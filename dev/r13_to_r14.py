@@ -20,6 +20,10 @@ Dropped without an R14 equivalent (warned, recorded in the report):
 
 Usage:
     python r13_to_r14.py <input.xml> <output.xml> [--verbose] [--report <path>]
+
+By default the sidecar report is written to `<output_dir>/#Assets/<output_stem>.report.txt`
+(the `#Assets/` folder is created if missing). Pass `--report <path>` to override.
+Re-running overwrites any existing report at that path.
 """
 import argparse
 import sys
@@ -27,6 +31,7 @@ import uuid
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from collections import Counter
+from pathlib import Path
 
 
 # ---------- helpers ----------
@@ -153,6 +158,25 @@ def convert_map_to_mouse(mm_el: ET.Element) -> tuple[str, ET.Element]:
     return aid, el
 
 
+def convert_map_to_keyboard(mtk_el: ET.Element) -> tuple[str, ET.Element]:
+    """R13 <map-to-keyboard><key extended scan-code/>...</map-to-keyboard>
+    -> R14 <action type=map-to-keyboard> with one <input> child per key, each
+    holding scan-code (int) and is-extended (bool) properties.
+
+    Schema verified against JG R14 source action_plugins/map_to_keyboard/__init__.py:
+      - element type="map-to-keyboard"
+      - per-key wrapper element name is "input"
+      - R13 attribute "extended" maps to R14 property "is-extended"
+    """
+    aid, el = make_action("map-to-keyboard")
+    for key_el in mtk_el.findall("key"):
+        inp = ET.SubElement(el, "input")
+        add_property(inp, "int", "scan-code", key_el.attrib.get("scan-code", "0"))
+        add_property(inp, "bool", "is-extended", key_el.attrib.get("extended", "False"))
+    append_label_and_mode(el, "Map to Keyboard")
+    return aid, el
+
+
 def convert_macro(macro_el: ET.Element, log) -> tuple[str, ET.Element]:
     aid, el = make_action("macro")
     add_property(el, "bool", "is-exclusive", "False")
@@ -218,6 +242,8 @@ def convert_action_set(action_set: ET.Element, library: list[ET.Element], log) -
             aid, el = convert_response_curve(a)
         elif tag == "map-to-mouse":
             aid, el = convert_map_to_mouse(a)
+        elif tag == "map-to-keyboard":
+            aid, el = convert_map_to_keyboard(a)
         elif tag == "macro":
             aid, el = convert_macro(a, log)
         elif tag == "previous-mode":
@@ -385,6 +411,15 @@ def write_report(report_path: str, action_counts: Counter, log: Logger,
         f.write("\n".join(lines) + "\n")
 
 
+def default_report_path(r14_path: str) -> str:
+    """Sidecar reports live in the per-stick `#Assets/` folder, alongside the
+    other ancillary materials. The folder is created on demand."""
+    out = Path(r14_path)
+    assets = out.parent / "#Assets"
+    assets.mkdir(exist_ok=True)
+    return str(assets / f"{out.stem}.report.txt")
+
+
 def convert(r13_path: str, r14_path: str, log: Logger, report_path: str | None = None) -> None:
     tree = ET.parse(r13_path)
     r13 = tree.getroot()
@@ -456,9 +491,9 @@ def convert(r13_path: str, r14_path: str, log: Logger, report_path: str | None =
     if log.warn_count:
         print(f"  Warnings:        {log.warn_count}", file=sys.stderr)
 
-    if report_path:
-        write_report(report_path, action_counts, log, len(inputs_el), len(library_actions))
-        print(f"Report:          {report_path}")
+    resolved_report = report_path if report_path else default_report_path(r14_path)
+    write_report(resolved_report, action_counts, log, len(inputs_el), len(library_actions))
+    print(f"Report:          {resolved_report}")
 
 
 def main() -> int:
@@ -466,7 +501,7 @@ def main() -> int:
     p.add_argument("input", help="R13 (profile version 9) XML")
     p.add_argument("output", help="R14 (profile version 14) XML")
     p.add_argument("--verbose", action="store_true", help="Print each dropped TTS / other action as it happens")
-    p.add_argument("--report", help="Write a sidecar conversion report to this path")
+    p.add_argument("--report", help="Override the report path (default: <output_dir>/#Assets/<output_stem>.report.txt)")
     args = p.parse_args()
     log = Logger(verbose=args.verbose)
     convert(args.input, args.output, log, args.report)
