@@ -107,6 +107,19 @@ def convert_temp_mode_switch(tms_el: ET.Element) -> tuple[str, ET.Element]:
     return aid, el
 
 
+def convert_switch_mode(sm_el: ET.Element) -> tuple[str, ET.Element]:
+    """R13 <switch-mode name="X"/> -> R14 change-mode with change-type=Switch
+    and one <target-mode> child. Per JG R14 source action_plugins/change_mode/
+    __init__.py: ChangeType.Switch requires exactly one target-mode, identical
+    XML shape to Temporary (just a different change-type value)."""
+    aid, el = make_action("change-mode")
+    add_property(el, "string", "change-type", "Switch")
+    target = ET.SubElement(el, "target-mode")
+    add_property(target, "string", "name", sm_el.attrib.get("name", ""))
+    append_label_and_mode(el, "Change Mode")
+    return aid, el
+
+
 def convert_previous_mode(_pm_el: ET.Element) -> tuple[str, ET.Element]:
     """R13 <previous-mode/> -> R14 change-mode action with change-type=Previous.
     Per JG R14 source (action_plugins/change_mode/__init__.py): Previous swaps
@@ -238,6 +251,8 @@ def convert_action_set(action_set: ET.Element, library: list[ET.Element], log) -
             aid, el = convert_cycle_modes(a)
         elif tag == "temporary-mode-switch":
             aid, el = convert_temp_mode_switch(a)
+        elif tag == "switch-mode":
+            aid, el = convert_switch_mode(a)
         elif tag == "response-curve":
             aid, el = convert_response_curve(a)
         elif tag == "map-to-mouse":
@@ -357,13 +372,25 @@ class Logger:
 
 
 def collect_modes(r13_root: ET.Element) -> dict[str, str | None]:
-    """Find the unique mode set across all devices, with parent (`inherit`) relationships."""
+    """Find the unique mode set across all devices, with parent (`inherit`) relationships.
+
+    R13 declares modes per-device. The same mode name can appear on multiple
+    devices with different (or absent) `inherit` attributes — typically because
+    only the actively-bound devices set inheritance and inactive/legacy device
+    entries leave it blank. First-wins drops the real inheritance when an
+    inherit-less device is iterated first (silent regression: throttle/stick
+    renders blank in JG R14 because modes that should inherit from SCM no
+    longer do). Prefer any non-None inherit value over None for the same mode.
+    """
     modes: dict[str, str | None] = {}
     for device in r13_root.findall("./devices/device") + r13_root.findall("./devices/vjoy-device"):
         for m in device.findall("mode"):
             name = m.attrib.get("name")
-            if name and name not in modes:
-                modes[name] = m.attrib.get("inherit")
+            if not name:
+                continue
+            inherit = m.attrib.get("inherit")
+            if name not in modes or (modes[name] is None and inherit is not None):
+                modes[name] = inherit
     return modes
 
 
@@ -438,12 +465,23 @@ def convert(r13_path: str, r14_path: str, log: Logger, report_path: str | None =
     # which is the dependency order JG R14 needs.
     library_actions: list[ET.Element] = []
 
-    physical_devices: list[tuple[str, str]] = []
+    # Only emit devices in the R14 <devices> section if they actually produced
+    # at least one bound input. R13 profiles often carry leftover device
+    # declarations from disconnected/legacy hardware that have mode listings but
+    # no actual button/axis/hat children. Listing such "ghost" devices in the
+    # R14 profile causes JG R14 to attempt reconciliation against hardware that
+    # isn't there, which can render an unrelated *connected* device blank in
+    # the UI (verified against Sub's Virpil VMAX+Aeromax profile, where two
+    # leftover VKBSim Space Gunfighter declarations caused the throttle to
+    # render blank even though it was bound and connected).
+    device_meta: dict[str, str] = {}
+    bound_device_ids: list[str] = []
+    seen_bound: set[str] = set()
     for device in r13.findall("./devices/device"):
         if device.attrib.get("type") != "joystick":
             continue
         guid = device.attrib["device-guid"]
-        physical_devices.append((guid, device.attrib.get("name", "")))
+        device_meta[guid] = device.attrib.get("name", "")
         for mode_el in device.findall("mode"):
             mode_name = mode_el.attrib["name"]
             for input_el in mode_el:
@@ -452,6 +490,10 @@ def convert(r13_path: str, r14_path: str, log: Logger, report_path: str | None =
                 inp = convert_input(input_el, mode_name, guid, library_actions, log)
                 if inp is not None:
                     inputs_el.append(inp)
+                    if guid not in seen_bound:
+                        seen_bound.add(guid)
+                        bound_device_ids.append(guid)
+    physical_devices = [(guid, device_meta[guid]) for guid in bound_device_ids]
 
     library_el = ET.SubElement(r14, "library")
     for a in library_actions:
