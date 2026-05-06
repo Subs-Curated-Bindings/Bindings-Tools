@@ -18,6 +18,12 @@ Critical invariants:
 Dropped without an R14 equivalent (warned, recorded in the report):
   - text-to-speech (no equivalent action in R14)
 
+Translated where the closest R14 action conveys the original intent:
+  - noop -> R14 `description` action (carries a visible text label, no runtime
+    effect). Preserves the "intentional placeholder" semantics that some R13
+    profiles rely on. The description text incorporates the parent input's
+    description attribute when present.
+
 Usage:
     python r13_to_r14.py <input.xml> <output.xml> [--verbose] [--report <path>]
 
@@ -190,6 +196,48 @@ def convert_map_to_keyboard(mtk_el: ET.Element) -> tuple[str, ET.Element]:
     return aid, el
 
 
+def convert_play_sound(ps_el: ET.Element) -> tuple[str, ET.Element]:
+    """R13 <play-sound file="X" volume="N"/> -> R14 <action type=play-sound>
+    with filename (string) and volume (int) properties.
+
+    Schema verified against JG R14 source action_plugins/play_sound/__init__.py:
+      - element type="play-sound"
+      - properties: filename (string), volume (int)
+      - R13 uses attribute name `file`; R14 renames to `filename`
+
+    JG R14 raises a load-time error if the filename path does not exist or is
+    inaccessible. Old R13 profiles often carry stale paths from earlier folder
+    layouts — those paths get preserved here unchanged. Audit the report.txt
+    sound-file references after conversion if loading fails."""
+    aid, el = make_action("play-sound")
+    add_property(el, "string", "filename", ps_el.attrib.get("file", ""))
+    add_property(el, "int", "volume", ps_el.attrib.get("volume", "100"))
+    append_label_and_mode(el, "Play Sound")
+    return aid, el
+
+
+def convert_noop(_noop_el: ET.Element, input_description: str) -> tuple[str, ET.Element]:
+    """R13 noop has no direct R14 equivalent (R14 removed the plugin), but R14's
+    `description` action is the closest semantic match — both are no-runtime-
+    effect placeholders that exist to be visible in the UI. Convert noop to a
+    description action whose text records the conversion, optionally prefixed
+    with the parent input's R13 description attribute (which often carries the
+    creator's note explaining *why* the slot is a deliberate no-op).
+
+    Schema verified against JG R14 source action_plugins/description/__init__.py:
+      - element type="description"
+      - single string property named "description" carrying the label text"""
+    aid, el = make_action("description")
+    note = "Incompatible action 'noop' converted to description"
+    if input_description:
+        text = f"{input_description} - {note}"
+    else:
+        text = note
+    add_property(el, "string", "description", text)
+    append_label_and_mode(el, "Description", "disallowed")
+    return aid, el
+
+
 def convert_macro(macro_el: ET.Element, log) -> tuple[str, ET.Element]:
     aid, el = make_action("macro")
     add_property(el, "bool", "is-exclusive", "False")
@@ -231,10 +279,15 @@ def convert_macro(macro_el: ET.Element, log) -> tuple[str, ET.Element]:
     return aid, el
 
 
-def convert_action_set(action_set: ET.Element, library: list[ET.Element], log) -> list[str]:
+def convert_action_set(action_set: ET.Element, library: list[ET.Element], log,
+                       input_description: str = "") -> list[str]:
     """Convert all primitive actions in one R13 <action-set> to R14 library entries.
     Appends each new action to `library` in the order it should be serialized
     (children appear before any root that references them).
+
+    `input_description` is the R13 `<button|axis|hat description="...">` value
+    for the input this action-set belongs to. Forwarded to converters that
+    benefit from the surrounding context (currently `convert_noop`).
 
     Returns the list of action ids to populate parent <actions> /
     <short-actions> / <long-actions>. Response-curves are sorted to the front:
@@ -261,11 +314,16 @@ def convert_action_set(action_set: ET.Element, library: list[ET.Element], log) -
             aid, el = convert_map_to_keyboard(a)
         elif tag == "macro":
             aid, el = convert_macro(a, log)
+        elif tag == "play-sound":
+            aid, el = convert_play_sound(a)
         elif tag == "previous-mode":
             aid, el = convert_previous_mode(a)
         elif tag == "text-to-speech":
             log.dropped_tts(a.attrib.get("text", ""))
             continue
+        elif tag == "noop":
+            aid, el = convert_noop(a, input_description)
+            log.dropped("noop converted to description action")
         else:
             log.warn(f"Unknown action tag '{tag}'; skipped")
             continue
@@ -290,6 +348,7 @@ def convert_input(input_el: ET.Element, mode_name: str, device_guid: str,
 
     ctype = container.attrib.get("type", "basic")
     sets = container.findall("action-set")
+    input_desc = input_el.attrib.get("description", "")
 
     root_child_ids: list[str] = []
 
@@ -297,8 +356,8 @@ def convert_input(input_el: ET.Element, mode_name: str, device_guid: str,
         if not sets:
             log.warn(f"Empty tempo container on {input_el.tag} {input_el.attrib.get('id','?')} — skipped")
             return None
-        short_ids = convert_action_set(sets[0], library, log) if len(sets) >= 1 else []
-        long_ids = convert_action_set(sets[1], library, log) if len(sets) >= 2 else []
+        short_ids = convert_action_set(sets[0], library, log, input_desc) if len(sets) >= 1 else []
+        long_ids = convert_action_set(sets[1], library, log, input_desc) if len(sets) >= 2 else []
         if not short_ids and not long_ids:
             return None
 
@@ -315,11 +374,40 @@ def convert_input(input_el: ET.Element, mode_name: str, device_guid: str,
         append_label_and_mode(tempo_el, label, "disallowed")
         library.append(tempo_el)
         root_child_ids.append(tempo_id)
+    elif ctype == "double_tap":
+        # Schema verified against JG R14 source action_plugins/double_tap/
+        # __init__.py: tag="double-tap"; children are <single-actions> and
+        # <double-actions> wrapping <action-id> entries (not <short-actions>/
+        # <long-actions> like tempo). Properties are `threshold` (float) and
+        # `activate-on` (string). R13 used `delay` for the threshold; R14
+        # renamed it. R13's activate-on values like "exclusive" pass through
+        # to R14 unchanged.
+        if not sets:
+            log.warn(f"Empty double_tap container on {input_el.tag} {input_el.attrib.get('id','?')} — skipped")
+            return None
+        single_ids = convert_action_set(sets[0], library, log, input_desc) if len(sets) >= 1 else []
+        double_ids = convert_action_set(sets[1], library, log, input_desc) if len(sets) >= 2 else []
+        if not single_ids and not double_ids:
+            return None
+
+        dt_id, dt_el = make_action("double-tap")
+        sa = ET.SubElement(dt_el, "single-actions")
+        for sid in single_ids:
+            ET.SubElement(sa, "action-id").text = sid
+        da = ET.SubElement(dt_el, "double-actions")
+        for did in double_ids:
+            ET.SubElement(da, "action-id").text = did
+        add_property(dt_el, "float", "threshold", container.attrib.get("delay", "0.5"))
+        add_property(dt_el, "string", "activate-on", container.attrib.get("activate-on", "exclusive"))
+        label = input_el.attrib.get("description", "Double Tap") or "Double Tap"
+        append_label_and_mode(dt_el, label, "disallowed")
+        library.append(dt_el)
+        root_child_ids.append(dt_id)
     else:
         if ctype != "basic":
             log.warn(f"Unknown container type '{ctype}' on {input_el.tag} {input_el.attrib.get('id','?')}; treated as basic")
         for s in sets:
-            root_child_ids.extend(convert_action_set(s, library, log))
+            root_child_ids.extend(convert_action_set(s, library, log, input_desc))
         if not root_child_ids:
             return None
 
@@ -337,7 +425,20 @@ def convert_input(input_el: ET.Element, mode_name: str, device_guid: str,
     ET.SubElement(inp, "input-id").text = input_el.attrib["id"]
     cfg = ET.SubElement(inp, "action-configuration")
     ET.SubElement(cfg, "root-action").text = root_id
-    ET.SubElement(cfg, "behavior").text = input_el.tag
+    # R13 supports an axis-as-button trigger via a <virtual-button> sibling of
+    # <action-set> inside an axis container. The action only fires when the
+    # axis crosses configured thresholds (e.g. lower-limit=0.95 / upper-limit=
+    # -0.95 means "fire near either extreme"). R14 expresses this by setting
+    # the input's <behavior> to "button" while leaving <input-type> as "axis".
+    # If we don't translate, R14 evaluates the action chain continuously across
+    # the entire axis range and runaway-fires (verified on Sub's STECS Y-rot
+    # mode-switch axis: caused JG R14 to stall until the profile was disabled).
+    # Threshold values aren't carried over here — R14's UI lets the user set
+    # them per-action and the defaults usually work for ±extreme detents.
+    behavior = input_el.tag
+    if input_el.tag == "axis" and container.find("virtual-button") is not None:
+        behavior = "button"
+    ET.SubElement(cfg, "behavior").text = behavior
     return inp
 
 
