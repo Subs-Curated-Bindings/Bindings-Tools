@@ -433,12 +433,25 @@ def convert_input(input_el: ET.Element, mode_name: str, device_guid: str,
     # If we don't translate, R14 evaluates the action chain continuously across
     # the entire axis range and runaway-fires (verified on Sub's STECS Y-rot
     # mode-switch axis: caused JG R14 to stall until the profile was disabled).
-    # Threshold values aren't carried over here — R14's UI lets the user set
-    # them per-action and the defaults usually work for ±extreme detents.
+    #
+    # Setting <behavior>button</behavior> alone is not enough. JG R14's
+    # _parse_virtual_button (gremlin/profile.py) raises AttributeError when an
+    # axis input has behavior=button but no <virtual-button> sub-element under
+    # <action-configuration> -- the entire profile fails to load. So we also
+    # emit a <virtual-button> block translating R13's attributes (direction,
+    # lower-limit, upper-limit) to R14's sub-elements
+    # (<axis-button-direction>, <lower-limit>, <upper-limit>). Format
+    # validated against SOL-R 2's working R14 (4 axis-as-button inputs).
     behavior = input_el.tag
-    if input_el.tag == "axis" and container.find("virtual-button") is not None:
+    vb = None if input_el.tag != "axis" else container.find("virtual-button")
+    if vb is not None:
         behavior = "button"
     ET.SubElement(cfg, "behavior").text = behavior
+    if vb is not None:
+        vb_el = ET.SubElement(cfg, "virtual-button")
+        ET.SubElement(vb_el, "lower-limit").text = vb.attrib.get("lower-limit", "-1.0")
+        ET.SubElement(vb_el, "upper-limit").text = vb.attrib.get("upper-limit", "1.0")
+        ET.SubElement(vb_el, "axis-button-direction").text = vb.attrib.get("direction", "anywhere")
     return inp
 
 
