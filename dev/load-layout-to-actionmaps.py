@@ -81,8 +81,9 @@ def load_layout_to_actionmaps(layout_src, install_root, channel):
 
     # 5. Sanity counts
     text = new_content.decode('utf-8')
+    js_rebind = '<rebind input="js'
     print(f'  actionmaps: {len(re.findall(r"<actionmap ", text))}')
-    print(f'  joystick rebinds: {len(re.findall(r\'<rebind input="js\', text))}')
+    print(f'  joystick rebinds: {text.count(js_rebind)}')
     print(f'  invert lines: {len(re.findall(r"invert=", text))}')
 
 
