@@ -27,8 +27,8 @@ Translated where the closest R14 action conveys the original intent:
 Usage:
     python r13_to_r14.py <input.xml> <output.xml> [--verbose] [--report <path>]
 
-By default the sidecar report is written to `<output_dir>/#Assets/<output_stem>.report.txt`
-(the `#Assets/` folder is created if missing). Pass `--report <path>` to override.
+By default the sidecar report is written to `<output_dir>/.Assets/<output_stem>.report.txt`
+(the `.Assets/` folder is created if missing). Pass `--report <path>` to override.
 Re-running overwrites any existing report at that path.
 """
 import argparse
@@ -553,10 +553,10 @@ def write_report(report_path: str, action_counts: Counter, log: Logger,
 
 
 def default_report_path(r14_path: str) -> str:
-    """Sidecar reports live in the per-stick `#Assets/` folder, alongside the
+    """Sidecar reports live in the per-stick `.Assets/` folder, alongside the
     other ancillary materials. The folder is created on demand."""
     out = Path(r14_path)
-    assets = out.parent / "#Assets"
+    assets = out.parent / ".Assets"
     assets.mkdir(exist_ok=True)
     return str(assets / f"{out.stem}.report.txt")
 
@@ -657,7 +657,7 @@ def main() -> int:
     p.add_argument("input", help="R13 (profile version 9) XML")
     p.add_argument("output", help="R14 (profile version 14) XML")
     p.add_argument("--verbose", action="store_true", help="Print each dropped TTS / other action as it happens")
-    p.add_argument("--report", help="Override the report path (default: <output_dir>/#Assets/<output_stem>.report.txt)")
+    p.add_argument("--report", help="Override the report path (default: <output_dir>/.Assets/<output_stem>.report.txt)")
     args = p.parse_args()
     log = Logger(verbose=args.verbose)
     convert(args.input, args.output, log, args.report)

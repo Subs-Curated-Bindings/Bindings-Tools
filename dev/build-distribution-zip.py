@@ -2,11 +2,11 @@
 Build a distribution zip for a stick folder.
 
 Walks the stick folder and zips everything except:
-  - the #Assets/ subfolder (contributor-only)
+  - the .Assets/ subfolder (contributor-only)
   - Thumbs.db
   - *.af~lock~ (Affinity lock files)
 
-The zip lands in <stick-folder>/#Assets/<zip-name>.zip. If a zip with the
+The zip lands in <stick-folder>/.Assets/<zip-name>.zip. If a zip with the
 same name already exists, it is overwritten.
 
 Usage:
@@ -20,7 +20,7 @@ import sys
 import zipfile
 
 
-EXCLUDE_DIRS = {'#Assets'}
+EXCLUDE_DIRS = {'.Assets'}
 EXCLUDE_FILES = {'Thumbs.db'}
 EXCLUDE_SUFFIXES = ('.af~lock~',)
 
@@ -29,7 +29,7 @@ def build_zip(stick_dir, zip_name):
     if not os.path.isdir(stick_dir):
         sys.exit(f'Stick folder not found: {stick_dir}')
 
-    assets_dir = os.path.join(stick_dir, '#Assets')
+    assets_dir = os.path.join(stick_dir, '.Assets')
     os.makedirs(assets_dir, exist_ok=True)
     zip_path = os.path.join(assets_dir, zip_name)
 
@@ -68,7 +68,7 @@ def build_zip(stick_dir, zip_name):
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument('--stick-folder', required=True, help='Path to the stick folder')
-    p.add_argument('--zip-name', required=True, help='Output zip filename (will land under #Assets/)')
+    p.add_argument('--zip-name', required=True, help='Output zip filename (will land under .Assets/)')
     args = p.parse_args()
     build_zip(args.stick_folder, args.zip_name)
 
