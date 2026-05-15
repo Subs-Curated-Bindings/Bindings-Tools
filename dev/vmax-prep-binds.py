@@ -1,5 +1,5 @@
 """
-One-shot for the VMAX 4.8.0 PTU prep:
+One-shot for the VMAX 4.8.0 LIVE prep:
   1. Remove the two ghost <device> entries (placeholder GUIDs left over
      from earlier distribution prep -- zero <input> elements reference
      them, so removal is safe).
@@ -22,7 +22,7 @@ import uuid
 
 PROFILE = (
     r'..\[Enhanced] Virpil VMAX Throttle + Aeromax-R'
-    r'\Joystick Gremlin Profile [ENH][VMAX+AERO][4.8.0][PTU][R14].xml'
+    r'\Joystick Gremlin Profile [ENH][VMAX+AERO][4.8.0][LIVE][R14].xml'
 )
 
 GHOST_GUIDS = [

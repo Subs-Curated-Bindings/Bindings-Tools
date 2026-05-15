@@ -30,7 +30,7 @@ state -- they work on local files.
 Validated against SOL-R 2 and NXT on 2026-05-07. Run from this folder:
 
 ```bash
-PROFILE="../[Enhanced] Dual TM SOL-R/Joystick Gremlin Profile [ENH][SOL-R 2][4.8.0][PTU][R14].xml"
+PROFILE="../[Enhanced] Dual TM SOL-R/Joystick Gremlin Profile [ENH][SOL-R 2][4.8.0][LIVE][R14].xml"
 
 # 1. Check what's there
 python audit-jg-profile.py "$PROFILE"
@@ -62,7 +62,7 @@ python audit-action-labels.py "$PROFILE"
 # 8. Rebuild the distribution zip so end-users get the polished profile
 python build-distribution-zip.py \
     --stick-folder "../[Enhanced] Dual TM SOL-R" \
-    --zip-name "[4.8.0][PTU][ENH] TM SOL-R 2 Binds.zip"
+    --zip-name "[4.8.0][LIVE][ENH] TM SOL-R 2 Binds.zip"
 ```
 
 Step 8 is mandatory: any commit that touches a stick's source files must
@@ -75,8 +75,8 @@ the repo silently lags the source.
 # Drop the new layout into SC's mappings folder + inject binds into actionmaps.
 # SC must be fully closed (this script does not enforce that).
 python load-layout-to-actionmaps.py \
-    --layout "../[Enhanced] Dual TM SOL-R/layout_ENH_SOL-R2_480_PTU_exported.xml" \
-    --channel PTU
+    --layout "../[Enhanced] Dual TM SOL-R/layout_ENH_SOL-R2_480_LIVE_exported.xml" \
+    --channel LIVE
 ```
 
 ## Conventions

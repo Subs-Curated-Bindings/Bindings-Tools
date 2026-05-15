@@ -25,7 +25,7 @@ import uuid
 
 PROFILE = (
     r'..\[Enhanced] Dual VKB Gunfighter Binds'
-    r'\Joystick Gremlin Profile [ENH][GF][4.8.0][PTU][R14].xml'
+    r'\Joystick Gremlin Profile [ENH][GF][4.8.0][LIVE][R14].xml'
 )
 
 BUTTONS = [

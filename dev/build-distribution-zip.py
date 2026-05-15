@@ -12,7 +12,7 @@ same name already exists, it is overwritten.
 Usage:
   python build-distribution-zip.py
       --stick-folder "<path to stick folder>"
-      --zip-name "[4.8.0][PTU][ENH] TM SOL-R 2 Binds.zip"
+      --zip-name "[4.8.0][LIVE][ENH] TM SOL-R 2 Binds.zip"
 """
 import argparse
 import os
