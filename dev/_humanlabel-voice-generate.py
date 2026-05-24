@@ -33,12 +33,18 @@ OUT_JSON = REPO / "tools" / "_humanlabel-voice-proposals.json"
 
 # Hand-curated SC player-speak renames (CIG-speak → Sub-speak)
 RENAMES_EXACT = {
-    "Boost": "After Burner",
     "Autoland": "Auto Land",
     "Spacebrake": "Space Brake",
     "Headlights (Toggle)": "Headlight Toggle",
     "Headlights": "Headlight",
 }
+
+# XML-name driven renames: when XMLActionName contains the key,
+# force the HumanLabel regardless of DisplayName. Lets us tell
+# v_afterburner ("After Burner") apart from eva_boost ("Boost").
+XML_NAME_LABELS = [
+    (re.compile(r"afterburner", re.I), "After Burner"),
+]
 
 # SC acronyms — keep these uppercase in human labels.
 SC_ACRONYMS = {
@@ -176,7 +182,13 @@ def abbreviate(s):
 
 def voice_transform(xml_name, display_name):
     """Apply Sub's voice rules to produce a player-speak HumanLabel."""
-    # 0. Compound-split overrides (when XML name has no word boundaries)
+    # 0a. XML-name driven labels (lets us distinguish v_afterburner from eva_boost
+    # even when both have DisplayName "Boost")
+    for pat, label in XML_NAME_LABELS:
+        if pat.search(xml_name or ""):
+            return label
+
+    # 0b. Compound-split overrides (when XML name has no word boundaries)
     if xml_name.lower() in COMPOUND_SPLITS:
         base = COMPOUND_SPLITS[xml_name.lower()]
         base = " ".join(w.capitalize() for w in base.split())

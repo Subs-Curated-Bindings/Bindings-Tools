@@ -337,7 +337,7 @@
     "action_map": "zero_gravity_eva",
     "display_name": "Boost",
     "current_proposal": "Boost",
-    "voice_draft": "After Burner",
+    "voice_draft": "Boost",
     "source": "csv_displayname",
     "confidence": "medium"
   },
@@ -535,7 +535,7 @@
     "action_map": "vehicle_driver",
     "display_name": "ui_CIboost",
     "current_proposal": "Boost",
-    "voice_draft": "After Burner",
+    "voice_draft": "Boost",
     "source": "xml_name_fallback",
     "confidence": "low"
   },
