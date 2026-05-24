@@ -183,20 +183,30 @@ def abbreviate(s):
 def apply_xml_decorators(xml_name, label):
     """Apply XML-name-driven label decorations:
       - `eva_` prefix in XML → "EVA " prefix on label (unless already present)
-      - `_long` / `_hold` suffix in XML → " [H]" suffix on label (game-native hold,
-        distinct from JG-tempo holds which live in the chart, not the label)
+      - `_long` / `_hold` suffix in XML → "[H] " PREFIX on label. End users don't
+        care whether the hold is implemented by SC (game-native, via _long/_hold)
+        or by JG tempo — both show as [H] in chart, so the HumanLabel needs [H]
+        wherever SC's action itself is hold-shaped.
       - `_short` suffix means the tap variant — no decoration; that's the base.
     """
     if not xml_name or not label:
         return label
     xml_low = xml_name.lower()
     out = label
-    # EVA prefix
-    if xml_low.startswith("eva_") and not re.match(r"\bEVA\b", out):
-        out = f"EVA {out}"
-    # Game-native hold suffix
+    # Strip any pre-existing [H] suffix (legacy from when this was a suffix)
+    out = re.sub(r"\s*\[H\]\s*$", "", out)
+    # Game-native hold prefix
     if (xml_low.endswith("_long") or xml_low.endswith("_hold")) and "[H]" not in out:
-        out = f"{out} [H]"
+        out = f"[H] {out}"
+    # EVA prefix (applied after [H] so it ends up as "EVA [H] X" — wait no,
+    # [H] should be the outermost prefix. Apply EVA first, then [H].)
+    # Reorder: handle EVA first if not already present
+    if xml_low.startswith("eva_") and not re.search(r"\bEVA\b", out):
+        # Insert "EVA " after any "[H] " prefix
+        if out.startswith("[H] "):
+            out = f"[H] EVA {out[4:]}"
+        else:
+            out = f"EVA {out}"
     return out
 
 
