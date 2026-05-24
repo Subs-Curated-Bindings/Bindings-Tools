@@ -190,9 +190,33 @@ def voice_transform(xml_name, display_name):
 
     # Cleanup
     base = re.sub(r"\s+", " ", base).strip()
-    base = base.strip("-").strip("/").strip()
+    base = base.strip("-").strip("/").strip(",").strip()
     base = cap_sc_acronyms(base)
     return base
+
+
+def voice_clean_existing(text):
+    """Apply Sub's voice rules to an already-named string (chart-sourced text).
+    Conservative: only fixes clear violations (Toggle-at-start, trailing punctuation,
+    acronym caps). Leaves correctly-voiced labels alone."""
+    if not text:
+        return text
+    s = text.strip().strip(",").strip()  # trim trailing commas (SVG text glitch)
+    # Toggle to end (start AND mid)
+    m = re.match(r"^Toggle\s+(.+)$", s)
+    if m:
+        s = f"{m.group(1)} Toggle"
+    m = re.match(r"^(.+?)\s+Toggle\s+(.+)$", s)
+    if m:
+        s = f"{m.group(1)} {m.group(2)} Toggle"
+    # SC acronyms
+    s = cap_sc_acronyms(s)
+    # Strip CIG-paren modifier tags if they snuck through
+    s = strip_paren_modifier_tags(s)
+    # Dedupe adjacent identical words (chart-text concat artifact, e.g.
+    # "Invoke Docking Docking Toggle" → "Invoke Docking Toggle")
+    s = re.sub(r"\b(\w+)(\s+\1\b)+", r"\1", s, flags=re.IGNORECASE)
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def main():
