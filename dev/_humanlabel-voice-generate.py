@@ -76,6 +76,19 @@ PHRASE_REWRITES = [
     (r"\bAutoland\b", "Auto Land"),
     (r"\bSpacebrake\b", "Space Brake"),
     (r"\bE\.V\.A\.\s*/\s*On Foot\b", "EVA/Foot"),
+    # Targeting/pinning specific compound phrases — collapse to chart-style player speak
+    # "Pin Index N - Pin / Unpin Selected Target" → "Pin/Unpin N"  (matches chart text Sub uses)
+    (r"\bPin Index (\d+)\s*[-–]\s*Pin\s*/\s*Unpin Selected Target\b", r"Pin/Unpin \1"),
+    # "Pin Index N - Lock / Unlock Pinned Target" → "Pin N Lock Toggle"
+    (r"\bPin Index (\d+)\s*[-–]\s*Lock\s*/\s*Unlock Pinned Target\b", r"Pin \1 Lock Toggle"),
+    # Generic "Pin Index N" → "Pin N" (catch any remaining)
+    (r"\bPin Index (\d+)\b", r"Pin \1"),
+    # Tight slash forms — Sub uses no spaces around / in chart text
+    (r"\bPin\s*/\s*Unpin\b", "Pin/Unpin"),
+    (r"\bLock\s*/\s*Unlock\b", "Lock/Unlock"),
+    (r"\bOn\s*/\s*Off\b", "On/Off"),
+    (r"\bLead\s*/\s*Lag\b", "Lead/Lag"),
+    (r"\bFixed\s*/\s*Auto\b", "Fixed/Auto"),
 ]
 
 
