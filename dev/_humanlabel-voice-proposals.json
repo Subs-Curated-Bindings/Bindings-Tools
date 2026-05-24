@@ -337,7 +337,7 @@
     "action_map": "zero_gravity_eva",
     "display_name": "Boost",
     "current_proposal": "Boost",
-    "voice_draft": "Boost",
+    "voice_draft": "EVA Boost",
     "source": "csv_displayname",
     "confidence": "medium"
   },

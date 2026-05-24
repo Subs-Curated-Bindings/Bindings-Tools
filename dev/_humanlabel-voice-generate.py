@@ -180,19 +180,39 @@ def abbreviate(s):
     return s
 
 
+def apply_xml_decorators(xml_name, label):
+    """Apply XML-name-driven label decorations:
+      - `eva_` prefix in XML → "EVA " prefix on label (unless already present)
+      - `_long` / `_hold` suffix in XML → " [H]" suffix on label (game-native hold,
+        distinct from JG-tempo holds which live in the chart, not the label)
+      - `_short` suffix means the tap variant — no decoration; that's the base.
+    """
+    if not xml_name or not label:
+        return label
+    xml_low = xml_name.lower()
+    out = label
+    # EVA prefix
+    if xml_low.startswith("eva_") and not re.match(r"\bEVA\b", out):
+        out = f"EVA {out}"
+    # Game-native hold suffix
+    if (xml_low.endswith("_long") or xml_low.endswith("_hold")) and "[H]" not in out:
+        out = f"{out} [H]"
+    return out
+
+
 def voice_transform(xml_name, display_name):
     """Apply Sub's voice rules to produce a player-speak HumanLabel."""
     # 0a. XML-name driven labels (lets us distinguish v_afterburner from eva_boost
     # even when both have DisplayName "Boost")
     for pat, label in XML_NAME_LABELS:
         if pat.search(xml_name or ""):
-            return label
+            return apply_xml_decorators(xml_name, label)
 
     # 0b. Compound-split overrides (when XML name has no word boundaries)
     if xml_name.lower() in COMPOUND_SPLITS:
         base = COMPOUND_SPLITS[xml_name.lower()]
         base = " ".join(w.capitalize() for w in base.split())
-        return cap_sc_acronyms(base)
+        return apply_xml_decorators(xml_name, cap_sc_acronyms(base))
 
     # 1. Start: prefer DisplayName if it's clean, otherwise humanize XMLActionName
     base = (display_name or "").strip()
@@ -228,10 +248,11 @@ def voice_transform(xml_name, display_name):
     base = re.sub(r"\s+", " ", base).strip()
     base = base.strip("-").strip("/").strip(",").strip()
     base = cap_sc_acronyms(base)
+    base = apply_xml_decorators(xml_name, base)
     return base
 
 
-def voice_clean_existing(text):
+def voice_clean_existing(text, xml_name=None):
     """Apply Sub's voice rules to an already-named string (chart-sourced text).
     Conservative: only fixes clear violations (Toggle-at-start, trailing punctuation,
     acronym caps). Leaves correctly-voiced labels alone."""
@@ -252,7 +273,10 @@ def voice_clean_existing(text):
     # Dedupe adjacent identical words (chart-text concat artifact, e.g.
     # "Invoke Docking Docking Toggle" → "Invoke Docking Toggle")
     s = re.sub(r"\b(\w+)(\s+\1\b)+", r"\1", s, flags=re.IGNORECASE)
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    if xml_name:
+        s = apply_xml_decorators(xml_name, s)
+    return s
 
 
 def main():
