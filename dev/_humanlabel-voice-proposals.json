@@ -1,0 +1,749 @@
+{
+  "attack1": {
+    "xml_name": "attack1",
+    "action_map": "player",
+    "display_name": "Firearm - Attack",
+    "current_proposal": "Firearm - Attack",
+    "voice_draft": "Firearm Attack",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "combathealtarget": {
+    "xml_name": "combathealtarget",
+    "action_map": "player",
+    "display_name": "",
+    "current_proposal": "Combathealtarget",
+    "voice_draft": "Combat Heal Target",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "emote_agree": {
+    "xml_name": "emote_agree",
+    "action_map": "player_emotes",
+    "display_name": "Agree",
+    "current_proposal": "Agree",
+    "voice_draft": "Agree",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_angry": {
+    "xml_name": "emote_angry",
+    "action_map": "player_emotes",
+    "display_name": "Angry",
+    "current_proposal": "Angry",
+    "voice_draft": "Angry",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_atease": {
+    "xml_name": "emote_atease",
+    "action_map": "player_emotes",
+    "display_name": "At Ease",
+    "current_proposal": "At Ease",
+    "voice_draft": "At Ease",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_attention": {
+    "xml_name": "emote_attention",
+    "action_map": "player_emotes",
+    "display_name": "Attention",
+    "current_proposal": "Attention",
+    "voice_draft": "Attention",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_blah": {
+    "xml_name": "emote_blah",
+    "action_map": "player_emotes",
+    "display_name": "Blah",
+    "current_proposal": "Blah",
+    "voice_draft": "Blah",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_bored": {
+    "xml_name": "emote_bored",
+    "action_map": "player_emotes",
+    "display_name": "Bored",
+    "current_proposal": "Bored",
+    "voice_draft": "Bored",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_bow": {
+    "xml_name": "emote_bow",
+    "action_map": "player_emotes",
+    "display_name": "Bow",
+    "current_proposal": "Bow",
+    "voice_draft": "Bow",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_burp": {
+    "xml_name": "emote_burp",
+    "action_map": "player_emotes",
+    "display_name": "Burp",
+    "current_proposal": "Burp",
+    "voice_draft": "Burp",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_cheer": {
+    "xml_name": "emote_cheer",
+    "action_map": "player_emotes",
+    "display_name": "Cheer",
+    "current_proposal": "Cheer",
+    "voice_draft": "Cheer",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_chicken": {
+    "xml_name": "emote_chicken",
+    "action_map": "player_emotes",
+    "display_name": "Chicken",
+    "current_proposal": "Chicken",
+    "voice_draft": "Chicken",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_clap": {
+    "xml_name": "emote_clap",
+    "action_map": "player_emotes",
+    "display_name": "Clap",
+    "current_proposal": "Clap",
+    "voice_draft": "Clap",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_come": {
+    "xml_name": "emote_come",
+    "action_map": "player_emotes",
+    "display_name": "Come",
+    "current_proposal": "Come",
+    "voice_draft": "Come",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_cry": {
+    "xml_name": "emote_cry",
+    "action_map": "player_emotes",
+    "display_name": "Cry",
+    "current_proposal": "Cry",
+    "voice_draft": "Cry",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_cs_no": {
+    "xml_name": "emote_cs_no",
+    "action_map": "player_emotes",
+    "display_name": "No",
+    "current_proposal": "No",
+    "voice_draft": "No",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_cs_yes": {
+    "xml_name": "emote_cs_yes",
+    "action_map": "player_emotes",
+    "display_name": "Yes",
+    "current_proposal": "Yes",
+    "voice_draft": "Yes",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_dance": {
+    "xml_name": "emote_dance",
+    "action_map": "player_emotes",
+    "display_name": "Dance",
+    "current_proposal": "Dance",
+    "voice_draft": "Dance",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_disagree": {
+    "xml_name": "emote_disagree",
+    "action_map": "player_emotes",
+    "display_name": "Disagree",
+    "current_proposal": "Disagree",
+    "voice_draft": "Disagree",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_failure": {
+    "xml_name": "emote_failure",
+    "action_map": "player_emotes",
+    "display_name": "Failure",
+    "current_proposal": "Failure",
+    "voice_draft": "Failure",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_flex": {
+    "xml_name": "emote_flex",
+    "action_map": "player_emotes",
+    "display_name": "Flex",
+    "current_proposal": "Flex",
+    "voice_draft": "Flex",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_flirt": {
+    "xml_name": "emote_flirt",
+    "action_map": "player_emotes",
+    "display_name": "Flirt",
+    "current_proposal": "Flirt",
+    "voice_draft": "Flirt",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_gasp": {
+    "xml_name": "emote_gasp",
+    "action_map": "player_emotes",
+    "display_name": "Gasp",
+    "current_proposal": "Gasp",
+    "voice_draft": "Gasp",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_gloat": {
+    "xml_name": "emote_gloat",
+    "action_map": "player_emotes",
+    "display_name": "Gloat",
+    "current_proposal": "Gloat",
+    "voice_draft": "Gloat",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_greet": {
+    "xml_name": "emote_greet",
+    "action_map": "player_emotes",
+    "display_name": "Greet",
+    "current_proposal": "Greet",
+    "voice_draft": "Greet",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_laugh": {
+    "xml_name": "emote_laugh",
+    "action_map": "player_emotes",
+    "display_name": "Laugh",
+    "current_proposal": "Laugh",
+    "voice_draft": "Laugh",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_point": {
+    "xml_name": "emote_point",
+    "action_map": "player_emotes",
+    "display_name": "Point",
+    "current_proposal": "Point",
+    "voice_draft": "Point",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_rude": {
+    "xml_name": "emote_rude",
+    "action_map": "player_emotes",
+    "display_name": "Rude",
+    "current_proposal": "Rude",
+    "voice_draft": "Rude",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_salute": {
+    "xml_name": "emote_salute",
+    "action_map": "player_emotes",
+    "display_name": "Salute",
+    "current_proposal": "Salute",
+    "voice_draft": "Salute",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_sit": {
+    "xml_name": "emote_sit",
+    "action_map": "player_emotes",
+    "display_name": "Sit",
+    "current_proposal": "Sit",
+    "voice_draft": "Sit",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_sleep": {
+    "xml_name": "emote_sleep",
+    "action_map": "player_emotes",
+    "display_name": "Sleep",
+    "current_proposal": "Sleep",
+    "voice_draft": "Sleep",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_smell": {
+    "xml_name": "emote_smell",
+    "action_map": "player_emotes",
+    "display_name": "Smell",
+    "current_proposal": "Smell",
+    "voice_draft": "Smell",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_taunt": {
+    "xml_name": "emote_taunt",
+    "action_map": "player_emotes",
+    "display_name": "Taunt",
+    "current_proposal": "Taunt",
+    "voice_draft": "Taunt",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_threaten": {
+    "xml_name": "emote_threaten",
+    "action_map": "player_emotes",
+    "display_name": "Threaten",
+    "current_proposal": "Threaten",
+    "voice_draft": "Threaten",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_wait": {
+    "xml_name": "emote_wait",
+    "action_map": "player_emotes",
+    "display_name": "Wait",
+    "current_proposal": "Wait",
+    "voice_draft": "Wait",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_wave": {
+    "xml_name": "emote_wave",
+    "action_map": "player_emotes",
+    "display_name": "Wave",
+    "current_proposal": "Wave",
+    "voice_draft": "Wave",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_whistle": {
+    "xml_name": "emote_whistle",
+    "action_map": "player_emotes",
+    "display_name": "Whistle",
+    "current_proposal": "Whistle",
+    "voice_draft": "Whistle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_boost": {
+    "xml_name": "eva_boost",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Boost",
+    "current_proposal": "Boost",
+    "voice_draft": "After Burner",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "foip_recalibrate": {
+    "xml_name": "foip_recalibrate",
+    "action_map": "player_input_optical_tracking",
+    "display_name": "FOIP Recalibrate\u00a0",
+    "current_proposal": "FOIP Recalibrate\u00a0",
+    "voice_draft": "FOIP Recalibrate",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "foip_viewownplayer": {
+    "xml_name": "foip_viewownplayer",
+    "action_map": "player_input_optical_tracking",
+    "display_name": "FOIP Selfie Cam",
+    "current_proposal": "FOIP Selfie Cam",
+    "voice_draft": "FOIP Selfie Cam",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "force_respawn": {
+    "xml_name": "force_respawn",
+    "action_map": "player",
+    "display_name": "Force Re-spawn (E.V.A. / On Foot)",
+    "current_proposal": "Force Re-spawn (E.V.A. / On Foot)",
+    "voice_draft": "Force Re-spawn (EVA/Foot)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "holster": {
+    "xml_name": "holster",
+    "action_map": "player",
+    "display_name": "Holster Weapon",
+    "current_proposal": "Holster Weapon",
+    "voice_draft": "Holster Weapon",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "interact_with_scope": {
+    "xml_name": "interact_with_scope",
+    "action_map": "player",
+    "display_name": "ui_CIFPSInteractWithScope",
+    "current_proposal": "Interact With Scope",
+    "voice_draft": "Interact With Scope",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "jump": {
+    "xml_name": "jump",
+    "action_map": "player",
+    "display_name": "Jump",
+    "current_proposal": "Jump",
+    "voice_draft": "Jump",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "nextitem": {
+    "xml_name": "nextitem",
+    "action_map": "player",
+    "display_name": "",
+    "current_proposal": "Nextitem",
+    "voice_draft": "Next Item",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "pc_interaction_mode": {
+    "xml_name": "pc_interaction_mode",
+    "action_map": "player_choice",
+    "display_name": "Interaction Mode",
+    "current_proposal": "Interaction Mode",
+    "voice_draft": "Interaction Mode",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "pc_personal_thought": {
+    "xml_name": "pc_personal_thought",
+    "action_map": "player_choice",
+    "display_name": "Personal Inner Thought (PIT)",
+    "current_proposal": "Personal Inner Thought (PIT)",
+    "voice_draft": "Personal Inner Thought (PIT)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "pc_select": {
+    "xml_name": "pc_select",
+    "action_map": "player_choice",
+    "display_name": "Activate Inner Thought",
+    "current_proposal": "Activate Inner Thought",
+    "voice_draft": "Activate Inner Thought",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "reload": {
+    "xml_name": "reload",
+    "action_map": "player",
+    "display_name": "Reload",
+    "current_proposal": "Reload",
+    "voice_draft": "Reload",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "respawn": {
+    "xml_name": "respawn",
+    "action_map": "default",
+    "display_name": "Re-spawn",
+    "current_proposal": "Re-spawn",
+    "voice_draft": "Re-spawn",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "spectate_toggle_thirdperson": {
+    "xml_name": "spectate_toggle_thirdperson",
+    "action_map": "spectator",
+    "display_name": "",
+    "current_proposal": "Spectate Toggle Thirdperson",
+    "voice_draft": "Spectate Third Person Toggle",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "stopwatch_reset": {
+    "xml_name": "stopwatch_reset",
+    "action_map": "stopwatch",
+    "display_name": "Reset (Long Press)",
+    "current_proposal": "Reset (Long Press)",
+    "voice_draft": "Reset",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "toggleAttachHelmet": {
+    "xml_name": "toggleAttachHelmet",
+    "action_map": "player",
+    "display_name": "Helmet\\n(Equip)",
+    "current_proposal": "Helmet\\n(Equip)",
+    "voice_draft": "Helmet Equip Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "toggle_flashlight": {
+    "xml_name": "toggle_flashlight",
+    "action_map": "player",
+    "display_name": "Flashlight (Toggle)",
+    "current_proposal": "Flashlight (Toggle)",
+    "voice_draft": "Flashlight",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "turret_pitch": {
+    "xml_name": "turret_pitch",
+    "action_map": "turret_movement",
+    "display_name": "Pitch",
+    "current_proposal": "Pitch",
+    "voice_draft": "Pitch",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "turret_yaw": {
+    "xml_name": "turret_yaw",
+    "action_map": "turret_movement",
+    "display_name": "Yaw",
+    "current_proposal": "Yaw",
+    "voice_draft": "Yaw",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "use": {
+    "xml_name": "use",
+    "action_map": "player",
+    "display_name": "",
+    "current_proposal": "Use",
+    "voice_draft": "Use",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_afterburner": {
+    "xml_name": "v_afterburner",
+    "action_map": "spaceship_movement",
+    "display_name": "Boost",
+    "current_proposal": "Boost",
+    "voice_draft": "After Burner",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_autoland": {
+    "xml_name": "v_autoland",
+    "action_map": "spaceship_movement",
+    "display_name": "Autoland",
+    "current_proposal": "Autoland",
+    "voice_draft": "Auto Land",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_boost": {
+    "xml_name": "v_boost",
+    "action_map": "vehicle_driver",
+    "display_name": "ui_CIboost",
+    "current_proposal": "Boost",
+    "voice_draft": "After Burner",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_engineering_assignment_engine_decrease": {
+    "xml_name": "v_engineering_assignment_engine_decrease",
+    "action_map": "spaceship_power",
+    "display_name": "Engines - Decrease (Tap)",
+    "current_proposal": "Engines - Decrease (Tap)",
+    "voice_draft": "Engines - Dec.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_engineering_assignment_engine_increase": {
+    "xml_name": "v_engineering_assignment_engine_increase",
+    "action_map": "spaceship_power",
+    "display_name": "Engines - Increase (Tap)",
+    "current_proposal": "Engines - Increase (Tap)",
+    "voice_draft": "Engines - Inc.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_engineering_assignment_reset": {
+    "xml_name": "v_engineering_assignment_reset",
+    "action_map": "spaceship_power",
+    "display_name": "Reset Assignments",
+    "current_proposal": "Reset Assignments",
+    "voice_draft": "Reset Assignments",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_engineering_assignment_weapons_decrease": {
+    "xml_name": "v_engineering_assignment_weapons_decrease",
+    "action_map": "spaceship_power",
+    "display_name": "Weapons - Decrease (Tap)",
+    "current_proposal": "Weapons - Decrease (Tap)",
+    "voice_draft": "Dec.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_engineering_assignment_weapons_increase": {
+    "xml_name": "v_engineering_assignment_weapons_increase",
+    "action_map": "spaceship_power",
+    "display_name": "Weapons - Increase (Tap)",
+    "current_proposal": "Weapons - Increase (Tap)",
+    "voice_draft": "Inc.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_horn": {
+    "xml_name": "v_horn",
+    "action_map": "vehicle_general",
+    "display_name": "Horn",
+    "current_proposal": "Horn",
+    "voice_draft": "Horn",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_ifcs_vector_decoupling_toggle": {
+    "xml_name": "v_ifcs_vector_decoupling_toggle",
+    "action_map": "spaceship_movement",
+    "display_name": "ui_v_ifcs_vector_decoupling_toggle",
+    "current_proposal": "Ifcs Vector Decoupling Toggle",
+    "voice_draft": "IFCS Vector Decoupling Toggle",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_roll": {
+    "xml_name": "v_roll",
+    "action_map": "spaceship_movement",
+    "display_name": "Roll",
+    "current_proposal": "Roll",
+    "voice_draft": "Roll",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_set_mining_mode": {
+    "xml_name": "v_set_mining_mode",
+    "action_map": "seat_general",
+    "display_name": "ui_v_set_mining_mode",
+    "current_proposal": "Set Mining Mode",
+    "voice_draft": "Set Mining Mode",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_set_salvage_mode": {
+    "xml_name": "v_set_salvage_mode",
+    "action_map": "seat_general",
+    "display_name": "ui_v_set_salvage_mode",
+    "current_proposal": "Set Salvage Mode",
+    "voice_draft": "Set Salvage Mode",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_starmap": {
+    "xml_name": "v_starmap",
+    "action_map": "vehicle_general",
+    "display_name": "Map",
+    "current_proposal": "Map",
+    "voice_draft": "Map",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_toggle_yaw_roll_swap": {
+    "xml_name": "v_toggle_yaw_roll_swap",
+    "action_map": "spaceship_movement",
+    "display_name": "Swap Yaw / Roll (Toggle)",
+    "current_proposal": "Swap Yaw / Roll (Toggle)",
+    "voice_draft": "Swap Yaw / Roll",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_transform_cycle": {
+    "xml_name": "v_transform_cycle",
+    "action_map": "spaceship_movement",
+    "display_name": "Cycle Configuration",
+    "current_proposal": "Cycle Configuration",
+    "voice_draft": "Cycle Configuration",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_interact": {
+    "xml_name": "v_view_interact",
+    "action_map": "spaceship_view",
+    "display_name": "",
+    "current_proposal": "View Interact",
+    "voice_draft": "View Interact",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_view_option": {
+    "xml_name": "v_view_option",
+    "action_map": "vehicle_general",
+    "display_name": "",
+    "current_proposal": "View Option",
+    "voice_draft": "View Option",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "view_fov_in": {
+    "xml_name": "view_fov_in",
+    "action_map": "view_director_mode",
+    "display_name": "Increase FoV",
+    "current_proposal": "Increase FoV",
+    "voice_draft": "Inc. FoV",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "view_fov_out": {
+    "xml_name": "view_fov_out",
+    "action_map": "view_director_mode",
+    "display_name": "Decrease FoV",
+    "current_proposal": "Decrease FoV",
+    "voice_draft": "Dec. FoV",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "view_fstop_in": {
+    "xml_name": "view_fstop_in",
+    "action_map": "view_director_mode",
+    "display_name": "ui_CIAdvanCamDOFIncrease",
+    "current_proposal": "View Fstop In",
+    "voice_draft": "Camera F-stop Inc.",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "view_fstop_out": {
+    "xml_name": "view_fstop_out",
+    "action_map": "view_director_mode",
+    "display_name": "Decrease DoF",
+    "current_proposal": "Decrease DoF",
+    "voice_draft": "Camera F-stop Dec.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "walk": {
+    "xml_name": "walk",
+    "action_map": "player",
+    "display_name": "Walk",
+    "current_proposal": "Walk",
+    "voice_draft": "Walk",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "weapon_melee": {
+    "xml_name": "weapon_melee",
+    "action_map": "player",
+    "display_name": "Melee - Attack (Ranged Weapon + Takedowns)",
+    "current_proposal": "Melee - Attack (Ranged Weapon + Takedowns)",
+    "voice_draft": "Melee - Attack (Ranged Weapon + Takedowns)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "zgt_detach": {
+    "xml_name": "zgt_detach",
+    "action_map": "zero_gravity_traversal",
+    "display_name": "Detach from Surface",
+    "current_proposal": "Detach from Surface",
+    "voice_draft": "Detach from Surface",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "zgt_launch": {
+    "xml_name": "zgt_launch",
+    "action_map": "zero_gravity_traversal",
+    "display_name": "Launch from Surface",
+    "current_proposal": "Launch from Surface",
+    "voice_draft": "Launch from Surface",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  }
+}
