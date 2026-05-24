@@ -400,7 +400,7 @@
     "action_map": "player",
     "display_name": "",
     "current_proposal": "Nextitem",
-    "voice_draft": "Next Item",
+    "voice_draft": "Item Next",
     "source": "xml_name_fallback",
     "confidence": "low"
   },

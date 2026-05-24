@@ -95,6 +95,8 @@ PHRASE_REWRITES = [
     (r"\bOn\s*/\s*Off\b", "On/Off"),
     (r"\bLead\s*/\s*Lag\b", "Lead/Lag"),
     (r"\bFixed\s*/\s*Auto\b", "Fixed/Auto"),
+    # Singularize CIG's "Weapon Presets - X" to match chart-style "Weapon Preset"
+    (r"\bWeapon Presets\s*[-–]\s*", "Weapon Preset "),
 ]
 
 
@@ -180,6 +182,20 @@ def abbreviate(s):
     return s
 
 
+def next_prev_to_suffix(s):
+    """'Next X' → 'X Next' and 'Prev. X' → 'X Prev.' — Sub's rule that direction
+    qualifiers Next/Prev go at the END for chart scannability (just like Forward
+    and Backward already do)."""
+    # Handle leading [H] prefix — keep it at front
+    m = re.match(r"^(\[H\]\s+)?Next\s+(.+?)(\*?)$", s)
+    if m:
+        return f"{m.group(1) or ''}{m.group(2)} Next{m.group(3)}"
+    m = re.match(r"^(\[H\]\s+)?Prev\.?\s+(.+?)(\*?)$", s)
+    if m:
+        return f"{m.group(1) or ''}{m.group(2)} Prev.{m.group(3)}"
+    return s
+
+
 def apply_xml_decorators(xml_name, label):
     """Apply XML-name-driven label decorations:
       - `eva_` prefix in XML → "EVA " prefix on label (unless already present)
@@ -222,6 +238,7 @@ def voice_transform(xml_name, display_name):
     if xml_name.lower() in COMPOUND_SPLITS:
         base = COMPOUND_SPLITS[xml_name.lower()]
         base = " ".join(w.capitalize() for w in base.split())
+        base = next_prev_to_suffix(base)
         return apply_xml_decorators(xml_name, cap_sc_acronyms(base))
 
     # 1. Start: prefer DisplayName if it's clean, otherwise humanize XMLActionName
@@ -253,6 +270,7 @@ def voice_transform(xml_name, display_name):
     base = strip_cig_section_prefixes(base)
     base = toggle_to_end(base)
     base = abbreviate(base)
+    base = next_prev_to_suffix(base)
 
     # Cleanup
     base = re.sub(r"\s+", " ", base).strip()
@@ -284,6 +302,10 @@ def voice_clean_existing(text, xml_name=None):
     # "Invoke Docking Docking Toggle" → "Invoke Docking Toggle")
     s = re.sub(r"\b(\w+)(\s+\1\b)+", r"\1", s, flags=re.IGNORECASE)
     s = re.sub(r"\s+", " ", s).strip()
+    # Abbreviate Previous → Prev. on chart text (some chart phrases use the long form)
+    s = abbreviate(s)
+    # Apply Next/Prev → suffix on chart text too
+    s = next_prev_to_suffix(s)
     if xml_name:
         s = apply_xml_decorators(xml_name, s)
     return s
