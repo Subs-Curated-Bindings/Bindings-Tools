@@ -571,7 +571,7 @@
     "action_map": "spaceship_power",
     "display_name": "Weapons - Decrease (Tap)",
     "current_proposal": "Weapons - Decrease (Tap)",
-    "voice_draft": "Dec.",
+    "voice_draft": "Weapons Dec.",
     "source": "csv_displayname",
     "confidence": "medium"
   },
@@ -580,7 +580,7 @@
     "action_map": "spaceship_power",
     "display_name": "Weapons - Increase (Tap)",
     "current_proposal": "Weapons - Increase (Tap)",
-    "voice_draft": "Inc.",
+    "voice_draft": "Weapons Inc.",
     "source": "csv_displayname",
     "confidence": "medium"
   },

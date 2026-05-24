@@ -81,8 +81,12 @@ PHRASE_REWRITES = [
 
 def strip_paren_modifier_tags(s):
     """Drop (Press)/(Hold)/(Tap)/(Long Press)/(Short Press)/(Toggle) — these
-    are [M]/[H]/[DT] modifier tags on chart, not part of the label name."""
-    pat = r"\s*\((Press|Hold|Tap|Long Press|Short Press|Toggle|Toggle\s*/\s*Hold|abs|rel|hold|press|tap)\)\s*"
+    are [M]/[H]/[DT] modifier tags on chart, not part of the label name.
+    PRESERVE (abs)/(rel) as ABS./REL. suffixes — those mark axis modes Sub
+    uses in chart text (e.g. 'Mining Laser PWR ABS.')."""
+    s = re.sub(r"\s*\(abs\)\s*", " ABS.", s, flags=re.IGNORECASE)
+    s = re.sub(r"\s*\(rel\)\s*", " REL.", s, flags=re.IGNORECASE)
+    pat = r"\s*\((Press|Hold|Tap|Long Press|Short Press|Toggle|Toggle\s*/\s*Hold|hold|press|tap)\)\s*"
     s = re.sub(pat, " ", s, flags=re.IGNORECASE)
     return re.sub(r"\s+", " ", s).strip()
 
@@ -110,13 +114,20 @@ def cap_sc_acronyms(s):
 
 
 def strip_cig_section_prefixes(s):
-    """Strip leading section labels like 'Throttle - ', 'Bombs - ', 'Decoy - '."""
-    s = re.sub(
-        r"^(Throttle|Bombs|Decoy|Shield|Shields|Weapon|Weapons|Missiles?|EVA|Tool|MFD|Notifications?|Firearm|Cooler|Comm)\s*[-–]\s*",
-        "",
+    """Strip leading section labels like 'Throttle - ', 'Bombs - ', 'Decoy - '.
+    But NOT when the result would be a single word — keeping 'Shields Increase'
+    is better than collapsing to 'Increase' which loses disambiguation."""
+    m = re.match(
+        r"^(Throttle|Bombs|Decoy|Shield|Shields|Weapon|Weapons|Missiles?|EVA|Tool|MFD|Notifications?|Firearm|Cooler|Comm)\s*[-–]\s*(.+)$",
         s,
     )
-    return s
+    if not m:
+        return s
+    prefix, rest = m.group(1), m.group(2).strip()
+    # Count words in remainder; if 1 word, keep the prefix (collapse hyphen → space)
+    if len(rest.split()) <= 1:
+        return f"{prefix} {rest}"
+    return rest
 
 
 def transform_cycle_lock(s):
