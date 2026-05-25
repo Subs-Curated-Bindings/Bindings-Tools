@@ -1,0 +1,691 @@
+{
+  "0dcd7600-d727-11ef-800a-444553540000|button|3|Auxiliary Mode": {
+    "etched": "R-A2",
+    "mode_tag": "Auxiliary Mode",
+    "body": "[H] Select Mining / Salvage Mode Toggle Bomb Impact",
+    "sc_actions": [
+      "v_weapon_bombing_toggle_desired_impact_point",
+      "v_horn",
+      "v_toggle_mining_mode",
+      "v_toggle_salvage_mode",
+      "v_master_mode_set_scm"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|5|Modifier": {
+    "etched": "R-D1",
+    "mode_tag": "Modifier",
+    "body": "[H] VOIP PTT [M][H] VOIP PTT Proximity [DT] Chat Window Toggle [M] Hail Target [M] Accept Notification [M][DT] Decline Notification",
+    "sc_actions": [
+      "v_target_hail",
+      "notification_accept",
+      "notification_decline",
+      "foip_pushtotalk_proximity"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|7|Modifier": {
+    "etched": "R-A4.right",
+    "mode_tag": "Modifier",
+    "body": "Shield Cap Increase [M] Shield Cap Decrease [H] Shield Set to Max [M][H] Shield Set to Min",
+    "sc_actions": [
+      "v_engineering_assignment_shields_decrease",
+      "v_engineering_assignment_shields_min"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|8|Modifier": {
+    "etched": "R-A4.down",
+    "mode_tag": "Modifier",
+    "body": "Thruster Cap Increase [M] Thruster Cap Decrease [H] Thruster Set to Max [M][H] Thruster Set to Min",
+    "sc_actions": [
+      "v_engineering_assignment_engine_decrease",
+      "v_engineering_assignment_engine_min"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|9|Modifier": {
+    "etched": "R-A4.left",
+    "mode_tag": "Modifier",
+    "body": "Weapon Cap Increase [M] Weapon Cap Decrease [H] Weapon Set to Max [M][H] Weapon Set to Min",
+    "sc_actions": [
+      "v_engineering_assignment_weapons_decrease",
+      "v_engineering_assignment_weapons_min"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|26|Modifier": {
+    "etched": "RAPID-TRIG-R",
+    "mode_tag": "Modifier",
+    "body": "Decoy, [H] Multi Decoy [M] NNext Weapon Preset",
+    "sc_actions": [
+      "v_weapon_preset_emp",
+      "v_weapon_preset_next_overflow",
+      "v_weapon_preset_qid",
+      "v_weapon_preset_qid_jammer",
+      "v_weapon_preset_qid_pulse"
+    ],
+    "parenthetical": "Trigger Up"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|27|Modifier": {
+    "etched": "RAPID-TRIG-R",
+    "mode_tag": "Modifier",
+    "body": "Noise, [M] Prev. Weapon Preset",
+    "sc_actions": [
+      "v_weapon_preset_prev_overflow"
+    ],
+    "parenthetical": "Trigger Down"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|hat|1|Modifier": {
+    "etched": "R-A1",
+    "mode_tag": "Modifier",
+    "body": "up=[M][H] Select MFD Up 1 [M] Target Attacker Forward Target Under Reticle | down=Unlock Target [M] Target Attacker Closest [M][H] Select MFD Down 1 | left=Tobii Gaze Target Target Hostile Forward [DT] Target Hostile Closest [M][H] Select MFD Left 1 [M][DT] Select MFD Cast Left 1 [M] Cycle MFD Page Backward 1 | right=Target All Forward [DT] Target All Closest [M][H] Select MFD Right 1 [M][DT] Select MFD Cast Right 1 [M] Cycle MFD Page Forward 1 | press-in=Mode Switch To Analog Freelook 1",
+    "sc_actions": [
+      "v_mfd_movement_up_long",
+      "v_mfd_movement_down_long",
+      "v_mfd_interact_cycle_backwards_short",
+      "v_mfd_movement_left_long",
+      "v_mfd_soft_select_cast_left_short",
+      "v_mfd_interact_cycle_forwards_short",
+      "v_mfd_movement_right_long",
+      "v_mfd_soft_select_cast_right_short"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|3|Nav Mode": {
+    "etched": "R-A2",
+    "mode_tag": "Nav Mode",
+    "body": "[H] Select Mining / Salvage Mode Toggle Bomb Impact",
+    "sc_actions": [
+      "v_weapon_bombing_toggle_desired_impact_point",
+      "v_horn",
+      "v_toggle_mining_mode",
+      "v_toggle_salvage_mode"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|1|SCM Mode": {
+    "etched": "MAIN-TRIG-R.stage-1",
+    "mode_tag": "",
+    "body": "Stage 1 Fire Selected Weapon Group Fire Weapon Group 2 [H] Engage Quantum Fire Salvage Beam Fire Mining Laser Active Scan",
+    "sc_actions": [
+      "v_toggle_qdrive_engagement",
+      "v_scanning_trigger_scan",
+      "v_toggle_mining_laser_fire",
+      "v_salvage_toggle_fire_focused",
+      "v_weapon_preset_attack",
+      "v_weapon_preset_fire_guns1",
+      "v_weapon_toggle_launch_missile",
+      "respawn"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|2|SCM Mode": {
+    "etched": "MAIN-TRIG-R.stage-2",
+    "mode_tag": "",
+    "body": "Stage 2 Fire Selected & Group 3",
+    "sc_actions": [
+      "v_weapon_preset_fire_guns2"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|3|SCM Mode": {
+    "etched": "R-A2",
+    "mode_tag": "",
+    "body": "[H] Select Mining / Salvage Mode Toggle Bomb Impact",
+    "sc_actions": [
+      "v_weapon_bombing_toggle_desired_impact_point",
+      "v_horn",
+      "v_set_mining_mode",
+      "v_set_salvage_mode"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|4|SCM Mode": {
+    "etched": "R-A1B",
+    "mode_tag": "",
+    "body": "Decouple Toggle",
+    "sc_actions": [
+      "v_ifcs_vector_decoupling_toggle"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|5|SCM Mode": {
+    "etched": "R-D1",
+    "mode_tag": "",
+    "body": "[H] VOIP PTT [M][H] VOIP PTT Proximity [DT] Chat Window Toggle [M] Hail Target [M] Accept Notification [M][DT] Decline Notification",
+    "sc_actions": [
+      "toggle_chat",
+      "foip_pushtotalk"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|7|SCM Mode": {
+    "etched": "R-A4.right",
+    "mode_tag": "",
+    "body": "Shield Cap Increase [M] Shield Cap Decrease [H] Shield Set to Max [M][H] Shield Set to Min",
+    "sc_actions": [
+      "v_engineering_assignment_shields_increase",
+      "v_engineering_assignment_shields_max"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|8|SCM Mode": {
+    "etched": "R-A4.down",
+    "mode_tag": "",
+    "body": "Thruster Cap Increase [M] Thruster Cap Decrease [H] Thruster Set to Max [M][H] Thruster Set to Min",
+    "sc_actions": [
+      "v_engineering_assignment_engine_increase",
+      "v_engineering_assignment_engine_max"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|9|SCM Mode": {
+    "etched": "R-A4.left",
+    "mode_tag": "",
+    "body": "Weapon Cap Increase [M] Weapon Cap Decrease [H] Weapon Set to Max [M][H] Weapon Set to Min",
+    "sc_actions": [
+      "v_engineering_assignment_weapons_increase",
+      "v_engineering_assignment_weapons_max"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|10|SCM Mode": {
+    "etched": "R-A4.press-in",
+    "mode_tag": "",
+    "body": "Capacitor Reset",
+    "sc_actions": [
+      "v_engineering_assignment_reset"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|11|SCM Mode": {
+    "etched": "R-A3.up",
+    "mode_tag": "",
+    "body": "Inc. Mining Laser Power (Slow) Fire Fracture Missile Count Up",
+    "sc_actions": [
+      "v_increase_mining_throttle",
+      "v_salvage_toggle_fire_fracture",
+      "v_weapon_increase_max_missiles"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|12|SCM Mode": {
+    "etched": "R-A3.right",
+    "mode_tag": "",
+    "body": "Sub Target Forward Missile Type Next Fire Right Tool [M] Right Modifier Cycle",
+    "sc_actions": [
+      "v_target_cycle_subitem_fwd",
+      "v_salvage_cycle_modifiers_right",
+      "v_salvage_toggle_fire_right",
+      "v_weapon_cycle_missile_fwd"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|13|SCM Mode": {
+    "etched": "R-A3.down",
+    "mode_tag": "",
+    "body": "Sub Target Reset MMissile Count Down Fire Disintegrate [M] Cycle Structural Modes Dec. Mining Laser Power (Slow)",
+    "sc_actions": [
+      "v_target_cycle_subitem_reset",
+      "v_decrease_mining_throttle",
+      "v_salvage_cycle_modifiers_structural",
+      "v_salvage_toggle_fire_disintegrate",
+      "v_weapon_decrease_max_missiles"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|14|SCM Mode": {
+    "etched": "R-A3.left",
+    "mode_tag": "",
+    "body": "Sub Target Back Missile Type Previous Fire Left Tool [M] Left Modifier Cycle",
+    "sc_actions": [
+      "v_target_cycle_subitem_back",
+      "v_salvage_cycle_modifiers_left",
+      "v_salvage_toggle_fire_left",
+      "v_weapon_cycle_missile_back"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|15|SCM Mode": {
+    "etched": "R-A3.press-in",
+    "mode_tag": "",
+    "body": "Reset Missile Count Cycle Fracture/Extraction Beam Axis Toggle",
+    "sc_actions": [
+      "v_toggle_mining_laser_type",
+      "v_salvage_toggle_beam_spacing_axis",
+      "v_weapon_reset_max_missiles"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|21|SCM Mode": {
+    "etched": "R-C1.up",
+    "mode_tag": "",
+    "body": "Mining Module 1 Focus Fracture",
+    "sc_actions": [
+      "v_mining_use_consumable1",
+      "v_salvage_focus_fracture",
+      "v_shield_raise_level_forward"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|22|SCM Mode": {
+    "etched": "R-C1.right",
+    "mode_tag": "",
+    "body": "Shields Right Mining Module 2 Focus Right Tool",
+    "sc_actions": [
+      "v_mining_use_consumable2",
+      "v_salvage_focus_right",
+      "v_shield_raise_level_right"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|23|SCM Mode": {
+    "etched": "R-C1.down",
+    "mode_tag": "",
+    "body": "SShields Aft Focus Disintegration",
+    "sc_actions": [
+      "v_salvage_focus_disintegrate",
+      "v_shield_raise_level_back"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|24|SCM Mode": {
+    "etched": "R-C1.left",
+    "mode_tag": "",
+    "body": "Shields Left Mining Module 3 Focus Left Tool",
+    "sc_actions": [
+      "v_mining_use_consumable3",
+      "v_salvage_focus_left",
+      "v_shield_raise_level_left"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|25|SCM Mode": {
+    "etched": "R-C1.press-in",
+    "mode_tag": "",
+    "body": "Shields Reset Focus All Salvage Heads",
+    "sc_actions": [
+      "v_salvage_focus_all_heads",
+      "v_shield_reset_level"
+    ]
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|26|SCM Mode": {
+    "etched": "RAPID-TRIG-R",
+    "mode_tag": "",
+    "body": "Decoy, [H] Multi Decoy [M] NNext Weapon Preset",
+    "sc_actions": [
+      "v_weapon_countermeasure_decoy_launch"
+    ],
+    "parenthetical": "Trigger Up"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|27|SCM Mode": {
+    "etched": "RAPID-TRIG-R",
+    "mode_tag": "",
+    "body": "Noise, [M] Prev. Weapon Preset",
+    "sc_actions": [
+      "v_weapon_countermeasure_noise_launch"
+    ],
+    "parenthetical": "Trigger Down"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|hat|1|SCM Mode": {
+    "etched": "R-A1",
+    "mode_tag": "",
+    "body": "up=[M][H] Select MFD Up 1 [M] Target Attacker Forward Target Under Reticle | down=Unlock Target [M] Target Attacker Closest [M][H] Select MFD Down 1 | left=Tobii Gaze Target Target Hostile Forward [DT] Target Hostile Closest [M][H] Select MFD Left 1 [M][DT] Select MFD Cast Left 1 [M] Cycle MFD Page Backward 1 | right=Target All Forward [DT] Target All Closest [M][H] Select MFD Right 1 [M][DT] Select MFD Cast Right 1 [M] Cycle MFD Page Forward 1 | press-in=Mode Switch To Analog Freelook 1",
+    "sc_actions": [
+      "v_target_under_reticle",
+      "v_target_unlock",
+      "v_target_cycle_attacker_reset",
+      "v_target_lock_selected",
+      "v_target_cycle_all_reset",
+      "v_target_cycle_hostile_fwd",
+      "v_target_cycle_hostile_reset"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|3|Auxiliary Mode": {
+    "etched": "L-A2",
+    "mode_tag": "Auxiliary Mode",
+    "body": "[H] Master Mode Cycle Nav, & SCM Operator Mode Cycle Guns, Flight, Missile, Mining, Salvage, Scanning, & Quantum",
+    "sc_actions": [
+      "v_operator_mode_cycle_forward",
+      "v_toggle_mining_mode",
+      "v_toggle_salvage_mode",
+      "v_master_mode_set_scm"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|6|Modifier": {
+    "etched": "L-A4.up",
+    "mode_tag": "Modifier",
+    "body": "[M] Scanning Angle [M] Bomb Range [M] Tractor Distance Camera (3rd Person)",
+    "sc_actions": [
+      "v_inc_scan_focus_level",
+      "tractor_beam_vehicle_increase_distance",
+      "v_salvage_decrease_beam_spacing",
+      "v_salvage_increase_beam_spacing",
+      "v_weapon_bombing_hud_range_increase",
+      "v_weapon_countermeasure_decoy_burst_increase"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|7|Modifier": {
+    "etched": "L-A4.right",
+    "mode_tag": "Modifier",
+    "body": "Dynamic Zoom [H] Missile Cinematic Camera [M] Toggle Docking Camera",
+    "sc_actions": [
+      "v_dock_toggle_view"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|8|Modifier": {
+    "etched": "L-A4.down",
+    "mode_tag": "Modifier",
+    "body": "[H] Look Behind [M] Tractor Distance [M] Bomb Range [M] Scanning Angle",
+    "sc_actions": [
+      "v_dec_scan_focus_level",
+      "tractor_beam_vehicle_decrease_distance",
+      "v_weapon_bombing_hud_range_decrease",
+      "v_weapon_countermeasure_decoy_burst_decrease"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|9|Modifier": {
+    "etched": "L-A4.left",
+    "mode_tag": "Modifier",
+    "body": "Head Tracking On/Off [M] Reset Head Tracking",
+    "sc_actions": [
+      "headtrack_recenter_device"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|10|Modifier": {
+    "etched": "L-A4.press-in",
+    "mode_tag": "Modifier",
+    "body": "Freelook 1 [H] Reset Freelook [M] Reset Range",
+    "sc_actions": [
+      "v_weapon_bombing_hud_range_reset",
+      "v_view_freelook_mode",
+      "eva_toggle_headlook_mode",
+      "v_view_freelook_mode",
+      "view_restore_defaults"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|11|Modifier": {
+    "etched": "L-A3.up",
+    "mode_tag": "Modifier",
+    "body": "Flight Ready [M] Toggle Power On/Off Lights Toggle [H] Light Amplification [DT] Port Lock Toggle",
+    "sc_actions": [
+      "v_power_toggle"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|12|Modifier": {
+    "etched": "L-A3.right",
+    "mode_tag": "Modifier",
+    "body": "[M] Shields Power Toggle VTOL Toggle Turret Position Toggle [DT] Cycle Config",
+    "sc_actions": [
+      "v_power_toggle_shields"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|13|Modifier": {
+    "etched": "L-A3.down",
+    "mode_tag": "Modifier",
+    "body": "[M] Thruster Power Toggle Landing Gear [H] Auto Land Toggle Docking Invoke Docking",
+    "sc_actions": [
+      "v_power_toggle_thrusters"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|14|Modifier": {
+    "etched": "L-A3.left",
+    "mode_tag": "Modifier",
+    "body": "[M] Weapon Power Toggle Open Doors Toggle [DT] Lock Doors Toggle",
+    "sc_actions": [
+      "v_power_toggle_weapons"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|15|Modifier": {
+    "etched": "L-A3.press-in",
+    "mode_tag": "Modifier",
+    "body": "Request Landing Request Jumpgate [M] Request Cargo",
+    "sc_actions": [
+      "v_atc_loading_area_request"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|21|Modifier": {
+    "etched": "L-C1.up",
+    "mode_tag": "Modifier",
+    "body": "Stagger Fire Toggle 1 Stagger Fire Toggle 1 Remote Turret 1 [M] GSafe Toggle",
+    "sc_actions": [
+      "v_ifcs_toggle_gforce_safety"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|22|Modifier": {
+    "etched": "L-C1.right",
+    "mode_tag": "Modifier",
+    "body": "E.S.P. Toggle Turret E.S.P Remote Turret 3 [M] Adv. HUD Toggle",
+    "sc_actions": [
+      "v_flight_advanced_hud_toggle"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|24|Modifier": {
+    "etched": "MAIN-TRIG-L",
+    "mode_tag": "Modifier",
+    "body": "After Burner Toggle SCM Limiter [H] Release Trim Turret Mouse Mode Turret Zoom",
+    "sc_actions": [
+      "turret_toggle_mouse_mode"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|hat|1|Modifier": {
+    "etched": "L-A1",
+    "mode_tag": "Modifier",
+    "body": "up=Increase Limiter Increase Limiter [M] Acc. Limiter Increase | down=[M] Acc. Limiter Decrease Decrease Limiter Decrease Limiter | left=Cruise Control Toggle [M] Set Limiter to SCM | right=Set Trim Toggle [H] Set Trim 100% [M] Release Trim | press-in=Mode Switch To Analog UNBOUND",
+    "sc_actions": [
+      "v_accel_range_up",
+      "v_accel_range_down",
+      "v_strafe_trim_reset_short"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|3|Nav Mode": {
+    "etched": "L-A2",
+    "mode_tag": "Nav Mode",
+    "body": "[H] Master Mode Cycle Nav, & SCM Operator Mode Cycle Guns, Flight, Missile, Mining, Salvage, Scanning, & Quantum",
+    "sc_actions": [
+      "v_operator_mode_cycle_forward",
+      "v_master_mode_set_scm"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|1|SCM Mode": {
+    "etched": "MAIN-TRIG-L",
+    "mode_tag": "",
+    "body": "After Burner Toggle SCM Limiter [H] Release Trim Turret Mouse Mode Turret Zoom",
+    "sc_actions": [
+      "v_afterburner",
+      "eva_boost",
+      "v_boost"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|3|SCM Mode": {
+    "etched": "L-A2",
+    "mode_tag": "",
+    "body": "[H] Master Mode Cycle Nav, & SCM Operator Mode Cycle Guns, Flight, Missile, Mining, Salvage, Scanning, & Quantum",
+    "sc_actions": [
+      "v_operator_mode_cycle_forward",
+      "v_master_mode_set_nav"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|4|SCM Mode": {
+    "etched": "L-A1B",
+    "mode_tag": "",
+    "body": "Precision Aiming [H] Precision Max Zoom",
+    "sc_actions": [
+      "v_ads_hold",
+      "v_ads_toggle"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|6|SCM Mode": {
+    "etched": "L-A4.up",
+    "mode_tag": "",
+    "body": "[M] Scanning Angle [M] Bomb Range [M] Tractor Distance Camera (3rd Person)",
+    "sc_actions": [
+      "v_view_cycle_fwd",
+      "v_view_cycle_fwd"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|7|SCM Mode": {
+    "etched": "L-A4.right",
+    "mode_tag": "",
+    "body": "Dynamic Zoom [H] Missile Cinematic Camera [M] Toggle Docking Camera",
+    "sc_actions": [
+      "v_view_dynamic_zoom_abs_toggle",
+      "v_weapon_launch_missile_cinematic_hold",
+      "v_view_dynamic_zoom_abs_toggle"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|8|SCM Mode": {
+    "etched": "L-A4.down",
+    "mode_tag": "",
+    "body": "[H] Look Behind [M] Tractor Distance [M] Bomb Range [M] Scanning Angle",
+    "sc_actions": [
+      "v_view_look_behind"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|9|SCM Mode": {
+    "etched": "L-A4.left",
+    "mode_tag": "",
+    "body": "Head Tracking On/Off [M] Reset Head Tracking",
+    "sc_actions": [
+      "headtrack_camera_enabled",
+      "headtrack_enabled"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|10|SCM Mode": {
+    "etched": "L-A4.press-in",
+    "mode_tag": "",
+    "body": "Freelook 1 [H] Reset Freelook [M] Reset Range",
+    "sc_actions": [
+      "v_view_freelook_mode",
+      "eva_toggle_headlook_mode",
+      "v_view_freelook_mode",
+      "view_restore_defaults"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|11|SCM Mode": {
+    "etched": "L-A3.up",
+    "mode_tag": "",
+    "body": "Flight Ready [M] Toggle Power On/Off Lights Toggle [H] Light Amplification [DT] Port Lock Toggle",
+    "sc_actions": [
+      "v_flightready",
+      "v_toggle_all_portlocks",
+      "v_lights",
+      "v_flightready",
+      "v_toggle_all_portlocks"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|12|SCM Mode": {
+    "etched": "L-A3.right",
+    "mode_tag": "",
+    "body": "[M] Shields Power Toggle VTOL Toggle Turret Position Toggle [DT] Cycle Config",
+    "sc_actions": [
+      "v_transform_cycle",
+      "v_vtol_toggle",
+      "turret_change_position"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|13|SCM Mode": {
+    "etched": "L-A3.down",
+    "mode_tag": "",
+    "body": "[M] Thruster Power Toggle Landing Gear [H] Auto Land Toggle Docking Invoke Docking",
+    "sc_actions": [
+      "v_autoland",
+      "v_toggle_landing_system",
+      "v_invoke_docking",
+      "v_toggle_docking_mode"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|14|SCM Mode": {
+    "etched": "L-A3.left",
+    "mode_tag": "",
+    "body": "[M] Weapon Power Toggle Open Doors Toggle [DT] Lock Doors Toggle",
+    "sc_actions": [
+      "v_toggle_all_doorlocks",
+      "v_toggle_all_doors",
+      "v_toggle_all_doorlocks",
+      "v_toggle_all_doors"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|15|SCM Mode": {
+    "etched": "L-A3.press-in",
+    "mode_tag": "",
+    "body": "Request Landing Request Jumpgate [M] Request Cargo",
+    "sc_actions": [
+      "v_atc_request",
+      "v_toggle_jump_request"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|21|SCM Mode": {
+    "etched": "L-C1.up",
+    "mode_tag": "",
+    "body": "Stagger Fire Toggle 1 Stagger Fire Toggle 1 Remote Turret 1 [M] GSafe Toggle",
+    "sc_actions": [
+      "v_enter_remote_turret_1",
+      "v_weapon_staggered_fire_toggle"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|22|SCM Mode": {
+    "etched": "L-C1.right",
+    "mode_tag": "",
+    "body": "E.S.P. Toggle Turret E.S.P Remote Turret 3 [M] Adv. HUD Toggle",
+    "sc_actions": [
+      "v_enter_remote_turret_3",
+      "v_ifcs_toggle_esp",
+      "turret_esp_toggle"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|23|SCM Mode": {
+    "etched": "L-C1.down",
+    "mode_tag": "",
+    "body": "Turret Gyro Mode [M] Exit Seat Start/Pause Stop Watch [H] Reset Stop Watch",
+    "sc_actions": [
+      "turret_gyromode",
+      "stopwatch_reset",
+      "stopwatch_trigger",
+      "tractor_beam_increase_distance"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|24|SCM Mode": {
+    "etched": "L-C1.left",
+    "mode_tag": "",
+    "body": "Lead/Lag Pip Toggle [M] Turret VJoy Remote Turret 2",
+    "sc_actions": [
+      "v_enter_remote_turret_2",
+      "v_weapon_pip_toggle_lead_lag",
+      "tractor_beam_decrease_distance"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|25|SCM Mode": {
+    "etched": "L-C1.press-in",
+    "mode_tag": "",
+    "body": "Gimbal Cycle Fixed/Auto [H] Recenter Turret Salvage Gimbal Toggle [DT] Salvage Gimbal Reset",
+    "sc_actions": [
+      "v_salvage_reset_gimbal",
+      "v_salvage_toggle_gimbal_mode",
+      "turret_recenter",
+      "v_weapon_gimbals_state_toggle"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|26|SCM Mode": {
+    "etched": "RAPID-TRIG-L",
+    "mode_tag": "",
+    "body": "Scan Ping [H] Light Amplification",
+    "sc_actions": [
+      "v_invoke_ping"
+    ],
+    "parenthetical": "Trigger Up"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|27|SCM Mode": {
+    "etched": "RAPID-TRIG-L",
+    "mode_tag": "",
+    "body": "SSpace Brake",
+    "sc_actions": [
+      "v_space_brake",
+      "eva_brake",
+      "v_brake"
+    ],
+    "parenthetical": "Trigger Down"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|hat|1|SCM Mode": {
+    "etched": "L-A1",
+    "mode_tag": "",
+    "body": "up=Increase Limiter Increase Limiter [M] Acc. Limiter Increase | down=[M] Acc. Limiter Decrease Decrease Limiter Decrease Limiter | left=Cruise Control Toggle [M] Set Limiter to SCM | right=Set Trim Toggle [H] Set Trim 100% [M] Release Trim | press-in=Mode Switch To Analog UNBOUND",
+    "sc_actions": [
+      "v_ifcs_speed_limiter_up",
+      "turret_limiter_rel_increase",
+      "v_ifcs_speed_limiter_down",
+      "turret_limiter_rel_decrease",
+      "v_ifcs_throttle_swap_mode",
+      "v_strafe_trim_set_100_long",
+      "v_strafe_trim_set_short"
+    ]
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|5|SCM Mode": {
+    "etched": "L-D1",
+    "mode_tag": "",
+    "body": "[M] Modifier",
+    "sc_actions": []
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|5|Modifier": {
+    "etched": "L-D1",
+    "mode_tag": "Modifier",
+    "body": "[M] Modifier",
+    "sc_actions": []
+  }
+}

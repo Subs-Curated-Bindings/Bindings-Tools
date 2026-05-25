@@ -1,0 +1,8205 @@
+[
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "4",
+    "mode": "Modifier",
+    "root_id": "bfc88ace-a0ce-4d0c-a2a2-ea1b7967f924",
+    "cluster": "ANALOG-HAT-L",
+    "status": "OK",
+    "input_tokens": [
+      "power",
+      "power",
+      "toggle",
+      "toggle",
+      "weapons",
+      "weapons"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        17.275845809716216
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ],
+      [
+        "LL-SWITCH",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_power_toggle_weapons"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        45,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "4",
+    "mode": "Modifier",
+    "root_id": "bf1d1f8b-238e-4f72-a83c-7efd22f024af",
+    "cluster": "ANALOG-HAT-L",
+    "status": "OK",
+    "input_tokens": [
+      "power",
+      "power",
+      "shields",
+      "shields",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        19.983896010818427
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ],
+      [
+        "LL-SWITCH",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_power_toggle_shields"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        47,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "5",
+    "mode": "Modifier",
+    "root_id": "d003072b-a6ee-43b4-a82c-2d58a86a7793",
+    "cluster": "ANALOG-HAT-L",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "power",
+      "power",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        17.275845809716216
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ],
+      [
+        "LL-SWITCH",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_power_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        46,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "5",
+    "mode": "Modifier",
+    "root_id": "42222bba-1366-4aa5-97f9-0d9960079f08",
+    "cluster": "ANALOG-HAT-L",
+    "status": "OK",
+    "input_tokens": [
+      "power",
+      "power",
+      "thrusters",
+      "thrusters",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        17.275845809716216
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ],
+      [
+        "LL-SWITCH",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_power_toggle_thrusters"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        48,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "1",
+    "mode": "Modifier",
+    "root_id": "c05f33cd-01df-472d-a201-959242b19a9d",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        51,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "2",
+    "mode": "Modifier",
+    "root_id": "e9aa9395-8926-4480-82aa-c2b8b739b8a9",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        52,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "3",
+    "mode": "Modifier",
+    "root_id": "b9ca26d7-3f3b-4cd1-888b-db6f74d66f53",
+    "cluster": "LL-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        53,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "4",
+    "mode": "Modifier",
+    "root_id": "d8e94dc5-a94d-4b9a-9cab-0ab39484a4d7",
+    "cluster": "LL-SWITCH",
+    "status": "COHERED",
+    "input_tokens": [
+      "fps",
+      "mode",
+      "mouse",
+      "mouse",
+      "movement",
+      "style",
+      "toggle",
+      "toggle",
+      "turret",
+      "turret",
+      "vjoy"
+    ],
+    "scores": [
+      [
+        "MAIN-TRIG-L",
+        20.802990340644584
+      ],
+      [
+        "LL-BTNS",
+        15.16701096933975
+      ],
+      [
+        "L-CLUSTER",
+        9.720273597673437
+      ],
+      [
+        "L-KNOB",
+        2.9856819377004893
+      ],
+      [
+        "L-ENCODER",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "turret_toggle_mouse_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        54,
+        "button"
+      ]
+    ],
+    "inferred_from": "MAIN-TRIG-L"
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "5",
+    "mode": "Modifier",
+    "root_id": "1add69db-b765-4198-8f0a-487bc07cf41e",
+    "cluster": "LL-BTNS",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        55,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "6",
+    "mode": "Modifier",
+    "root_id": "aebe276f-c0a1-4839-bd55-a37ff0a770ba",
+    "cluster": "LL-BTNS",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        56,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "7",
+    "mode": "Modifier",
+    "root_id": "1f7c4447-7f21-4d58-b688-932bc329f1f6",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        57,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "8",
+    "mode": "Modifier",
+    "root_id": "8f962fd1-b33a-410e-b75c-4e28304e1fd3",
+    "cluster": "LL-BTNS",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        58,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "9",
+    "mode": "Modifier",
+    "root_id": "e4197b5f-1120-404f-b695-92b06861e411",
+    "cluster": "ANALOG-HAT-L",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        59,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "10",
+    "mode": "Modifier",
+    "root_id": "5c316adc-d0f4-48d2-bf1e-9c3ced61e5ce",
+    "cluster": "ANALOG-HAT-L",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        60,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "11",
+    "mode": "Modifier",
+    "root_id": "9f987b16-e7b6-4c0c-909f-6d6376907da2",
+    "cluster": "ANALOG-HAT-L",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        61,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "12",
+    "mode": "Modifier",
+    "root_id": "f2fd8e5e-2b67-4aa7-838c-0c937487900b",
+    "cluster": "LR-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        62,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "13",
+    "mode": "Modifier",
+    "root_id": "34daff83-1723-47e0-84c5-5b39847537e5",
+    "cluster": "LR-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        63,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "14",
+    "mode": "Modifier",
+    "root_id": "0bbf3f39-66b7-4dac-ace3-1f5420fe49d4",
+    "cluster": "LL-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        64,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "15",
+    "mode": "Modifier",
+    "root_id": "f1aba478-54ce-4285-aeff-7abe934aae00",
+    "cluster": "LR-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        65,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "16",
+    "mode": "Modifier",
+    "root_id": "4074d109-2cb9-4d96-b422-4b5d638e7687",
+    "cluster": "LR-BTNS",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        66,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "17",
+    "mode": "Modifier",
+    "root_id": "fceec348-7675-4ac0-b9ad-24b0dc070118",
+    "cluster": "LR-BTNS",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        67,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "18",
+    "mode": "Modifier",
+    "root_id": "6039c31e-0b75-41b4-9297-3cb8e8b86769",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        68,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "19",
+    "mode": "Modifier",
+    "root_id": "dbf6f8a1-bd84-4b6e-a409-bb33eac6228d",
+    "cluster": "L-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        69,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "20",
+    "mode": "Modifier",
+    "root_id": "f8e7147c-e33f-44b0-8b34-0cd95f29123c",
+    "cluster": "L-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        70,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "21",
+    "mode": "Modifier",
+    "root_id": "78389c7e-7697-49dc-ae8b-1ebde175e5ba",
+    "cluster": "L-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        71,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "22",
+    "mode": "Modifier",
+    "root_id": "e1905acc-3684-4021-a85b-365030eebcaf",
+    "cluster": "L-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        72,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "23",
+    "mode": "Modifier",
+    "root_id": "cea2f82c-6ff6-4229-ad43-e5d4cced38cb",
+    "cluster": "L-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        73,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "24",
+    "mode": "Modifier",
+    "root_id": "1342f6b9-1f4b-4173-9008-a97f4c54801e",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        74,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "25",
+    "mode": "Modifier",
+    "root_id": "8d208159-6dec-4684-a463-b5bc7ab824f4",
+    "cluster": "MAIN-TRIG-L",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        75,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "26",
+    "mode": "Modifier",
+    "root_id": "c856ffa3-bb6f-44da-b04e-73b3b6d55dce",
+    "cluster": "RAPID-TRIG-L",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        76,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "27",
+    "mode": "Modifier",
+    "root_id": "672051f0-d3a8-4821-a52e-4b72646fdbc0",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        77,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "28",
+    "mode": "Modifier",
+    "root_id": "c4d9fbf2-1f82-4a2f-b433-c06b952a2f92",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": []
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "29",
+    "mode": "Modifier",
+    "root_id": "8227be36-a22a-49fa-96e5-8595a521c0a9",
+    "cluster": "ANALOG-HAT-L",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        79,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "30",
+    "mode": "Modifier",
+    "root_id": "8b379eb6-ede5-4598-afbf-d4758391bc21",
+    "cluster": "LL-BTNS",
+    "status": "COHERED",
+    "input_tokens": [
+      "bombing",
+      "bombs",
+      "camera",
+      "dock",
+      "docking",
+      "hud",
+      "hud",
+      "range",
+      "range",
+      "reset",
+      "reset",
+      "toggle",
+      "toggle",
+      "view",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        22.42906909092806
+      ],
+      [
+        "L-CLUSTER",
+        9.9918066851516
+      ],
+      [
+        "4WAY-HAT-L-40",
+        8.10473703611922
+      ],
+      [
+        "ANALOG-HAT-L",
+        5.5134287461649825
+      ],
+      [
+        "L-THROTTLE",
+        2.3353749158170367
+      ]
+    ],
+    "actions": [
+      "v_dock_toggle_view",
+      "v_weapon_bombing_hud_range_reset"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        80,
+        "button"
+      ]
+    ],
+    "inferred_from": "4WAY-HAT-L-30"
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "31",
+    "mode": "Modifier",
+    "root_id": "3e4c340a-596f-45f8-85de-2fd42151c2a8",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "OK",
+    "input_tokens": [
+      "device",
+      "device",
+      "except",
+      "head",
+      "headtrack",
+      "ir",
+      "recenter",
+      "recenter",
+      "track",
+      "tracking"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        12.809937691061632
+      ],
+      [
+        "LL-BTNS",
+        3.367295829986474
+      ]
+    ],
+    "actions": [
+      "headtrack_recenter_device"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        81,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "32",
+    "mode": "Modifier",
+    "root_id": "573283c9-5115-47ed-b8f8-3bb6a555d998",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "TIE",
+    "input_tokens": [
+      "angle",
+      "bombing",
+      "bombs",
+      "focus",
+      "hud",
+      "hud",
+      "inc",
+      "increase",
+      "increase",
+      "increase",
+      "level",
+      "range",
+      "range",
+      "scan",
+      "scanning",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        13.756316120765018
+      ],
+      [
+        "ANALOG-HAT-L",
+        13.756316120765018
+      ],
+      [
+        "L-THROTTLE",
+        11.676874579085183
+      ],
+      [
+        "RAPID-TRIG-L",
+        2.70805020110221
+      ],
+      [
+        "4WAY-HAT-L-40",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_inc_scan_focus_level",
+      "v_weapon_bombing_hud_range_increase"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        82,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "33",
+    "mode": "Modifier",
+    "root_id": "fa76350a-2c9d-4f06-aa08-4ec45d4a5a05",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "COHERED",
+    "input_tokens": [
+      "bombing",
+      "bombs",
+      "decrease",
+      "decrease",
+      "hud",
+      "hud",
+      "range",
+      "range",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        4.4148164574968725
+      ],
+      [
+        "4WAY-HAT-L-40",
+        2.70805020110221
+      ],
+      [
+        "L-THROTTLE",
+        2.3353749158170367
+      ],
+      [
+        "4WAY-HAT-L-30",
+        2.3353749158170367
+      ]
+    ],
+    "actions": [
+      "v_weapon_bombing_hud_range_decrease"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        83,
+        "button"
+      ]
+    ],
+    "inferred_from": "ANALOG-HAT-L"
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "34",
+    "mode": "Modifier",
+    "root_id": "89f6a311-0456-4d8d-b951-0ccc31605cfa",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "OK",
+    "input_tokens": [
+      "angle",
+      "dec",
+      "decrease",
+      "focus",
+      "level",
+      "scan",
+      "scanning"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        11.676874579085183
+      ],
+      [
+        "L-THROTTLE",
+        9.341499663268147
+      ],
+      [
+        "ANALOG-HAT-L",
+        9.341499663268147
+      ],
+      [
+        "RAPID-TRIG-L",
+        2.70805020110221
+      ],
+      [
+        "4WAY-HAT-L-40",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_dec_scan_focus_level"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        84,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "35",
+    "mode": "Modifier",
+    "root_id": "3c9ebc2c-02a5-4086-ab65-11bd8f19dcb0",
+    "cluster": "L-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [
+      "area",
+      "atc",
+      "cargo",
+      "loading",
+      "loading",
+      "request",
+      "request"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-40",
+        10.459525519123666
+      ],
+      [
+        "L-CLUSTER",
+        10.459525519123666
+      ]
+    ],
+    "actions": [
+      "v_atc_loading_area_request"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        85,
+        "button"
+      ]
+    ],
+    "inferred_from": "4WAY-HAT-L-40"
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "36",
+    "mode": "Modifier",
+    "root_id": "4c26327a-7d6f-416e-ac38-ef5bf15287bb",
+    "cluster": "L-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        86,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "37",
+    "mode": "Modifier",
+    "root_id": "36ee1cc7-574c-4e78-af84-69a61c38edb1",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "ifcs",
+      "increment",
+      "limiter",
+      "limiter",
+      "speed",
+      "speed",
+      "step",
+      "tap",
+      "up"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        16.177233521048105
+      ],
+      [
+        "4WAY-HAT-L-40",
+        2.70805020110221
+      ],
+      [
+        "RAPID-TRIG-L",
+        1.8870696490323797
+      ],
+      [
+        "LL-SWITCH",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_ifcs_speed_limiter_increment"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        87,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "38",
+    "mode": "Modifier",
+    "root_id": "eb600db6-0f44-4a95-a2f5-26337cd83db1",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "decrement",
+      "down",
+      "ifcs",
+      "limiter",
+      "limiter",
+      "speed",
+      "speed",
+      "step",
+      "tap"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        16.177233521048105
+      ],
+      [
+        "4WAY-HAT-L-40",
+        2.70805020110221
+      ],
+      [
+        "RAPID-TRIG-L",
+        1.8870696490323797
+      ],
+      [
+        "LL-SWITCH",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_ifcs_speed_limiter_decrement"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        88,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "39",
+    "mode": "Modifier",
+    "root_id": "f88fb175-e7ff-4957-8a41-4cf2d0ba6970",
+    "cluster": "L-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        89,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "40",
+    "mode": "Modifier",
+    "root_id": "455266ab-d32d-405b-a504-e9c4dcaa72ce",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        90,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "41",
+    "mode": "Modifier",
+    "root_id": "1659baf3-208f-43d4-9aee-243467335713",
+    "cluster": "L-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        91,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "42",
+    "mode": "Modifier",
+    "root_id": "a14b6319-fae7-45e1-a737-7d9db9cd3714",
+    "cluster": "L-CLUSTER",
+    "status": "COHERED",
+    "input_tokens": [
+      "accel",
+      "acceleration",
+      "increase",
+      "limiter",
+      "range",
+      "up"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-40",
+        12.150692062177368
+      ],
+      [
+        "L-CLUSTER",
+        2.70805020110221
+      ],
+      [
+        "L-THROTTLE",
+        2.3353749158170367
+      ],
+      [
+        "4WAY-HAT-L-30",
+        2.3353749158170367
+      ],
+      [
+        "ANALOG-HAT-L",
+        2.3353749158170367
+      ]
+    ],
+    "actions": [
+      "v_accel_range_up"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        92,
+        "button"
+      ]
+    ],
+    "inferred_from": "4WAY-HAT-L-40"
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "43",
+    "mode": "Modifier",
+    "root_id": "4130480b-167d-4263-808c-dad6ecb2c2fc",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "INHERITED",
+    "input_tokens": [
+      "release",
+      "reset",
+      "short",
+      "short",
+      "strafe",
+      "trim",
+      "trim"
+    ],
+    "scores": [
+      [
+        "MAIN-TRIG-L",
+        5.41610040220442
+      ],
+      [
+        "4WAY-HAT-L-40",
+        5.41610040220442
+      ],
+      [
+        "L-CLUSTER",
+        1.8870696490323797
+      ],
+      [
+        "4WAY-HAT-L-30",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_strafe_trim_reset_short"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        93,
+        "button"
+      ]
+    ],
+    "inferred_from": "MAIN-TRIG-L"
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "44",
+    "mode": "Modifier",
+    "root_id": "146c4ce8-1fba-471c-b09f-186901286a09",
+    "cluster": "L-CLUSTER",
+    "status": "COHERED",
+    "input_tokens": [
+      "accel",
+      "acceleration",
+      "decrease",
+      "down",
+      "limiter",
+      "range"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-40",
+        12.150692062177368
+      ],
+      [
+        "L-CLUSTER",
+        2.70805020110221
+      ],
+      [
+        "L-THROTTLE",
+        2.3353749158170367
+      ],
+      [
+        "4WAY-HAT-L-30",
+        2.3353749158170367
+      ],
+      [
+        "ANALOG-HAT-L",
+        2.3353749158170367
+      ]
+    ],
+    "actions": [
+      "v_accel_range_down"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        94,
+        "button"
+      ]
+    ],
+    "inferred_from": "4WAY-HAT-L-40"
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "hat",
+    "iid": "1",
+    "mode": "Modifier",
+    "root_id": "d548c76f-4944-442d-b301-44e682bc9df1",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        2,
+        "hat"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "28",
+    "mode": "Nav Mode",
+    "root_id": "2c77cfe4-50a2-46d7-833b-9256dad83563",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": []
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "36",
+    "mode": "Nav Mode",
+    "root_id": "36593e2f-7943-4e9f-a58f-32dc89091aaa",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cycle",
+      "cycle",
+      "laser",
+      "laser",
+      "long",
+      "long",
+      "master",
+      "master",
+      "master",
+      "master",
+      "mining",
+      "mining",
+      "mode",
+      "mode",
+      "mode",
+      "mode",
+      "scm",
+      "scm",
+      "set",
+      "set",
+      "toggle",
+      "toggle",
+      "type"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        21.379989963714472
+      ],
+      [
+        "ANALOG-HAT-L",
+        14.5100879231414
+      ],
+      [
+        "L-KNOB",
+        12.428323798775647
+      ],
+      [
+        "L-THROTTLE",
+        8.740725802839217
+      ],
+      [
+        "4WAY-HAT-L-40",
+        6.51471269087253
+      ]
+    ],
+    "actions": [
+      "v_master_mode_cycle_long",
+      "v_toggle_mining_laser_type",
+      "v_master_mode_set_scm"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        36,
+        "button"
+      ],
+      [
+        1,
+        128,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "1",
+    "mode": "SCM Mode",
+    "root_id": "e0f8dffd-024c-42cd-84e2-def75ec5f07e",
+    "cluster": "L-THROTTLE",
+    "status": "OK",
+    "input_tokens": [
+      "abs",
+      "eva",
+      "lateral",
+      "lateral",
+      "left",
+      "left",
+      "right",
+      "right",
+      "strafe",
+      "strafe",
+      "strafe",
+      "strafe"
+    ],
+    "scores": [
+      [
+        "L-THROTTLE",
+        3.367295829986474
+      ]
+    ],
+    "actions": [
+      "v_strafe_lateral",
+      "eva_strafe_lateral"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        1,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "2",
+    "mode": "SCM Mode",
+    "root_id": "80400633-5d27-4d10-bed3-6c718f4445a6",
+    "cluster": null,
+    "status": "UNMATCHED",
+    "input_tokens": [
+      "back",
+      "backward",
+      "backward",
+      "drive",
+      "eva",
+      "forward",
+      "forward",
+      "forward",
+      "longitudinal",
+      "longitudinal",
+      "move",
+      "strafe",
+      "strafe",
+      "strafe"
+    ],
+    "scores": [],
+    "actions": [
+      "v_strafe_longitudinal",
+      "eva_strafe_longitudinal",
+      "v_move"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        2,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "3",
+    "mode": "SCM Mode",
+    "root_id": "4eefa79f-5683-4140-8daa-6c1feb6c28e5",
+    "cluster": "ANALOG-HAT-L",
+    "status": "OK",
+    "input_tokens": [
+      "abs",
+      "abs",
+      "abs",
+      "absolute",
+      "beam",
+      "beam",
+      "decrease",
+      "increase",
+      "laser",
+      "limiter",
+      "limiter",
+      "mining",
+      "mining",
+      "power",
+      "salvage",
+      "spacing",
+      "spacing",
+      "speed",
+      "turret",
+      "turret"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        31.12564697946494
+      ],
+      [
+        "L-CLUSTER",
+        16.623980288129573
+      ],
+      [
+        "L-THROTTLE",
+        14.187463174505528
+      ],
+      [
+        "4WAY-HAT-L-40",
+        8.12415060330663
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_mining_throttle",
+      "v_salvage_beam_spacing_abs",
+      "turret_limiter_abs"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        3,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "4",
+    "mode": "SCM Mode",
+    "root_id": "c04793e0-49a7-4e80-822e-1a3567ce818c",
+    "cluster": "ANALOG-HAT-L",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        4,
+        "axis"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "5",
+    "mode": "SCM Mode",
+    "root_id": "dbd38ebc-6eeb-4b87-a126-e557efffdb49",
+    "cluster": "ANALOG-HAT-L",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        5,
+        "axis"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "6",
+    "mode": "SCM Mode",
+    "root_id": "070ba68f-176a-45cd-91b6-49989c5dfbd3",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        6,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "7",
+    "mode": "SCM Mode",
+    "root_id": "133e25d1-5167-4f08-936a-27757584b3d8",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        7,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "axis",
+    "iid": "8",
+    "mode": "SCM Mode",
+    "root_id": "fae244a3-a6af-461d-a4a1-7d5cb34463e1",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        8,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "1",
+    "mode": "SCM Mode",
+    "root_id": "d345d8e5-8159-418c-8822-85f6f2432dfe",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "TIE",
+    "input_tokens": [
+      "landing",
+      "landing",
+      "retract",
+      "retract",
+      "system",
+      "system"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-40",
+        2.3353749158170367
+      ],
+      [
+        "LL-SWITCH",
+        2.3353749158170367
+      ],
+      [
+        "L-CLUSTER",
+        2.3353749158170367
+      ]
+    ],
+    "actions": [
+      "v_retract_landing_system"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        1,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "2",
+    "mode": "SCM Mode",
+    "root_id": "16c29a08-52a6-4c8c-b318-5cbd3b69ae62",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "TIE",
+    "input_tokens": [
+      "autoland",
+      "autoland",
+      "deploy",
+      "deploy",
+      "landing",
+      "landing",
+      "landing",
+      "landing",
+      "system",
+      "system",
+      "system",
+      "system",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-40",
+        3.4339872044851463
+      ],
+      [
+        "LL-SWITCH",
+        3.4339872044851463
+      ],
+      [
+        "L-CLUSTER",
+        3.4339872044851463
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_autoland",
+      "v_deploy_landing_system",
+      "v_toggle_landing_system"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        2,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "3",
+    "mode": "SCM Mode",
+    "root_id": "40ce71cb-c4dd-4b76-ae73-e28dc71f16c7",
+    "cluster": "LL-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "all",
+      "all",
+      "close",
+      "close",
+      "close",
+      "close",
+      "doors",
+      "doors",
+      "doors",
+      "doors"
+    ],
+    "scores": [
+      [
+        "LL-SWITCH",
+        5.41610040220442
+      ],
+      [
+        "LR-SWITCH",
+        2.70805020110221
+      ],
+      [
+        "L-CLUSTER",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_close_all_doors",
+      "v_close_all_doors"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        3,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "4",
+    "mode": "SCM Mode",
+    "root_id": "9cd1ff23-9b42-4ae7-b3f7-d6230b1e4f22",
+    "cluster": "LL-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "close",
+      "doors",
+      "doors",
+      "doors",
+      "doors",
+      "doors",
+      "doors",
+      "open",
+      "open",
+      "open",
+      "open",
+      "open",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "LL-SWITCH",
+        22.31927092663546
+      ],
+      [
+        "L-CLUSTER",
+        12.876629065560305
+      ],
+      [
+        "LR-SWITCH",
+        6.142037405587357
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_open_all_doors",
+      "v_toggle_all_doors",
+      "v_open_all_doors"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        4,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "5",
+    "mode": "SCM Mode",
+    "root_id": "2948ae35-2fcb-4a13-a902-39c04902ba92",
+    "cluster": "LL-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "esp",
+      "esp",
+      "ifcs",
+      "off",
+      "off",
+      "toggle",
+      "toggle",
+      "toggle",
+      "toggle",
+      "turret",
+      "turret"
+    ],
+    "scores": [
+      [
+        "LL-BTNS",
+        9.912645490320894
+      ],
+      [
+        "4WAY-HAT-L-30",
+        3.8066624897703196
+      ],
+      [
+        "ANALOG-HAT-L",
+        3.8066624897703196
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.0794415416798357
+      ],
+      [
+        "L-ENCODER",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_ifcs_toggle_esp",
+      "turret_esp_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        5,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "6",
+    "mode": "SCM Mode",
+    "root_id": "db9dda2a-0dd0-43a7-903e-494e02381822",
+    "cluster": "LL-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "gyro",
+      "gyromode",
+      "stabilization",
+      "toggle",
+      "turret",
+      "turret"
+    ],
+    "scores": [
+      [
+        "LL-BTNS",
+        13.279941320307369
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.0794415416798357
+      ],
+      [
+        "L-ENCODER",
+        2.0794415416798357
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "turret_gyromode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        6,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "7",
+    "mode": "SCM Mode",
+    "root_id": "1bbbcc4a-1934-4454-9ee4-2dadf907d9e6",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "OK",
+    "input_tokens": [
+      "abs",
+      "abs",
+      "dynamic",
+      "dynamic",
+      "toggle",
+      "toggle",
+      "view",
+      "zoom",
+      "zoom"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        13.53587469444457
+      ],
+      [
+        "L-CLUSTER",
+        10.168578864458095
+      ],
+      [
+        "L-THROTTLE",
+        3.367295829986474
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.3353749158170367
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_view_dynamic_zoom_abs_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        7,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "8",
+    "mode": "SCM Mode",
+    "root_id": "92fdffb8-ed86-491b-9d12-089168a1d0a8",
+    "cluster": "LL-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "change",
+      "change",
+      "fire",
+      "fire",
+      "off",
+      "position",
+      "position",
+      "recenter",
+      "recenter",
+      "staggered",
+      "staggered",
+      "toggle",
+      "toggle",
+      "turret",
+      "turret",
+      "turret",
+      "turret",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "LL-BTNS",
+        33.48371630022621
+      ],
+      [
+        "ANALOG-HAT-L",
+        5.886104031450156
+      ],
+      [
+        "4WAY-HAT-L-30",
+        3.8066624897703196
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.0794415416798357
+      ],
+      [
+        "L-ENCODER",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "turret_change_position",
+      "turret_recenter",
+      "v_weapon_staggered_fire_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        8,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "9",
+    "mode": "SCM Mode",
+    "root_id": "f6327bff-3df9-4b45-ab07-e9a8f8a1bd1a",
+    "cluster": "ANALOG-HAT-L",
+    "status": "WEAK",
+    "input_tokens": [
+      "beam",
+      "beam",
+      "beam",
+      "beam",
+      "burst",
+      "burst",
+      "countermeasure",
+      "decoy",
+      "decoy",
+      "decrease",
+      "decrease",
+      "decrease",
+      "decrease",
+      "distance",
+      "distance",
+      "increase",
+      "increase",
+      "salvage",
+      "size",
+      "spacing",
+      "spacing",
+      "tap",
+      "tractor",
+      "tractor",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        26.848943073036637
+      ],
+      [
+        "L-ENCODER",
+        26.685964479085815
+      ],
+      [
+        "L-THROTTLE",
+        12.588172499717544
+      ],
+      [
+        "4WAY-HAT-L-40",
+        5.41610040220442
+      ],
+      [
+        "4WAY-HAT-L-30",
+        3.7741392980647595
+      ]
+    ],
+    "actions": [
+      "v_salvage_increase_beam_spacing",
+      "v_weapon_countermeasure_decoy_burst_decrease",
+      "tractor_beam_decrease_distance"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        9,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "10",
+    "mode": "SCM Mode",
+    "root_id": "c51909cc-21da-4520-be1b-d05d67c1b68f",
+    "cluster": "ANALOG-HAT-L",
+    "status": "WEAK",
+    "input_tokens": [
+      "beam",
+      "beam",
+      "beam",
+      "beam",
+      "burst",
+      "burst",
+      "countermeasure",
+      "decoy",
+      "decoy",
+      "decrease",
+      "decrease",
+      "distance",
+      "distance",
+      "increase",
+      "increase",
+      "increase",
+      "increase",
+      "salvage",
+      "size",
+      "spacing",
+      "spacing",
+      "tap",
+      "tractor",
+      "tractor",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        26.848943073036637
+      ],
+      [
+        "L-ENCODER",
+        26.685964479085815
+      ],
+      [
+        "L-THROTTLE",
+        12.588172499717544
+      ],
+      [
+        "4WAY-HAT-L-40",
+        5.41610040220442
+      ],
+      [
+        "4WAY-HAT-L-30",
+        3.7741392980647595
+      ]
+    ],
+    "actions": [
+      "v_salvage_decrease_beam_spacing",
+      "v_weapon_countermeasure_decoy_burst_increase",
+      "tractor_beam_increase_distance"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        10,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "11",
+    "mode": "SCM Mode",
+    "root_id": "2a8cfbc5-a438-48e8-a72e-07f4161cdb73",
+    "cluster": "ANALOG-HAT-L",
+    "status": "OK",
+    "input_tokens": [
+      "axis",
+      "axis",
+      "beam",
+      "beam",
+      "salvage",
+      "salvage",
+      "spacing",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        20.775483264191624
+      ],
+      [
+        "L-CLUSTER",
+        3.1780538303479453
+      ],
+      [
+        "L-THROTTLE",
+        2.0794415416798357
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_salvage_toggle_beam_spacing_axis"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        11,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "12",
+    "mode": "SCM Mode",
+    "root_id": "5025440d-cd39-4532-a867-0000bede002b",
+    "cluster": "LR-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "doors",
+      "doors",
+      "doors",
+      "doors",
+      "port",
+      "ports",
+      "unlock",
+      "unlock",
+      "unlock",
+      "unlock",
+      "unlock",
+      "unlock"
+    ],
+    "scores": [
+      [
+        "LR-SWITCH",
+        8.12415060330663
+      ],
+      [
+        "LL-SWITCH",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_unlock_all_doors",
+      "v_unlock_all_ports",
+      "v_unlock_all_doors"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        12,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "13",
+    "mode": "SCM Mode",
+    "root_id": "03d785cb-c14c-46ee-8c81-c3f8ecb532d5",
+    "cluster": "LR-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "doorlocks",
+      "doorlocks",
+      "doors",
+      "doors",
+      "doors",
+      "doors",
+      "doors",
+      "doors",
+      "lock",
+      "lock",
+      "lock",
+      "lock",
+      "lock",
+      "lock",
+      "toggle",
+      "toggle",
+      "toggle",
+      "toggle",
+      "unlock",
+      "unlock"
+    ],
+    "scores": [
+      [
+        "LR-SWITCH",
+        23.3511918408049
+      ],
+      [
+        "LL-SWITCH",
+        3.8066624897703196
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_lock_all_doors",
+      "v_toggle_all_doorlocks",
+      "v_lock_all_doors",
+      "v_toggle_all_doorlocks"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        13,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "14",
+    "mode": "SCM Mode",
+    "root_id": "e9777e3d-c18b-472a-aeea-00e4bc0145d1",
+    "cluster": "LL-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "all",
+      "close",
+      "doors",
+      "doors",
+      "open",
+      "port",
+      "ports",
+      "toggle",
+      "toggle",
+      "unlock",
+      "unlock"
+    ],
+    "scores": [
+      [
+        "LL-SWITCH",
+        22.31927092663546
+      ],
+      [
+        "L-CLUSTER",
+        12.876629065560305
+      ],
+      [
+        "LR-SWITCH",
+        11.558137807791777
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_toggle_all_doors",
+      "v_unlock_all_ports"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        14,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "15",
+    "mode": "SCM Mode",
+    "root_id": "6e3b87cd-cf9e-4240-9097-1ec133d14889",
+    "cluster": "LR-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "all",
+      "lock",
+      "lock",
+      "lock",
+      "lock",
+      "lock",
+      "lock",
+      "port",
+      "port",
+      "port",
+      "port",
+      "portlocks",
+      "portlocks",
+      "ports",
+      "ports",
+      "toggle",
+      "toggle",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "LR-SWITCH",
+        20.64314163970269
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ],
+      [
+        "LL-SWITCH",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_lock_all_ports",
+      "v_toggle_all_portlocks",
+      "v_lock_all_ports",
+      "v_toggle_all_portlocks"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        15,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "16",
+    "mode": "SCM Mode",
+    "root_id": "01a2b8f3-3969-489c-944c-36f19c5a02d2",
+    "cluster": "LR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "gimbal",
+      "gimbals",
+      "locked",
+      "state",
+      "state",
+      "toggle",
+      "toggle",
+      "unlocked",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "LR-BTNS",
+        10.541254149743267
+      ],
+      [
+        "L-CLUSTER",
+        3.8066624897703196
+      ],
+      [
+        "ANALOG-HAT-L",
+        3.1780538303479453
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_weapon_gimbals_state_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        16,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "17",
+    "mode": "SCM Mode",
+    "root_id": "751bbd16-1945-4ae2-a463-6349f6ed2bb0",
+    "cluster": "LR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "lag",
+      "lag",
+      "lead",
+      "lead",
+      "pip",
+      "pips",
+      "toggle",
+      "toggle",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "LR-BTNS",
+        24.010437469689165
+      ],
+      [
+        "ANALOG-HAT-L",
+        3.1780538303479453
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ],
+      [
+        "LL-SWITCH",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_weapon_pip_toggle_lead_lag"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        17,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "18",
+    "mode": "SCM Mode",
+    "root_id": "cd90e48e-93ad-4055-9e33-0bfec01e8b19",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        18,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "19",
+    "mode": "SCM Mode",
+    "root_id": "e49584ea-83a7-4805-966d-c8834f122c42",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "flashlight",
+      "flashlight",
+      "gimbal",
+      "gimbal",
+      "gimbal",
+      "gimbal",
+      "headlights",
+      "lights",
+      "mode",
+      "mode",
+      "mode",
+      "reset",
+      "reset",
+      "salvage",
+      "salvage",
+      "salvage",
+      "salvage",
+      "toggle",
+      "toggle",
+      "toggle",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        23.12942664946081
+      ],
+      [
+        "LR-BTNS",
+        10.541254149743267
+      ],
+      [
+        "ANALOG-HAT-L",
+        3.1780538303479453
+      ],
+      [
+        "LL-BTNS",
+        2.9856819377004893
+      ],
+      [
+        "L-KNOB",
+        2.9856819377004893
+      ]
+    ],
+    "actions": [
+      "v_salvage_reset_gimbal",
+      "v_salvage_toggle_gimbal_mode",
+      "v_lights",
+      "toggle_flashlight"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        19,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "20",
+    "mode": "SCM Mode",
+    "root_id": "36a07cfd-3476-482b-9f57-a9c0e2d37721",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "master",
+      "master",
+      "mode",
+      "mode",
+      "nav",
+      "nav",
+      "set",
+      "set"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        11.988957138991802
+      ],
+      [
+        "L-KNOB",
+        5.254365479018854
+      ],
+      [
+        "4WAY-HAT-L-40",
+        2.70805020110221
+      ],
+      [
+        "MAIN-TRIG-L",
+        1.8870696490323797
+      ],
+      [
+        "LL-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_master_mode_set_nav"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        127,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "21",
+    "mode": "SCM Mode",
+    "root_id": "4bb53e6d-9495-4894-b126-a75a7abb10c2",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "master",
+      "master",
+      "mode",
+      "mode",
+      "scm",
+      "scm",
+      "set",
+      "set"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        11.988957138991802
+      ],
+      [
+        "L-KNOB",
+        11.329711510107538
+      ],
+      [
+        "4WAY-HAT-L-40",
+        5.41610040220442
+      ],
+      [
+        "MAIN-TRIG-L",
+        1.8870696490323797
+      ],
+      [
+        "LL-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_master_mode_set_scm"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        128,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "22",
+    "mode": "SCM Mode",
+    "root_id": "9564cddc-1f1d-443a-aa62-36740f94617d",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cimining",
+      "cisalvage",
+      "mining",
+      "mode",
+      "mode",
+      "mode",
+      "mode",
+      "salvage",
+      "toggle",
+      "toggle",
+      "ui",
+      "ui"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        30.355758088552818
+      ],
+      [
+        "ANALOG-HAT-L",
+        14.999505119574545
+      ],
+      [
+        "LL-BTNS",
+        2.9856819377004893
+      ],
+      [
+        "L-KNOB",
+        2.9856819377004893
+      ],
+      [
+        "MAIN-TRIG-L",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_toggle_mining_mode",
+      "v_toggle_salvage_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        125,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "23",
+    "mode": "SCM Mode",
+    "root_id": "cf67656e-4c86-4718-879e-f6e8fb6dcad1",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "mining",
+      "mining",
+      "mode",
+      "mode",
+      "mode",
+      "mode",
+      "salvage",
+      "salvage",
+      "set",
+      "set",
+      "set",
+      "set",
+      "ui",
+      "ui"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        12.43570390607327
+      ],
+      [
+        "ANALOG-HAT-L",
+        3.8140425970679424
+      ],
+      [
+        "4WAY-HAT-L-40",
+        2.70805020110221
+      ],
+      [
+        "MAIN-TRIG-L",
+        1.8870696490323797
+      ],
+      [
+        "LL-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_set_mining_mode",
+      "v_set_salvage_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        126,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "24",
+    "mode": "SCM Mode",
+    "root_id": "bc8e03d6-5e6f-416f-bcdc-c7c65eea5e60",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "OK",
+    "input_tokens": [
+      "afterburner",
+      "aim",
+      "boost",
+      "boost",
+      "boost",
+      "boost",
+      "ciboost",
+      "down",
+      "eva",
+      "force",
+      "gforce",
+      "ifcs",
+      "off",
+      "safety",
+      "safety",
+      "sight",
+      "toggle",
+      "toggle",
+      "ui",
+      "zoom"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        6.142037405587357
+      ],
+      [
+        "ANALOG-HAT-L",
+        3.8066624897703196
+      ],
+      [
+        "L-CLUSTER",
+        3.4339872044851463
+      ],
+      [
+        "LL-SWITCH",
+        2.9856819377004893
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.3353749158170367
+      ]
+    ],
+    "actions": [
+      "v_afterburner",
+      "v_ifcs_toggle_gforce_safety",
+      "zoom",
+      "eva_boost",
+      "v_boost"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        24,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "25",
+    "mode": "SCM Mode",
+    "root_id": "30aad3e6-d077-4d21-8121-54726ddc6e75",
+    "cluster": "MAIN-TRIG-L",
+    "status": "TIE",
+    "input_tokens": [
+      "long",
+      "long",
+      "release",
+      "reset",
+      "strafe",
+      "trim",
+      "trim"
+    ],
+    "scores": [
+      [
+        "MAIN-TRIG-L",
+        5.41610040220442
+      ],
+      [
+        "4WAY-HAT-L-40",
+        5.41610040220442
+      ],
+      [
+        "L-CLUSTER",
+        1.8870696490323797
+      ],
+      [
+        "4WAY-HAT-L-30",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_strafe_trim_reset_long"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        25,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "26",
+    "mode": "SCM Mode",
+    "root_id": "fb7cf8e6-0407-4205-930c-0558a6891b0c",
+    "cluster": "RAPID-TRIG-L",
+    "status": "OK",
+    "input_tokens": [
+      "brake",
+      "brake",
+      "brake",
+      "brake",
+      "brake",
+      "eva",
+      "space",
+      "spacebrake"
+    ],
+    "scores": [
+      [
+        "RAPID-TRIG-L",
+        3.367295829986474
+      ]
+    ],
+    "actions": [
+      "v_space_brake",
+      "eva_brake",
+      "v_brake"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        26,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "27",
+    "mode": "SCM Mode",
+    "root_id": "30494f94-f9a7-4c7c-aff0-9825227e20fe",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "OK",
+    "input_tokens": [
+      "activate",
+      "invoke",
+      "jump",
+      "jump",
+      "ping",
+      "ping",
+      "release"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-40",
+        5.41610040220442
+      ],
+      [
+        "RAPID-TRIG-L",
+        3.367295829986474
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.70805020110221
+      ],
+      [
+        "L-CLUSTER",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_invoke_ping",
+      "jump"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        27,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "28",
+    "mode": "SCM Mode",
+    "root_id": "a28b93ee-7329-4cb4-bede-d7eb1ca4eb5f",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": []
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "29",
+    "mode": "SCM Mode",
+    "root_id": "1d235d5c-0b60-4f40-ad61-efa8748c7dfc",
+    "cluster": "ANALOG-HAT-L",
+    "status": "OK",
+    "input_tokens": [
+      "flight",
+      "flight",
+      "flightready",
+      "flightready",
+      "ready",
+      "ready",
+      "systems",
+      "systems"
+    ],
+    "scores": [
+      [
+        "ANALOG-HAT-L",
+        6.734591659972948
+      ]
+    ],
+    "actions": [
+      "v_flightready",
+      "v_flightready"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        29,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "30",
+    "mode": "SCM Mode",
+    "root_id": "d4634fb8-a642-44b8-af5d-9b0860182d84",
+    "cluster": "LL-BTNS",
+    "status": "TIE",
+    "input_tokens": [
+      "eva",
+      "freelook",
+      "freelook",
+      "freelook",
+      "freelook",
+      "freelook",
+      "headlook",
+      "mode",
+      "mode",
+      "mode",
+      "toggle",
+      "view",
+      "view"
+    ],
+    "scores": [
+      [
+        "LL-BTNS",
+        2.9856819377004893
+      ],
+      [
+        "L-KNOB",
+        2.9856819377004893
+      ],
+      [
+        "L-CLUSTER",
+        2.9856819377004893
+      ],
+      [
+        "MAIN-TRIG-L",
+        1.8870696490323797
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_view_freelook_mode",
+      "eva_toggle_headlook_mode",
+      "v_view_freelook_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        30,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "31",
+    "mode": "SCM Mode",
+    "root_id": "52152cc5-9f3f-4267-9a01-afe6baef56c4",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "OK",
+    "input_tokens": [
+      "3rd",
+      "camera",
+      "camera",
+      "disable",
+      "enable",
+      "enable",
+      "enabled",
+      "enabled",
+      "head",
+      "head",
+      "headtrack",
+      "headtrack",
+      "person",
+      "toggle",
+      "toggle",
+      "tracking",
+      "tracking"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        37.479620789635064
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "4WAY-HAT-L-40",
+        1.0986122886681098
+      ],
+      [
+        "LL-SWITCH",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "headtrack_camera_enabled",
+      "headtrack_enabled"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        31,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "32",
+    "mode": "SCM Mode",
+    "root_id": "625d0b25-d5a0-44bf-b262-7288d11f83fb",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "OK",
+    "input_tokens": [
+      "cycle",
+      "cycle",
+      "fwd",
+      "fwd",
+      "person",
+      "third",
+      "thirdperson",
+      "toggle",
+      "view",
+      "view",
+      "view"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        4.465908118654584
+      ],
+      [
+        "LR-BTNS",
+        2.9856819377004893
+      ],
+      [
+        "LR-SWITCH",
+        2.9856819377004893
+      ],
+      [
+        "L-CLUSTER",
+        2.9856819377004893
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_view_cycle_fwd",
+      "thirdperson",
+      "v_view_cycle_fwd"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        32,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "33",
+    "mode": "SCM Mode",
+    "root_id": "14007865-272b-4de3-852e-ef8482952e3f",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "OK",
+    "input_tokens": [
+      "abs",
+      "abs",
+      "camera",
+      "cimissiles",
+      "cinematic",
+      "cinematic",
+      "dynamic",
+      "dynamic",
+      "launch",
+      "missile",
+      "toggle",
+      "toggle",
+      "ui",
+      "view",
+      "weapon",
+      "zoom",
+      "zoom"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        36.447699875465624
+      ],
+      [
+        "L-CLUSTER",
+        10.168578864458095
+      ],
+      [
+        "L-THROTTLE",
+        3.367295829986474
+      ],
+      [
+        "ANALOG-HAT-L",
+        3.1780538303479453
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.3353749158170367
+      ]
+    ],
+    "actions": [
+      "v_view_dynamic_zoom_abs_toggle",
+      "v_weapon_launch_missile_cinematic_hold"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        33,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "34",
+    "mode": "SCM Mode",
+    "root_id": "aef6274f-658e-4258-a883-5804606d689d",
+    "cluster": "4WAY-HAT-L-30",
+    "status": "OK",
+    "input_tokens": [
+      "behind",
+      "behind",
+      "look",
+      "look",
+      "view"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-30",
+        13.469183319945897
+      ]
+    ],
+    "actions": [
+      "v_view_look_behind"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        34,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "35",
+    "mode": "SCM Mode",
+    "root_id": "a90e1373-459a-4dc7-afa0-81d57fe4104d",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "docking",
+      "docking",
+      "docking",
+      "docking",
+      "drive",
+      "invoke",
+      "invoke",
+      "jump",
+      "jump",
+      "jump",
+      "mode",
+      "mode",
+      "request",
+      "request",
+      "toggle",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        34.293190809506335
+      ],
+      [
+        "4WAY-HAT-L-40",
+        25.67152950050101
+      ],
+      [
+        "4WAY-HAT-L-30",
+        8.10473703611922
+      ],
+      [
+        "LL-BTNS",
+        2.9856819377004893
+      ],
+      [
+        "L-KNOB",
+        2.9856819377004893
+      ]
+    ],
+    "actions": [
+      "v_toggle_jump_request",
+      "v_invoke_docking",
+      "v_toggle_docking_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        35,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "36",
+    "mode": "SCM Mode",
+    "root_id": "43bc3432-969f-469d-bf0a-730649ce3365",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cycle",
+      "cycle",
+      "laser",
+      "laser",
+      "long",
+      "long",
+      "master",
+      "master",
+      "master",
+      "master",
+      "mining",
+      "mining",
+      "mode",
+      "mode",
+      "mode",
+      "mode",
+      "nav",
+      "nav",
+      "set",
+      "set",
+      "toggle",
+      "toggle",
+      "type"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        21.379989963714472
+      ],
+      [
+        "ANALOG-HAT-L",
+        14.5100879231414
+      ],
+      [
+        "L-THROTTLE",
+        8.740725802839217
+      ],
+      [
+        "L-KNOB",
+        6.352977767686964
+      ],
+      [
+        "4WAY-HAT-L-40",
+        3.8066624897703196
+      ]
+    ],
+    "actions": [
+      "v_master_mode_cycle_long",
+      "v_toggle_mining_laser_type",
+      "v_master_mode_set_nav"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        36,
+        "button"
+      ],
+      [
+        1,
+        127,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "37",
+    "mode": "SCM Mode",
+    "root_id": "cf30ebd7-5306-4d45-abb7-404caa2a047e",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cycle",
+      "forward",
+      "mode",
+      "mode",
+      "next",
+      "operator",
+      "operator"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        22.945993363814168
+      ],
+      [
+        "L-ENCODER",
+        2.3353749158170367
+      ],
+      [
+        "MAIN-TRIG-L",
+        1.8870696490323797
+      ],
+      [
+        "LL-BTNS",
+        1.8870696490323797
+      ],
+      [
+        "LR-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_operator_mode_cycle_forward"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        37,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "38",
+    "mode": "SCM Mode",
+    "root_id": "3994e9d4-c9e6-4efe-b203-d0a6bbe18250",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "back",
+      "cycle",
+      "mode",
+      "mode",
+      "operator",
+      "operator",
+      "previous"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        13.87602678802418
+      ],
+      [
+        "L-ENCODER",
+        2.70805020110221
+      ],
+      [
+        "MAIN-TRIG-L",
+        1.8870696490323797
+      ],
+      [
+        "LL-BTNS",
+        1.8870696490323797
+      ],
+      [
+        "LR-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_operator_mode_cycle_back"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        38,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "39",
+    "mode": "SCM Mode",
+    "root_id": "a368eaf3-70b2-4442-90ae-fb09f6fdc2e3",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "ads",
+      "ads",
+      "ads",
+      "ads",
+      "max",
+      "max",
+      "stable",
+      "stable",
+      "toggle",
+      "toggle",
+      "ui",
+      "ui",
+      "zoom",
+      "zoom"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        6.801283034471621
+      ],
+      [
+        "4WAY-HAT-L-30",
+        3.4339872044851463
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.3353749158170367
+      ],
+      [
+        "LL-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "LR-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_ads_stable_max_zoom_hold",
+      "v_ads_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        39,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "40",
+    "mode": "SCM Mode",
+    "root_id": "f37506d5-6e6e-4520-bcf5-88152627a758",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "TIE",
+    "input_tokens": [
+      "atc",
+      "landing",
+      "request",
+      "request"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-40",
+        10.459525519123666
+      ],
+      [
+        "L-CLUSTER",
+        10.459525519123666
+      ],
+      [
+        "LL-SWITCH",
+        2.3353749158170367
+      ]
+    ],
+    "actions": [
+      "v_atc_request"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        40,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "41",
+    "mode": "SCM Mode",
+    "root_id": "28605b03-38cc-47d1-b7cf-f7c7d15f6002",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cruise",
+      "ifcs",
+      "mode",
+      "mode",
+      "swap",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        9.720273597673437
+      ],
+      [
+        "4WAY-HAT-L-40",
+        4.465908118654584
+      ],
+      [
+        "LL-BTNS",
+        2.9856819377004893
+      ],
+      [
+        "L-KNOB",
+        2.9856819377004893
+      ],
+      [
+        "MAIN-TRIG-L",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_ifcs_throttle_swap_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        41,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "42",
+    "mode": "SCM Mode",
+    "root_id": "ad4d3e96-7b57-448e-93fb-f727e4b88fbc",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "ifcs",
+      "increase",
+      "increase",
+      "increase",
+      "limiter",
+      "limiter",
+      "limiter",
+      "limiter",
+      "rel",
+      "rel",
+      "speed",
+      "speed",
+      "speed",
+      "turret",
+      "turret",
+      "up"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        12.809937691061632
+      ],
+      [
+        "4WAY-HAT-L-40",
+        12.150692062177368
+      ],
+      [
+        "ANALOG-HAT-L",
+        3.367295829986474
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.0794415416798357
+      ],
+      [
+        "LL-BTNS",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_ifcs_speed_limiter_up",
+      "turret_limiter_rel_increase"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        42,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "43",
+    "mode": "SCM Mode",
+    "root_id": "4e0f3451-9cef-4a52-8b81-8415caa03dc1",
+    "cluster": "4WAY-HAT-L-40",
+    "status": "OK",
+    "input_tokens": [
+      "100",
+      "100",
+      "long",
+      "long",
+      "set",
+      "set",
+      "set",
+      "set",
+      "short",
+      "short",
+      "strafe",
+      "strafe",
+      "trim",
+      "trim",
+      "trim",
+      "trim"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-L-40",
+        8.783396232190894
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_strafe_trim_set_100_long",
+      "v_strafe_trim_set_short"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        43,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "141b1470-1081-11f0-8006-444553540000",
+    "side": "L",
+    "itype": "button",
+    "iid": "44",
+    "mode": "SCM Mode",
+    "root_id": "c490faf7-4aae-462c-a718-5b6ef462c67c",
+    "cluster": "L-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "decrease",
+      "decrease",
+      "decrease",
+      "down",
+      "ifcs",
+      "limiter",
+      "limiter",
+      "limiter",
+      "limiter",
+      "rel",
+      "rel",
+      "speed",
+      "speed",
+      "speed",
+      "turret",
+      "turret"
+    ],
+    "scores": [
+      [
+        "L-CLUSTER",
+        12.809937691061632
+      ],
+      [
+        "4WAY-HAT-L-40",
+        12.150692062177368
+      ],
+      [
+        "ANALOG-HAT-L",
+        3.367295829986474
+      ],
+      [
+        "MAIN-TRIG-L",
+        2.0794415416798357
+      ],
+      [
+        "LL-BTNS",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_ifcs_speed_limiter_down",
+      "turret_limiter_rel_decrease"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        44,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "4",
+    "mode": "Modifier",
+    "root_id": "1fd3d027-ed41-4234-84ae-f8a12ed998e5",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "index",
+      "index",
+      "left",
+      "left",
+      "level",
+      "level",
+      "pin",
+      "pin",
+      "pin",
+      "raise",
+      "raise",
+      "selected",
+      "shield",
+      "shield",
+      "target",
+      "target",
+      "toggle",
+      "unpin"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        13.540251005511049
+      ],
+      [
+        "ANALOG-HAT-R",
+        10.83220080440884
+      ],
+      [
+        "R-CLUSTER",
+        6.51471269087253
+      ],
+      [
+        "RR-BTNS",
+        3.8066624897703196
+      ],
+      [
+        "RL-BTNS",
+        3.8066624897703196
+      ]
+    ],
+    "actions": [
+      "v_target_toggle_pin_index_1",
+      "v_shield_raise_level_left"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        45,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "4",
+    "mode": "Modifier",
+    "root_id": "fc8d127e-57ed-4ed7-a5a3-9892c594d39a",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "index",
+      "index",
+      "level",
+      "level",
+      "pin",
+      "pin",
+      "pin",
+      "raise",
+      "raise",
+      "right",
+      "right",
+      "selected",
+      "shield",
+      "shield",
+      "target",
+      "target",
+      "toggle",
+      "unpin"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        13.540251005511049
+      ],
+      [
+        "ANALOG-HAT-R",
+        10.83220080440884
+      ],
+      [
+        "R-CLUSTER",
+        6.51471269087253
+      ],
+      [
+        "RR-BTNS",
+        3.8066624897703196
+      ],
+      [
+        "RL-BTNS",
+        3.8066624897703196
+      ]
+    ],
+    "actions": [
+      "v_target_toggle_pin_index_3",
+      "v_shield_raise_level_right"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        47,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "5",
+    "mode": "Modifier",
+    "root_id": "6f9a83bc-b149-4348-aa35-14d84b572742",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "forward",
+      "front",
+      "index",
+      "index",
+      "level",
+      "level",
+      "pin",
+      "pin",
+      "pin",
+      "raise",
+      "raise",
+      "selected",
+      "shield",
+      "shield",
+      "target",
+      "target",
+      "toggle",
+      "unpin"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        16.24830120661326
+      ],
+      [
+        "ANALOG-HAT-R",
+        10.83220080440884
+      ],
+      [
+        "R-CLUSTER",
+        3.8066624897703196
+      ],
+      [
+        "RR-BTNS",
+        3.8066624897703196
+      ],
+      [
+        "RL-BTNS",
+        3.8066624897703196
+      ]
+    ],
+    "actions": [
+      "v_target_toggle_pin_index_2",
+      "v_shield_raise_level_forward"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        46,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "5",
+    "mode": "Modifier",
+    "root_id": "4a197a94-128b-44c5-9a9f-3b5a8e1ad33e",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "COHERED",
+    "input_tokens": [
+      "back",
+      "back",
+      "level",
+      "level",
+      "raise",
+      "raise",
+      "shield",
+      "shield"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-40",
+        3.367295829986474
+      ]
+    ],
+    "actions": [
+      "v_shield_raise_level_back"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        48,
+        "button"
+      ]
+    ],
+    "inferred_from": "4WAY-HAT-R-40"
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "1",
+    "mode": "Modifier",
+    "root_id": "8f6ccbb2-989b-4d40-b5b4-80d238650bdc",
+    "cluster": "RL-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        51,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "2",
+    "mode": "Modifier",
+    "root_id": "646c3089-36c4-4f10-9479-a62d647d0e60",
+    "cluster": "RL-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        52,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "3",
+    "mode": "Modifier",
+    "root_id": "50c29df2-1a52-4942-8211-4facc252af60",
+    "cluster": "RL-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        53,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "4",
+    "mode": "Modifier",
+    "root_id": "b750e595-e5ce-4132-a76e-5ff259d35ce2",
+    "cluster": "RL-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        54,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "5",
+    "mode": "Modifier",
+    "root_id": "328ae24f-0f20-4e34-aac5-1cb5155f21c8",
+    "cluster": "RL-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "destruct",
+      "destruct",
+      "self",
+      "self"
+    ],
+    "scores": [
+      [
+        "RL-BTNS",
+        13.469183319945897
+      ]
+    ],
+    "actions": [
+      "v_self_destruct"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        55,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "6",
+    "mode": "Modifier",
+    "root_id": "600d3ee3-ced7-4321-8bac-8527c55e0847",
+    "cluster": "RL-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "eject",
+      "eject"
+    ],
+    "scores": [
+      [
+        "RL-BTNS",
+        3.367295829986474
+      ]
+    ],
+    "actions": [
+      "v_eject"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        56,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "7",
+    "mode": "Modifier",
+    "root_id": "a790baff-3058-41ec-96ec-59f99bbf7ef5",
+    "cluster": "RL-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "cargo",
+      "cargo",
+      "jettison",
+      "jettison",
+      "volatile"
+    ],
+    "scores": [
+      [
+        "RL-BTNS",
+        12.437262405776458
+      ]
+    ],
+    "actions": [
+      "v_jettison_volatile_cargo"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        57,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "8",
+    "mode": "Modifier",
+    "root_id": "7155189f-22d2-49a8-b27a-c39b78aa7598",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        58,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "9",
+    "mode": "Modifier",
+    "root_id": "25a22654-ade7-45c2-91f9-516f2e1dc02d",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        59,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "10",
+    "mode": "Modifier",
+    "root_id": "8d136a28-9dcd-4d63-ae25-dbb3560cd6cf",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        60,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "11",
+    "mode": "Modifier",
+    "root_id": "9bae1ee1-387a-4e96-974c-b4c5366cc352",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        61,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "12",
+    "mode": "Modifier",
+    "root_id": "f5e4b84b-232b-4b93-b3bd-cdd974b1b081",
+    "cluster": "RR-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        62,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "13",
+    "mode": "Modifier",
+    "root_id": "69258a2e-b660-4093-8231-b934333329e1",
+    "cluster": "RR-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        63,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "14",
+    "mode": "Modifier",
+    "root_id": "b3252cb5-35b9-4ebb-b2e5-f2d80d5ab32b",
+    "cluster": "RR-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        64,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "15",
+    "mode": "Modifier",
+    "root_id": "a0c2c1ec-74a6-4633-8e4d-0f076ba783de",
+    "cluster": "RR-SWITCH",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        65,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "16",
+    "mode": "Modifier",
+    "root_id": "5d4366d0-97c1-4079-ab38-4b5e53603557",
+    "cluster": "RR-BTNS",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        66,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "17",
+    "mode": "Modifier",
+    "root_id": "1a691101-c7e2-40e0-afe6-20c6e04210b1",
+    "cluster": "RR-BTNS",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        67,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "18",
+    "mode": "Modifier",
+    "root_id": "be2f344d-7000-4d02-8378-713b18b79bd5",
+    "cluster": "RR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "cast",
+      "cast",
+      "mfd",
+      "mfd",
+      "right",
+      "right",
+      "select",
+      "select",
+      "short",
+      "short",
+      "soft"
+    ],
+    "scores": [
+      [
+        "RR-BTNS",
+        24.301384124354737
+      ],
+      [
+        "R-CLUSTER",
+        10.83220080440884
+      ]
+    ],
+    "actions": [
+      "v_mfd_soft_select_cast_right_short"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        68,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "19",
+    "mode": "Modifier",
+    "root_id": "ef8f8e3c-9fcb-4e74-924a-26343e03cb6a",
+    "cluster": "RR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "cast",
+      "cast",
+      "left",
+      "left",
+      "mfd",
+      "mfd",
+      "select",
+      "select",
+      "short",
+      "short",
+      "soft"
+    ],
+    "scores": [
+      [
+        "RR-BTNS",
+        24.301384124354737
+      ],
+      [
+        "R-CLUSTER",
+        10.83220080440884
+      ]
+    ],
+    "actions": [
+      "v_mfd_soft_select_cast_left_short"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        69,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "20",
+    "mode": "Modifier",
+    "root_id": "be8912a3-f902-47a7-8215-2f7bd560f6d9",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        70,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "21",
+    "mode": "Modifier",
+    "root_id": "cc07a40b-423c-4bd7-ba83-dd0179af4337",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        71,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "22",
+    "mode": "Modifier",
+    "root_id": "945205cc-e3cc-47c7-8ec0-2193973ffb8a",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        72,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "23",
+    "mode": "Modifier",
+    "root_id": "c34345ce-a948-485f-bcd5-ba12fe2423cc",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        73,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "24",
+    "mode": "Modifier",
+    "root_id": "78ff2f26-70a0-45bf-b8b0-ceda48bee092",
+    "cluster": "MAIN-TRIG-R",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        74,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "25",
+    "mode": "Modifier",
+    "root_id": "27db0d35-5f60-4dec-a208-6fbd72288c60",
+    "cluster": "R-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        75,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "26",
+    "mode": "Modifier",
+    "root_id": "c8ba5391-cb9d-4e99-8493-d8cb3a5fe49f",
+    "cluster": "RAPID-TRIG-R",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        76,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "27",
+    "mode": "Modifier",
+    "root_id": "dfc45ad8-1986-44d9-a926-f821c032605f",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        77,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "28",
+    "mode": "Modifier",
+    "root_id": "7eef9ec8-915b-4b28-8aec-acd3a836be63",
+    "cluster": null,
+    "status": "UNMATCHED",
+    "input_tokens": [
+      "cam",
+      "foip",
+      "foip",
+      "foip",
+      "only",
+      "proximity",
+      "proximity",
+      "push",
+      "pushtotalk",
+      "selfie",
+      "talk",
+      "viewownplayer",
+      "voip"
+    ],
+    "scores": [],
+    "actions": [
+      "foip_pushtotalk_proximity",
+      "foip_viewownplayer"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        78,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "29",
+    "mode": "Modifier",
+    "root_id": "9a61e4a2-7d82-470a-9795-d78b2e68df0a",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "OK",
+    "input_tokens": [
+      "level",
+      "levels",
+      "reset",
+      "reset",
+      "shield",
+      "shield"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-40",
+        5.254365479018854
+      ],
+      [
+        "R-CLUSTER",
+        1.8870696490323797
+      ],
+      [
+        "ANALOG-HAT-R",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_shield_reset_level"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        79,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "30",
+    "mode": "Modifier",
+    "root_id": "1b4e98a3-5752-4889-9960-7813d2b5a6cd",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "pinned",
+      "pins",
+      "remove",
+      "remove",
+      "target",
+      "targets"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        29.717484526559154
+      ],
+      [
+        "ANALOG-HAT-R",
+        13.540251005511049
+      ],
+      [
+        "RL-BTNS",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_target_remove_all_pins"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        80,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "31",
+    "mode": "Modifier",
+    "root_id": "731638ff-c64b-4ae4-8278-5e306840e190",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "back",
+      "back",
+      "back",
+      "back",
+      "cycle",
+      "cycle",
+      "cycle",
+      "cycle",
+      "friendlies",
+      "friendly",
+      "lock",
+      "lock",
+      "sub",
+      "subitem",
+      "target",
+      "target",
+      "target"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        6.075346031088684
+      ],
+      [
+        "RL-BTNS",
+        2.70805020110221
+      ],
+      [
+        "R-CLUSTER",
+        1.8870696490323797
+      ],
+      [
+        "RR-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_friendly_back",
+      "v_target_cycle_subitem_back"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        81,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "32",
+    "mode": "Modifier",
+    "root_id": "5d5b76a8-9c5d-4de6-aea9-3cf77c686371",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "attacker",
+      "attackers",
+      "cycle",
+      "cycle",
+      "cycle",
+      "cycle",
+      "forward",
+      "forward",
+      "fwd",
+      "fwd",
+      "lock",
+      "lock",
+      "pinned",
+      "pinned",
+      "target",
+      "target"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        11.491446433293104
+      ],
+      [
+        "RR-BTNS",
+        4.59511985013459
+      ],
+      [
+        "ANALOG-HAT-R",
+        2.70805020110221
+      ],
+      [
+        "RL-BTNS",
+        2.70805020110221
+      ],
+      [
+        "R-CLUSTER",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_attacker_fwd",
+      "v_target_cycle_pinned_fwd"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        82,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "33",
+    "mode": "Modifier",
+    "root_id": "444b66e3-a2c6-44f7-97d4-6dfd2fca0cb1",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "cycle",
+      "cycle",
+      "cycle",
+      "cycle",
+      "forward",
+      "forward",
+      "friendlies",
+      "friendly",
+      "fwd",
+      "fwd",
+      "lock",
+      "lock",
+      "sub",
+      "subitem",
+      "target",
+      "target",
+      "target"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        15.517987892163841
+      ],
+      [
+        "RR-BTNS",
+        4.59511985013459
+      ],
+      [
+        "RL-BTNS",
+        2.70805020110221
+      ],
+      [
+        "R-CLUSTER",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_friendly_fwd",
+      "v_target_cycle_subitem_fwd"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        83,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "34",
+    "mode": "Modifier",
+    "root_id": "44b9bff9-0735-46f2-b9c6-926c890645e4",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "closest",
+      "cycle",
+      "cycle",
+      "cycle",
+      "cycle",
+      "friendlies",
+      "friendly",
+      "lock",
+      "lock",
+      "reset",
+      "reset",
+      "reset",
+      "reset",
+      "sub",
+      "subitem",
+      "target",
+      "target",
+      "target",
+      "target"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        9.442641861075158
+      ],
+      [
+        "R-CLUSTER",
+        3.7741392980647595
+      ],
+      [
+        "RL-BTNS",
+        2.70805020110221
+      ],
+      [
+        "ANALOG-HAT-R",
+        1.8870696490323797
+      ],
+      [
+        "RR-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_friendly_reset",
+      "v_target_cycle_subitem_reset"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        84,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "35",
+    "mode": "Modifier",
+    "root_id": "355c5cc7-d244-4368-b08f-e4bfb86df8e1",
+    "cluster": "R-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cisalvage",
+      "focus",
+      "focus",
+      "left",
+      "left",
+      "salvage",
+      "ui"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        4.787491742782046
+      ],
+      [
+        "RR-BTNS",
+        2.70805020110221
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_salvage_focus_left"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        85,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "36",
+    "mode": "Modifier",
+    "root_id": "e94673de-0b93-4cb4-974f-1788c7d351d4",
+    "cluster": "R-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cisalvage",
+      "cycle",
+      "cycle",
+      "emp",
+      "emps",
+      "focused",
+      "focused",
+      "jammer",
+      "jammers",
+      "long",
+      "modifiers",
+      "modifiers",
+      "preset",
+      "preset",
+      "preset",
+      "preset",
+      "presets",
+      "presets",
+      "presets",
+      "presets",
+      "pulse",
+      "pulse",
+      "qid",
+      "qid",
+      "qid",
+      "qids",
+      "quantum",
+      "quantum",
+      "range",
+      "range",
+      "salvage",
+      "set",
+      "set",
+      "set",
+      "set",
+      "short",
+      "snares",
+      "ui",
+      "weapon",
+      "weapon",
+      "weapon",
+      "weapon",
+      "weapon",
+      "weapon",
+      "weapon",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        20.90469499567163
+      ],
+      [
+        "MAIN-TRIG-R",
+        10.89347474333262
+      ],
+      [
+        "RAPID-TRIG-R",
+        8.12415060330663
+      ],
+      [
+        "4WAY-HAT-R-40",
+        4.787491742782046
+      ],
+      [
+        "RR-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_salvage_cycle_modifiers_focused",
+      "v_weapon_preset_emp",
+      "v_weapon_preset_qid",
+      "v_weapon_preset_qid_jammer",
+      "v_weapon_preset_qid_pulse"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        86,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "37",
+    "mode": "Modifier",
+    "root_id": "e5793496-d097-486b-8df5-019cdeabb1fb",
+    "cluster": "MAIN-TRIG-R",
+    "status": "COHERED",
+    "input_tokens": [
+      "back",
+      "beam",
+      "beam",
+      "cifpstractor",
+      "cycle",
+      "cycle",
+      "distance",
+      "distance",
+      "increase",
+      "increase",
+      "missile",
+      "missile",
+      "next",
+      "next",
+      "overflow",
+      "overflow",
+      "preset",
+      "presets",
+      "previous",
+      "tractor",
+      "type",
+      "ui",
+      "weapon",
+      "weapon",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        41.77124681780596
+      ],
+      [
+        "4WAY-HAT-R-40",
+        4.787491742782046
+      ],
+      [
+        "MAIN-TRIG-R",
+        4.1588830833596715
+      ],
+      [
+        "RR-BTNS",
+        3.9665111907122155
+      ],
+      [
+        "RAPID-TRIG-R",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "tractor_beam_vehicle_increase_distance",
+      "v_weapon_preset_next_overflow",
+      "v_weapon_cycle_missile_back"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        87,
+        "button"
+      ]
+    ],
+    "inferred_from": "R-CLUSTER"
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "38",
+    "mode": "Modifier",
+    "root_id": "fd86628e-2d12-47cb-8dcb-62c88329cdf7",
+    "cluster": "MAIN-TRIG-R",
+    "status": "COHERED",
+    "input_tokens": [
+      "beam",
+      "beam",
+      "cifpstractor",
+      "cycle",
+      "cycle",
+      "decrease",
+      "decrease",
+      "distance",
+      "distance",
+      "fwd",
+      "missile",
+      "missile",
+      "next",
+      "overflow",
+      "overflow",
+      "preset",
+      "presets",
+      "prev",
+      "previous",
+      "tractor",
+      "type",
+      "ui",
+      "weapon",
+      "weapon",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        37.74470535893522
+      ],
+      [
+        "4WAY-HAT-R-40",
+        4.787491742782046
+      ],
+      [
+        "MAIN-TRIG-R",
+        4.1588830833596715
+      ],
+      [
+        "RR-BTNS",
+        3.9665111907122155
+      ],
+      [
+        "RAPID-TRIG-R",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "tractor_beam_vehicle_decrease_distance",
+      "v_weapon_preset_prev_overflow",
+      "v_weapon_cycle_missile_fwd"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        88,
+        "button"
+      ]
+    ],
+    "inferred_from": "R-CLUSTER"
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "39",
+    "mode": "Modifier",
+    "root_id": "a73b835e-f915-478e-9ead-ab0186724e12",
+    "cluster": "R-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cisalvage",
+      "focus",
+      "focus",
+      "right",
+      "right",
+      "salvage",
+      "ui"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        4.787491742782046
+      ],
+      [
+        "RR-BTNS",
+        2.70805020110221
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_salvage_focus_right"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        89,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "40",
+    "mode": "Modifier",
+    "root_id": "ee531858-42dc-4edb-8775-90fc2f49e3c4",
+    "cluster": "R-CLUSTER",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        90,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "41",
+    "mode": "Modifier",
+    "root_id": "336d832b-0855-4ec8-9d63-f596721f5644",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "OK",
+    "input_tokens": [
+      "assignment",
+      "assignment",
+      "assignment",
+      "capacitor",
+      "decrease",
+      "decrease",
+      "engineering",
+      "engineering",
+      "min",
+      "min",
+      "tap",
+      "ui",
+      "weapon",
+      "weapons",
+      "weapons",
+      "weapons"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-40",
+        11.522083402754994
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.0794415416798357
+      ],
+      [
+        "R-CLUSTER",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_weapons_decrease",
+      "v_engineering_assignment_weapons_min"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        91,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "42",
+    "mode": "Modifier",
+    "root_id": "4a547485-99bc-4485-9cdd-63bcd030ef7c",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        92,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "43",
+    "mode": "Modifier",
+    "root_id": "ed9ef4ca-d984-4026-9d12-af8d9d4cfcd9",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "OK",
+    "input_tokens": [
+      "assignment",
+      "assignment",
+      "assignment",
+      "capacitor",
+      "decrease",
+      "decrease",
+      "engineering",
+      "engineering",
+      "min",
+      "min",
+      "shield",
+      "shields",
+      "shields",
+      "shields",
+      "tap",
+      "ui"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-40",
+        12.809937691061632
+      ],
+      [
+        "ANALOG-HAT-R",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_shields_decrease",
+      "v_engineering_assignment_shields_min"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        93,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "44",
+    "mode": "Modifier",
+    "root_id": "6e96f32f-6e42-4bb7-bee4-fc420bf0250d",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "OK",
+    "input_tokens": [
+      "assignment",
+      "assignment",
+      "assignment",
+      "capacitor",
+      "decrease",
+      "decrease",
+      "engine",
+      "engine",
+      "engine",
+      "engineering",
+      "engineering",
+      "engines",
+      "min",
+      "min",
+      "tap",
+      "ui"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-40",
+        9.442641861075158
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_engine_decrease",
+      "v_engineering_assignment_engine_min"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        94,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "1",
+    "mode": "SCM Mode",
+    "root_id": "0e9305b5-2533-46ec-b225-0a52e90a2f22",
+    "cluster": "RR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "axis",
+      "eva",
+      "hotas",
+      "left",
+      "left",
+      "right",
+      "right",
+      "turret",
+      "view",
+      "view",
+      "yaw",
+      "yaw",
+      "yaw",
+      "yaw",
+      "yaw"
+    ],
+    "scores": [
+      [
+        "RR-BTNS",
+        8.12415060330663
+      ],
+      [
+        "R-CLUSTER",
+        5.41610040220442
+      ],
+      [
+        "R-THROTTLE",
+        2.70805020110221
+      ],
+      [
+        "RL-SWITCH",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_yaw",
+      "turret_yaw",
+      "eva_view_yaw"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        1,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "2",
+    "mode": "SCM Mode",
+    "root_id": "1acf04cd-2d22-47b2-b7f9-c846f1bc60e3",
+    "cluster": "RR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "axis",
+      "axis",
+      "down",
+      "down",
+      "down",
+      "eva",
+      "hotas",
+      "hotas",
+      "pitch",
+      "pitch",
+      "pitch",
+      "pitch",
+      "pitch",
+      "pitch",
+      "pitch",
+      "turret",
+      "up",
+      "up",
+      "up",
+      "view",
+      "view"
+    ],
+    "scores": [
+      [
+        "RR-BTNS",
+        6.482189499166969
+      ],
+      [
+        "RAPID-TRIG-R",
+        3.7741392980647595
+      ],
+      [
+        "R-CLUSTER",
+        3.7741392980647595
+      ],
+      [
+        "R-THROTTLE",
+        2.70805020110221
+      ],
+      [
+        "RL-SWITCH",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_pitch",
+      "turret_pitch",
+      "eva_view_pitch",
+      "v_pitch"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        2,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "4",
+    "mode": "SCM Mode",
+    "root_id": "26c2e65a-99f2-4d82-84c3-9a4b9d8309a5",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "5",
+    "mode": "SCM Mode",
+    "root_id": "8ef8fd6e-88dd-4ea3-a825-47e4ca3e9e8d",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "6",
+    "mode": "SCM Mode",
+    "root_id": "1f062625-3e7b-41e1-b118-35dc776b62ed",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        6,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "7",
+    "mode": "SCM Mode",
+    "root_id": "3f965ad5-4f0c-4a87-be00-a8150a01b6bf",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        7,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "8",
+    "mode": "SCM Mode",
+    "root_id": "992ec2a3-67b2-4938-b78a-3cd3cbf9fb52",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        8,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "1",
+    "mode": "SCM Mode",
+    "root_id": "70f20cfe-15d1-4144-a321-025b65907db6",
+    "cluster": "RL-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "configuration",
+      "enter",
+      "enter",
+      "remote",
+      "remote",
+      "retract",
+      "retract",
+      "transform",
+      "turret",
+      "turret"
+    ],
+    "scores": [
+      [
+        "RL-SWITCH",
+        16.938183804959415
+      ]
+    ],
+    "actions": [
+      "v_enter_remote_turret_1",
+      "v_transform_retract"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        1,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "2",
+    "mode": "SCM Mode",
+    "root_id": "a6eb6da4-29cf-4053-a92f-b4de918ad417",
+    "cluster": "RL-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "configuration",
+      "configuration",
+      "cycle",
+      "cycle",
+      "deploy",
+      "enter",
+      "enter",
+      "expand",
+      "remote",
+      "remote",
+      "transform",
+      "transform",
+      "turret",
+      "turret"
+    ],
+    "scores": [
+      [
+        "RL-SWITCH",
+        16.938183804959415
+      ],
+      [
+        "R-CLUSTER",
+        1.8870696490323797
+      ],
+      [
+        "RR-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_enter_remote_turret_2",
+      "v_transform_cycle",
+      "v_transform_deploy"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        2,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "3",
+    "mode": "SCM Mode",
+    "root_id": "0f9a5b79-7f7c-4e83-b66d-76f08cd6bf9f",
+    "cluster": "RL-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "enter",
+      "enter",
+      "remote",
+      "remote",
+      "turret",
+      "turret"
+    ],
+    "scores": [
+      [
+        "RL-SWITCH",
+        10.203592144986466
+      ]
+    ],
+    "actions": [
+      "v_enter_remote_turret_3"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        3,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "4",
+    "mode": "SCM Mode",
+    "root_id": "f73c1e37-df92-43e7-b12b-ff8134ea2406",
+    "cluster": "RL-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "emergency",
+      "emergency",
+      "exit",
+      "exit",
+      "exit",
+      "exit",
+      "exit",
+      "exit",
+      "pl",
+      "remote",
+      "remote",
+      "seat",
+      "seat",
+      "turret",
+      "turret"
+    ],
+    "scores": [
+      [
+        "RL-SWITCH",
+        37.141958784878256
+      ]
+    ],
+    "actions": [
+      "v_emergency_exit",
+      "turret_remote_exit",
+      "pl_exit"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        4,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "5",
+    "mode": "SCM Mode",
+    "root_id": "401cb43b-c32f-449d-8904-1c76710aab73",
+    "cluster": "RL-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "chat",
+      "chat",
+      "hail",
+      "hail",
+      "target",
+      "target",
+      "toggle",
+      "toggle",
+      "window"
+    ],
+    "scores": [
+      [
+        "RL-BTNS",
+        34.11232495964859
+      ],
+      [
+        "4WAY-HAT-R-30",
+        2.70805020110221
+      ],
+      [
+        "R-CLUSTER",
+        1.0986122886681098
+      ],
+      [
+        "RR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "RL-SWITCH",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_target_hail",
+      "toggle_chat"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        5,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "6",
+    "mode": "SCM Mode",
+    "root_id": "565671be-1613-4af0-9d50-1f845a1ee3a6",
+    "cluster": "RL-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "advanced",
+      "advanced",
+      "flight",
+      "hud",
+      "hud",
+      "toggle",
+      "toggle"
+    ],
+    "scores": [
+      [
+        "RL-BTNS",
+        11.200499778627531
+      ],
+      [
+        "R-CLUSTER",
+        1.0986122886681098
+      ],
+      [
+        "RR-BTNS",
+        1.0986122886681098
+      ],
+      [
+        "RL-SWITCH",
+        1.0986122886681098
+      ],
+      [
+        "RR-SWITCH",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_flight_advanced_hud_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        6,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "7",
+    "mode": "SCM Mode",
+    "root_id": "1f74f57a-7b93-4479-8566-50c7f63a168a",
+    "cluster": "RL-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "accept",
+      "accept",
+      "decline",
+      "decline",
+      "notification",
+      "notification",
+      "notifications",
+      "notifications",
+      "prompt",
+      "prompt"
+    ],
+    "scores": [
+      [
+        "RL-BTNS",
+        16.83647914993237
+      ]
+    ],
+    "actions": [
+      "notification_accept",
+      "notification_decline"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        7,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "8",
+    "mode": "SCM Mode",
+    "root_id": "4099788c-4dc3-486a-8ce5-e92387c2f78c",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        8,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "9",
+    "mode": "SCM Mode",
+    "root_id": "fb3c2cf2-5137-400b-8b15-b6d76d608f45",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        9,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "10",
+    "mode": "SCM Mode",
+    "root_id": "6cc89553-aa0b-4bfe-b8ad-88a396e9624e",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        10,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "11",
+    "mode": "SCM Mode",
+    "root_id": "91b8a846-1dfe-4ad2-a5ad-512b99704b77",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        11,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "12",
+    "mode": "SCM Mode",
+    "root_id": "e4b06750-103a-4a64-a15f-20812435e439",
+    "cluster": "RR-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "activate",
+      "consumable2",
+      "mining",
+      "mining",
+      "module",
+      "slot",
+      "use"
+    ],
+    "scores": [
+      [
+        "RR-SWITCH",
+        11.836488545347528
+      ],
+      [
+        "MAIN-TRIG-R",
+        1.7346010553881064
+      ],
+      [
+        "R-CLUSTER",
+        1.7346010553881064
+      ]
+    ],
+    "actions": [
+      "v_mining_use_consumable2"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        12,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "13",
+    "mode": "SCM Mode",
+    "root_id": "e0db6e1e-a913-4006-907f-e6177dda1fc8",
+    "cluster": "RR-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "line",
+      "lines",
+      "pip",
+      "pip",
+      "prec",
+      "precision",
+      "toggle",
+      "toggle",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "RR-SWITCH",
+        30.745029129662115
+      ],
+      [
+        "R-CLUSTER",
+        3.1780538303479453
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.0794415416798357
+      ],
+      [
+        "4WAY-HAT-R-40",
+        2.0794415416798357
+      ],
+      [
+        "RR-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_weapon_pip_prec_line_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        13,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "14",
+    "mode": "SCM Mode",
+    "root_id": "76fc4bb3-2607-49cf-afe3-1e9f21eb0dbf",
+    "cluster": "RR-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "activate",
+      "consumable1",
+      "mining",
+      "mining",
+      "module",
+      "slot",
+      "use"
+    ],
+    "scores": [
+      [
+        "RR-SWITCH",
+        11.836488545347528
+      ],
+      [
+        "MAIN-TRIG-R",
+        1.7346010553881064
+      ],
+      [
+        "R-CLUSTER",
+        1.7346010553881064
+      ]
+    ],
+    "actions": [
+      "v_mining_use_consumable1"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        14,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "15",
+    "mode": "SCM Mode",
+    "root_id": "a0714701-a863-421f-973d-332dce83c3c2",
+    "cluster": "RR-SWITCH",
+    "status": "OK",
+    "input_tokens": [
+      "activate",
+      "consumable3",
+      "mining",
+      "mining",
+      "module",
+      "slot",
+      "use"
+    ],
+    "scores": [
+      [
+        "RR-SWITCH",
+        11.836488545347528
+      ],
+      [
+        "MAIN-TRIG-R",
+        1.7346010553881064
+      ],
+      [
+        "R-CLUSTER",
+        1.7346010553881064
+      ]
+    ],
+    "actions": [
+      "v_mining_use_consumable3"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        15,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "16",
+    "mode": "SCM Mode",
+    "root_id": "4bca0c29-9c9e-47d7-a8b7-dbfb491ad752",
+    "cluster": "RR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "down",
+      "down",
+      "long",
+      "long",
+      "mfd",
+      "mfd",
+      "movement",
+      "movement"
+    ],
+    "scores": [
+      [
+        "RR-BTNS",
+        5.254365479018854
+      ],
+      [
+        "RAPID-TRIG-R",
+        1.8870696490323797
+      ],
+      [
+        "R-CLUSTER",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_mfd_movement_down_long"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        16,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "17",
+    "mode": "SCM Mode",
+    "root_id": "ac23e6a2-910a-4d57-9553-d01725684029",
+    "cluster": "RR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "long",
+      "long",
+      "mfd",
+      "mfd",
+      "movement",
+      "movement",
+      "up",
+      "up"
+    ],
+    "scores": [
+      [
+        "RR-BTNS",
+        5.254365479018854
+      ],
+      [
+        "RAPID-TRIG-R",
+        1.8870696490323797
+      ],
+      [
+        "R-CLUSTER",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_mfd_movement_up_long"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        17,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "18",
+    "mode": "SCM Mode",
+    "root_id": "b4a3bbdf-c617-44f7-938b-083f85e86409",
+    "cluster": "RR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "cycle",
+      "cycle",
+      "forwards",
+      "forwards",
+      "interact",
+      "long",
+      "long",
+      "mfd",
+      "mfd",
+      "mfd",
+      "mfd",
+      "movement",
+      "movement",
+      "page",
+      "right",
+      "right",
+      "short",
+      "short"
+    ],
+    "scores": [
+      [
+        "RR-BTNS",
+        11.329711510107538
+      ],
+      [
+        "R-CLUSTER",
+        4.59511985013459
+      ]
+    ],
+    "actions": [
+      "v_mfd_interact_cycle_forwards_short",
+      "v_mfd_movement_right_long"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        18,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "19",
+    "mode": "SCM Mode",
+    "root_id": "9a13e7f5-579b-4a47-8c0a-bdb5c057d1ad",
+    "cluster": "RR-BTNS",
+    "status": "OK",
+    "input_tokens": [
+      "backwards",
+      "backwards",
+      "cycle",
+      "cycle",
+      "interact",
+      "left",
+      "left",
+      "long",
+      "long",
+      "mfd",
+      "mfd",
+      "mfd",
+      "mfd",
+      "movement",
+      "movement",
+      "page",
+      "short",
+      "short"
+    ],
+    "scores": [
+      [
+        "RR-BTNS",
+        11.329711510107538
+      ],
+      [
+        "R-CLUSTER",
+        4.59511985013459
+      ],
+      [
+        "4WAY-HAT-R-30",
+        3.367295829986474
+      ]
+    ],
+    "actions": [
+      "v_mfd_interact_cycle_backwards_short",
+      "v_mfd_movement_left_long"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        19,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "20",
+    "mode": "SCM Mode",
+    "root_id": "c4c9b086-c809-4e39-9f8e-6848a26ccecf",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        20,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "21",
+    "mode": "SCM Mode",
+    "root_id": "f4d3543c-7d52-4277-903b-84637c012aab",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        21,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "22",
+    "mode": "SCM Mode",
+    "root_id": "11470993-f943-41cc-9703-67b0261e0b9d",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        22,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "23",
+    "mode": "SCM Mode",
+    "root_id": "3e79c694-6304-4442-914b-84787a681fed",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        23,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "24",
+    "mode": "SCM Mode",
+    "root_id": "43e34f35-1b4a-4d09-9826-04b6c4cedbfd",
+    "cluster": "MAIN-TRIG-R",
+    "status": "OK",
+    "input_tokens": [
+      "activate",
+      "attack",
+      "attack",
+      "attack1",
+      "cisalvage",
+      "drive",
+      "engage",
+      "engagement",
+      "fire",
+      "fire",
+      "fire",
+      "fire",
+      "fire",
+      "firearm",
+      "focused",
+      "focused",
+      "laser",
+      "laser",
+      "launch",
+      "launch",
+      "mining",
+      "mining",
+      "missile",
+      "missiles",
+      "preset",
+      "preset",
+      "qdrive",
+      "quantum",
+      "re",
+      "respawn",
+      "salvage",
+      "scan",
+      "scanning",
+      "scanning",
+      "spawn",
+      "tap",
+      "toggle",
+      "toggle",
+      "toggle",
+      "toggle",
+      "toggle",
+      "toggle",
+      "ui",
+      "weapon",
+      "weapon",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "MAIN-TRIG-R",
+        56.01520904713878
+      ],
+      [
+        "R-CLUSTER",
+        19.142788489593258
+      ],
+      [
+        "RR-SWITCH",
+        7.50396317569029
+      ],
+      [
+        "RAPID-TRIG-R",
+        2.70805020110221
+      ],
+      [
+        "4WAY-HAT-R-40",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_toggle_qdrive_engagement",
+      "v_scanning_trigger_scan",
+      "v_toggle_mining_laser_fire",
+      "v_salvage_toggle_fire_focused",
+      "v_weapon_preset_attack",
+      "v_weapon_toggle_launch_missile",
+      "attack1",
+      "respawn"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        24,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "25",
+    "mode": "SCM Mode",
+    "root_id": "77e77100-c598-41d0-8d45-7d50b3d05628",
+    "cluster": "R-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "fire",
+      "fire",
+      "group",
+      "guns",
+      "guns0",
+      "preset",
+      "presets",
+      "weapon",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        11.522083402754994
+      ],
+      [
+        "MAIN-TRIG-R",
+        8.814033201652784
+      ],
+      [
+        "RAPID-TRIG-R",
+        2.70805020110221
+      ],
+      [
+        "4WAY-HAT-R-40",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_weapon_preset_fire_guns0"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        25,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "26",
+    "mode": "SCM Mode",
+    "root_id": "ed35ca15-f671-48b2-9e34-becec55e227f",
+    "cluster": "RAPID-TRIG-R",
+    "status": "OK",
+    "input_tokens": [
+      "countermeasure",
+      "deploy",
+      "launch",
+      "noise",
+      "noise",
+      "tap",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "RAPID-TRIG-R",
+        3.367295829986474
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.0794415416798357
+      ],
+      [
+        "R-CLUSTER",
+        2.0794415416798357
+      ],
+      [
+        "4WAY-HAT-R-40",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_weapon_countermeasure_noise_launch"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        26,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "27",
+    "mode": "SCM Mode",
+    "root_id": "3fdeda11-308a-4127-b023-d94441cec76d",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "OK",
+    "input_tokens": [
+      "burst",
+      "burst",
+      "countermeasure",
+      "decoy",
+      "decoy",
+      "launch",
+      "launch",
+      "launch",
+      "set",
+      "tap",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-40",
+        4.787491742782046
+      ],
+      [
+        "RAPID-TRIG-R",
+        2.70805020110221
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.0794415416798357
+      ],
+      [
+        "R-CLUSTER",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_weapon_countermeasure_decoy_launch"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        27,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "28",
+    "mode": "SCM Mode",
+    "root_id": "4b09861a-dd46-41e0-a33c-4b9ee6de99a3",
+    "cluster": null,
+    "status": "UNMATCHED",
+    "input_tokens": [
+      "foip",
+      "push",
+      "pushtotalk",
+      "talk",
+      "voip"
+    ],
+    "scores": [],
+    "actions": [
+      "foip_pushtotalk"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        28,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "29",
+    "mode": "SCM Mode",
+    "root_id": "6f0db87a-8a8f-4d9b-84e0-4bb068a96b42",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "INHERITED",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        29,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "30",
+    "mode": "SCM Mode",
+    "root_id": "0b17ec05-7653-4668-83d9-f7f76354a717",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "current",
+      "lock",
+      "lock",
+      "selected",
+      "selected",
+      "selected",
+      "selected",
+      "target",
+      "target",
+      "target",
+      "target",
+      "target",
+      "target",
+      "unlock",
+      "unlock",
+      "unpin",
+      "unpin"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        24.960629753239
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.70805020110221
+      ],
+      [
+        "R-CLUSTER",
+        2.70805020110221
+      ],
+      [
+        "ANALOG-HAT-R",
+        2.70805020110221
+      ],
+      [
+        "RL-BTNS",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_target_lock_selected",
+      "v_target_unlock",
+      "v_target_unpin_selected_hold"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        30,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "31",
+    "mode": "SCM Mode",
+    "root_id": "ddfc23a1-c0bc-4746-8cde-fd13e2362604",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "back",
+      "back",
+      "back",
+      "back",
+      "cycle",
+      "cycle",
+      "cycle",
+      "cycle",
+      "hostile",
+      "hostiles",
+      "index",
+      "index",
+      "lock",
+      "lock",
+      "pin",
+      "pin",
+      "pin",
+      "selected",
+      "target",
+      "target",
+      "target",
+      "target",
+      "toggle",
+      "unpin"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        19.615597036599734
+      ],
+      [
+        "ANALOG-HAT-R",
+        13.540251005511049
+      ],
+      [
+        "R-CLUSTER",
+        5.6937321388027
+      ],
+      [
+        "RL-BTNS",
+        3.8066624897703196
+      ],
+      [
+        "RR-BTNS",
+        2.9856819377004893
+      ]
+    ],
+    "actions": [
+      "v_target_toggle_pin_index_1_hold",
+      "v_target_cycle_all_back",
+      "v_target_cycle_hostile_back"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        31,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "32",
+    "mode": "SCM Mode",
+    "root_id": "e6592421-f159-4155-9a06-def10f09d785",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "cycle",
+      "cycle",
+      "forward",
+      "fwd",
+      "index",
+      "index",
+      "lock",
+      "lock",
+      "pin",
+      "pin",
+      "pin",
+      "pin",
+      "pin",
+      "reticle",
+      "reticle",
+      "selected",
+      "selected",
+      "selected",
+      "target",
+      "target",
+      "target",
+      "target",
+      "target",
+      "target",
+      "target",
+      "toggle",
+      "under",
+      "under",
+      "unpin",
+      "view",
+      "view"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        36.4520761865321
+      ],
+      [
+        "ANALOG-HAT-R",
+        10.83220080440884
+      ],
+      [
+        "R-CLUSTER",
+        5.6937321388027
+      ],
+      [
+        "RR-BTNS",
+        5.6937321388027
+      ],
+      [
+        "RL-BTNS",
+        3.8066624897703196
+      ]
+    ],
+    "actions": [
+      "v_target_pin_selected_hold",
+      "v_target_toggle_pin_index_2_hold",
+      "v_target_cycle_in_view_fwd",
+      "v_target_under_reticle"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        32,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "33",
+    "mode": "SCM Mode",
+    "root_id": "22e6e91c-c414-48e1-89c5-f8b7a286cd72",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "cycle",
+      "cycle",
+      "cycle",
+      "cycle",
+      "forward",
+      "forward",
+      "fwd",
+      "fwd",
+      "hostile",
+      "hostiles",
+      "index",
+      "index",
+      "lock",
+      "lock",
+      "pin",
+      "pin",
+      "pin",
+      "selected",
+      "target",
+      "target",
+      "target",
+      "target",
+      "toggle",
+      "unpin"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        22.323647237701945
+      ],
+      [
+        "ANALOG-HAT-R",
+        13.540251005511049
+      ],
+      [
+        "R-CLUSTER",
+        5.6937321388027
+      ],
+      [
+        "RR-BTNS",
+        5.6937321388027
+      ],
+      [
+        "RL-BTNS",
+        3.8066624897703196
+      ]
+    ],
+    "actions": [
+      "v_target_toggle_pin_index_3_hold",
+      "v_target_cycle_all_fwd",
+      "v_target_cycle_hostile_fwd"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        33,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "34",
+    "mode": "SCM Mode",
+    "root_id": "f3691090-13b1-478b-8563-80ffe1f82315",
+    "cluster": "4WAY-HAT-R-30",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "closest",
+      "closest",
+      "cycle",
+      "cycle",
+      "cycle",
+      "cycle",
+      "hostile",
+      "hostiles",
+      "lock",
+      "lock",
+      "reset",
+      "reset",
+      "reset",
+      "reset",
+      "target",
+      "target"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-30",
+        12.150692062177368
+      ],
+      [
+        "ANALOG-HAT-R",
+        4.59511985013459
+      ],
+      [
+        "R-CLUSTER",
+        3.7741392980647595
+      ],
+      [
+        "RL-BTNS",
+        2.70805020110221
+      ],
+      [
+        "RR-BTNS",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_all_reset",
+      "v_target_cycle_hostile_reset"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        34,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "35",
+    "mode": "SCM Mode",
+    "root_id": "55afd086-19e1-4b8c-87c5-5b2b217fc713",
+    "cluster": "R-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cycle",
+      "cycle",
+      "horn",
+      "horn",
+      "left",
+      "left",
+      "modifiers",
+      "modifiers",
+      "salvage",
+      "salvage"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        13.409153051787374
+      ],
+      [
+        "RR-BTNS",
+        11.329711510107538
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_salvage_cycle_modifiers_left",
+      "v_horn"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        35,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "36",
+    "mode": "SCM Mode",
+    "root_id": "ed98495a-3ae4-4ffc-a846-7b543a48267a",
+    "cluster": "R-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "armed",
+      "bombing",
+      "cibombs",
+      "cisalvage",
+      "desired",
+      "desired",
+      "focus",
+      "focus",
+      "fracture",
+      "fracture",
+      "impact",
+      "impact",
+      "max",
+      "missiles",
+      "missiles",
+      "number",
+      "point",
+      "point",
+      "reset",
+      "reset",
+      "salvage",
+      "toggle",
+      "toggle",
+      "ui",
+      "ui",
+      "weapon",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        13.879156681033109
+      ],
+      [
+        "4WAY-HAT-R-40",
+        7.333807020698689
+      ],
+      [
+        "MAIN-TRIG-R",
+        4.1588830833596715
+      ],
+      [
+        "ANALOG-HAT-R",
+        1.8870696490323797
+      ],
+      [
+        "RR-BTNS",
+        1.0986122886681098
+      ]
+    ],
+    "actions": [
+      "v_salvage_focus_fracture",
+      "v_weapon_bombing_toggle_desired_impact_point",
+      "v_weapon_reset_max_missiles"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        36,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "37",
+    "mode": "SCM Mode",
+    "root_id": "08e94a02-92dd-4b79-8edb-a841bd96dc1e",
+    "cluster": "MAIN-TRIG-R",
+    "status": "OK",
+    "input_tokens": [
+      "all",
+      "all",
+      "armed",
+      "cisalvage",
+      "focus",
+      "focus",
+      "heads",
+      "increase",
+      "increase",
+      "increase",
+      "increase",
+      "laser",
+      "max",
+      "mining",
+      "mining",
+      "missiles",
+      "missiles",
+      "number",
+      "power",
+      "salvage",
+      "ui",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "MAIN-TRIG-R",
+        12.899608886198887
+      ],
+      [
+        "R-CLUSTER",
+        11.968830169836462
+      ],
+      [
+        "4WAY-HAT-R-40",
+        8.15478757276852
+      ],
+      [
+        "ANALOG-HAT-R",
+        2.70805020110221
+      ],
+      [
+        "4WAY-HAT-R-30",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_increase_mining_throttle",
+      "v_salvage_focus_all_heads",
+      "v_weapon_increase_max_missiles"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        37,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "38",
+    "mode": "SCM Mode",
+    "root_id": "7376928f-cf4f-4ce1-bd17-4cf975bda2c6",
+    "cluster": "MAIN-TRIG-R",
+    "status": "OK",
+    "input_tokens": [
+      "armed",
+      "cisalvage",
+      "decrease",
+      "decrease",
+      "decrease",
+      "decrease",
+      "disintegrate",
+      "disintegrate",
+      "focus",
+      "focus",
+      "laser",
+      "max",
+      "mining",
+      "mining",
+      "missiles",
+      "missiles",
+      "number",
+      "power",
+      "salvage",
+      "ui",
+      "weapon"
+    ],
+    "scores": [
+      [
+        "MAIN-TRIG-R",
+        12.899608886198887
+      ],
+      [
+        "R-CLUSTER",
+        11.968830169836462
+      ],
+      [
+        "4WAY-HAT-R-40",
+        8.15478757276852
+      ],
+      [
+        "RR-SWITCH",
+        1.7346010553881064
+      ]
+    ],
+    "actions": [
+      "v_decrease_mining_throttle",
+      "v_salvage_focus_disintegrate",
+      "v_weapon_decrease_max_missiles"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        38,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "39",
+    "mode": "SCM Mode",
+    "root_id": "4e0aa84b-0cb0-46de-8677-3a0e87767bca",
+    "cluster": "R-CLUSTER",
+    "status": "OK",
+    "input_tokens": [
+      "cycle",
+      "cycle",
+      "modifiers",
+      "modifiers",
+      "right",
+      "right",
+      "salvage",
+      "salvage"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        13.409153051787374
+      ],
+      [
+        "RR-BTNS",
+        11.329711510107538
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_salvage_cycle_modifiers_right"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        39,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "40",
+    "mode": "SCM Mode",
+    "root_id": "f3dc4db4-b475-4a78-828c-ade19aadd522",
+    "cluster": "R-CLUSTER",
+    "status": "TIE",
+    "input_tokens": [
+      "assignment",
+      "assignments",
+      "engineering",
+      "reset",
+      "reset"
+    ],
+    "scores": [
+      [
+        "R-CLUSTER",
+        1.8870696490323797
+      ],
+      [
+        "ANALOG-HAT-R",
+        1.8870696490323797
+      ],
+      [
+        "4WAY-HAT-R-40",
+        1.8870696490323797
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_reset"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        40,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "41",
+    "mode": "SCM Mode",
+    "root_id": "f0d8e993-eb7f-492f-bd74-75870313cf12",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "OK",
+    "input_tokens": [
+      "assignment",
+      "assignment",
+      "assignment",
+      "capacitor",
+      "engineering",
+      "engineering",
+      "increase",
+      "increase",
+      "max",
+      "max",
+      "tap",
+      "ui",
+      "weapon",
+      "weapons",
+      "weapons",
+      "weapons"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-40",
+        11.522083402754994
+      ],
+      [
+        "MAIN-TRIG-R",
+        2.0794415416798357
+      ],
+      [
+        "R-CLUSTER",
+        2.0794415416798357
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_weapons_increase",
+      "v_engineering_assignment_weapons_max"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        41,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "42",
+    "mode": "SCM Mode",
+    "root_id": "f6721784-a94c-4af3-9480-6dd97f697b0c",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        42,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "43",
+    "mode": "SCM Mode",
+    "root_id": "e9390fea-1da1-410f-8ef5-121ddd7251d3",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "OK",
+    "input_tokens": [
+      "assignment",
+      "assignment",
+      "assignment",
+      "capacitor",
+      "engineering",
+      "engineering",
+      "increase",
+      "increase",
+      "max",
+      "max",
+      "shield",
+      "shields",
+      "shields",
+      "shields",
+      "tap",
+      "ui"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-40",
+        12.809937691061632
+      ],
+      [
+        "ANALOG-HAT-R",
+        2.70805020110221
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_shields_increase",
+      "v_engineering_assignment_shields_max"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        43,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "button",
+    "iid": "44",
+    "mode": "SCM Mode",
+    "root_id": "8dc9d6a3-be36-4a51-86a0-fdb48f18f550",
+    "cluster": "4WAY-HAT-R-40",
+    "status": "OK",
+    "input_tokens": [
+      "assignment",
+      "assignment",
+      "assignment",
+      "capacitor",
+      "engine",
+      "engine",
+      "engine",
+      "engineering",
+      "engineering",
+      "engines",
+      "increase",
+      "increase",
+      "max",
+      "max",
+      "tap",
+      "ui"
+    ],
+    "scores": [
+      [
+        "4WAY-HAT-R-40",
+        9.442641861075158
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_engine_increase",
+      "v_engineering_assignment_engine_max"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        44,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "hat",
+    "iid": "1",
+    "mode": "SCM Mode",
+    "root_id": "7988342f-b735-410a-a2ab-6d2b6b897e7b",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        1,
+        "hat"
+      ]
+    ]
+  },
+  {
+    "device": "6686f980-1082-11f0-8008-444553540000",
+    "side": "R",
+    "itype": "axis",
+    "iid": "3",
+    "mode": "SCM Mode",
+    "root_id": "5f2f63a7-406a-417c-b092-1245bc17a148",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "input_tokens": [],
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        3,
+        "axis"
+      ]
+    ]
+  }
+]

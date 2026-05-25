@@ -1,0 +1,4537 @@
+[
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "4",
+    "mode": "Modifier Mode",
+    "cluster": "R-M1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "5",
+    "mode": "Modifier Mode",
+    "cluster": "R-M1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "1",
+    "mode": "Modifier Mode",
+    "cluster": "MAIN-TRIG-R.stage-1",
+    "status": "COHERED",
+    "scores": [
+      [
+        "R-H2",
+        13.548447772715228
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        6.456769655572163
+      ],
+      [
+        "MAIN-TRIG-R.stage-2",
+        4.51085950651685
+      ],
+      [
+        "T-B2",
+        3.2188758248682006
+      ],
+      [
+        "FLIP-TRIG-R",
+        1.9459101490553132
+      ]
+    ],
+    "actions": [
+      "v_weapon_preset_fire_guns2"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        41,
+        "button"
+      ]
+    ],
+    "inferred_from": "R-H2"
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "2",
+    "mode": "Modifier Mode",
+    "cluster": "R-H2",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        42,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "3",
+    "mode": "Modifier Mode",
+    "cluster": "T-B2",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        43,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "4",
+    "mode": "Modifier Mode",
+    "cluster": "R-H2",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        44,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "5",
+    "mode": "Modifier Mode",
+    "cluster": "R-H1",
+    "status": "INHERITED",
+    "scores": [
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.9459101490553132
+      ],
+      [
+        "R-H1",
+        1.9459101490553132
+      ],
+      [
+        "R-H2",
+        1.9459101490553132
+      ],
+      [
+        "T-H2",
+        1.9459101490553132
+      ]
+    ],
+    "actions": [
+      "v_weapon_countermeasure_noise_launch"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        45,
+        "button"
+      ]
+    ],
+    "inferred_from": "MAIN-TRIG-R.stage-1"
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "7",
+    "mode": "Modifier Mode",
+    "cluster": "R-H3",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        47,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "8",
+    "mode": "Modifier Mode",
+    "cluster": "R-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H3",
+        11.414485392156976
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        4.976733742420574
+      ],
+      [
+        "T-B1",
+        1.7578579175523736
+      ],
+      [
+        "T-B2",
+        1.7578579175523736
+      ],
+      [
+        "T-T1",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_mining_use_consumable1"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        48,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "9",
+    "mode": "Modifier Mode",
+    "cluster": "R-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H3",
+        11.414485392156976
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        4.976733742420574
+      ],
+      [
+        "T-B1",
+        1.7578579175523736
+      ],
+      [
+        "T-B2",
+        1.7578579175523736
+      ],
+      [
+        "T-T1",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_mining_use_consumable3"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        49,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "10",
+    "mode": "Modifier Mode",
+    "cluster": "R-H3",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        50,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "11",
+    "mode": "Modifier Mode",
+    "cluster": "R-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H3",
+        11.414485392156976
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        4.976733742420574
+      ],
+      [
+        "T-B1",
+        1.7578579175523736
+      ],
+      [
+        "T-B2",
+        1.7578579175523736
+      ],
+      [
+        "T-T1",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_mining_use_consumable2"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        51,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "12",
+    "mode": "Modifier Mode",
+    "cluster": "R-B1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-B1",
+        24.729355351413624
+      ],
+      [
+        "R-H2",
+        2.1972245773362196
+      ],
+      [
+        "R-M1",
+        2.1972245773362196
+      ]
+    ],
+    "actions": [
+      "v_target_hail",
+      "notification_accept",
+      "notification_decline",
+      "foip_pushtotalk_proximity"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        52,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "13",
+    "mode": "Modifier Mode",
+    "cluster": "R-B6",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        53,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "14",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        54,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "15",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        55,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "16",
+    "mode": "Modifier Mode",
+    "cluster": "R-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H1",
+        14.786526189527676
+      ],
+      [
+        "R-H3",
+        2.5649493574615367
+      ],
+      [
+        "T-E2",
+        2.5649493574615367
+      ],
+      [
+        "T-H1",
+        2.5649493574615367
+      ],
+      [
+        "T-H2",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_eject",
+      "v_engineering_assignment_shields_decrease",
+      "v_engineering_assignment_shields_max",
+      "v_engineering_assignment_shields_min"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        56,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "17",
+    "mode": "Modifier Mode",
+    "cluster": "R-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H1",
+        9.002701007197938
+      ],
+      [
+        "T-H1",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_engine_decrease",
+      "v_engineering_assignment_engine_min"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        57,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "18",
+    "mode": "Modifier Mode",
+    "cluster": "R-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H1",
+        10.948611156253252
+      ],
+      [
+        "T-H1",
+        2.5649493574615367
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.9459101490553132
+      ],
+      [
+        "R-H2",
+        1.9459101490553132
+      ],
+      [
+        "T-H2",
+        1.9459101490553132
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_weapons_decrease",
+      "v_engineering_assignment_weapons_min"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        58,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "19",
+    "mode": "Modifier Mode",
+    "cluster": "R-B1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        59,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "20",
+    "mode": "Modifier Mode",
+    "cluster": "R-H2",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        60,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "21",
+    "mode": "Modifier Mode",
+    "cluster": "R-H2",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        61,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "22",
+    "mode": "Modifier Mode",
+    "cluster": "R-H2",
+    "status": "INHERITED",
+    "scores": [
+      [
+        "R-H3",
+        3.0975149678639333
+      ],
+      [
+        "T-B1",
+        3.0975149678639333
+      ],
+      [
+        "T-B2",
+        3.0975149678639333
+      ],
+      [
+        "T-H3",
+        3.0975149678639333
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.6094379124341003
+      ]
+    ],
+    "actions": [
+      "v_salvage_cycle_modifiers_right"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        62,
+        "button"
+      ]
+    ],
+    "inferred_from": "R-H3"
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "23",
+    "mode": "Modifier Mode",
+    "cluster": "R-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H2",
+        4.706952880298034
+      ],
+      [
+        "R-H3",
+        3.0975149678639333
+      ],
+      [
+        "T-B1",
+        3.0975149678639333
+      ],
+      [
+        "T-B2",
+        3.0975149678639333
+      ],
+      [
+        "T-H3",
+        3.0975149678639333
+      ]
+    ],
+    "actions": [
+      "v_salvage_cycle_modifiers_structural"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        63,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "24",
+    "mode": "Modifier Mode",
+    "cluster": "R-H2",
+    "status": "INHERITED",
+    "scores": [
+      [
+        "R-H3",
+        3.0975149678639333
+      ],
+      [
+        "T-B1",
+        3.0975149678639333
+      ],
+      [
+        "T-B2",
+        3.0975149678639333
+      ],
+      [
+        "T-H3",
+        3.0975149678639333
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.6094379124341003
+      ]
+    ],
+    "actions": [
+      "v_salvage_cycle_modifiers_left"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        64,
+        "button"
+      ]
+    ],
+    "inferred_from": "R-H3"
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "25",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        65,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "26",
+    "mode": "Modifier Mode",
+    "cluster": "R-H2",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        66,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "27",
+    "mode": "Modifier Mode",
+    "cluster": "R-M1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        67,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "28",
+    "mode": "Modifier Mode",
+    "cluster": "R-M1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        68,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "29",
+    "mode": "Modifier Mode",
+    "cluster": "R-M1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        69,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "30",
+    "mode": "Modifier Mode",
+    "cluster": "R-M1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        70,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "31",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        71,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "32",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        72,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "33",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        73,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "34",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        74,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "35",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        75,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "36",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        76,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "1",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "TIE",
+    "scores": [
+      [
+        "R-H2",
+        3.2188758248682006
+      ],
+      [
+        "T-H1",
+        3.2188758248682006
+      ],
+      [
+        "T-B3",
+        1.7578579175523736
+      ],
+      [
+        "T-E2",
+        1.7578579175523736
+      ],
+      [
+        "T-H2",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_yaw",
+      "turret_yaw",
+      "eva_view_yaw",
+      "v_view_yaw",
+      "v_yaw"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        1,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "2",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "TIE",
+    "scores": [
+      [
+        "R-H2",
+        3.2188758248682006
+      ],
+      [
+        "T-H1",
+        3.2188758248682006
+      ],
+      [
+        "T-B3",
+        1.7578579175523736
+      ],
+      [
+        "T-E2",
+        1.7578579175523736
+      ],
+      [
+        "T-H2",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_pitch",
+      "turret_pitch",
+      "eva_view_pitch",
+      "v_view_pitch",
+      "v_pitch"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        2,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "3",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "UNMATCHED",
+    "scores": [],
+    "actions": [
+      "v_roll",
+      "eva_roll"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        3,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "4",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-M1",
+        18.758029509575074
+      ],
+      [
+        "T-H2",
+        4.706952880298034
+      ],
+      [
+        "R-H2",
+        3.685301632766053
+      ],
+      [
+        "R-H3",
+        3.685301632766053
+      ],
+      [
+        "R-B1",
+        2.1972245773362196
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_all_fwd",
+      "v_target_cycle_hostile_fwd",
+      "v_target_cycle_all_back",
+      "v_target_cycle_hostile_back"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        4,
+        "axis"
+      ],
+      [
+        2,
+        38,
+        "button"
+      ],
+      [
+        2,
+        40,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "5",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-M1",
+        44.509036108520675
+      ],
+      [
+        "R-H2",
+        5.294739545200153
+      ],
+      [
+        "R-H3",
+        5.294739545200153
+      ],
+      [
+        "T-H2",
+        4.706952880298034
+      ],
+      [
+        "T-H3",
+        3.0975149678639333
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_attacker_fwd",
+      "v_target_under_reticle",
+      "v_target_cycle_all_reset",
+      "v_target_cycle_hostile_reset"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        5,
+        "axis"
+      ],
+      [
+        2,
+        37,
+        "button"
+      ],
+      [
+        2,
+        39,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "6",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "UNMATCHED",
+    "scores": [],
+    "actions": [
+      "v_space_brake",
+      "eva_brake",
+      "v_brake"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        6,
+        "axis"
+      ],
+      [
+        2,
+        81,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "7",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        7,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "axis",
+    "iid": "8",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        8,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "1",
+    "mode": "SCM Mode",
+    "cluster": "MAIN-TRIG-R.stage-1",
+    "status": "OK",
+    "scores": [
+      [
+        "MAIN-TRIG-R.stage-1",
+        39.38173457427456
+      ],
+      [
+        "R-H2",
+        14.772223204337344
+      ],
+      [
+        "T-B2",
+        7.5416830998821105
+      ],
+      [
+        "T-B3",
+        3.4210000089583352
+      ],
+      [
+        "T-H1",
+        3.4210000089583352
+      ]
+    ],
+    "actions": [
+      "v_toggle_qdrive_engagement",
+      "v_scanning_trigger_scan",
+      "v_toggle_mining_laser_fire",
+      "v_weapon_preset_attack",
+      "attack1",
+      "respawn"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        1,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "2",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H2",
+        16.113397130176764
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        6.456769655572163
+      ],
+      [
+        "MAIN-TRIG-R.stage-2",
+        4.51085950651685
+      ],
+      [
+        "T-B2",
+        3.2188758248682006
+      ],
+      [
+        "R-H3",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_weapon_preset_fire_guns0",
+      "attackSecondary"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        2,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "3",
+    "mode": "SCM Mode",
+    "cluster": "T-B2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-B2",
+        6.922643891475888
+      ],
+      [
+        "FLIP-TRIG-R",
+        3.7037680666076866
+      ],
+      [
+        "R-H2",
+        3.169685580677429
+      ],
+      [
+        "T-H1",
+        3.169685580677429
+      ],
+      [
+        "T-H3",
+        2.9816333491744893
+      ]
+    ],
+    "actions": [
+      "v_toggle_missile_mode",
+      "v_toggle_missile_mode",
+      "v_toggle_guns_mode",
+      "v_toggle_guns_mode"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        3,
+        "button"
+      ],
+      [
+        2,
+        3,
+        "button"
+      ],
+      [
+        1,
+        123,
+        "button"
+      ],
+      [
+        1,
+        123,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "4",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H2",
+        5.115595729732743
+      ],
+      [
+        "T-H1",
+        3.169685580677429
+      ],
+      [
+        "T-H2",
+        3.169685580677429
+      ],
+      [
+        "FLIP-TRIG-R",
+        1.9459101490553132
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.9459101490553132
+      ]
+    ],
+    "actions": [
+      "v_weapon_toggle_launch_missile"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        4,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "5",
+    "mode": "SCM Mode",
+    "cluster": "R-H1",
+    "status": "TIE",
+    "scores": [
+      [
+        "R-H1",
+        4.51085950651685
+      ],
+      [
+        "R-H2",
+        4.51085950651685
+      ],
+      [
+        "R-B4",
+        3.2188758248682006
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.9459101490553132
+      ],
+      [
+        "T-H2",
+        1.9459101490553132
+      ]
+    ],
+    "actions": [
+      "v_weapon_countermeasure_decoy_launch"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        5,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "6",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-M1",
+        27.948231176281823
+      ],
+      [
+        "T-H2",
+        3.2188758248682006
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        2.5649493574615367
+      ],
+      [
+        "MAIN-TRIG-R.stage-2",
+        2.5649493574615367
+      ],
+      [
+        "R-B1",
+        2.1972245773362196
+      ]
+    ],
+    "actions": [
+      "v_target_lock_selected",
+      "v_target_unlock"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        6,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "7",
+    "mode": "SCM Mode",
+    "cluster": "R-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H3",
+        20.049461619229596
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        13.023923304591076
+      ],
+      [
+        "T-H3",
+        10.880402906226717
+      ],
+      [
+        "R-H2",
+        6.052089168924416
+      ],
+      [
+        "R-H1",
+        4.828313737302301
+      ]
+    ],
+    "actions": [
+      "v_toggle_mining_laser_type",
+      "v_salvage_focus_all_heads",
+      "v_shield_reset_level"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        7,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "8",
+    "mode": "SCM Mode",
+    "cluster": "R-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H3",
+        13.831014744500239
+      ],
+      [
+        "FLIP-TRIG-R",
+        3.2188758248682006
+      ],
+      [
+        "R-H1",
+        3.2188758248682006
+      ],
+      [
+        "R-M1",
+        3.2188758248682006
+      ],
+      [
+        "R-H2",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_salvage_focus_fracture",
+      "v_shield_raise_level_forward"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        8,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "9",
+    "mode": "SCM Mode",
+    "cluster": "R-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H3",
+        4.828313737302301
+      ],
+      [
+        "FLIP-TRIG-R",
+        3.2188758248682006
+      ],
+      [
+        "R-H1",
+        3.2188758248682006
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.6094379124341003
+      ],
+      [
+        "T-B1",
+        1.6094379124341003
+      ]
+    ],
+    "actions": [
+      "v_salvage_focus_right",
+      "v_shield_raise_level_right"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        9,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "10",
+    "mode": "SCM Mode",
+    "cluster": "R-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H3",
+        4.828313737302301
+      ],
+      [
+        "FLIP-TRIG-R",
+        3.2188758248682006
+      ],
+      [
+        "R-H1",
+        3.2188758248682006
+      ],
+      [
+        "R-H2",
+        3.2188758248682006
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.6094379124341003
+      ]
+    ],
+    "actions": [
+      "v_salvage_focus_disintegrate",
+      "v_shield_raise_level_back"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        10,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "11",
+    "mode": "SCM Mode",
+    "cluster": "R-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H3",
+        4.828313737302301
+      ],
+      [
+        "FLIP-TRIG-R",
+        3.2188758248682006
+      ],
+      [
+        "R-H1",
+        3.2188758248682006
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.6094379124341003
+      ],
+      [
+        "T-B1",
+        1.6094379124341003
+      ]
+    ],
+    "actions": [
+      "v_salvage_focus_left",
+      "v_shield_raise_level_left"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        11,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "12",
+    "mode": "SCM Mode",
+    "cluster": "R-B1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-B1",
+        23.755906205699517
+      ],
+      [
+        "R-B5",
+        1.2237754316221157
+      ],
+      [
+        "R-B6",
+        1.2237754316221157
+      ],
+      [
+        "R-H2",
+        1.2237754316221157
+      ],
+      [
+        "T-B3",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "toggle_chat",
+      "foip_pushtotalk"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        12,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "13",
+    "mode": "SCM Mode",
+    "cluster": "R-B6",
+    "status": "OK",
+    "scores": [
+      [
+        "R-B6",
+        16.296503308431138
+      ],
+      [
+        "R-M1",
+        5.41610040220442
+      ],
+      [
+        "R-H2",
+        3.169685580677429
+      ],
+      [
+        "T-H2",
+        3.169685580677429
+      ],
+      [
+        "R-H3",
+        2.1972245773362196
+      ]
+    ],
+    "actions": [
+      "v_mfd_quick_action_repair_all",
+      "v_weapon_bombing_toggle_desired_impact_point"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        13,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "14",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        14,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "15",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        15,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "16",
+    "mode": "SCM Mode",
+    "cluster": "R-H1",
+    "status": "TIE",
+    "scores": [
+      [
+        "R-H1",
+        2.5649493574615367
+      ],
+      [
+        "R-H3",
+        2.5649493574615367
+      ],
+      [
+        "T-H1",
+        2.5649493574615367
+      ],
+      [
+        "T-H2",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_shields_increase"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        16,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "17",
+    "mode": "SCM Mode",
+    "cluster": "R-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H1",
+        8.348774539791274
+      ],
+      [
+        "T-E2",
+        2.5649493574615367
+      ],
+      [
+        "T-H1",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_engine_increase",
+      "v_engineering_assignment_engine_max"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        17,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "18",
+    "mode": "SCM Mode",
+    "cluster": "R-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H1",
+        10.294684688846587
+      ],
+      [
+        "T-E2",
+        2.5649493574615367
+      ],
+      [
+        "T-H1",
+        2.5649493574615367
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.9459101490553132
+      ],
+      [
+        "R-H2",
+        1.9459101490553132
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_weapons_increase",
+      "v_engineering_assignment_weapons_max"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        18,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "19",
+    "mode": "SCM Mode",
+    "cluster": "R-B1",
+    "status": "TIE",
+    "scores": [
+      [
+        "R-B1",
+        1.2237754316221157
+      ],
+      [
+        "R-B5",
+        1.2237754316221157
+      ],
+      [
+        "R-B6",
+        1.2237754316221157
+      ],
+      [
+        "R-H2",
+        1.2237754316221157
+      ],
+      [
+        "T-B3",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "v_ifcs_vector_decoupling_toggle",
+      "v_horn"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        19,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "20",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H2",
+        42.850407951895804
+      ],
+      [
+        "T-T1",
+        18.593188679297995
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        10.882471353748706
+      ],
+      [
+        "T-H2",
+        7.876638460975462
+      ],
+      [
+        "R-H1",
+        6.12029741895095
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_subitem_reset",
+      "v_salvage_toggle_beam_spacing_axis",
+      "v_weapon_reset_max_missiles"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        20,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "21",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H2",
+        14.11829673693068
+      ],
+      [
+        "R-H1",
+        7.075808863978387
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        5.5012582105447265
+      ],
+      [
+        "R-H3",
+        4.174387269895637
+      ],
+      [
+        "T-H1",
+        3.7887247890836524
+      ]
+    ],
+    "actions": [
+      "v_salvage_toggle_fire_fracture",
+      "v_weapon_increase_max_missiles"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        21,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "22",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H2",
+        55.15714259230225
+      ],
+      [
+        "T-B2",
+        14.046126124117183
+      ],
+      [
+        "R-M1",
+        13.341929107370653
+      ],
+      [
+        "T-H2",
+        7.876638460975462
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        5.5012582105447265
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_subitem_fwd",
+      "v_salvage_toggle_fire_right",
+      "v_weapon_preset_next_overflow",
+      "v_weapon_cycle_missile_fwd"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        22,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "23",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H2",
+        39.86930333587628
+      ],
+      [
+        "R-H1",
+        9.640758221439924
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        8.066207568006263
+      ],
+      [
+        "T-H1",
+        6.353674146545189
+      ],
+      [
+        "T-B2",
+        4.174387269895637
+      ]
+    ],
+    "actions": [
+      "v_salvage_toggle_fire_disintegrate",
+      "v_weapon_preset_emp",
+      "v_weapon_preset_qid",
+      "v_weapon_preset_qid_jammer",
+      "v_weapon_preset_qid_pulse",
+      "v_weapon_decrease_max_missiles"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        23,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "24",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H2",
+        49.373317409972515
+      ],
+      [
+        "T-B2",
+        8.262300941787448
+      ],
+      [
+        "T-H2",
+        7.876638460975462
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        5.5012582105447265
+      ],
+      [
+        "T-H3",
+        4.321290399486049
+      ]
+    ],
+    "actions": [
+      "v_target_cycle_subitem_back",
+      "v_salvage_toggle_fire_left",
+      "v_weapon_preset_prev_overflow",
+      "v_weapon_cycle_missile_back"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        24,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "25",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        25,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "26",
+    "mode": "SCM Mode",
+    "cluster": "R-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "R-H2",
+        8.047189562170502
+      ],
+      [
+        "FLIP-TRIG-R",
+        1.6094379124341003
+      ],
+      [
+        "R-H1",
+        1.6094379124341003
+      ],
+      [
+        "R-H3",
+        1.6094379124341003
+      ],
+      [
+        "T-H1",
+        1.6094379124341003
+      ]
+    ],
+    "actions": [
+      "v_engineering_assignment_reset"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        26,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "27",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-M1",
+        3.2188758248682006
+      ]
+    ],
+    "actions": [
+      "v_mfd_movement_up_long"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        27,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "28",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-M1",
+        7.925828705166234
+      ],
+      [
+        "R-H2",
+        1.488077055429833
+      ],
+      [
+        "R-H3",
+        1.488077055429833
+      ],
+      [
+        "T-B1",
+        1.488077055429833
+      ],
+      [
+        "T-B2",
+        1.488077055429833
+      ]
+    ],
+    "actions": [
+      "v_mfd_interact_cycle_forwards_short",
+      "v_mfd_movement_right_long"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        28,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "29",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-M1",
+        3.2188758248682006
+      ]
+    ],
+    "actions": [
+      "v_mfd_movement_down_long"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        29,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "30",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-M1",
+        7.925828705166234
+      ],
+      [
+        "R-H2",
+        1.488077055429833
+      ],
+      [
+        "R-H3",
+        1.488077055429833
+      ],
+      [
+        "T-B1",
+        1.488077055429833
+      ],
+      [
+        "T-B2",
+        1.488077055429833
+      ]
+    ],
+    "actions": [
+      "v_mfd_interact_cycle_backwards_short",
+      "v_mfd_movement_left_long"
+    ],
+    "vjoy_targets": [
+      [
+        2,
+        30,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "31",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        31,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "32",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        32,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "33",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        33,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "34",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        34,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "35",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        35,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "40440b60-c93b-11f0-8002-444553540000",
+    "device_short": "40440b60",
+    "itype": "button",
+    "iid": "36",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        2,
+        36,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "3",
+    "mode": "Aux Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": []
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "21",
+    "mode": "Aux Mode",
+    "cluster": "T-B2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-B2",
+        36.69178964431242
+      ],
+      [
+        "T-B1",
+        8.375833687905281
+      ],
+      [
+        "R-M1",
+        4.706952880298034
+      ],
+      [
+        "R-H2",
+        4.05302641289137
+      ],
+      [
+        "T-H3",
+        3.245934972982207
+      ]
+    ],
+    "actions": [
+      "v_operator_mode_cycle_forward",
+      "v_master_mode_cycle_long"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        21,
+        "button"
+      ],
+      [
+        1,
+        124,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "22",
+    "mode": "Aux Mode",
+    "cluster": "T-B1",
+    "status": "COHERED",
+    "scores": [
+      [
+        "T-B2",
+        14.78178122214345
+      ],
+      [
+        "T-H3",
+        11.02882291134499
+      ],
+      [
+        "T-B1",
+        5.125153747538848
+      ],
+      [
+        "T-M1",
+        4.442651256490317
+      ],
+      [
+        "R-H2",
+        3.7887247890836524
+      ]
+    ],
+    "actions": [
+      "v_master_mode_set_scm",
+      "v_toggle_mining_mode",
+      "v_toggle_salvage_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        22,
+        "button"
+      ],
+      [
+        1,
+        128,
+        "button"
+      ],
+      [
+        1,
+        125,
+        "button"
+      ]
+    ],
+    "inferred_from": "T-B2"
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "1",
+    "mode": "Modifier Mode",
+    "cluster": "T-E1",
+    "status": "COHERED",
+    "scores": [
+      [
+        "T-H3",
+        17.852237041893375
+      ],
+      [
+        "T-B3",
+        13.979434749618513
+      ],
+      [
+        "FLIP-TRIG-R",
+        2.5649493574615367
+      ],
+      [
+        "T-E2",
+        1.7578579175523736
+      ],
+      [
+        "T-H2",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_emergency_exit",
+      "turret_remote_exit"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        41,
+        "button"
+      ]
+    ],
+    "inferred_from": "T-H3"
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "2",
+    "mode": "Modifier Mode",
+    "cluster": "T-B3",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        42,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "3",
+    "mode": "Modifier Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": []
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "4",
+    "mode": "Modifier Mode",
+    "cluster": "T-H3",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        44,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "5",
+    "mode": "Modifier Mode",
+    "cluster": "T-H3",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        45,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "6",
+    "mode": "Modifier Mode",
+    "cluster": "T-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H3",
+        10.226476438820054
+      ],
+      [
+        "T-H1",
+        3.7887247890836524
+      ],
+      [
+        "T-H2",
+        3.7887247890836524
+      ],
+      [
+        "T-B2",
+        2.5649493574615367
+      ],
+      [
+        "R-B1",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "v_flight_advanced_hud_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        46,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "7",
+    "mode": "Modifier Mode",
+    "cluster": "T-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H3",
+        4.442651256490317
+      ],
+      [
+        "T-H1",
+        3.7887247890836524
+      ],
+      [
+        "T-H2",
+        3.7887247890836524
+      ],
+      [
+        "R-B1",
+        1.2237754316221157
+      ],
+      [
+        "R-B5",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "v_ifcs_toggle_gforce_safety"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        47,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "8",
+    "mode": "Modifier Mode",
+    "cluster": "T-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H3",
+        23.755906205699517
+      ],
+      [
+        "R-H2",
+        3.169685580677429
+      ],
+      [
+        "T-H2",
+        3.169685580677429
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        1.9459101490553132
+      ],
+      [
+        "R-H1",
+        1.9459101490553132
+      ]
+    ],
+    "actions": [
+      "v_weapon_pip_toggle_lead_lag"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        48,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "9",
+    "mode": "Modifier Mode",
+    "cluster": "T-H1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        49,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "10",
+    "mode": "Modifier Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        12.875503299472802
+      ]
+    ],
+    "actions": [
+      "v_atc_loading_area_request"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        50,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "11",
+    "mode": "Modifier Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        26.320855563161054
+      ],
+      [
+        "R-H3",
+        2.5649493574615367
+      ],
+      [
+        "R-B1",
+        1.2237754316221157
+      ],
+      [
+        "R-B5",
+        1.2237754316221157
+      ],
+      [
+        "R-B6",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "v_power_toggle_shields"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        51,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "12",
+    "mode": "Modifier Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        17.31815455596312
+      ],
+      [
+        "R-B1",
+        1.2237754316221157
+      ],
+      [
+        "R-B5",
+        1.2237754316221157
+      ],
+      [
+        "R-B6",
+        1.2237754316221157
+      ],
+      [
+        "R-H2",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "v_power_toggle_thrusters"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        52,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "13",
+    "mode": "Modifier Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        17.31815455596312
+      ],
+      [
+        "R-B1",
+        1.2237754316221157
+      ],
+      [
+        "R-B5",
+        1.2237754316221157
+      ],
+      [
+        "R-B6",
+        1.2237754316221157
+      ],
+      [
+        "R-H2",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "v_power_toggle_weapons"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        53,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "14",
+    "mode": "Modifier Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        24.205911188438566
+      ],
+      [
+        "T-E2",
+        19.61009495944575
+      ],
+      [
+        "T-H3",
+        19.526017456254536
+      ],
+      [
+        "R-B6",
+        3.4210000089583352
+      ],
+      [
+        "T-B3",
+        2.9816333491744893
+      ]
+    ],
+    "actions": [
+      "turret_toggle_mouse_mode",
+      "v_power_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        54,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "15",
+    "mode": "Modifier Mode",
+    "cluster": "T-M1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        55,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "16",
+    "mode": "Modifier Mode",
+    "cluster": "R-M1",
+    "status": "COHERED",
+    "scores": [
+      [
+        "T-H1",
+        13.177088277093574
+      ],
+      [
+        "T-H3",
+        4.174387269895637
+      ],
+      [
+        "R-H1",
+        3.5553480614894135
+      ],
+      [
+        "R-H2",
+        3.5553480614894135
+      ],
+      [
+        "T-T1",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_weapon_bombing_hud_range_reset"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        56,
+        "button"
+      ]
+    ],
+    "inferred_from": "T-H1"
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "17",
+    "mode": "Modifier Mode",
+    "cluster": "T-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H1",
+        18.57525097861133
+      ],
+      [
+        "T-H2",
+        8.918623504006726
+      ],
+      [
+        "R-B1",
+        1.2237754316221157
+      ],
+      [
+        "R-B5",
+        1.2237754316221157
+      ],
+      [
+        "R-B6",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "v_dock_toggle_view"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        57,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "18",
+    "mode": "Modifier Mode",
+    "cluster": "T-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H1",
+        32.42420342379823
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        6.340359303727753
+      ],
+      [
+        "T-T1",
+        4.762173934797756
+      ],
+      [
+        "R-H1",
+        4.51085950651685
+      ],
+      [
+        "R-H2",
+        4.143134726391533
+      ]
+    ],
+    "actions": [
+      "v_dec_scan_focus_level",
+      "tractor_beam_vehicle_decrease_distance",
+      "v_weapon_bombing_hud_range_decrease"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        58,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "19",
+    "mode": "Modifier Mode",
+    "cluster": "T-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H1",
+        12.875503299472802
+      ],
+      [
+        "T-H3",
+        3.2188758248682006
+      ]
+    ],
+    "actions": [
+      "headtrack_recenter_device"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        59,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "20",
+    "mode": "Modifier Mode",
+    "cluster": "R-M1",
+    "status": "COHERED",
+    "scores": [
+      [
+        "T-H1",
+        38.86195507353463
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        6.340359303727753
+      ],
+      [
+        "T-T1",
+        4.762173934797756
+      ],
+      [
+        "R-H1",
+        4.51085950651685
+      ],
+      [
+        "R-H2",
+        4.143134726391533
+      ]
+    ],
+    "actions": [
+      "v_inc_scan_focus_level",
+      "tractor_beam_vehicle_increase_distance",
+      "v_weapon_bombing_hud_range_increase"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        60,
+        "button"
+      ]
+    ],
+    "inferred_from": "T-H1"
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "21",
+    "mode": "Modifier Mode",
+    "cluster": "T-B2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-B2",
+        18.032461162509883
+      ],
+      [
+        "T-B1",
+        8.375833687905281
+      ],
+      [
+        "R-H2",
+        4.706952880298034
+      ],
+      [
+        "T-H3",
+        3.245934972982207
+      ],
+      [
+        "FLIP-TRIG-R",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_operator_mode_cycle_back"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        61,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "22",
+    "mode": "Modifier Mode",
+    "cluster": "T-B1",
+    "status": "INHERITED",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        62,
+        "button"
+      ]
+    ],
+    "inferred_from": null
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "21",
+    "mode": "NAV Mode",
+    "cluster": "T-B2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-B2",
+        36.69178964431242
+      ],
+      [
+        "T-B1",
+        8.375833687905281
+      ],
+      [
+        "R-H2",
+        6.617975770352906
+      ],
+      [
+        "R-M1",
+        4.706952880298034
+      ],
+      [
+        "T-H3",
+        3.245934972982207
+      ]
+    ],
+    "actions": [
+      "v_operator_mode_cycle_forward",
+      "v_master_mode_cycle_long",
+      "v_master_mode_set_scm"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        21,
+        "button"
+      ],
+      [
+        1,
+        128,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "22",
+    "mode": "NAV Mode",
+    "cluster": "T-B1",
+    "status": "TIE",
+    "scores": [
+      [
+        "T-B1",
+        5.125153747538848
+      ],
+      [
+        "T-B2",
+        5.125153747538848
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        3.3672958299864737
+      ],
+      [
+        "R-H3",
+        3.3672958299864737
+      ],
+      [
+        "T-H3",
+        3.3672958299864737
+      ]
+    ],
+    "actions": [
+      "v_set_mining_mode",
+      "v_set_salvage_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        22,
+        "button"
+      ],
+      [
+        1,
+        126,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "axis",
+    "iid": "1",
+    "mode": "SCM Mode",
+    "cluster": "T-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-M1",
+        3.2188758248682006
+      ],
+      [
+        "T-E2",
+        2.5649493574615367
+      ],
+      [
+        "T-T1",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_strafe_lateral",
+      "gp_movex",
+      "eva_strafe_lateral"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        1,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "axis",
+    "iid": "2",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-M1",
+        6.437751649736401
+      ],
+      [
+        "T-M1",
+        3.2188758248682006
+      ],
+      [
+        "T-E2",
+        2.5649493574615367
+      ],
+      [
+        "T-T1",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_strafe_vertical",
+      "gp_movey",
+      "eva_strafe_vertical"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        2,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "axis",
+    "iid": "4",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        4,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "axis",
+    "iid": "5",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        5,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "axis",
+    "iid": "6",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": [
+      [
+        1,
+        6,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "axis",
+    "iid": "7",
+    "mode": "SCM Mode",
+    "cluster": "T-T1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-T1",
+        12.20570757890146
+      ],
+      [
+        "T-E2",
+        9.640758221439924
+      ],
+      [
+        "T-H1",
+        2.5649493574615367
+      ],
+      [
+        "T-E1",
+        1.9459101490553132
+      ],
+      [
+        "T-M1",
+        1.9459101490553132
+      ]
+    ],
+    "actions": [
+      "v_accel_range_abs"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        7,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "axis",
+    "iid": "8",
+    "mode": "SCM Mode",
+    "cluster": "T-E2",
+    "status": "TIE",
+    "scores": [
+      [
+        "T-E2",
+        17.335606293824533
+      ],
+      [
+        "T-T1",
+        17.335606293824533
+      ],
+      [
+        "T-E1",
+        1.9459101490553132
+      ],
+      [
+        "T-M1",
+        1.9459101490553132
+      ]
+    ],
+    "actions": [
+      "v_ifcs_speed_limiter_abs"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        8,
+        "axis"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "1",
+    "mode": "SCM Mode",
+    "cluster": "T-E1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-E1",
+        4.442651256490317
+      ],
+      [
+        "T-H3",
+        2.9816333491744893
+      ],
+      [
+        "FLIP-TRIG-R",
+        1.7578579175523736
+      ],
+      [
+        "T-B1",
+        1.7578579175523736
+      ],
+      [
+        "T-B2",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_ifcs_throttle_swap_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        1,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "2",
+    "mode": "SCM Mode",
+    "cluster": "T-B3",
+    "status": "OK",
+    "scores": [
+      [
+        "T-B3",
+        7.661527081358517
+      ],
+      [
+        "T-H2",
+        4.442651256490317
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        3.2188758248682006
+      ],
+      [
+        "R-B1",
+        1.2237754316221157
+      ],
+      [
+        "R-B5",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "v_invoke_ping",
+      "v_light_amplification_toggle",
+      "v_light_amplification_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        2,
+        "button"
+      ],
+      [
+        1,
+        23,
+        "button"
+      ],
+      [
+        1,
+        23,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "3",
+    "mode": "SCM Mode",
+    "cluster": null,
+    "status": "NO-VJOY",
+    "scores": [],
+    "actions": [],
+    "vjoy_targets": []
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "4",
+    "mode": "SCM Mode",
+    "cluster": "T-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H3",
+        40.14712534027707
+      ],
+      [
+        "T-H2",
+        4.927543498229802
+      ],
+      [
+        "R-H2",
+        4.779123493111529
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        3.5553480614894135
+      ],
+      [
+        "R-H1",
+        3.5553480614894135
+      ]
+    ],
+    "actions": [
+      "v_salvage_reset_gimbal",
+      "v_salvage_toggle_gimbal_mode",
+      "turret_recenter",
+      "v_weapon_gimbals_state_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        4,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "5",
+    "mode": "SCM Mode",
+    "cluster": "T-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H3",
+        12.638260823779092
+      ],
+      [
+        "T-B3",
+        2.9816333491744893
+      ],
+      [
+        "T-H2",
+        2.9816333491744893
+      ],
+      [
+        "T-E2",
+        1.7578579175523736
+      ],
+      [
+        "T-T1",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "turret_gyromode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        5,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "6",
+    "mode": "SCM Mode",
+    "cluster": "T-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H3",
+        19.07601247351549
+      ],
+      [
+        "T-H2",
+        5.546582706636026
+      ],
+      [
+        "T-H1",
+        3.7887247890836524
+      ],
+      [
+        "T-B3",
+        2.9816333491744893
+      ],
+      [
+        "T-E2",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_enter_remote_turret_3",
+      "v_ifcs_toggle_esp",
+      "turret_esp_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        6,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "7",
+    "mode": "SCM Mode",
+    "cluster": "T-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H3",
+        12.638260823779092
+      ],
+      [
+        "T-H2",
+        7.4924928556913395
+      ],
+      [
+        "R-H2",
+        5.115595729732743
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        3.8918202981106265
+      ],
+      [
+        "T-H1",
+        3.7887247890836524
+      ]
+    ],
+    "actions": [
+      "v_enter_remote_turret_1",
+      "v_weapon_staggered_fire_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        7,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "8",
+    "mode": "SCM Mode",
+    "cluster": "T-H3",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H3",
+        11.414485392156976
+      ],
+      [
+        "T-B3",
+        1.7578579175523736
+      ],
+      [
+        "T-E2",
+        1.7578579175523736
+      ],
+      [
+        "T-H2",
+        1.7578579175523736
+      ],
+      [
+        "T-T1",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_enter_remote_turret_2"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        8,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "9",
+    "mode": "SCM Mode",
+    "cluster": "T-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H1",
+        16.01030162114979
+      ],
+      [
+        "T-E2",
+        14.132599722121011
+      ],
+      [
+        "R-H1",
+        7.075808863978387
+      ],
+      [
+        "R-B4",
+        3.2188758248682006
+      ],
+      [
+        "R-H2",
+        3.169685580677429
+      ]
+    ],
+    "actions": [
+      "v_ads_stable_max_zoom_hold",
+      "v_ads_toggle",
+      "v_weapon_countermeasure_decoy_burst_decrease",
+      "v_view_dynamic_zoom_abs_toggle"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        9,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "10",
+    "mode": "SCM Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        16.04518888015023
+      ],
+      [
+        "R-H1",
+        4.51085950651685
+      ],
+      [
+        "T-H1",
+        3.7887247890836524
+      ],
+      [
+        "R-B4",
+        3.2188758248682006
+      ],
+      [
+        "R-H2",
+        3.169685580677429
+      ]
+    ],
+    "actions": [
+      "v_atc_request",
+      "v_toggle_jump_request",
+      "v_weapon_countermeasure_decoy_burst_increase"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        10,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "11",
+    "mode": "SCM Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        45.0072431930776
+      ],
+      [
+        "T-H3",
+        9.599609119527397
+      ],
+      [
+        "T-B3",
+        2.9816333491744893
+      ],
+      [
+        "R-H2",
+        2.7118524870519485
+      ],
+      [
+        "T-E2",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_transform_cycle",
+      "v_vtol_toggle",
+      "turret_change_position"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        11,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "12",
+    "mode": "SCM Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        28.23187845321593
+      ],
+      [
+        "T-H1",
+        8.918623504006726
+      ],
+      [
+        "T-H3",
+        2.9816333491744893
+      ],
+      [
+        "FLIP-TRIG-R",
+        1.7578579175523736
+      ],
+      [
+        "T-B1",
+        1.7578579175523736
+      ]
+    ],
+    "actions": [
+      "v_invoke_docking",
+      "v_toggle_docking_mode",
+      "v_lights"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        12,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "13",
+    "mode": "SCM Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        22.44805327088619
+      ],
+      [
+        "T-H3",
+        6.353674146545189
+      ],
+      [
+        "R-M1",
+        5.41610040220442
+      ],
+      [
+        "R-B6",
+        3.4210000089583352
+      ],
+      [
+        "R-H3",
+        2.1972245773362196
+      ]
+    ],
+    "actions": [
+      "v_toggle_all_doorlocks",
+      "v_toggle_all_doors",
+      "v_toggle_all_doorlocks",
+      "v_toggle_all_doors"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        13,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "14",
+    "mode": "SCM Mode",
+    "cluster": "T-H2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H2",
+        32.75860721289746
+      ],
+      [
+        "R-B6",
+        3.4210000089583352
+      ],
+      [
+        "T-B2",
+        2.5649493574615367
+      ],
+      [
+        "R-H3",
+        2.1972245773362196
+      ],
+      [
+        "R-M1",
+        2.1972245773362196
+      ]
+    ],
+    "actions": [
+      "v_flightready",
+      "v_toggle_all_portlocks",
+      "v_flightready",
+      "v_toggle_all_portlocks"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        14,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "15",
+    "mode": "SCM Mode",
+    "cluster": "T-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-M1",
+        3.2188758248682006
+      ]
+    ],
+    "actions": [
+      "v_afterburner",
+      "jump",
+      "eva_boost",
+      "v_boost"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        15,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "16",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "OK",
+    "scores": [
+      [
+        "R-M1",
+        3.2188758248682006
+      ],
+      [
+        "FLIP-TRIG-R",
+        1.6094379124341003
+      ],
+      [
+        "R-H1",
+        1.6094379124341003
+      ],
+      [
+        "R-H2",
+        1.6094379124341003
+      ],
+      [
+        "R-H3",
+        1.6094379124341003
+      ]
+    ],
+    "actions": [
+      "view_restore_defaults",
+      "view_restore_defaults",
+      "view_restore_defaults"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        16,
+        "button"
+      ],
+      [
+        1,
+        16,
+        "button"
+      ],
+      [
+        1,
+        16,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "17",
+    "mode": "SCM Mode",
+    "cluster": "T-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H1",
+        34.70451736195277
+      ],
+      [
+        "T-E2",
+        5.1298987149230735
+      ],
+      [
+        "R-H2",
+        5.115595729732743
+      ],
+      [
+        "T-H2",
+        3.169685580677429
+      ],
+      [
+        "T-T1",
+        2.5649493574615367
+      ]
+    ],
+    "actions": [
+      "v_view_dynamic_zoom_abs_toggle",
+      "v_weapon_launch_missile_cinematic_hold"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        17,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "18",
+    "mode": "SCM Mode",
+    "cluster": "T-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H1",
+        12.875503299472802
+      ]
+    ],
+    "actions": [
+      "v_view_look_behind"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        18,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "19",
+    "mode": "SCM Mode",
+    "cluster": "T-H1",
+    "status": "OK",
+    "scores": [
+      [
+        "T-H1",
+        34.01570363554566
+      ],
+      [
+        "R-M1",
+        10.259797429846147
+      ],
+      [
+        "R-B1",
+        1.2237754316221157
+      ],
+      [
+        "R-B5",
+        1.2237754316221157
+      ],
+      [
+        "R-B6",
+        1.2237754316221157
+      ]
+    ],
+    "actions": [
+      "headtrack_camera_enabled",
+      "headtrack_enabled"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        19,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "20",
+    "mode": "SCM Mode",
+    "cluster": "R-M1",
+    "status": "WEAK",
+    "scores": [
+      [
+        "R-M1",
+        4.05302641289137
+      ],
+      [
+        "T-H1",
+        3.7887247890836524
+      ],
+      [
+        "R-H2",
+        2.7118524870519485
+      ],
+      [
+        "T-H2",
+        2.7118524870519485
+      ],
+      [
+        "T-H3",
+        2.7118524870519485
+      ]
+    ],
+    "actions": [
+      "v_view_cycle_fwd",
+      "thirdperson",
+      "v_view_cycle_fwd"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        20,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "21",
+    "mode": "SCM Mode",
+    "cluster": "T-B2",
+    "status": "OK",
+    "scores": [
+      [
+        "T-B2",
+        36.69178964431242
+      ],
+      [
+        "T-B1",
+        8.375833687905281
+      ],
+      [
+        "R-H2",
+        6.617975770352906
+      ],
+      [
+        "R-M1",
+        4.706952880298034
+      ],
+      [
+        "T-H3",
+        3.245934972982207
+      ]
+    ],
+    "actions": [
+      "v_operator_mode_cycle_forward",
+      "v_master_mode_cycle_long",
+      "v_master_mode_set_nav"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        21,
+        "button"
+      ],
+      [
+        1,
+        127,
+        "button"
+      ]
+    ]
+  },
+  {
+    "device": "63b4c490-c93b-11f0-8004-444553540000",
+    "device_short": "63b4c490",
+    "itype": "button",
+    "iid": "22",
+    "mode": "SCM Mode",
+    "cluster": "T-B1",
+    "status": "TIE",
+    "scores": [
+      [
+        "T-B1",
+        5.125153747538848
+      ],
+      [
+        "T-B2",
+        5.125153747538848
+      ],
+      [
+        "MAIN-TRIG-R.stage-1",
+        3.3672958299864737
+      ],
+      [
+        "R-H3",
+        3.3672958299864737
+      ],
+      [
+        "T-H3",
+        3.3672958299864737
+      ]
+    ],
+    "actions": [
+      "v_set_mining_mode",
+      "v_set_salvage_mode"
+    ],
+    "vjoy_targets": [
+      [
+        1,
+        22,
+        "button"
+      ],
+      [
+        1,
+        126,
+        "button"
+      ]
+    ]
+  }
+]

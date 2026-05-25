@@ -1,0 +1,1126 @@
+{
+  "0dcd7600-d727-11ef-800a-444553540000|button|7|Modifier": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.right"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.press-in"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_engineering_assignment_shields_decrease",
+      "v_engineering_assignment_shields_min"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|8|Modifier": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.right"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.press-in"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_engineering_assignment_engine_decrease",
+      "v_engineering_assignment_engine_min"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|9|Modifier": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.right"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.press-in"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_engineering_assignment_weapons_decrease",
+      "v_engineering_assignment_weapons_min"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|16|Modifier": {
+    "top_candidates": [
+      [
+        0.6666666666666666,
+        2,
+        "RAPID-TRIG-L"
+      ],
+      [
+        0.6666666666666666,
+        2,
+        "L-A3.up"
+      ]
+    ],
+    "sc_actions": [
+      "v_light_amplification_toggle"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|26|Modifier": {
+    "top_candidates": [
+      [
+        0.375,
+        3,
+        "RAPID-TRIG-R"
+      ],
+      [
+        0.25,
+        1,
+        "L-A4.up"
+      ],
+      [
+        0.2222222222222222,
+        2,
+        "MAIN-TRIG-R.stage-1"
+      ]
+    ],
+    "sc_actions": [
+      "v_weapon_preset_emp",
+      "v_weapon_preset_next_overflow",
+      "v_weapon_preset_qid",
+      "v_weapon_preset_qid_jammer",
+      "v_weapon_preset_qid_pulse"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|hat|1|Modifier": {
+    "top_candidates": [
+      [
+        0.4444444444444444,
+        4,
+        "R-A1.right"
+      ],
+      [
+        0.3,
+        3,
+        "R-A1.left"
+      ],
+      [
+        0.2857142857142857,
+        2,
+        "R-A1.down"
+      ]
+    ],
+    "sc_actions": [
+      "v_mfd_movement_up_long",
+      "v_mfd_movement_down_long",
+      "v_mfd_interact_cycle_backwards_short",
+      "v_mfd_movement_left_long",
+      "v_mfd_soft_select_cast_left_short",
+      "v_mfd_interact_cycle_forwards_short",
+      "v_mfd_movement_right_long",
+      "v_mfd_soft_select_cast_right_short"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|1|SCM Mode": {
+    "top_candidates": [
+      [
+        0.7777777777777778,
+        7,
+        "MAIN-TRIG-R.stage-1"
+      ],
+      [
+        0.5454545454545454,
+        6,
+        "L-A2"
+      ],
+      [
+        0.5,
+        1,
+        "MAIN-TRIG-R.stage-2"
+      ]
+    ],
+    "sc_actions": [
+      "v_toggle_qdrive_engagement",
+      "v_scanning_trigger_scan",
+      "v_toggle_mining_laser_fire",
+      "v_salvage_toggle_fire_focused",
+      "v_weapon_preset_attack",
+      "v_weapon_preset_fire_guns1",
+      "v_weapon_toggle_launch_missile",
+      "respawn"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|2|SCM Mode": {
+    "top_candidates": [
+      [
+        0.5,
+        1,
+        "MAIN-TRIG-R.stage-2"
+      ],
+      [
+        0.2857142857142857,
+        2,
+        "RAPID-TRIG-R"
+      ],
+      [
+        0.2857142857142857,
+        2,
+        "MAIN-TRIG-R.stage-1"
+      ]
+    ],
+    "sc_actions": [
+      "v_weapon_preset_fire_guns2"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|4|SCM Mode": {
+    "top_candidates": [
+      [
+        1.0,
+        1,
+        "R-A1B"
+      ]
+    ],
+    "sc_actions": [
+      "v_ifcs_vector_decoupling_toggle"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|7|SCM Mode": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.right"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.press-in"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_engineering_assignment_shields_increase",
+      "v_engineering_assignment_shields_max"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|8|SCM Mode": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.right"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.press-in"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_engineering_assignment_engine_increase",
+      "v_engineering_assignment_engine_max"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|9|SCM Mode": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.right"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.press-in"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_engineering_assignment_weapons_increase",
+      "v_engineering_assignment_weapons_max"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|10|SCM Mode": {
+    "top_candidates": [
+      [
+        0.5,
+        1,
+        "R-A4.up"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "L-A4.left"
+      ],
+      [
+        0.25,
+        1,
+        "R-C1.press-in"
+      ]
+    ],
+    "sc_actions": [
+      "v_engineering_assignment_reset"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|12|SCM Mode": {
+    "top_candidates": [
+      [
+        0.75,
+        6,
+        "R-A3.right"
+      ],
+      [
+        0.5,
+        4,
+        "R-A3.left"
+      ],
+      [
+        0.4,
+        2,
+        "L-A3.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_target_cycle_subitem_fwd",
+      "v_salvage_cycle_modifiers_right",
+      "v_salvage_toggle_fire_right",
+      "v_weapon_cycle_missile_fwd"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|13|SCM Mode": {
+    "top_candidates": [
+      [
+        0.8,
+        4,
+        "R-A1.up"
+      ],
+      [
+        0.6153846153846154,
+        8,
+        "R-A3.down"
+      ],
+      [
+        0.6,
+        3,
+        "L-A3.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_target_cycle_subitem_reset",
+      "v_decrease_mining_throttle",
+      "v_salvage_cycle_modifiers_structural",
+      "v_salvage_toggle_fire_disintegrate",
+      "v_weapon_decrease_max_missiles"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|14|SCM Mode": {
+    "top_candidates": [
+      [
+        0.75,
+        6,
+        "R-A3.left"
+      ],
+      [
+        0.5,
+        4,
+        "R-A3.right"
+      ],
+      [
+        0.4,
+        2,
+        "L-A3.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_target_cycle_subitem_back",
+      "v_salvage_cycle_modifiers_left",
+      "v_salvage_toggle_fire_left",
+      "v_weapon_cycle_missile_back"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|15|SCM Mode": {
+    "top_candidates": [
+      [
+        0.5555555555555556,
+        5,
+        "MAIN-TRIG-R.stage-1"
+      ],
+      [
+        0.5,
+        1,
+        "R-A4.up"
+      ],
+      [
+        0.5,
+        1,
+        "R-A1.press-in.device"
+      ]
+    ],
+    "sc_actions": [
+      "v_toggle_mining_laser_type",
+      "v_salvage_toggle_beam_spacing_axis",
+      "v_weapon_reset_max_missiles"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|22|SCM Mode": {
+    "top_candidates": [
+      [
+        0.75,
+        3,
+        "R-C1.up"
+      ],
+      [
+        0.6,
+        3,
+        "R-C1.right"
+      ],
+      [
+        0.6,
+        3,
+        "R-C1.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_mining_use_consumable2",
+      "v_salvage_focus_right",
+      "v_shield_raise_level_right"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|23|SCM Mode": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "R-C1.press-in"
+      ],
+      [
+        0.25,
+        1,
+        "R-C1.up"
+      ],
+      [
+        0.25,
+        1,
+        "R-C1.down"
+      ]
+    ],
+    "sc_actions": [
+      "v_salvage_focus_disintegrate",
+      "v_shield_raise_level_back"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|24|SCM Mode": {
+    "top_candidates": [
+      [
+        0.75,
+        3,
+        "R-C1.up"
+      ],
+      [
+        0.6,
+        3,
+        "R-C1.right"
+      ],
+      [
+        0.6,
+        3,
+        "R-C1.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_mining_use_consumable3",
+      "v_salvage_focus_left",
+      "v_shield_raise_level_left"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|26|SCM Mode": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "RAPID-TRIG-R"
+      ],
+      [
+        0.2,
+        1,
+        "L-A3.left"
+      ],
+      [
+        0.16666666666666666,
+        1,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_weapon_countermeasure_decoy_launch"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|button|27|SCM Mode": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "RAPID-TRIG-R"
+      ],
+      [
+        0.2,
+        1,
+        "L-A3.left"
+      ],
+      [
+        0.16666666666666666,
+        1,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_weapon_countermeasure_noise_launch"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcd7600-d727-11ef-800a-444553540000|hat|1|SCM Mode": {
+    "top_candidates": [
+      [
+        0.625,
+        5,
+        "R-A1.up.alt"
+      ],
+      [
+        0.5714285714285714,
+        4,
+        "R-A1.down"
+      ],
+      [
+        0.5,
+        1,
+        "R-A4.up"
+      ]
+    ],
+    "sc_actions": [
+      "v_target_under_reticle",
+      "v_target_unlock",
+      "v_target_cycle_attacker_reset",
+      "v_target_lock_selected",
+      "v_target_cycle_all_reset",
+      "v_target_cycle_hostile_fwd",
+      "v_target_cycle_hostile_reset"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|3|Auxiliary Mode": {
+    "top_candidates": [
+      [
+        0.45454545454545453,
+        5,
+        "L-A2"
+      ],
+      [
+        0.4,
+        2,
+        "R-A2"
+      ],
+      [
+        0.25,
+        2,
+        "R-A3.right"
+      ]
+    ],
+    "sc_actions": [
+      "v_operator_mode_cycle_forward",
+      "v_toggle_mining_mode",
+      "v_toggle_salvage_mode",
+      "v_master_mode_set_scm"
+    ],
+    "mode": "Auxiliary Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|6|Modifier": {
+    "top_candidates": [
+      [
+        0.625,
+        5,
+        "L-A4.press-in"
+      ],
+      [
+        0.5555555555555556,
+        5,
+        "L-A4.down"
+      ],
+      [
+        0.5,
+        3,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_inc_scan_focus_level",
+      "tractor_beam_vehicle_increase_distance",
+      "v_salvage_decrease_beam_spacing",
+      "v_salvage_increase_beam_spacing",
+      "v_weapon_bombing_hud_range_increase",
+      "v_weapon_countermeasure_decoy_burst_increase"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|8|Modifier": {
+    "top_candidates": [
+      [
+        0.625,
+        5,
+        "L-A4.press-in"
+      ],
+      [
+        0.5555555555555556,
+        5,
+        "L-A4.down"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_dec_scan_focus_level",
+      "tractor_beam_vehicle_decrease_distance",
+      "v_weapon_bombing_hud_range_decrease",
+      "v_weapon_countermeasure_decoy_burst_decrease"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|9|Modifier": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        1,
+        "L-A4.left"
+      ],
+      [
+        0.2,
+        1,
+        "L-C1.right"
+      ]
+    ],
+    "sc_actions": [
+      "headtrack_recenter_device"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|10|Modifier": {
+    "top_candidates": [
+      [
+        0.75,
+        3,
+        "L-A4.up"
+      ],
+      [
+        0.5,
+        1,
+        "R-A4.up"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "L-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_weapon_bombing_hud_range_reset",
+      "v_view_freelook_mode",
+      "eva_toggle_headlook_mode",
+      "v_view_freelook_mode",
+      "view_restore_defaults"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|11|Modifier": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        1,
+        "R-C1.press-in"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "R-A3.up"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "R-A3.down"
+      ]
+    ],
+    "sc_actions": [
+      "v_power_toggle"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|13|Modifier": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        1,
+        "R-A3.up"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "R-A3.down"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "R-A1.up"
+      ]
+    ],
+    "sc_actions": [
+      "v_power_toggle_thrusters"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|14|Modifier": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        1,
+        "R-A3.up"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "R-A3.down"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "R-A1.up"
+      ]
+    ],
+    "sc_actions": [
+      "v_power_toggle_weapons"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|22|Modifier": {
+    "top_candidates": [
+      [
+        0.25,
+        1,
+        "L-C1.up"
+      ],
+      [
+        0.25,
+        1,
+        "L-A3.up"
+      ],
+      [
+        0.25,
+        1,
+        "L-A2"
+      ]
+    ],
+    "sc_actions": [
+      "v_flight_advanced_hud_toggle"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|24|Modifier": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        2,
+        "MAIN-TRIG-L"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "L-C1.left"
+      ],
+      [
+        0.25,
+        1,
+        "L-C1.up"
+      ]
+    ],
+    "sc_actions": [
+      "turret_toggle_mouse_mode"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|hat|1|Modifier": {
+    "top_candidates": [
+      [
+        0.6666666666666666,
+        2,
+        "L-A1.up"
+      ],
+      [
+        0.6666666666666666,
+        2,
+        "L-A1.right"
+      ],
+      [
+        0.6666666666666666,
+        2,
+        "L-A1.down"
+      ]
+    ],
+    "sc_actions": [
+      "v_accel_range_up",
+      "v_accel_range_down",
+      "v_strafe_trim_reset_short"
+    ],
+    "mode": "Modifier"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|3|Nav Mode": {
+    "top_candidates": [
+      [
+        0.375,
+        3,
+        "L-A2"
+      ],
+      [
+        0.25,
+        2,
+        "R-A3.right"
+      ],
+      [
+        0.25,
+        1,
+        "L-A1.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_operator_mode_cycle_forward",
+      "v_master_mode_set_scm"
+    ],
+    "mode": "Nav Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|2|SCM Mode": {
+    "top_candidates": [
+      [
+        0.6666666666666666,
+        2,
+        "L-A1.right"
+      ],
+      [
+        0.5,
+        1,
+        "R-A4.up"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "L-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_strafe_trim_reset_long"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|3|SCM Mode": {
+    "top_candidates": [
+      [
+        0.375,
+        3,
+        "L-A2"
+      ],
+      [
+        0.25,
+        2,
+        "R-A3.right"
+      ],
+      [
+        0.125,
+        1,
+        "RAPID-TRIG-R"
+      ]
+    ],
+    "sc_actions": [
+      "v_operator_mode_cycle_forward",
+      "v_master_mode_set_nav"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|9|SCM Mode": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        1,
+        "L-A4.left"
+      ],
+      [
+        0.2,
+        1,
+        "L-A4.right"
+      ],
+      [
+        0.2,
+        1,
+        "L-A4.down"
+      ]
+    ],
+    "sc_actions": [
+      "headtrack_camera_enabled",
+      "headtrack_enabled"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|10|SCM Mode": {
+    "top_candidates": [
+      [
+        0.5,
+        2,
+        "L-A4.up"
+      ],
+      [
+        0.5,
+        1,
+        "R-A4.up"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "L-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "v_view_freelook_mode",
+      "eva_toggle_headlook_mode",
+      "v_view_freelook_mode",
+      "view_restore_defaults"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|21|SCM Mode": {
+    "top_candidates": [
+      [
+        0.5,
+        2,
+        "L-C1.up"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "L-C1.left"
+      ],
+      [
+        0.25,
+        2,
+        "L-C1.down"
+      ]
+    ],
+    "sc_actions": [
+      "v_enter_remote_turret_1",
+      "v_weapon_staggered_fire_toggle"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|22|SCM Mode": {
+    "top_candidates": [
+      [
+        0.5,
+        2,
+        "L-C1.up"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "L-C1.left"
+      ],
+      [
+        0.25,
+        2,
+        "L-C1.down"
+      ]
+    ],
+    "sc_actions": [
+      "v_enter_remote_turret_3",
+      "v_ifcs_toggle_esp",
+      "turret_esp_toggle"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|23|SCM Mode": {
+    "top_candidates": [
+      [
+        0.5,
+        1,
+        "R-A4.up"
+      ],
+      [
+        0.4166666666666667,
+        5,
+        "L-C1.down"
+      ],
+      [
+        0.3333333333333333,
+        1,
+        "L-A4.left"
+      ]
+    ],
+    "sc_actions": [
+      "turret_gyromode",
+      "stopwatch_reset",
+      "stopwatch_trigger",
+      "tractor_beam_increase_distance"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|25|SCM Mode": {
+    "top_candidates": [
+      [
+        0.7142857142857143,
+        5,
+        "L-C1.right"
+      ],
+      [
+        0.5,
+        1,
+        "R-A4.up"
+      ],
+      [
+        0.3333333333333333,
+        2,
+        "R-C1.press-in"
+      ]
+    ],
+    "sc_actions": [
+      "v_salvage_reset_gimbal",
+      "v_salvage_toggle_gimbal_mode",
+      "turret_recenter",
+      "v_weapon_gimbals_state_toggle"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|26|SCM Mode": {
+    "top_candidates": [
+      [
+        0.3333333333333333,
+        1,
+        "L-A1.right"
+      ],
+      [
+        0.2,
+        1,
+        "RAPID-TRIG-L"
+      ],
+      [
+        0.2,
+        1,
+        "MAIN-TRIG-L"
+      ]
+    ],
+    "sc_actions": [
+      "v_invoke_ping"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|button|125|SCM Mode": {
+    "top_candidates": [
+      [
+        0.5,
+        2,
+        "R-A2"
+      ],
+      [
+        0.5,
+        2,
+        "MAIN-TRIG-R.stage-1"
+      ],
+      [
+        0.5,
+        2,
+        "L-A2"
+      ]
+    ],
+    "sc_actions": [
+      "v_toggle_mining_mode",
+      "v_toggle_salvage_mode"
+    ],
+    "mode": "SCM Mode"
+  },
+  "0dcdeb30-d727-11ef-8013-444553540000|hat|1|SCM Mode": {
+    "top_candidates": [
+      [
+        0.6666666666666666,
+        2,
+        "L-A1.up"
+      ],
+      [
+        0.6666666666666666,
+        2,
+        "L-A1.right"
+      ],
+      [
+        0.6666666666666666,
+        2,
+        "L-A1.down"
+      ]
+    ],
+    "sc_actions": [
+      "v_ifcs_speed_limiter_up",
+      "turret_limiter_rel_increase",
+      "v_ifcs_speed_limiter_down",
+      "turret_limiter_rel_decrease",
+      "v_ifcs_throttle_swap_mode",
+      "v_strafe_trim_set_100_long",
+      "v_strafe_trim_set_short"
+    ],
+    "mode": "SCM Mode"
+  }
+}

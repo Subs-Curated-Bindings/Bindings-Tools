@@ -1,0 +1,25 @@
+{
+  "_comment": "Manual cluster overrides for VMAX+AERO. Key format: device|itype|iid|mode (mode * matches any). Each entry assigns a chart cluster to a specific JG input identity.",
+
+  "_comment_T-B4_modifier": "63b4c490 button 3 fires change-mode action (Temporary). Same modifier convention as NXT/SOL-R.",
+  "63b4c490|button|3|*": {"cluster": "T-B4"},
+
+  "_comment_R-B3_physical_modifier_DEFERRED": "Sub explained R-B3 is the hardware switch with two positions that add layers of buttons. The two switch positions fire 63b4c490 buttons 21 + 22, but those buttons are ALREADY bound (in SCM/Aux/NAV modes) to T-B1 (Auxiliary Mode Cycle) and T-B2 (Master Mode Cycle). R-B3 is the chart label for the switch itself rather than a separate bind input. Leaving it unassigned for now — will need either an audit-exemption for label-only clusters or a separate JG description hook.",
+
+  "_comment_R-B4_decoy": "40440b60 button 5 fires v_weapon_countermeasure_decoy_launch (Decoy) / v_weapon_countermeasure_noise_launch (Noise in modifier).",
+  "40440b60|button|5|*": {"cluster": "R-B4"},
+
+  "_comment_R-B5_decouple": "40440b60 button 19 fires v_ifcs_vector_decoupling_toggle (Decouple Toggle).",
+  "40440b60|button|19|*": {"cluster": "R-B5"},
+
+  "_comment_FLIP-TRIG-R": "Flip trigger: button 3 of 40440b60 fires the missile-mode/guns-mode toggle (Trigger Up = exit missile mode, Trigger Down = enter missile op mode), button 4 fires the missile launch (Trigger Pulled = FIRE missile).",
+  "40440b60|button|3|*": {"cluster": "FLIP-TRIG-R"},
+  "40440b60|button|4|*": {"cluster": "FLIP-TRIG-R"},
+
+  "_comment_MAIN-TRIG-R": "40440b60 button 1 = stage 1 (light pull, fire guns2 in modifier), button 2 = stage 2 (full pull, fire guns0).",
+  "40440b60|button|1|*": {"cluster": "MAIN-TRIG-R.stage-1"},
+  "40440b60|button|2|*": {"cluster": "MAIN-TRIG-R.stage-2"},
+
+  "_comment_T-E2_speed_limiter_abs": "63b4c490 axis 8 fires v_ifcs_speed_limiter_abs (Speed Limiter ABS, the encoder's axis behavior).",
+  "63b4c490|axis|8|*": {"cluster": "T-E2"}
+}
