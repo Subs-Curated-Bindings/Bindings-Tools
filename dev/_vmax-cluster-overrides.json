@@ -21,5 +21,8 @@
   "40440b60|button|2|*": {"cluster": "MAIN-TRIG-R.stage-2"},
 
   "_comment_T-E2_speed_limiter_abs": "63b4c490 axis 8 fires v_ifcs_speed_limiter_abs (Speed Limiter ABS, the encoder's axis behavior).",
-  "63b4c490|axis|8|*": {"cluster": "T-E2"}
+  "63b4c490|axis|8|*": {"cluster": "T-E2"},
+
+  "_comment_T-H1_press_in": "63b4c490 button 16 fires view_restore_defaults (Reset Freelook). This is T-H1's press-in (4-way hat T-H1 on the throttle).",
+  "63b4c490|button|16|*": {"cluster": "T-H1"}
 }
