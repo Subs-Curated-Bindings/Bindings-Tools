@@ -458,6 +458,71 @@ def run_audit(stick_dir):
         if not vjoy_to_inputs.get((dev, btn, "button")):
             layout_orphans.append((dev, btn, acts))
 
+    # ---- Check 4: Cluster over-attribution ----
+    # A chart cluster (e.g. R-M1) has a fixed number of directional sub-clusters:
+    #   * a button cluster has just itself (1)
+    #   * a hat has up/down/left/right + optional press-in (4-5)
+    #   * a multi-stage trigger has stage-1/stage-2 (2)
+    #   * a rapid trigger ships as one base cluster but is functionally 2 inputs
+    #     (Trigger Up / Trigger Down) — see Gunfighter / NXT
+    # JG attaches one description per input root; the matcher should assign at
+    # most one JG input per direction (per mode). If JG assigns MORE inputs to
+    # a cluster than the chart has directions for it, the matcher has over-
+    # attributed — usually because the input's true cluster is missing from the
+    # chart and the matcher picked a tangentially-related cluster instead.
+    #
+    # Only meaningful for charts that use the directional sub-cluster convention
+    # (NXT / Gunfighter / VMAX use bind.X.up/.down/.left/.right; SOL-R aggregates
+    # multiple inputs into one flat cluster, so the per-direction count isn't a
+    # signal there).
+    chart_uses_direction_subclusters = any(
+        n.endswith(".up") or n.endswith(".down") or n.endswith(".left") or n.endswith(".right")
+        for n in chart_clusters
+    )
+
+    chart_directions_per_base = defaultdict(set)
+    for cluster_name in chart_clusters:
+        base = base_name(cluster_name)
+        if cluster_name == base:
+            chart_directions_per_base[base].add("(self)")
+        else:
+            chart_directions_per_base[base].add(cluster_name[len(base) + 1:])
+
+    jg_inputs_per_base_mode = defaultdict(lambda: defaultdict(set))
+    for key, rec in jg_records.items():
+        if not rec["etched_name"]:
+            continue
+        base = base_name(rec["etched_name"])
+        mode = key[3]
+        jg_inputs_per_base_mode[base][mode].add((key[0], key[1], key[2]))
+
+    # [PM] (Physical Modifier) is a hardware switch on the stick that toggles
+    # the entire grip into a 2nd layer — each hat direction gets a separate
+    # button press in the PM layer, doubling effective directional capacity.
+    # Detect at chart level: if any cluster body uses [PM] notation, the stick
+    # has the modifier. Doubled-capacity then applies to every hat-like cluster
+    # (4+ directions), not just the ones whose body happens to spell out [PM].
+    chart_has_pm_modifier = any("[PM]" in body for body in chart_clusters.values())
+
+    over_attributed = []
+    if chart_uses_direction_subclusters:
+        for base, modes in jg_inputs_per_base_mode.items():
+            if base not in chart_directions_per_base:
+                continue
+            expected = len(chart_directions_per_base[base])
+            # Rapid triggers and Virpil flip triggers ship as one chart cluster
+            # but split into 2 physical inputs at the JG layer (Trigger Up vs
+            # Trigger Down on the rapid; mode-switch vs fire on the flip).
+            if base.startswith("RAPID-TRIG-") or base.startswith("FLIP-TRIG-"):
+                expected = max(expected, 2)
+            # Hat-like cluster on a stick with [PM] hardware: each direction
+            # exists in both the primary and PM layers, so 2x the capacity.
+            if chart_has_pm_modifier and len(chart_directions_per_base[base]) >= 4:
+                expected *= 2
+            for mode, inputs in modes.items():
+                if len(inputs) > expected:
+                    over_attributed.append((base, mode, len(inputs), expected, sorted(inputs)))
+
     # ---- Report ----
     print("=" * 70)
     print(f"SUMMARY")
@@ -472,6 +537,7 @@ def run_audit(stick_dir):
     print(f"  JG inputs silent-broken (all vjoy emissions unbound) : {len(silent_broken)}")
     print(f"  JG inputs partial-coverage (bound + dead emissions)  : {len(path_partial_coverage)}  [informational]")
     print(f"  Layout buttons w/o JG emitter     : {len(layout_orphans)}")
+    print(f"  Over-attributed clusters (more JG inputs than chart directions) : {len(over_attributed)}")
     print()
 
     if chart_without_jg:
@@ -541,6 +607,21 @@ def run_audit(stick_dir):
             print(f"  js{dev}_button{btn:<3d}  {actions_str}")
         print()
 
+    if over_attributed:
+        print("-" * 70)
+        print("Over-attributed chart clusters")
+        print("(Cluster claimed by more JG inputs than the chart has directions.")
+        print(" Usually means the matcher fell back to a tangential cluster because")
+        print(" the input's true cluster is missing from the chart. Fix by adding a")
+        print(" dedicated chart cluster for the unattributed inputs, or by writing a")
+        print(" manual override in the per-stick overrides JSON.)")
+        print("-" * 70)
+        for base, mode, n_inputs, expected, inputs in over_attributed:
+            print(f"  {base:20s} mode={mode:14s}  {n_inputs} JG inputs vs {expected} chart directions:")
+            for (did, itype, iid) in inputs:
+                print(f"      dev:{did[:8]}  {itype}#{iid}")
+        print()
+
     # Detailed table: per chart cluster, status
     print("=" * 70)
     print("PER-CLUSTER STATUS")
@@ -566,7 +647,8 @@ def run_audit(stick_dir):
     # partial_coverage is informational, not an audit failure (the input still
     # works via its bound emissions — the unbound slots are dead weight, not breakage).
     total_issues = (len(chart_without_jg) + len(jg_without_chart)
-                    + len(silent_broken) + len(layout_orphans))
+                    + len(silent_broken) + len(layout_orphans)
+                    + len(over_attributed))
     if total_issues == 0:
         print("AUDIT PASSED — chart, JG profile, and layout XML all agree.")
     else:

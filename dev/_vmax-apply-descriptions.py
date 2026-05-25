@@ -185,11 +185,17 @@ def main():
     # Idempotency: wipe any existing description actions before adding new ones.
     # Without this, running apply twice doubles up every description because we
     # only ever APPEND to <actions> lists, never check for existing entries.
+    #
+    # Match leading indent + the action block + the one trailing newline that
+    # belongs to *this* block. Using greedy `\s*` for the trailing whitespace
+    # consumes the indent of the NEXT line too — which silently collapses the
+    # whitespace before </library> when this is the last description, causing
+    # the insertion step to splice new blocks inside the prior root action.
     desc_pat = re.compile(
-        r'(\s*)<action id="([^"]+)" type="description">(?:.*?)</action>\s*',
+        r'[ \t]*<action id="([^"]+)" type="description">(?:.*?)</action>[ \t]*\r?\n',
         re.DOTALL,
     )
-    existing_desc_ids = [m.group(2) for m in desc_pat.finditer(raw)]
+    existing_desc_ids = [m.group(1) for m in desc_pat.finditer(raw)]
     if existing_desc_ids:
         raw, n_blocks = desc_pat.subn("", raw)
         n_refs = 0
@@ -227,13 +233,20 @@ def main():
         )
         new_blocks.append(block)
 
-    lib_close_re = re.compile(r"\r?\n(\s*</library>)")
-    m = lib_close_re.search(raw)
-    if not m:
+    # Find </library> and insert new blocks at the start of its line so each
+    # block (ending in eol) is followed naturally by the closing tag's indent.
+    # The wipe step's trailing `\s*` can consume the newline before </library>
+    # when the wiped description was the last library entry, so we anchor on
+    # the tag itself rather than on a preceding newline.
+    lib_close_idx = raw.find("</library>")
+    if lib_close_idx == -1:
         print("ERROR: could not find </library>", file=sys.stderr)
         return 1
-    insert_at = m.start() + len(eol)
-    raw = raw[:insert_at] + "".join(new_blocks) + raw[insert_at:]
+    line_start = raw.rfind("\n", 0, lib_close_idx) + 1
+    insert_at = line_start if line_start > 0 else lib_close_idx
+    # If wipe collapsed the newline, prepend one so </library> stays on its own line
+    prefix = "" if line_start > 0 else eol
+    raw = raw[:insert_at] + prefix + "".join(new_blocks) + raw[insert_at:]
 
     # For each root action's <actions>, splice in <action-id> for the new description
     inserts_by_root = defaultdict(list)

@@ -40,6 +40,17 @@ CLUSTERS_JSON = TOOLS_DIR + r"\_vmax-cluster-bodies.json"
 CSV_PATH = TOOLS_DIR + r"\_sc-keybinds-reference.csv"
 OUT_PATH = TOOLS_DIR + r"\_vmax-cluster-assignment.json"
 
+# Main flight-axis actions — these are stick axes that users customize per
+# preference and are deliberately left off the chart (per Sub, 2026-05-25).
+# Inputs whose ONLY mapped actions match this pattern get no description.
+FLIGHT_AXIS_PAT = re.compile(
+    r"^(v|eva|turret|gp)_"
+    r"(view_)?"
+    r"(pitch|yaw|roll|movex|movey)$"
+)
+def is_flight_axis_action(name):
+    return bool(FLIGHT_AXIS_PAT.match(name))
+
 STOP_WORDS = {
     "a", "an", "the", "and", "or", "to", "of", "on", "in", "by", "with", "for",
     "is", "are", "v", "vehicle", "spaceship", "ship", "press", "hold",
@@ -225,16 +236,38 @@ def main():
         input_tokens_set = set(input_tokens)
         input_bigrams_set = set(input_bigrams)
 
+        # Length-normalized scoring (cosine-style). Raw IDF sum favors long
+        # cluster bodies, which over-attributed throttle inputs to R-M1 (599
+        # chars, richest token bag) when their true cluster was T-E*/T-T* with
+        # sparse bodies. Normalizing by sqrt(cluster_size) removes the long-doc
+        # bias while preserving the IDF-weighted overlap signal.
         scores = {}
         for cname, ctoks in cluster_tokens.items():
             u_over = input_tokens_set & set(ctoks.keys())
             b_over = input_bigrams_set & set(cluster_bigrams[cname].keys())
             if not u_over and not b_over:
                 continue
-            s = sum(idf[tk] for tk in u_over) + 2.0 * sum(idf_bg[tk] for tk in b_over)
-            scores[cname] = s
+            raw = sum(idf[tk] for tk in u_over) + 2.0 * sum(idf_bg[tk] for tk in b_over)
+            cluster_size = len(ctoks) + len(cluster_bigrams[cname])
+            norm = max(1.0, cluster_size ** 0.5)
+            scores[cname] = raw / norm
 
-        if scores:
+        # Skip main flight-stick axes — Sub doesn't put pitch/yaw/roll on the
+        # chart because users customize those per preference. Recognising the
+        # pattern here means the apply step won't attach a description and the
+        # audit's over-attribution check won't see them.
+        action_names = {a[3] for a in actions}
+        flight_only = (
+            action_names
+            and all(is_flight_axis_action(n) for n in action_names)
+            and all(a[2] == "axis" for a in actions)
+        )
+
+        if flight_only:
+            cluster = None
+            status = "FLIGHT-AXIS"
+            ranked = []
+        elif scores:
             ranked = sorted(scores.items(), key=lambda x: -x[1])
             top_score = ranked[0][1]
             second_score = ranked[1][1] if len(ranked) > 1 else 0
