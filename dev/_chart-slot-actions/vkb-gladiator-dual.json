@@ -71,18 +71,9 @@
             "always": "js1_button43"
           },
           "body": "Thruster Power Toggle Landing Gear"
-        },
-        "SCM Mode": {
-          "actions": {
-            "always": "v_autoland"
-          },
-          "layout_keys": {
-            "always": "js1_button13"
-          },
-          "body": "Landing Gear, [H] Auto Land, Toggle Docking Mode"
         }
       },
-      "showcase_action": "v_autoland"
+      "showcase_action": "v_power_toggle_thrusters"
     },
     "L-A3.left": {
       "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
