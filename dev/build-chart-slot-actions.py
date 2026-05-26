@@ -74,6 +74,37 @@ def parse_description_text(desc):
 
 # ---------- JG profile parsing ----------
 
+def collect_mode_switches(action, by_id, visited=None):
+    """Walk an action subtree, return list of target-mode names from any
+    <action type="change-mode"> descendants. These are JG-side mode toggles
+    (e.g. the SOL-R 2 PINKY-L button activates Modifier mode); they have no
+    SC action because the binding is internal to JG."""
+    if visited is None:
+        visited = set()
+    aid = action.attrib.get("id")
+    if aid in visited:
+        return []
+    visited.add(aid)
+    out = []
+    if action.attrib.get("type") == "change-mode":
+        tm = action.find("target-mode")
+        if tm is not None:
+            for p in tm.findall("property"):
+                if p.findtext("name", "") == "name":
+                    val = p.findtext("value", "")
+                    if val:
+                        out.append(val)
+    for tag in ("actions", "short-actions", "long-actions", "single-actions", "double-actions"):
+        sub = action.find(tag)
+        if sub is None:
+            continue
+        for cid_el in sub.findall("action-id"):
+            cid = cid_el.text
+            if cid and cid in by_id and cid != aid:
+                out.extend(collect_mode_switches(by_id[cid], by_id, set(visited)))
+    return out
+
+
 def collect_vjoy_targets(action, by_id, visited=None, path="always"):
     """Walk an action subtree, collect (vjoy_dev, vjoy_input, type, path)."""
     if visited is None:
@@ -178,6 +209,7 @@ def parse_jg(jg_path):
                 continue  # no description = not a chart-bridged input
 
             vjoy_targets = collect_vjoy_targets(root_action, by_id)
+            mode_switches = collect_mode_switches(root_action, by_id)
             records.append({
                 "etched": etched,
                 "mode": mode,
@@ -187,6 +219,7 @@ def parse_jg(jg_path):
                 "phys_type": itype,
                 "phys_id": iid,
                 "vjoy_targets": vjoy_targets,
+                "mode_switches": mode_switches,
             })
     return records
 
@@ -331,15 +364,29 @@ def build_sidecar(stick_dir):
             if showcase_action:
                 break
 
-        binds[etched] = {
+        # Collect mode-switch targets across all records — preserves the
+        # "this input is the JG mode toggle" signal even when the bind has
+        # no SC action emission (e.g. SOL-R 2 PINKY-L is purely the Modifier
+        # button; no map-to-vjoy, only a change-mode action).
+        mode_switch_targets = []
+        for r in recs:
+            for tm in r.get("mode_switches", []):
+                if tm not in mode_switch_targets:
+                    mode_switch_targets.append(tm)
+
+        bind = {
             "phys_device": recs[0]["phys_device"],
             "phys_type": recs[0]["phys_type"],
             "phys_id": recs[0]["phys_id"],
             "modes": modes_dict,
             "showcase_action": showcase_action,
         }
+        if mode_switch_targets:
+            bind["role"] = "mode-switch"
+            bind["target_mode"] = mode_switch_targets[0]
+        binds[etched] = bind
 
-        if showcase_action:
+        if showcase_action or mode_switch_targets:
             stats["resolved"] += 1
         else:
             stats["no_action"] += 1

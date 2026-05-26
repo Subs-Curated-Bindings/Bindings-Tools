@@ -11,8 +11,8 @@
     ""
   ],
   "stats": {
-    "resolved": 24,
-    "no_action": 1
+    "resolved": 25,
+    "no_action": 0
   },
   "binds": {
     "ANALOG-HAT-L": {
@@ -72,7 +72,9 @@
       "phys_type": "button",
       "phys_id": "28",
       "modes": {},
-      "showcase_action": null
+      "showcase_action": null,
+      "role": "mode-switch",
+      "target_mode": "Modifier"
     },
     "LL-BTNS": {
       "phys_device": "141b1470-1081-11f0-8006-444553540000",
@@ -159,7 +161,9 @@
           "body": "v_ifcs_speed_limiter_down | turret_limiter_rel_decrease"
         }
       },
-      "showcase_action": "v_ifcs_speed_limiter_down"
+      "showcase_action": "v_ifcs_speed_limiter_down",
+      "role": "mode-switch",
+      "target_mode": "SCM Mode"
     },
     "4WAY-HAT-L-40": {
       "phys_device": "141b1470-1081-11f0-8006-444553540000",
@@ -270,7 +274,9 @@
           "body": "Position 23 \u2014 Toggle M/S (change-mode)"
         }
       },
-      "showcase_action": "v_set_mining_mode"
+      "showcase_action": "v_set_mining_mode",
+      "role": "mode-switch",
+      "target_mode": "Nav Mode"
     },
     "MAIN-TRIG-L": {
       "phys_device": "141b1470-1081-11f0-8006-444553540000",

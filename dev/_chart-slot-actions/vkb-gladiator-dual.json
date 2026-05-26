@@ -346,7 +346,9 @@
           "body": "[H] Master Mode Cycle Nav & SCM, Operator Mode Cycle"
         }
       },
-      "showcase_action": "v_operator_mode_cycle_forward"
+      "showcase_action": "v_operator_mode_cycle_forward",
+      "role": "mode-switch",
+      "target_mode": "Nav Mode"
     },
     "L-B1": {
       "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
@@ -1122,7 +1124,9 @@
           "body": "[H] Select Mining/Salvage Mode, Self Repair All Toggle"
         }
       },
-      "showcase_action": "v_mfd_quick_action_repair_all"
+      "showcase_action": "v_mfd_quick_action_repair_all",
+      "role": "mode-switch",
+      "target_mode": "Auxiliary Mode"
     },
     "R-B1": {
       "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",

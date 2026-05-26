@@ -11,8 +11,8 @@
     ""
   ],
   "stats": {
-    "resolved": 21,
-    "no_action": 1
+    "resolved": 22,
+    "no_action": 0
   },
   "binds": {
     "R-M1": {
@@ -261,7 +261,9 @@
       "phys_type": "button",
       "phys_id": "3",
       "modes": {},
-      "showcase_action": null
+      "showcase_action": null,
+      "role": "mode-switch",
+      "target_mode": "Modifier Mode"
     },
     "T-B2": {
       "phys_device": "63b4c490-c93b-11f0-8004-444553540000",
@@ -309,7 +311,9 @@
           "body": "[H] / Master Mode Cycle / Operator Mode Cycle Next / [DT] / Operator Mode Cycle Prev. / ( / Guns, / Flight, / Missile, / Mining, / Salvage, / Scanning, / & Quantum)"
         }
       },
-      "showcase_action": "v_operator_mode_cycle_forward"
+      "showcase_action": "v_operator_mode_cycle_forward",
+      "role": "mode-switch",
+      "target_mode": "SCM Mode"
     },
     "T-B1": {
       "phys_device": "63b4c490-c93b-11f0-8004-444553540000",
@@ -344,7 +348,9 @@
           "body": "[M] / Auxilliary Mode Cycle / Mining, / Salvage"
         }
       },
-      "showcase_action": "v_set_mining_mode"
+      "showcase_action": "v_set_mining_mode",
+      "role": "mode-switch",
+      "target_mode": "SCM Mode"
     },
     "T-E1": {
       "phys_device": "63b4c490-c93b-11f0-8004-444553540000",

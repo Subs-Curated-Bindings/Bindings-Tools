@@ -11,8 +11,8 @@
     ""
   ],
   "stats": {
-    "resolved": 41,
-    "no_action": 1
+    "resolved": 42,
+    "no_action": 0
   },
   "binds": {
     "R-A2": {
@@ -54,7 +54,9 @@
           "body": "[H] Select Mining / Salvage Mode Toggle Bomb Impact"
         }
       },
-      "showcase_action": "v_weapon_bombing_toggle_desired_impact_point"
+      "showcase_action": "v_weapon_bombing_toggle_desired_impact_point",
+      "role": "mode-switch",
+      "target_mode": "SCM Mode"
     },
     "R-D1": {
       "phys_device": "0dcd7600-d727-11ef-800a-444553540000",
@@ -501,14 +503,18 @@
           "body": "[H] Master Mode Cycle Nav, & SCM Operator Mode Cycle Guns, Flight, Missile, Mining, Salvage, Scanning, & Quantum"
         }
       },
-      "showcase_action": "v_operator_mode_cycle_forward"
+      "showcase_action": "v_operator_mode_cycle_forward",
+      "role": "mode-switch",
+      "target_mode": "SCM Mode"
     },
     "L-D1": {
       "phys_device": "0dcdeb30-d727-11ef-8013-444553540000",
       "phys_type": "button",
       "phys_id": "5",
       "modes": {},
-      "showcase_action": null
+      "showcase_action": null,
+      "role": "mode-switch",
+      "target_mode": "Modifier"
     },
     "L-A4.up": {
       "phys_device": "0dcdeb30-d727-11ef-8013-444553540000",
