@@ -291,6 +291,56 @@ def main():
             ],
         }
 
+    # Uniqueness pass — chart phrases are limited supply. Without this, the
+    # matcher cheerfully assigns "Cycle MFD Page Backward" to 9 different
+    # XMLActionNames (gp_rotatepitch, gp_rotateyaw, ...) and downstream slot
+    # matching fragments into ambiguous_exact piles. Greedy by score: strongest
+    # proposal claims its top chart phrase first; collision losers walk down
+    # their candidate list, then fall back to DisplayName, then XML-name.
+    print("Uniqueness pass — resolving chart-phrase collisions ...")
+    claimed = {}  # clean_text -> winner XMLActionName
+    losers = []
+    proposal_order = sorted(proposals.items(), key=lambda kv: -kv[1]["score"])
+    for xml_name, p in proposal_order:
+        if not p["source"].startswith("chart"):
+            continue
+        text = p["proposal"]
+        if text not in claimed:
+            claimed[text] = xml_name
+            continue
+        # Collision — try next-best chart candidate
+        found = False
+        for cand in p["candidates"][1:]:
+            ct = cand["text"]
+            if ct not in claimed:
+                claimed[ct] = xml_name
+                p["proposal"] = ct
+                p["source"] = f"chart:{cand['cluster']}"
+                p["score"] = cand["score"]
+                p["confidence"] = "medium"  # downgrade — wasn't top pick
+                found = True
+                break
+        if not found:
+            losers.append(xml_name)
+
+    fb_disp = 0
+    fb_xml = 0
+    for xml_name in losers:
+        p = proposals[xml_name]
+        disp = p.get("display_name", "")
+        if display_name_is_clean(disp):
+            p["proposal"] = disp
+            p["source"] = "csv_displayname"
+            p["confidence"] = "medium"
+            fb_disp += 1
+        else:
+            p["proposal"] = make_label_from_xml_action(xml_name)
+            p["source"] = "xml_name_fallback"
+            p["confidence"] = "low"
+            fb_xml += 1
+    print(f"  {len(claimed)} unique chart-phrase assignments")
+    print(f"  {len(losers)} losers re-routed ({fb_disp} → displayname, {fb_xml} → xml fallback)")
+
     # Stats
     conf_counts = Counter(p["confidence"] for p in proposals.values())
     src_counts = Counter(

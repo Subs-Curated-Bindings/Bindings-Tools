@@ -5,14 +5,14 @@
     "joystick_actions_in_csv": 467,
     "proposals_generated": 467,
     "by_confidence": {
-      "medium": 410,
-      "high": 48,
-      "low": 9
+      "medium": 396,
+      "high": 38,
+      "low": 33
     },
     "by_source": {
-      "chart": 392,
-      "xml_fallback": 9,
-      "csv_displayname": 66
+      "chart": 240,
+      "xml_fallback": 33,
+      "csv_displayname": 194
     }
   },
   "proposals": {
@@ -66,8 +66,8 @@
       "candidates": []
     },
     "cycle_chat_lobby": {
-      "proposal": "Chat Window Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-PINKY",
+      "proposal": "Cycle Chat Lobby",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Cycle Chat Lobby",
@@ -203,8 +203,8 @@
       "candidates": []
     },
     "emote_cs_forward": {
-      "proposal": "Hostile Target Forward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-TGT.right",
+      "proposal": "Forward",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.56,
       "display_name": "Forward",
@@ -236,8 +236,8 @@
       ]
     },
     "emote_cs_left": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Left",
@@ -277,8 +277,8 @@
       "candidates": []
     },
     "emote_cs_right": {
-      "proposal": "Shields Right",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.right",
+      "proposal": "Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Right",
@@ -310,7 +310,7 @@
       ]
     },
     "emote_cs_stop": {
-      "proposal": "Start/Pause Stop Watch",
+      "proposal": "Reset Stop Watch",
       "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.down",
       "confidence": "medium",
       "score": 5.59,
@@ -512,7 +512,7 @@
     },
     "eva_boost": {
       "proposal": "Boost",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.press-in",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.26,
       "display_name": "Boost",
@@ -532,8 +532,8 @@
       ]
     },
     "eva_brake": {
-      "proposal": "Space Brake",
-      "source": "chart:[Enhanced] Dual VKB Gunfi:RAPID-TRIG-L",
+      "proposal": "Brake",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 8.35,
       "display_name": "Brake",
@@ -547,8 +547,8 @@
       ]
     },
     "eva_roll": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Roll Left/Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Roll Left/Right",
@@ -580,8 +580,8 @@
       ]
     },
     "eva_roll_left": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Roll Left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Roll Left",
@@ -613,8 +613,8 @@
       ]
     },
     "eva_roll_right": {
-      "proposal": "Shields Right",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.right",
+      "proposal": "Roll Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Roll Right",
@@ -646,8 +646,8 @@
       ]
     },
     "eva_strafe_back": {
-      "proposal": "Strafe Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.left",
+      "proposal": "Strafe Backward",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.86,
       "display_name": "Strafe Backward",
@@ -679,10 +679,10 @@
       ]
     },
     "eva_strafe_down": {
-      "proposal": "Strafe Down",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.down",
+      "proposal": "Strafe Left",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.left",
       "confidence": "medium",
-      "score": 15.7,
+      "score": 5.86,
       "display_name": "Strafe Down",
       "candidates": [
         {
@@ -712,8 +712,8 @@
       ]
     },
     "eva_strafe_forward": {
-      "proposal": "Strafe Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.left",
+      "proposal": "Strafe Forward",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.86,
       "display_name": "Strafe Forward",
@@ -745,8 +745,8 @@
       ]
     },
     "eva_strafe_lateral": {
-      "proposal": "Strafe Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.left",
+      "proposal": "Strafe Left/Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 15.29,
       "display_name": "Strafe Left/Right",
@@ -779,7 +779,7 @@
     },
     "eva_strafe_left": {
       "proposal": "Strafe Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 15.29,
       "display_name": "Strafe Left",
@@ -811,8 +811,8 @@
       ]
     },
     "eva_strafe_longitudinal": {
-      "proposal": "Strafe Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.left",
+      "proposal": "Strafe Forward/Backward",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.86,
       "display_name": "Strafe Forward/Backward",
@@ -845,7 +845,7 @@
     },
     "eva_strafe_right": {
       "proposal": "Strafe Right",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 15.29,
       "display_name": "Strafe Right",
@@ -878,7 +878,7 @@
     },
     "eva_strafe_up": {
       "proposal": "Strafe Up",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.up",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 15.7,
       "display_name": "Strafe Up",
@@ -910,8 +910,8 @@
       ]
     },
     "eva_strafe_vertical": {
-      "proposal": "Strafe Down",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.down",
+      "proposal": "Strafe Up/Down",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 15.7,
       "display_name": "Strafe Up/Down",
@@ -943,8 +943,8 @@
       ]
     },
     "eva_toggle_headlook_mode": {
-      "proposal": "3rd Person Freelook",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.press-in.game",
+      "proposal": "Freelook",
+      "source": "chart:[Enhanced] Dual TM SOL-R:ANALOG-HAT-R",
       "confidence": "medium",
       "score": 5.59,
       "display_name": "Freelook (Hold)",
@@ -976,8 +976,8 @@
       ]
     },
     "eva_view_pitch": {
-      "proposal": "Missle Count Down",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
+      "proposal": "View Up/Down",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.61,
       "display_name": "View Up/Down",
@@ -1009,8 +1009,8 @@
       ]
     },
     "eva_view_pitch_down": {
-      "proposal": "Missle Count Down",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
+      "proposal": "Landing Gear Down",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-SW3.down",
       "confidence": "medium",
       "score": 4.61,
       "display_name": "View Down",
@@ -1042,8 +1042,8 @@
       ]
     },
     "eva_view_pitch_mouse": {
-      "proposal": "Turret Mouse Mode*",
-      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-L",
+      "proposal": "View Up/Down",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "View Up/Down",
@@ -1075,8 +1075,8 @@
       ]
     },
     "eva_view_pitch_up": {
-      "proposal": "Missile Count Up",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.up",
+      "proposal": "Con\ufb01g Up",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-SW2.up",
       "confidence": "medium",
       "score": 4.61,
       "display_name": "View Up",
@@ -1108,8 +1108,8 @@
       ]
     },
     "eva_view_yaw": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "View Left/Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "View Left/Right",
@@ -1141,8 +1141,8 @@
       ]
     },
     "eva_view_yaw_left": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "View Left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "View Left",
@@ -1174,8 +1174,8 @@
       ]
     },
     "eva_view_yaw_mouse": {
-      "proposal": "Turret Mouse Mode*",
-      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-L",
+      "proposal": "View Left/Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "View Left/Right",
@@ -1207,8 +1207,8 @@
       ]
     },
     "eva_view_yaw_right": {
-      "proposal": "Shields Right",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.right",
+      "proposal": "View Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "View Right",
@@ -1240,8 +1240,8 @@
       ]
     },
     "fixed_speed_decrement": {
-      "proposal": "Gimbal Cycle Fixed/Auto",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.press-in",
+      "proposal": "Default Movement Speed Decrease",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Default Movement Speed Decrease",
@@ -1273,10 +1273,10 @@
       ]
     },
     "fixed_speed_increment": {
-      "proposal": "Speed Limiter Inc. Step",
-      "source": "chart:[Enhanced] Dual TM SOL-R:L-CLUSTER",
+      "proposal": "Gimbal Cycle Fixed/Auto",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.press-in",
       "confidence": "medium",
-      "score": 13.88,
+      "score": 6.42,
       "display_name": "Default Movement Speed Increase",
       "candidates": [
         {
@@ -1306,8 +1306,8 @@
       ]
     },
     "focus_on_chat_textinput": {
-      "proposal": "Chat Window Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-PINKY",
+      "proposal": "Chat Window Focus",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 19.26,
       "display_name": "Chat Window Focus",
@@ -1428,8 +1428,8 @@
       ]
     },
     "force_respawn": {
-      "proposal": "G-Force Safety Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-AP-6",
+      "proposal": "Force Re-spawn (E.V.A. / On Foot)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 8.35,
       "display_name": "Force Re-spawn (E.V.A. / On Foot)",
@@ -1443,8 +1443,8 @@
       ]
     },
     "free_thirdperson_camera": {
-      "proposal": "Missile Cinematic Camera",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.right",
+      "proposal": "Free View Camera (Hold)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.04,
       "display_name": "Free View Camera (Hold)",
@@ -1476,8 +1476,8 @@
       ]
     },
     "gp_movex": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Move Left / Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Move Left / Right",
@@ -1509,8 +1509,8 @@
       ]
     },
     "gp_movey": {
-      "proposal": "Cycle MFD Page Backward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "Move Forward / Backward",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.61,
       "display_name": "Move Forward / Backward",
@@ -1542,8 +1542,8 @@
       ]
     },
     "gp_rotatepitch": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look (Pitch)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look (Pitch)",
@@ -1575,8 +1575,8 @@
       ]
     },
     "gp_rotateyaw": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look (Yaw)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look (Yaw)",
@@ -1674,7 +1674,7 @@
       ]
     },
     "headtrack_recenter_device": {
-      "proposal": "Head Tracking On/Off",
+      "proposal": "Reset Head Tracking",
       "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.left",
       "confidence": "medium",
       "score": 16.45,
@@ -1739,8 +1739,8 @@
       "candidates": []
     },
     "nextweapon": {
-      "proposal": "Weapon Preset Next",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.right",
+      "proposal": "Next Weapon Presett",
+      "source": "chart:[Enhanced] Dual TM SOL-R:R-CLUSTER",
       "confidence": "medium",
       "score": 13.8,
       "display_name": "Next Weapon",
@@ -1838,8 +1838,8 @@
       ]
     },
     "pc_focus": {
-      "proposal": "Focus All Salvage Heads",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.press-in",
+      "proposal": "Focus Disintegration",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.down",
       "confidence": "medium",
       "score": 4.77,
       "display_name": "Focus",
@@ -1879,7 +1879,7 @@
       "candidates": []
     },
     "pc_personal_back": {
-      "proposal": "Exit Seat/",
+      "proposal": "Exit Turret",
       "source": "chart:[Enhanced] MOZA MTQ + MHG:T-BRK.left",
       "confidence": "medium",
       "score": 5.59,
@@ -1920,8 +1920,8 @@
       "candidates": []
     },
     "pc_screen_focus_down": {
-      "proposal": "Select MFD Down",
-      "source": "chart:[Enhanced] Dual TM SOL-R:RR-BTNS",
+      "proposal": "MFD Down",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.09,
       "display_name": "MFD Down",
@@ -1953,8 +1953,8 @@
       ]
     },
     "pc_screen_focus_left": {
-      "proposal": "Focus Left Tool",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "MFD Left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.66,
       "display_name": "MFD Left",
@@ -1986,8 +1986,8 @@
       ]
     },
     "pc_screen_focus_right": {
-      "proposal": "Focus Right Tool",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.right",
+      "proposal": "MFD Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.66,
       "display_name": "MFD Right",
@@ -2019,8 +2019,8 @@
       ]
     },
     "pc_screen_focus_up": {
-      "proposal": "Select MFD Up",
-      "source": "chart:[Enhanced] Dual TM SOL-R:RR-BTNS",
+      "proposal": "MFD Up",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.09,
       "display_name": "MFD Up",
@@ -2052,8 +2052,8 @@
       ]
     },
     "pc_select": {
-      "proposal": "Activate Scan",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:MAIN-TRIG.stage-1",
+      "proposal": "Activate Inner Thought",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 7.51,
       "display_name": "Activate Inner Thought",
@@ -2073,8 +2073,8 @@
       ]
     },
     "pc_zoom_in": {
-      "proposal": "/Toggle Precision Aiming Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.press-in",
+      "proposal": "Interaction Mode Zoom In",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.11,
       "display_name": "Interaction Mode Zoom In",
@@ -2106,8 +2106,8 @@
       ]
     },
     "pc_zoom_out": {
-      "proposal": "/Toggle Precision Aiming Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.press-in",
+      "proposal": "Interaction Mode Zoom Out",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.11,
       "display_name": "Interaction Mode Zoom Out",
@@ -2139,8 +2139,8 @@
       ]
     },
     "pl_exit": {
-      "proposal": "Exit Seat/",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-BRK.left",
+      "proposal": "Exit Seat",
+      "source": "chart:[Enhanced] Dual TM SOL-R:RL-SWITCH",
       "confidence": "medium",
       "score": 18.02,
       "display_name": "Exit seat",
@@ -2172,8 +2172,8 @@
       ]
     },
     "pl_hud_open_scoreboard": {
-      "proposal": "Open Doors Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-A1",
+      "proposal": "Port Open",
+      "source": "chart:[Enhanced] Dual TM SOL-R:LR-SWITCH",
       "confidence": "medium",
       "score": 5.86,
       "display_name": "Scoreboard",
@@ -2205,8 +2205,8 @@
       ]
     },
     "port_modification_select": {
-      "proposal": "Port Lock Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-A3",
+      "proposal": "Port Modification Interact",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.86,
       "display_name": "Port Modification Interact",
@@ -2238,8 +2238,8 @@
       ]
     },
     "prevItem": {
-      "proposal": "Missile Type Previous",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.left",
+      "proposal": "Prev. Operator Mode",
+      "source": "chart:[Enhanced] Dual TM SOL-R:L-CLUSTER",
       "confidence": "medium",
       "score": 5.19,
       "display_name": "",
@@ -2271,8 +2271,8 @@
       ]
     },
     "prevweapon": {
-      "proposal": "Weapon Preset Previous",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.left",
+      "proposal": "Previous Weapon",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.53,
       "display_name": "Previous Weapon",
@@ -2304,8 +2304,8 @@
       ]
     },
     "prone_rollleft": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Roll Left (while Prone)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Roll Left (while Prone)",
@@ -2337,8 +2337,8 @@
       ]
     },
     "prone_rollright": {
-      "proposal": "Shields Right",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.right",
+      "proposal": "Roll Right (while Prone)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Roll Right (while Prone)",
@@ -2386,9 +2386,9 @@
       "candidates": []
     },
     "spectate_free_look": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
-      "confidence": "medium",
+      "proposal": "Spectate Free Look",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 6.42,
       "display_name": "",
       "candidates": [
@@ -2485,8 +2485,8 @@
       ]
     },
     "spectate_rotatepitch": {
-      "proposal": "Missile Cinematic Camera",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.right",
+      "proposal": "Spectator Camera Rotate Pitch",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.04,
       "display_name": "Spectator Camera Rotate Pitch",
@@ -2518,8 +2518,8 @@
       ]
     },
     "spectate_rotatepitch_mouse": {
-      "proposal": "Turret Mouse Mode*",
-      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-L",
+      "proposal": "Uses Mouse Axis",
+      "source": "chart:[Enhanced] Dual VKB Gladi:R-A1.press-in.device",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Spectator Camera Rotate Pitch",
@@ -2551,8 +2551,8 @@
       ]
     },
     "spectate_rotateyaw": {
-      "proposal": "Missile Cinematic Camera",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.right",
+      "proposal": "Spectator Camera Rotate Yaw",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.04,
       "display_name": "Spectator Camera Rotate Yaw",
@@ -2584,8 +2584,8 @@
       ]
     },
     "spectate_rotateyaw_mouse": {
-      "proposal": "Turret Mouse Mode*",
-      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-L",
+      "proposal": "Spectator Camera Rotate Yaw",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Spectator Camera Rotate Yaw",
@@ -2617,9 +2617,9 @@
       ]
     },
     "spectate_speed_decrement": {
-      "proposal": "Speed Limiter ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-RT2.down",
-      "confidence": "medium",
+      "proposal": "Spectate Speed Decrement",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 5.48,
       "display_name": "",
       "candidates": [
@@ -2650,9 +2650,9 @@
       ]
     },
     "spectate_speed_increment": {
-      "proposal": "Speed Limiter ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-RT2.down",
-      "confidence": "medium",
+      "proposal": "Spectate Speed Increment",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 5.48,
       "display_name": "",
       "candidates": [
@@ -2691,8 +2691,8 @@
       "candidates": []
     },
     "spectate_zoom": {
-      "proposal": "/Toggle Precision Aiming Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.press-in",
+      "proposal": "Spectator Camera Zoom",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.11,
       "display_name": "Spectator Camera Zoom",
@@ -2724,8 +2724,8 @@
       ]
     },
     "spectate_zoom_in": {
-      "proposal": "/Toggle Precision Aiming Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.press-in",
+      "proposal": "Spectator Camera Zoom In",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.11,
       "display_name": "Spectator Camera Zoom In",
@@ -2757,8 +2757,8 @@
       ]
     },
     "spectate_zoom_out": {
-      "proposal": "/Toggle Precision Aiming Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.press-in",
+      "proposal": "Spectator Camera Zoom Out",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.11,
       "display_name": "Spectator Camera Zoom Out",
@@ -2831,8 +2831,8 @@
       ]
     },
     "thirdperson": {
-      "proposal": "3rd Person Freelook",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.press-in.game",
+      "proposal": "Third Person View (Toggle)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.86,
       "display_name": "Third Person View (Toggle)",
@@ -2913,8 +2913,8 @@
       "candidates": []
     },
     "tractor_beam_decrease_distance": {
-      "proposal": "Tractor Distance Inc./Dec.",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E3",
+      "proposal": "Dec. Tractor Distance",
+      "source": "chart:[Enhanced] Dual TM SOL-R:4WAY-HAT-L-30",
       "confidence": "medium",
       "score": 20.41,
       "display_name": "Tractor Beam - Decrease Distance",
@@ -2946,8 +2946,8 @@
       ]
     },
     "tractor_beam_increase_distance": {
-      "proposal": "Tractor Distance Inc./Dec.",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E3",
+      "proposal": "Inc. Tractor Distance",
+      "source": "chart:[Enhanced] Dual TM SOL-R:4WAY-HAT-L-30",
       "confidence": "medium",
       "score": 20.26,
       "display_name": "Tractor Beam - Increase Distance",
@@ -3012,8 +3012,8 @@
       ]
     },
     "tractor_beam_vehicle_increase_distance": {
-      "proposal": "Tractor Distance Inc./Dec.",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E3",
+      "proposal": "Tractor Distance Inc.",
+      "source": "chart:[Enhanced] Dual TM SOL-R:L-ENCODER",
       "confidence": "medium",
       "score": 20.26,
       "display_name": "ui_CIFPSTractorBeamVehicleIncreaseDistance",
@@ -3078,8 +3078,8 @@
       ]
     },
     "turret_esp_toggle": {
-      "proposal": "Toggle Power On/Off",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.up",
+      "proposal": "Turret E.S.P. Toggle On / Off",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 12.31,
       "display_name": "Turret E.S.P. Toggle On / Off",
@@ -3177,8 +3177,8 @@
       ]
     },
     "turret_limiter_rel": {
-      "proposal": "Turret Speed Limiter ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-2",
+      "proposal": "Turret - Speed Limiter (rel)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 19.59,
       "display_name": "Turret - Speed Limiter (rel)",
@@ -3210,8 +3210,8 @@
       ]
     },
     "turret_limiter_rel_decrease": {
-      "proposal": "Turret Speed Limiter ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-2",
+      "proposal": "Turret - Speed Limiter - Decrease (rel)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 19.59,
       "display_name": "Turret - Speed Limiter - Decrease (rel)",
@@ -3243,10 +3243,10 @@
       ]
     },
     "turret_limiter_rel_increase": {
-      "proposal": "Speed Limiter Inc. Step",
-      "source": "chart:[Enhanced] Dual TM SOL-R:L-CLUSTER",
+      "proposal": "Turret Speed Limiter Incrimental",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E3",
       "confidence": "medium",
-      "score": 19.92,
+      "score": 19.59,
       "display_name": "Turret - Speed Limiter - Increase (rel)",
       "candidates": [
         {
@@ -3276,10 +3276,10 @@
       ]
     },
     "turret_limiter_toggle": {
-      "proposal": "Turret Speed Limiter ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-2",
+      "proposal": "Speed Limiter Toggle",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-SPD-2",
       "confidence": "medium",
-      "score": 19.59,
+      "score": 18.35,
       "display_name": "Turret - Speed Limiter - On/Off (Hold/Toggle)",
       "candidates": [
         {
@@ -3531,10 +3531,10 @@
       ]
     },
     "v_accel_range_down": {
-      "proposal": "Acceleration Limiter ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-2",
-      "confidence": "high",
-      "score": 18.55,
+      "proposal": "Bomb Hud Range Inc./Dec.",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E3",
+      "confidence": "medium",
+      "score": 12.58,
       "display_name": "Acceleration Limiter - Decrease (hold)",
       "candidates": [
         {
@@ -3564,10 +3564,10 @@
       ]
     },
     "v_accel_range_up": {
-      "proposal": "Acceleration Limiter ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-2",
-      "confidence": "high",
-      "score": 18.55,
+      "proposal": "Inc. Bomb Range",
+      "source": "chart:[Enhanced] Dual TM SOL-R:4WAY-HAT-L-30",
+      "confidence": "medium",
+      "score": 12.43,
       "display_name": "Acceleration Limiter - Increase (hold)",
       "candidates": [
         {
@@ -3597,9 +3597,9 @@
       ]
     },
     "v_ads_hold": {
-      "proposal": "ADS Zoom Toggle",
-      "source": "chart:[Enhanced] Dual TM SOL-R:L-CLUSTER",
-      "confidence": "medium",
+      "proposal": "Ads",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 7.51,
       "display_name": "ui_v_ads_hold",
       "candidates": [
@@ -3651,10 +3651,10 @@
       ]
     },
     "v_ads_toggle": {
-      "proposal": "ADS Zoom Toggle",
+      "proposal": "ADS Zoom",
       "source": "chart:[Enhanced] Dual TM SOL-R:L-CLUSTER",
-      "confidence": "high",
-      "score": 15.37,
+      "confidence": "medium",
+      "score": 7.51,
       "display_name": "ui_v_ads_toggle",
       "candidates": [
         {
@@ -3759,8 +3759,8 @@
       ]
     },
     "v_auto_targeting_toggle_long": {
-      "proposal": "Toggle Power On/Off",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.up",
+      "proposal": "Auto Targeting - Toggle On/Off (Long Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 12.31,
       "display_name": "Auto Targeting - Toggle On/Off (Long Press)",
@@ -3801,8 +3801,8 @@
     },
     "v_boost": {
       "proposal": "Boost",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.press-in",
-      "confidence": "medium",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 6.26,
       "display_name": "ui_CIboost",
       "candidates": [
@@ -3821,8 +3821,8 @@
       ]
     },
     "v_brake": {
-      "proposal": "Space Brake",
-      "source": "chart:[Enhanced] Dual VKB Gunfi:RAPID-TRIG-L",
+      "proposal": "Brake",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 8.35,
       "display_name": "Brake",
@@ -3869,8 +3869,8 @@
       ]
     },
     "v_cooler_throttle_down": {
-      "proposal": "Mining Throttle ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-3",
+      "proposal": "R-THROTTLE",
+      "source": "chart:[Enhanced] Dual TM SOL-R:R-THROTTLE",
       "confidence": "medium",
       "score": 6.02,
       "display_name": "Decrease Cooler Rate",
@@ -3902,8 +3902,8 @@
       ]
     },
     "v_cooler_throttle_up": {
-      "proposal": "Mining Throttle ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-3",
+      "proposal": "Mining Throttle",
+      "source": "chart:[Enhanced] Dual VKB Gladi:L-T1.up",
       "confidence": "medium",
       "score": 6.02,
       "display_name": "Increase Cooler Rate",
@@ -4001,8 +4001,8 @@
       ]
     },
     "v_deploy_landing_system": {
-      "proposal": "Request Landing",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-NAV-1",
+      "proposal": "Landing Gear Up",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-SW3.up",
       "confidence": "medium",
       "score": 5.19,
       "display_name": "Landing System (Deploy)",
@@ -4170,9 +4170,9 @@
       ]
     },
     "v_engineering_assignment_engine_min": {
-      "proposal": "Capacitor Reset",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.up",
-      "confidence": "medium",
+      "proposal": "Engineering Assignment Engine Min",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 6.42,
       "display_name": "ui_v_capacitor_assignment_engine_min",
       "candidates": [
@@ -4244,8 +4244,8 @@
       ]
     },
     "v_engineering_assignment_shields_increase": {
-      "proposal": "Shields Reset",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.press-in",
+      "proposal": "Shields Left",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
       "confidence": "medium",
       "score": 4.38,
       "display_name": "Shields - Increase (Tap)",
@@ -4359,9 +4359,9 @@
       "candidates": []
     },
     "v_engineering_assignment_weapons_max": {
-      "proposal": "Weapon Set to Max",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.left",
-      "confidence": "medium",
+      "proposal": "Engineering Assignment Weapons Max",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 13.09,
       "display_name": "ui_v_capacitor_assignment_weapon_max",
       "candidates": [
@@ -4458,8 +4458,8 @@
       ]
     },
     "v_enter_remote_turret_2": {
-      "proposal": "Remote Turret 2",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.left",
+      "proposal": "Remote Turret 3",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.right",
       "confidence": "medium",
       "score": 12.68,
       "display_name": "Enter Remote Turret 2",
@@ -4491,8 +4491,8 @@
       ]
     },
     "v_enter_remote_turret_3": {
-      "proposal": "Remote Turret 2",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.left",
+      "proposal": "Remote Turret 1",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.up",
       "confidence": "medium",
       "score": 12.68,
       "display_name": "Enter Remote Turret 3",
@@ -4605,9 +4605,9 @@
       ]
     },
     "v_hud_cancel": {
-      "proposal": "Decrease Bomb HUD Range",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
-      "confidence": "medium",
+      "proposal": "Hud Cancel",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 5.59,
       "display_name": "",
       "candidates": [
@@ -4638,9 +4638,9 @@
       ]
     },
     "v_hud_confirm": {
-      "proposal": "Decrease Bomb HUD Range",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
-      "confidence": "medium",
+      "proposal": "Hud Confirm",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 5.59,
       "display_name": "",
       "candidates": [
@@ -4671,9 +4671,9 @@
       ]
     },
     "v_hud_focused_cycle_mode_back": {
-      "proposal": "Cycle MFD Page Backward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
-      "confidence": "medium",
+      "proposal": "Hud Focused Cycle Mode Back",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 12.4,
       "display_name": "",
       "candidates": [
@@ -4704,9 +4704,9 @@
       ]
     },
     "v_hud_focused_cycle_mode_fwd": {
-      "proposal": "Cycle MFD Page Forward",
-      "source": "chart:[Enhanced] Dual TM SOL-R:RR-BTNS",
-      "confidence": "medium",
+      "proposal": "Hud Focused Cycle Mode Fwd",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 12.33,
       "display_name": "",
       "candidates": [
@@ -4770,9 +4770,9 @@
       ]
     },
     "v_hud_left_panel_down": {
-      "proposal": "Decrease Bomb HUD Range",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
-      "confidence": "medium",
+      "proposal": "Hud Left Panel Down",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 5.59,
       "display_name": "",
       "candidates": [
@@ -4803,9 +4803,9 @@
       ]
     },
     "v_hud_left_panel_left": {
-      "proposal": "Decrease Bomb HUD Range",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
-      "confidence": "medium",
+      "proposal": "Hud Left Panel Left",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 5.59,
       "display_name": "",
       "candidates": [
@@ -4836,9 +4836,9 @@
       ]
     },
     "v_hud_left_panel_right": {
-      "proposal": "Decrease Bomb HUD Range",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
-      "confidence": "medium",
+      "proposal": "Hud Left Panel Right",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 5.59,
       "display_name": "",
       "candidates": [
@@ -4869,9 +4869,9 @@
       ]
     },
     "v_hud_left_panel_up": {
-      "proposal": "Decrease Bomb HUD Range",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
-      "confidence": "medium",
+      "proposal": "Hud Left Panel Up",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 5.59,
       "display_name": "",
       "candidates": [
@@ -4902,8 +4902,8 @@
       ]
     },
     "v_hud_open_scoreboard": {
-      "proposal": "Open Doors Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-A1",
+      "proposal": "Open Doors",
+      "source": "chart:[Enhanced] Dual TM SOL-R:LL-SWITCH",
       "confidence": "medium",
       "score": 5.86,
       "display_name": "Scoreboard",
@@ -4935,8 +4935,8 @@
       ]
     },
     "v_ifcs_speed_limiter_abs": {
-      "proposal": "Speed Limiter ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-RT2.down",
+      "proposal": "Speed Limiter (abs)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 21.6,
       "display_name": "Speed Limiter (abs)",
@@ -5001,8 +5001,8 @@
       ]
     },
     "v_ifcs_speed_limiter_down": {
-      "proposal": "Speed Limiter ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-RT2.down",
+      "proposal": "Lower Speed Limiter",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E1.down",
       "confidence": "medium",
       "score": 14.25,
       "display_name": "Speed Limiter - Decrease (hold)",
@@ -5034,10 +5034,10 @@
       ]
     },
     "v_ifcs_speed_limiter_increment": {
-      "proposal": "Speed Limiter Inc. Step",
-      "source": "chart:[Enhanced] Dual TM SOL-R:L-CLUSTER",
+      "proposal": "Speed Limiter ABS",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-RT2.down",
       "confidence": "medium",
-      "score": 25.52,
+      "score": 14.25,
       "display_name": "Speed Limiter - Step Up (tap)",
       "candidates": [
         {
@@ -5067,10 +5067,10 @@
       ]
     },
     "v_ifcs_speed_limiter_toggle": {
-      "proposal": "Speed Limiter Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-SPD-2",
-      "confidence": "high",
-      "score": 18.35,
+      "proposal": "Raise Speed Limiter",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E1.up",
+      "confidence": "medium",
+      "score": 14.25,
       "display_name": "Speed Limiter - Enable / Disable",
       "candidates": [
         {
@@ -5100,8 +5100,8 @@
       ]
     },
     "v_ifcs_speed_limiter_up": {
-      "proposal": "Speed Limiter Inc. Step",
-      "source": "chart:[Enhanced] Dual TM SOL-R:L-CLUSTER",
+      "proposal": "Speed Limiter - Increase (hold)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 19.92,
       "display_name": "Speed Limiter - Increase (hold)",
@@ -5133,10 +5133,10 @@
       ]
     },
     "v_ifcs_throttle_set_normal": {
-      "proposal": "IFCS Set Page",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-6",
+      "proposal": "Cruise Control Toggle",
+      "source": "chart:[Enhanced] Dual TM SOL-R:4WAY-HAT-L-40",
       "confidence": "medium",
-      "score": 8.35,
+      "score": 6.42,
       "display_name": "Throttle - Cruise Mode - Disable",
       "candidates": [
         {
@@ -5265,9 +5265,9 @@
       ]
     },
     "v_ifcs_vector_decoupling_toggle": {
-      "proposal": "IFCS Set Page",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-6",
-      "confidence": "medium",
+      "proposal": "Ifcs Vector Decoupling Toggle",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 8.35,
       "display_name": "ui_v_ifcs_vector_decoupling_toggle",
       "candidates": [
@@ -5313,8 +5313,8 @@
       ]
     },
     "v_increase_mining_throttle": {
-      "proposal": "Inc. Mining Laser Power (Slow)",
-      "source": "chart:[Enhanced] Dual VKB Gladi:R-A3.up",
+      "proposal": "Increase Mining Laser Power",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 25.77,
       "display_name": "Increase Mining Laser Power",
@@ -5379,10 +5379,10 @@
       ]
     },
     "v_invoke_ping": {
-      "proposal": "Activate Scan",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:MAIN-TRIG.stage-1",
+      "proposal": "Scan Ping",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-BRK.left",
       "confidence": "medium",
-      "score": 7.51,
+      "score": 6.42,
       "display_name": "Activate Ping (Hold & Release)",
       "candidates": [
         {
@@ -5511,8 +5511,8 @@
       ]
     },
     "v_lock_all_doors": {
-      "proposal": "Lock Doors Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-A2",
+      "proposal": "Lock Doors",
+      "source": "chart:[Enhanced] Dual TM SOL-R:LR-SWITCH",
       "confidence": "medium",
       "score": 15.85,
       "display_name": "Lock All Doors",
@@ -5544,8 +5544,8 @@
       ]
     },
     "v_lock_all_ports": {
-      "proposal": "Port Lock Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-A3",
+      "proposal": "Port Lock",
+      "source": "chart:[Enhanced] Dual TM SOL-R:LR-SWITCH",
       "confidence": "medium",
       "score": 16.85,
       "display_name": "Port Lock All",
@@ -5577,8 +5577,8 @@
       ]
     },
     "v_look_ahead_enable": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Enable / Disable Look Ahead",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Enable / Disable Look Ahead",
@@ -5610,8 +5610,8 @@
       ]
     },
     "v_look_ahead_start_target_tracking": {
-      "proposal": "Start/Pause Stop Watch",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.down",
+      "proposal": "Enable / Disable Target Padlock (Toggle, Hold)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Enable / Disable Target Padlock (Toggle, Hold)",
@@ -5643,10 +5643,10 @@
       ]
     },
     "v_master_mode_cycle": {
-      "proposal": "Master Mode Cycle",
-      "source": "chart:[Enhanced] Dual VKB Gladi:L-A2",
+      "proposal": "Master Mode Toggle",
+      "source": "chart:[Enhanced] Dual TM SOL-R:L-CLUSTER",
       "confidence": "medium",
-      "score": 15.52,
+      "score": 6.69,
       "display_name": "ui_v_master_mode_cycle",
       "candidates": [
         {
@@ -5742,8 +5742,8 @@
       ]
     },
     "v_master_mode_set_scm": {
-      "proposal": "Master Mode Toggle",
-      "source": "chart:[Enhanced] Dual TM SOL-R:L-CLUSTER",
+      "proposal": "Set Master Mode to SCM",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.69,
       "display_name": "Set Master Mode to SCM",
@@ -5808,8 +5808,8 @@
       ]
     },
     "v_mfd_interact_cycle_backwards_short": {
-      "proposal": "Cycle MFD Page Backward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD - Cycle Page - Backwards (Short Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 26.03,
       "display_name": "MFD - Cycle Page - Backwards (Short Press)",
@@ -5874,8 +5874,8 @@
       ]
     },
     "v_mfd_interact_cycle_forwards_short": {
-      "proposal": "Cycle MFD Page Forward",
-      "source": "chart:[Enhanced] Dual TM SOL-R:RR-BTNS",
+      "proposal": "MFD - Cycle Page - Forwards (Short Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 25.95,
       "display_name": "MFD - Cycle Page - Forwards (Short Press)",
@@ -6072,8 +6072,8 @@
       ]
     },
     "v_mfd_select_view_comms_short": {
-      "proposal": "Cycle MFD Page Backward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD - Set Page - Communications (Short Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.62,
       "display_name": "MFD - Set Page - Communications (Short Press)",
@@ -6138,8 +6138,8 @@
       ]
     },
     "v_mfd_select_view_diagnostics_short": {
-      "proposal": "Cycle MFD Page Backward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD - Set Page - Diagnostics (Short Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.62,
       "display_name": "MFD - Set Page - Diagnostics (Short Press)",
@@ -6237,8 +6237,8 @@
       ]
     },
     "v_mfd_select_view_scanning_short": {
-      "proposal": "Cycle MFD Page Backward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD - Set Page - Scanning (Short Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.62,
       "display_name": "MFD - Set Page - Scanning (Short Press)",
@@ -6369,10 +6369,10 @@
       ]
     },
     "v_mfd_soft_select_cast_left_short": {
-      "proposal": "Select MFD Cast Left",
-      "source": "chart:[Enhanced] Dual VKB Gunfi:R-A1.left",
-      "confidence": "high",
-      "score": 27.01,
+      "proposal": "Cast Left Select",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-1",
+      "confidence": "medium",
+      "score": 20.84,
       "display_name": "MFD - Select - Left Cast (Short Press)",
       "candidates": [
         {
@@ -6435,10 +6435,10 @@
       ]
     },
     "v_mfd_soft_select_cast_right_short": {
-      "proposal": "Select MFD Cast Right",
-      "source": "chart:[Enhanced] Dual VKB Gunfi:R-A1.right",
-      "confidence": "high",
-      "score": 27.01,
+      "proposal": "Cast Right Select",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-5",
+      "confidence": "medium",
+      "score": 20.84,
       "display_name": "MFD - Select - Right Cast (Short Press)",
       "candidates": [
         {
@@ -6501,8 +6501,8 @@
       ]
     },
     "v_mfd_soft_select_mfd_2_long": {
-      "proposal": "MFD 8 Select",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD 7 Select",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-7",
       "confidence": "medium",
       "score": 12.12,
       "display_name": "MFD - Select - MFD 2 (Long Press)",
@@ -6534,8 +6534,8 @@
       ]
     },
     "v_mfd_soft_select_mfd_3_long": {
-      "proposal": "MFD 8 Select",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD 6 Select",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-6",
       "confidence": "medium",
       "score": 12.12,
       "display_name": "MFD - Select - MFD 3 (Long Press)",
@@ -6567,8 +6567,8 @@
       ]
     },
     "v_mfd_soft_select_mfd_4_long": {
-      "proposal": "MFD 8 Select",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD 5 Select",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-5",
       "confidence": "medium",
       "score": 12.12,
       "display_name": "MFD - Select - MFD 4 (Long Press)",
@@ -6600,8 +6600,8 @@
       ]
     },
     "v_mfd_soft_select_mfd_5_long": {
-      "proposal": "MFD 8 Select",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD - Select - MFD 5 (Long Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 12.12,
       "display_name": "MFD - Select - MFD 5 (Long Press)",
@@ -6633,8 +6633,8 @@
       ]
     },
     "v_mfd_soft_select_mfd_6_long": {
-      "proposal": "MFD 8 Select",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD - Select - MFD 6 (Long Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 12.12,
       "display_name": "MFD - Select - MFD 6 (Long Press)",
@@ -6666,8 +6666,8 @@
       ]
     },
     "v_mfd_soft_select_mfd_7_long": {
-      "proposal": "MFD 8 Select",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD - Select - MFD 7 (Long Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 12.12,
       "display_name": "MFD - Select - MFD 7 (Long Press)",
@@ -6699,8 +6699,8 @@
       ]
     },
     "v_mfd_soft_select_mfd_8_long": {
-      "proposal": "MFD 8 Select",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "MFD - Select - MFD 8 (Long Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 12.12,
       "display_name": "MFD - Select - MFD 8 (Long Press)",
@@ -6732,10 +6732,10 @@
       ]
     },
     "v_mining_throttle": {
-      "proposal": "Dec. Mining Laser Power (Slow)",
-      "source": "chart:[Enhanced] Dual VKB Gladi:R-A3.down",
+      "proposal": "Inc. Mining Laser Power (Slow)",
+      "source": "chart:[Enhanced] Dual VKB Gladi:R-A3.up",
       "confidence": "medium",
-      "score": 25.92,
+      "score": 25.77,
       "display_name": "Increase / Decrease Mining Laser Power",
       "candidates": [
         {
@@ -6798,8 +6798,8 @@
       ]
     },
     "v_mining_use_consumable2": {
-      "proposal": "Mining Module 2",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Mining Module 3",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.right",
       "confidence": "medium",
       "score": 13.41,
       "display_name": "Activate Mining Module (Slot 2)",
@@ -6831,8 +6831,8 @@
       ]
     },
     "v_mining_use_consumable3": {
-      "proposal": "Mining Module 2",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Mining Module 1",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.up",
       "confidence": "medium",
       "score": 13.41,
       "display_name": "Activate Mining Module (Slot 3)",
@@ -6864,8 +6864,8 @@
       ]
     },
     "v_mining_use_permanent_modifier": {
-      "proposal": "Fire Mining Laser",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:MAIN-TRIG.stage-1",
+      "proposal": "Mining Laser PWR ABS",
+      "source": "chart:[Enhanced] Dual TM SOL-R:L-THROTTLE",
       "confidence": "medium",
       "score": 13.41,
       "display_name": "Toggle Laser Beam (High / low)",
@@ -6897,8 +6897,8 @@
       ]
     },
     "v_move": {
-      "proposal": "Cycle MFD Page Backward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "Drive Forward / Backward",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.61,
       "display_name": "Drive Forward / Backward",
@@ -6930,8 +6930,8 @@
       ]
     },
     "v_move_back": {
-      "proposal": "Cycle MFD Page Backward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-8",
+      "proposal": "Drive Backward",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.61,
       "display_name": "Drive Backward",
@@ -6963,8 +6963,8 @@
       ]
     },
     "v_move_forward": {
-      "proposal": "Hostile Target Forward",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-TGT.right",
+      "proposal": "Attackers Target Forward",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-TGT.up",
       "confidence": "medium",
       "score": 4.56,
       "display_name": "Drive Forward",
@@ -7260,10 +7260,10 @@
       ]
     },
     "v_power_throttle_max": {
-      "proposal": "Inc. Mining Laser Power (Slow)",
-      "source": "chart:[Enhanced] Dual VKB Gladi:R-A3.up",
+      "proposal": "L-THROTTLE",
+      "source": "chart:[Enhanced] Dual TM SOL-R:L-THROTTLE",
       "confidence": "medium",
-      "score": 12.36,
+      "score": 6.02,
       "display_name": "Increase Throttle to Max",
       "candidates": [
         {
@@ -7293,10 +7293,10 @@
       ]
     },
     "v_power_throttle_min": {
-      "proposal": "Dec. Mining Laser Power (Slow)",
-      "source": "chart:[Enhanced] Dual VKB Gladi:R-A3.down",
+      "proposal": "Mining Throttle ABS",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-3",
       "confidence": "medium",
-      "score": 12.52,
+      "score": 6.02,
       "display_name": "Decrease Throttle to Min",
       "candidates": [
         {
@@ -7425,8 +7425,8 @@
       ]
     },
     "v_power_toggle_thrusters": {
-      "proposal": "Weapon Power Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.left",
+      "proposal": "Thruster Power Toggle",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
       "confidence": "medium",
       "score": 10.79,
       "display_name": "Toggle Power - Thrusters",
@@ -7458,8 +7458,8 @@
       ]
     },
     "v_power_toggle_weapons": {
-      "proposal": "Weapon Power Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.left",
+      "proposal": "Toggle Power - Weapons",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 10.79,
       "display_name": "Toggle Power - Weapons",
@@ -7532,8 +7532,8 @@
       "candidates": []
     },
     "v_roll_left": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Roll left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Roll left",
@@ -7631,9 +7631,9 @@
       ]
     },
     "v_salvage_cycle_modifiers_focused": {
-      "proposal": "Fire Focused Salvage Beam",
-      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-R",
-      "confidence": "high",
+      "proposal": "Salvage Cycle Modifiers Focused",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 18.65,
       "display_name": "ui_CISalvageCycleModifiersFocused",
       "candidates": [
@@ -7811,9 +7811,9 @@
       ]
     },
     "v_salvage_focus_disintegrate": {
-      "proposal": "Focus All Salvage Heads",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.press-in",
-      "confidence": "medium",
+      "proposal": "Salvage Focus Disintegrate",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 13.29,
       "display_name": "ui_CISalvageFocusDisintegrate",
       "candidates": [
@@ -8009,8 +8009,8 @@
       ]
     },
     "v_salvage_toggle_beam_spacing_axis": {
-      "proposal": "Salvage Beam Spacing ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-3",
+      "proposal": "Salvage Beam Spacing",
+      "source": "chart:[Enhanced] Dual TM SOL-R:ANALOG-HAT-L",
       "confidence": "medium",
       "score": 22.16,
       "display_name": "Salvage Beam Axis (Toggle)",
@@ -8141,9 +8141,9 @@
       ]
     },
     "v_salvage_toggle_fire_left": {
-      "proposal": "Fire Left Tool",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.left",
-      "confidence": "medium",
+      "proposal": "Salvage Toggle Fire Left",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 12.32,
       "display_name": "ui_CISalvageFireToggleLeft",
       "candidates": [
@@ -8322,8 +8322,8 @@
       "candidates": []
     },
     "v_shield_raise_level_back": {
-      "proposal": "Raise Speed Limiter",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E1.up",
+      "proposal": "Raise Missile Count",
+      "source": "chart:[Enhanced] Virpil VMAX Th:FLIP-TRIG-R",
       "confidence": "medium",
       "score": 7.51,
       "display_name": "Shield raise level back",
@@ -8355,10 +8355,10 @@
       ]
     },
     "v_shield_raise_level_down": {
-      "proposal": "Raise Speed Limiter",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E1.up",
+      "proposal": "Shield Cap Increase",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.right",
       "confidence": "medium",
-      "score": 7.51,
+      "score": 4.77,
       "display_name": "Shield raise level bottom",
       "candidates": [
         {
@@ -8388,10 +8388,10 @@
       ]
     },
     "v_shield_raise_level_forward": {
-      "proposal": "Raise Speed Limiter",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E1.up",
+      "proposal": "Shield Cap Decrease",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.right",
       "confidence": "medium",
-      "score": 7.51,
+      "score": 4.77,
       "display_name": "Shield raise level front",
       "candidates": [
         {
@@ -8421,8 +8421,8 @@
       ]
     },
     "v_shield_raise_level_left": {
-      "proposal": "Raise Speed Limiter",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E1.up",
+      "proposal": "Shield raise level left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 7.51,
       "display_name": "Shield raise level left",
@@ -8454,8 +8454,8 @@
       ]
     },
     "v_shield_raise_level_right": {
-      "proposal": "Raise Speed Limiter",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E1.up",
+      "proposal": "Shield raise level right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 7.51,
       "display_name": "Shield raise level right",
@@ -8487,8 +8487,8 @@
       ]
     },
     "v_shield_raise_level_up": {
-      "proposal": "Raise Speed Limiter",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-E1.up",
+      "proposal": "Shield raise level top",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 7.51,
       "display_name": "Shield raise level top",
@@ -8520,8 +8520,8 @@
       ]
     },
     "v_shield_reset_level": {
-      "proposal": "Shield Cap Increase",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.right",
+      "proposal": "Shield reset levels",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.77,
       "display_name": "Shield reset levels",
@@ -8627,8 +8627,8 @@
       ]
     },
     "v_strafe_lateral": {
-      "proposal": "Strafe Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.left",
+      "proposal": "Strafe Right",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.right",
       "confidence": "medium",
       "score": 15.29,
       "display_name": "Strafe left / right (abs.)",
@@ -8660,8 +8660,8 @@
       ]
     },
     "v_strafe_left": {
-      "proposal": "Strafe Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.left",
+      "proposal": "Strafe left (abs.)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 15.29,
       "display_name": "Strafe left (abs.)",
@@ -8693,8 +8693,8 @@
       ]
     },
     "v_strafe_longitudinal": {
-      "proposal": "Mining Throttle ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-3",
+      "proposal": "Throttle - Forward / Back",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.02,
       "display_name": "Throttle - Forward / Back",
@@ -8726,8 +8726,8 @@
       ]
     },
     "v_strafe_longitudinal_invert": {
-      "proposal": "Mining Throttle ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-3",
+      "proposal": "Throttle - Forward / Back Invert",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.02,
       "display_name": "Throttle - Forward / Back Invert",
@@ -8759,8 +8759,8 @@
       ]
     },
     "v_strafe_right": {
-      "proposal": "Strafe Right",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.right",
+      "proposal": "Strafe right (abs.)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 15.29,
       "display_name": "Strafe right (abs.)",
@@ -8825,8 +8825,8 @@
       ]
     },
     "v_strafe_trim_reset_short": {
-      "proposal": "Release Trim",
-      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-L",
+      "proposal": "Throttle - Trim - Release (Short Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.37,
       "display_name": "Throttle - Trim - Release (Short Press)",
@@ -8891,8 +8891,8 @@
       ]
     },
     "v_strafe_trim_set_50_long": {
-      "proposal": "Mining Throttle ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-3",
+      "proposal": "Throttle - Trim - Set To 50% (Long Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.02,
       "display_name": "Throttle - Trim - Set To 50% (Long Press)",
@@ -8924,8 +8924,8 @@
       ]
     },
     "v_strafe_trim_set_50_short": {
-      "proposal": "Mining Throttle ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-3",
+      "proposal": "Throttle - Trim - Set To 50% (Short Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.02,
       "display_name": "Throttle - Trim - Set To 50% (Short Press)",
@@ -8957,8 +8957,8 @@
       ]
     },
     "v_strafe_trim_set_short": {
-      "proposal": "Mining Throttle ABS",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-3",
+      "proposal": "Throttle - Trim - Set (Short Press)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.02,
       "display_name": "Throttle - Trim - Set (Short Press)",
@@ -9023,8 +9023,8 @@
       ]
     },
     "v_strafe_vertical": {
-      "proposal": "Strafe Down",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-M1.down",
+      "proposal": "Strafe up / down (abs.)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 15.7,
       "display_name": "Strafe up / down (abs.)",
@@ -9452,9 +9452,9 @@
       ]
     },
     "v_target_cycle_in_view_fwd": {
-      "proposal": "Door Lock Cycle",
-      "source": "chart:[Enhanced] Dual TM SOL-R:LR-SWITCH",
-      "confidence": "high",
+      "proposal": "Cycle Lock - In View - Forward",
+      "source": "csv_displayname",
+      "confidence": "medium",
       "score": 13.56,
       "display_name": "Cycle Lock - In View - Forward",
       "candidates": [
@@ -9749,9 +9749,9 @@
       ]
     },
     "v_target_pin_selected_hold": {
-      "proposal": "Pin Selected",
-      "source": "chart:[Enhanced] Dual VKB Gladi:R-A4.press-in",
-      "confidence": "high",
+      "proposal": "Pin Selected Target (Hold)",
+      "source": "csv_displayname",
+      "confidence": "medium",
       "score": 16.85,
       "display_name": "Pin Selected Target (Hold)",
       "candidates": [
@@ -9815,8 +9815,8 @@
       ]
     },
     "v_target_toggle_lock_index_1": {
-      "proposal": "Unlock Current Target",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-TGT.press-in",
+      "proposal": "Pin Index 1 - Lock / Unlock Pinned Target",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 14.17,
       "display_name": "Pin Index 1 - Lock / Unlock Pinned Target",
@@ -9848,8 +9848,8 @@
       ]
     },
     "v_target_toggle_lock_index_2": {
-      "proposal": "Unlock Current Target",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-TGT.press-in",
+      "proposal": "Pin Index 2 - Lock / Unlock Pinned Target",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 14.17,
       "display_name": "Pin Index 2 - Lock / Unlock Pinned Target",
@@ -9881,8 +9881,8 @@
       ]
     },
     "v_target_toggle_lock_index_3": {
-      "proposal": "Unlock Current Target",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-TGT.press-in",
+      "proposal": "Pin Index 3 - Lock / Unlock Pinned Target",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 14.17,
       "display_name": "Pin Index 3 - Lock / Unlock Pinned Target",
@@ -9947,7 +9947,7 @@
       ]
     },
     "v_target_toggle_pin_index_1_hold": {
-      "proposal": "Pin/Unpin 2",
+      "proposal": "Pin/Unpin 1",
       "source": "chart:[Enhanced] Dual TM SOL-R:ANALOG-HAT-R",
       "confidence": "medium",
       "score": 17.57,
@@ -9980,7 +9980,7 @@
       ]
     },
     "v_target_toggle_pin_index_2": {
-      "proposal": "Pin/Unpin 2",
+      "proposal": "Pin/Unpin 3",
       "source": "chart:[Enhanced] Dual TM SOL-R:ANALOG-HAT-R",
       "confidence": "medium",
       "score": 17.57,
@@ -10013,8 +10013,8 @@
       ]
     },
     "v_target_toggle_pin_index_2_hold": {
-      "proposal": "Pin/Unpin 2",
-      "source": "chart:[Enhanced] Dual TM SOL-R:ANALOG-HAT-R",
+      "proposal": "Eye Tracker Pin/Unpin 1",
+      "source": "chart:[Enhanced] Dual TM SOL-R:4WAY-HAT-R-30",
       "confidence": "medium",
       "score": 17.57,
       "display_name": "Pin Index 2 - Pin / Unpin Selected Target (Hold)",
@@ -10046,8 +10046,8 @@
       ]
     },
     "v_target_toggle_pin_index_3": {
-      "proposal": "Pin/Unpin 2",
-      "source": "chart:[Enhanced] Dual TM SOL-R:ANALOG-HAT-R",
+      "proposal": "Pin Index 3 - Pin / Unpin Selected Target",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.57,
       "display_name": "Pin Index 3 - Pin / Unpin Selected Target",
@@ -10079,8 +10079,8 @@
       ]
     },
     "v_target_toggle_pin_index_3_hold": {
-      "proposal": "Pin/Unpin 2",
-      "source": "chart:[Enhanced] Dual TM SOL-R:ANALOG-HAT-R",
+      "proposal": "Pin Index 3 - Pin / Unpin Selected Target (Hold)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.57,
       "display_name": "Pin Index 3 - Pin / Unpin Selected Target (Hold)",
@@ -10112,8 +10112,8 @@
       ]
     },
     "v_target_under_reticle": {
-      "proposal": "Target Under Reticle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-TGT.press-in",
+      "proposal": "Lock Target Under Reticle",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 24.13,
       "display_name": "Lock Target Under Reticle",
@@ -10211,9 +10211,9 @@
       ]
     },
     "v_target_unpin_selected_hold": {
-      "proposal": "Unpin Selected",
-      "source": "chart:[Enhanced] Dual VKB Gladi:R-A4.press-in",
-      "confidence": "high",
+      "proposal": "Unpin Selected Target (Hold)",
+      "source": "csv_displayname",
+      "confidence": "medium",
       "score": 16.85,
       "display_name": "Unpin Selected Target (Hold)",
       "candidates": [
@@ -10343,10 +10343,10 @@
       ]
     },
     "v_toggle_cabin_lights": {
-      "proposal": "Lights Toggle",
-      "source": "chart:[Enhanced] Virpil VMAX Th:T-H2.down",
+      "proposal": "Lights On/Off",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-A4",
       "confidence": "medium",
-      "score": 14.12,
+      "score": 6.69,
       "display_name": "",
       "candidates": [
         {
@@ -10376,8 +10376,8 @@
       ]
     },
     "v_toggle_docking_mode": {
-      "proposal": "Toggle Docking Camera",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.up",
+      "proposal": "Toggle Docking",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-HDG-4",
       "confidence": "medium",
       "score": 11.88,
       "display_name": "Toggle Docking Mode",
@@ -10442,7 +10442,7 @@
       ]
     },
     "v_toggle_jump_request": {
-      "proposal": "Request Landing",
+      "proposal": "Request Jumpgate",
       "source": "chart:[Enhanced] MOZA MTQ + MHG:T-NAV-1",
       "confidence": "medium",
       "score": 4.96,
@@ -10541,8 +10541,8 @@
       ]
     },
     "v_toggle_mining_laser_type": {
-      "proposal": "Fire Mining Laser",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:MAIN-TRIG.stage-1",
+      "proposal": "Mining Laser PWR ABS.",
+      "source": "chart:[Enhanced] Dual TM SOL-R:L-THROTTLE",
       "confidence": "medium",
       "score": 13.41,
       "display_name": "Switch Mining Laser (Toggle)",
@@ -10643,10 +10643,10 @@
       ]
     },
     "v_toggle_running_lights": {
-      "proposal": "Lights Toggle",
-      "source": "chart:[Enhanced] Virpil VMAX Th:T-H2.down",
+      "proposal": "Lights",
+      "source": "chart:[Enhanced] Dual VKB Gladi:R-F1",
       "confidence": "medium",
-      "score": 14.12,
+      "score": 5.57,
       "display_name": "",
       "candidates": [
         {
@@ -10676,9 +10676,9 @@
       ]
     },
     "v_toggle_salvage_mode": {
-      "proposal": "Salvage Gimbal Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.press-in",
-      "confidence": "medium",
+      "proposal": "Toggle Salvage Mode",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 10.22,
       "display_name": "ui_CISalvageMode",
       "candidates": [
@@ -10740,8 +10740,8 @@
       ]
     },
     "v_transform_retract": {
-      "proposal": "Retract Con\ufb01g",
-      "source": "chart:[Enhanced] Dual TM SOL-R:RL-SWITCH",
+      "proposal": "Retract Configuration",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 8.35,
       "display_name": "Retract Configuration",
@@ -10788,8 +10788,8 @@
       ]
     },
     "v_unlock_all_ports": {
-      "proposal": "Unlock Current Target",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-TGT.press-in",
+      "proposal": "Port Unlock All",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.2,
       "display_name": "Port Unlock All",
@@ -10821,9 +10821,9 @@
       ]
     },
     "v_view_cycle_fwd": {
-      "proposal": "Cycle MFD Page Forward",
-      "source": "chart:[Enhanced] Dual TM SOL-R:RR-BTNS",
-      "confidence": "medium",
+      "proposal": "View Cycle Fwd",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 12.33,
       "display_name": "",
       "candidates": [
@@ -10854,9 +10854,9 @@
       ]
     },
     "v_view_cycle_internal_fwd": {
-      "proposal": "Cycle MFD Page Forward",
-      "source": "chart:[Enhanced] Dual TM SOL-R:RR-BTNS",
-      "confidence": "medium",
+      "proposal": "View Cycle Internal Fwd",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 12.33,
       "display_name": "",
       "candidates": [
@@ -10920,8 +10920,8 @@
       ]
     },
     "v_view_dynamic_zoom_abs_toggle": {
-      "proposal": "Dynamic Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.right",
+      "proposal": "Dynamic Zoom Toggle (abs.)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.3,
       "display_name": "Dynamic Zoom Toggle (abs.)",
@@ -10953,8 +10953,8 @@
       ]
     },
     "v_view_dynamic_zoom_rel": {
-      "proposal": "Dynamic Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.right",
+      "proposal": "Dynamic Zoom In and Out (rel.)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.3,
       "display_name": "Dynamic Zoom In and Out (rel.)",
@@ -10986,8 +10986,8 @@
       ]
     },
     "v_view_dynamic_zoom_rel_in": {
-      "proposal": "Dynamic Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.right",
+      "proposal": "Dynamic Zoom In (rel.)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.3,
       "display_name": "Dynamic Zoom In (rel.)",
@@ -11019,8 +11019,8 @@
       ]
     },
     "v_view_dynamic_zoom_rel_out": {
-      "proposal": "Dynamic Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.right",
+      "proposal": "Dynamic Zoom Out (rel.)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.3,
       "display_name": "Dynamic Zoom Out (rel.)",
@@ -11052,8 +11052,8 @@
       ]
     },
     "v_view_freelook_mode": {
-      "proposal": "3rd Person Freelook",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.press-in.game",
+      "proposal": "Reset Freelook",
+      "source": "chart:[Enhanced] Dual TM SOL-R:4WAY-HAT-L-30",
       "confidence": "medium",
       "score": 5.59,
       "display_name": "Freelook (Hold)",
@@ -11126,8 +11126,8 @@
       ]
     },
     "v_view_mode": {
-      "proposal": "Missile Cinematic Camera",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.right",
+      "proposal": "Cycle camera orbit mode",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.04,
       "display_name": "Cycle camera orbit mode",
@@ -11167,8 +11167,8 @@
       "candidates": []
     },
     "v_view_pitch": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look up / down",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look up / down",
@@ -11200,8 +11200,8 @@
       ]
     },
     "v_view_pitch_down": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look down",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look down",
@@ -11233,8 +11233,8 @@
       ]
     },
     "v_view_pitch_mouse": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look up / down",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look up / down",
@@ -11266,8 +11266,8 @@
       ]
     },
     "v_view_pitch_up": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look up",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look up",
@@ -11299,8 +11299,8 @@
       ]
     },
     "v_view_yaw": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look left / right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look left / right",
@@ -11332,8 +11332,8 @@
       ]
     },
     "v_view_yaw_left": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look left",
@@ -11365,8 +11365,8 @@
       ]
     },
     "v_view_yaw_mouse": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look left / right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look left / right",
@@ -11398,8 +11398,8 @@
       ]
     },
     "v_view_yaw_right": {
-      "proposal": "Look Behind",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.down",
+      "proposal": "Look right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Look right",
@@ -11464,8 +11464,8 @@
       ]
     },
     "v_view_zoom_out": {
-      "proposal": "3rd Person Freelook",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.press-in.game",
+      "proposal": "Camera (3rd Person)",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.up",
       "confidence": "medium",
       "score": 17.57,
       "display_name": "Zoom out (3rd person view)",
@@ -11497,10 +11497,10 @@
       ]
     },
     "v_vtol_off": {
-      "proposal": "IFCS Set Page",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-6",
+      "proposal": "Vtol Down",
+      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-SW1.down",
       "confidence": "medium",
-      "score": 8.35,
+      "score": 6.2,
       "display_name": "ui_v_ifcs_vtol_off",
       "candidates": [
         {
@@ -11530,10 +11530,10 @@
       ]
     },
     "v_vtol_on": {
-      "proposal": "IFCS Set Page",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-BB-6",
+      "proposal": "VTOL Cycle",
+      "source": "chart:[Enhanced] Dual VKB Gladi:L-F2",
       "confidence": "medium",
-      "score": 8.35,
+      "score": 6.2,
       "display_name": "ui_v_ifcs_vtol_on",
       "candidates": [
         {
@@ -11596,8 +11596,8 @@
       ]
     },
     "v_weapon_aim_type_cycle": {
-      "proposal": "Missile Type Previous",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.left",
+      "proposal": "Missile Type Nex",
+      "source": "chart:[Enhanced] Dual TM SOL-R:R-CLUSTER",
       "confidence": "medium",
       "score": 5.59,
       "display_name": "Aim Mode - Cycle",
@@ -11629,8 +11629,8 @@
       ]
     },
     "v_weapon_aim_type_set_painting": {
-      "proposal": "Missile Type Previous",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.left",
+      "proposal": "Aim Mode - Set to Painting",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 5.59,
       "display_name": "Aim Mode - Set to Painting",
@@ -11761,8 +11761,8 @@
       ]
     },
     "v_weapon_bombing_hud_range_reset": {
-      "proposal": "Decrease Bomb HUD Range",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
+      "proposal": "Bomb Decrease Hud Range",
+      "source": "chart:[Enhanced] Virpil VMAX Th:T-H1.down",
       "confidence": "medium",
       "score": 15.15,
       "display_name": "Bombs - Reset HUD Range",
@@ -11827,8 +11827,8 @@
       ]
     },
     "v_weapon_bombing_toggle_desired_impact_point_hold": {
-      "proposal": "Bomb Impact Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-REV",
+      "proposal": "Toggle Bomb Impact",
+      "source": "chart:[Enhanced] Dual TM SOL-R:R-CLUSTER",
       "confidence": "medium",
       "score": 13.72,
       "display_name": "ui_CIBombs_ToggleDesiredImpactPointHold",
@@ -11926,8 +11926,8 @@
       ]
     },
     "v_weapon_countermeasure_decoy_launch": {
-      "proposal": "Decoy Burst Size Dec",
-      "source": "chart:[Enhanced] Dual TM SOL-R:L-ENCODER",
+      "proposal": "Decoy - Launch Burst (tap), Set and Launch Burst (hold)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.58,
       "display_name": "Decoy - Launch Burst (tap), Set and Launch Burst (hold)",
@@ -12085,8 +12085,8 @@
       ]
     },
     "v_weapon_gimbals_state_toggle": {
-      "proposal": "Salvage Gimbal Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-COM.press-in",
+      "proposal": "Gimbal State - Toggle Locked / Unlocked",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 11.76,
       "display_name": "Gimbal State - Toggle Locked / Unlocked",
@@ -12118,8 +12118,8 @@
       ]
     },
     "v_weapon_increase_max_missiles": {
-      "proposal": "Weapon Set to Max",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.left",
+      "proposal": "Increase Number of Armed Missiles",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.09,
       "display_name": "Increase Number of Armed Missiles",
@@ -12258,8 +12258,8 @@
       ]
     },
     "v_weapon_preset_attack": {
-      "proposal": "Weapon Preset Previous",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.left",
+      "proposal": "Weapon Preset - Fire",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.53,
       "display_name": "Weapon Preset - Fire",
@@ -12357,8 +12357,8 @@
       ]
     },
     "v_weapon_preset_fire_guns1": {
-      "proposal": "Group Fire Weapon Group 1",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:MAIN-TRIG.stage-1",
+      "proposal": "Fire Selected Weapon Group",
+      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-R",
       "confidence": "medium",
       "score": 19.48,
       "display_name": "Weapon Presets - Fire Guns Group 2",
@@ -12390,8 +12390,8 @@
       ]
     },
     "v_weapon_preset_fire_guns2": {
-      "proposal": "Group Fire Weapon Group 1",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:MAIN-TRIG.stage-1",
+      "proposal": "Weapon Presets - Fire Guns Group 3",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 19.48,
       "display_name": "Weapon Presets - Fire Guns Group 3",
@@ -12423,8 +12423,8 @@
       ]
     },
     "v_weapon_preset_fire_guns3": {
-      "proposal": "Group Fire Weapon Group 1",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:MAIN-TRIG.stage-1",
+      "proposal": "Fire Weapon Group 2",
+      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-R",
       "confidence": "medium",
       "score": 19.48,
       "display_name": "Weapon Presets - Fire Guns Group 4",
@@ -12456,8 +12456,8 @@
       ]
     },
     "v_weapon_preset_guns0": {
-      "proposal": "Group Fire Weapon Group 1",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:MAIN-TRIG.stage-1",
+      "proposal": "Weapon Presets - Set Guns Group 1",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.66,
       "display_name": "Weapon Presets - Set Guns Group 1",
@@ -12489,8 +12489,8 @@
       ]
     },
     "v_weapon_preset_guns1": {
-      "proposal": "Group Fire Weapon Group 1",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:MAIN-TRIG.stage-1",
+      "proposal": "Weapon Presets - Set Guns Group 2",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.66,
       "display_name": "Weapon Presets - Set Guns Group 2",
@@ -12555,8 +12555,8 @@
       ]
     },
     "v_weapon_preset_next_overflow": {
-      "proposal": "Weapon Preset Next",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.right",
+      "proposal": "Next Weapon Preset",
+      "source": "chart:[Enhanced] Dual VKB Gladi:RAPID-TRIG-R",
       "confidence": "medium",
       "score": 21.59,
       "display_name": "Weapon Presets - Next (Overflow)",
@@ -12621,8 +12621,8 @@
       ]
     },
     "v_weapon_preset_prev_overflow": {
-      "proposal": "Weapon Preset Previous",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.left",
+      "proposal": "Prev. Weapon Preset",
+      "source": "chart:[Enhanced] Dual TM SOL-R:R-CLUSTER",
       "confidence": "medium",
       "score": 21.32,
       "display_name": "Weapon Presets - Previous (Overflow)",
@@ -12654,8 +12654,8 @@
       ]
     },
     "v_weapon_preset_qid": {
-      "proposal": "Set Preset EMP/QID",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
+      "proposal": "EMP/QID Preset",
+      "source": "chart:[Enhanced] Dual TM SOL-R:RAPID-TRIG-R",
       "confidence": "medium",
       "score": 17.42,
       "display_name": "Weapon Presets - Set QIDs",
@@ -12687,8 +12687,8 @@
       ]
     },
     "v_weapon_preset_qid_jammer": {
-      "proposal": "Set Preset EMP/QID",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
+      "proposal": "Weapon Presets - Set Quantum Jammers (short range)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.42,
       "display_name": "Weapon Presets - Set Quantum Jammers (short range)",
@@ -12720,8 +12720,8 @@
       ]
     },
     "v_weapon_preset_qid_pulse": {
-      "proposal": "Set Preset EMP/QID",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.down",
+      "proposal": "Weapon Presets - Set Quantum Snares / Pulse (long range)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 17.42,
       "display_name": "Weapon Presets - Set Quantum Snares / Pulse (long range)",
@@ -12753,8 +12753,8 @@
       ]
     },
     "v_weapon_reset_max_missiles": {
-      "proposal": "Weapon Set to Max",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-POV.left",
+      "proposal": "Reset Number of Armed Missiles",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 13.09,
       "display_name": "Reset Number of Armed Missiles",
@@ -12786,8 +12786,8 @@
       ]
     },
     "v_weapon_staggered_fire_toggle": {
-      "proposal": "Toggle Power On/Off",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.up",
+      "proposal": "Staggered Fire - Toggle On / Off",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 12.31,
       "display_name": "Staggered Fire - Toggle On / Off",
@@ -12819,8 +12819,8 @@
       ]
     },
     "v_weapon_toggle_launch_missile": {
-      "proposal": "Missile Op Mode Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-CTL.press-in",
+      "proposal": "Launch Missiles (Tap)",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 10.22,
       "display_name": "Launch Missiles (Tap)",
@@ -12852,8 +12852,8 @@
       ]
     },
     "v_yaw": {
-      "proposal": "Beam Axis Toggle",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DATA.press-in",
+      "proposal": "Axis Unbound",
+      "source": "chart:[Enhanced] Dual TM SOL-R:R-THROTTLE",
       "confidence": "medium",
       "score": 5.48,
       "display_name": "Yaw Left / Right (Axis / HOTAS)",
@@ -12885,8 +12885,8 @@
       ]
     },
     "v_yaw_left": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Turn Left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Turn Left",
@@ -12918,8 +12918,8 @@
       ]
     },
     "v_yaw_mouse": {
-      "proposal": "Turret Mouse Mode*",
-      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-L",
+      "proposal": "Turret Mouse Mode",
+      "source": "chart:[Enhanced] Dual VKB Gladi:MAIN-TRIG-L",
       "confidence": "medium",
       "score": 6.42,
       "display_name": "Yaw Left / Right (Mouse)",
@@ -12951,8 +12951,8 @@
       ]
     },
     "v_yaw_right": {
-      "proposal": "Shields Right",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.right",
+      "proposal": "Turn Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Turn Right",
@@ -13000,9 +13000,9 @@
       "candidates": []
     },
     "view_fstop_in": {
-      "proposal": "Sel\ufb01e Cam",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-PINKY",
-      "confidence": "medium",
+      "proposal": "View Fstop In",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 8.35,
       "display_name": "ui_CIAdvanCamDOFIncrease",
       "candidates": [
@@ -13023,8 +13023,8 @@
       "candidates": []
     },
     "view_restore_defaults": {
-      "proposal": "Unlock Current Target",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-TGT.press-in",
+      "proposal": "Reset Current View",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 6.69,
       "display_name": "Reset Current View",
@@ -13088,8 +13088,8 @@
       "candidates": []
     },
     "zgt_roll_left": {
-      "proposal": "Shields Left",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.left",
+      "proposal": "Roll Left",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Roll Left",
@@ -13121,8 +13121,8 @@
       ]
     },
     "zgt_roll_right": {
-      "proposal": "Shields Right",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:R-DEF.right",
+      "proposal": "Roll Right",
+      "source": "csv_displayname",
       "confidence": "medium",
       "score": 4.34,
       "display_name": "Roll Right",
@@ -13187,8 +13187,8 @@
       ]
     },
     "zoom_in": {
-      "proposal": "/Toggle Precision Aiming Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.press-in",
+      "proposal": "Turret Zoom",
+      "source": "chart:[Enhanced] Dual TM SOL-R:MAIN-TRIG-L",
       "confidence": "medium",
       "score": 5.11,
       "display_name": "ui_CIFPSZoomIn",
@@ -13220,9 +13220,9 @@
       ]
     },
     "zoom_out": {
-      "proposal": "/Toggle Precision Aiming Zoom",
-      "source": "chart:[Enhanced] MOZA MTQ + MHG:T-WPN.press-in",
-      "confidence": "medium",
+      "proposal": "Zoom Out",
+      "source": "xml_name_fallback",
+      "confidence": "low",
       "score": 5.11,
       "display_name": "ui_CIFPSZoomOut",
       "candidates": [

@@ -17,6 +17,15 @@
     "source": "xml_name_fallback",
     "confidence": "low"
   },
+  "cycle_chat_lobby": {
+    "xml_name": "cycle_chat_lobby",
+    "action_map": "default",
+    "display_name": "Cycle Chat Lobby",
+    "current_proposal": "Cycle Chat Lobby",
+    "voice_draft": "Cycle Chat Lobby",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "emote_agree": {
     "xml_name": "emote_agree",
     "action_map": "player_emotes",
@@ -134,12 +143,39 @@
     "source": "csv_displayname",
     "confidence": "medium"
   },
+  "emote_cs_forward": {
+    "xml_name": "emote_cs_forward",
+    "action_map": "player_emotes",
+    "display_name": "Forward",
+    "current_proposal": "Forward",
+    "voice_draft": "Forward",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_cs_left": {
+    "xml_name": "emote_cs_left",
+    "action_map": "player_emotes",
+    "display_name": "Left",
+    "current_proposal": "Left",
+    "voice_draft": "Left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "emote_cs_no": {
     "xml_name": "emote_cs_no",
     "action_map": "player_emotes",
     "display_name": "No",
     "current_proposal": "No",
     "voice_draft": "No",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "emote_cs_right": {
+    "xml_name": "emote_cs_right",
+    "action_map": "player_emotes",
+    "display_name": "Right",
+    "current_proposal": "Right",
+    "voice_draft": "Right",
     "source": "csv_displayname",
     "confidence": "medium"
   },
@@ -332,12 +368,255 @@
     "source": "csv_displayname",
     "confidence": "medium"
   },
+  "eva_boost": {
+    "xml_name": "eva_boost",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Boost",
+    "current_proposal": "Boost",
+    "voice_draft": "EVA Boost",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_brake": {
+    "xml_name": "eva_brake",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Brake",
+    "current_proposal": "Brake",
+    "voice_draft": "EVA Brake",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_roll": {
+    "xml_name": "eva_roll",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Roll Left/Right",
+    "current_proposal": "Roll Left/Right",
+    "voice_draft": "EVA Roll Left/Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_roll_left": {
+    "xml_name": "eva_roll_left",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Roll Left",
+    "current_proposal": "Roll Left",
+    "voice_draft": "EVA Roll Left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_roll_right": {
+    "xml_name": "eva_roll_right",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Roll Right",
+    "current_proposal": "Roll Right",
+    "voice_draft": "EVA Roll Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_strafe_back": {
+    "xml_name": "eva_strafe_back",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Strafe Backward",
+    "current_proposal": "Strafe Backward",
+    "voice_draft": "EVA Strafe Backward",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_strafe_forward": {
+    "xml_name": "eva_strafe_forward",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Strafe Forward",
+    "current_proposal": "Strafe Forward",
+    "voice_draft": "EVA Strafe Forward",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_strafe_lateral": {
+    "xml_name": "eva_strafe_lateral",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Strafe Left/Right",
+    "current_proposal": "Strafe Left/Right",
+    "voice_draft": "EVA Strafe Left/Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_strafe_left": {
+    "xml_name": "eva_strafe_left",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Strafe Left",
+    "current_proposal": "Strafe Left",
+    "voice_draft": "EVA Strafe Left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_strafe_longitudinal": {
+    "xml_name": "eva_strafe_longitudinal",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Strafe Forward/Backward",
+    "current_proposal": "Strafe Forward/Backward",
+    "voice_draft": "EVA Strafe Forward/Backward",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_strafe_right": {
+    "xml_name": "eva_strafe_right",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Strafe Right",
+    "current_proposal": "Strafe Right",
+    "voice_draft": "EVA Strafe Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_strafe_up": {
+    "xml_name": "eva_strafe_up",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Strafe Up",
+    "current_proposal": "Strafe Up",
+    "voice_draft": "EVA Strafe Up",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_strafe_vertical": {
+    "xml_name": "eva_strafe_vertical",
+    "action_map": "zero_gravity_eva",
+    "display_name": "Strafe Up/Down",
+    "current_proposal": "Strafe Up/Down",
+    "voice_draft": "EVA Strafe Up/Down",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_view_pitch": {
+    "xml_name": "eva_view_pitch",
+    "action_map": "zero_gravity_eva",
+    "display_name": "View Up/Down",
+    "current_proposal": "View Up/Down",
+    "voice_draft": "EVA View Up/Down",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_view_pitch_mouse": {
+    "xml_name": "eva_view_pitch_mouse",
+    "action_map": "zero_gravity_eva",
+    "display_name": "View Up/Down",
+    "current_proposal": "View Up/Down",
+    "voice_draft": "EVA View Up/Down",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_view_yaw": {
+    "xml_name": "eva_view_yaw",
+    "action_map": "zero_gravity_eva",
+    "display_name": "View Left/Right",
+    "current_proposal": "View Left/Right",
+    "voice_draft": "EVA View Left/Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_view_yaw_left": {
+    "xml_name": "eva_view_yaw_left",
+    "action_map": "zero_gravity_eva",
+    "display_name": "View Left",
+    "current_proposal": "View Left",
+    "voice_draft": "EVA View Left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_view_yaw_mouse": {
+    "xml_name": "eva_view_yaw_mouse",
+    "action_map": "zero_gravity_eva",
+    "display_name": "View Left/Right",
+    "current_proposal": "View Left/Right",
+    "voice_draft": "EVA View Left/Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "eva_view_yaw_right": {
+    "xml_name": "eva_view_yaw_right",
+    "action_map": "zero_gravity_eva",
+    "display_name": "View Right",
+    "current_proposal": "View Right",
+    "voice_draft": "EVA View Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "fixed_speed_decrement": {
+    "xml_name": "fixed_speed_decrement",
+    "action_map": "player",
+    "display_name": "Default Movement Speed Decrease",
+    "current_proposal": "Default Movement Speed Decrease",
+    "voice_draft": "Default Movement Speed Dec.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "focus_on_chat_textinput": {
+    "xml_name": "focus_on_chat_textinput",
+    "action_map": "default",
+    "display_name": "Chat Window Focus",
+    "current_proposal": "Chat Window Focus",
+    "voice_draft": "Chat Window Focus",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "foip_recalibrate": {
     "xml_name": "foip_recalibrate",
     "action_map": "player_input_optical_tracking",
     "display_name": "FOIP Recalibrate\u00a0",
     "current_proposal": "FOIP Recalibrate\u00a0",
     "voice_draft": "FOIP Recalibrate",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "force_respawn": {
+    "xml_name": "force_respawn",
+    "action_map": "player",
+    "display_name": "Force Re-spawn (E.V.A. / On Foot)",
+    "current_proposal": "Force Re-spawn (E.V.A. / On Foot)",
+    "voice_draft": "Force Re-spawn (EVA/Foot)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "free_thirdperson_camera": {
+    "xml_name": "free_thirdperson_camera",
+    "action_map": "player",
+    "display_name": "Free View Camera (Hold)",
+    "current_proposal": "Free View Camera (Hold)",
+    "voice_draft": "Free View Camera",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "gp_movex": {
+    "xml_name": "gp_movex",
+    "action_map": "player",
+    "display_name": "Move Left / Right",
+    "current_proposal": "Move Left / Right",
+    "voice_draft": "Move Left / Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "gp_movey": {
+    "xml_name": "gp_movey",
+    "action_map": "player",
+    "display_name": "Move Forward / Backward",
+    "current_proposal": "Move Forward / Backward",
+    "voice_draft": "Move Forward / Backward",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "gp_rotatepitch": {
+    "xml_name": "gp_rotatepitch",
+    "action_map": "player",
+    "display_name": "Look (Pitch)",
+    "current_proposal": "Look (Pitch)",
+    "voice_draft": "Look (Pitch)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "gp_rotateyaw": {
+    "xml_name": "gp_rotateyaw",
+    "action_map": "player",
+    "display_name": "Look (Yaw)",
+    "current_proposal": "Look (Yaw)",
+    "voice_draft": "Look (Yaw)",
     "source": "csv_displayname",
     "confidence": "medium"
   },
@@ -395,6 +674,105 @@
     "source": "csv_displayname",
     "confidence": "medium"
   },
+  "pc_screen_focus_down": {
+    "xml_name": "pc_screen_focus_down",
+    "action_map": "player_choice",
+    "display_name": "MFD Down",
+    "current_proposal": "MFD Down",
+    "voice_draft": "MFD Down",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "pc_screen_focus_left": {
+    "xml_name": "pc_screen_focus_left",
+    "action_map": "player_choice",
+    "display_name": "MFD Left",
+    "current_proposal": "MFD Left",
+    "voice_draft": "MFD Left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "pc_screen_focus_right": {
+    "xml_name": "pc_screen_focus_right",
+    "action_map": "player_choice",
+    "display_name": "MFD Right",
+    "current_proposal": "MFD Right",
+    "voice_draft": "MFD Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "pc_screen_focus_up": {
+    "xml_name": "pc_screen_focus_up",
+    "action_map": "player_choice",
+    "display_name": "MFD Up",
+    "current_proposal": "MFD Up",
+    "voice_draft": "MFD Up",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "pc_select": {
+    "xml_name": "pc_select",
+    "action_map": "player_choice",
+    "display_name": "Activate Inner Thought",
+    "current_proposal": "Activate Inner Thought",
+    "voice_draft": "Activate Inner Thought",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "pc_zoom_in": {
+    "xml_name": "pc_zoom_in",
+    "action_map": "player_choice",
+    "display_name": "Interaction Mode Zoom In",
+    "current_proposal": "Interaction Mode Zoom In",
+    "voice_draft": "Interaction Mode Zoom In",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "pc_zoom_out": {
+    "xml_name": "pc_zoom_out",
+    "action_map": "player_choice",
+    "display_name": "Interaction Mode Zoom Out",
+    "current_proposal": "Interaction Mode Zoom Out",
+    "voice_draft": "Interaction Mode Zoom Out",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "port_modification_select": {
+    "xml_name": "port_modification_select",
+    "action_map": "player",
+    "display_name": "Port Modification Interact",
+    "current_proposal": "Port Modification Interact",
+    "voice_draft": "Port Modification Interact",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "prevweapon": {
+    "xml_name": "prevweapon",
+    "action_map": "player",
+    "display_name": "Previous Weapon",
+    "current_proposal": "Previous Weapon",
+    "voice_draft": "Weapon Prev.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "prone_rollleft": {
+    "xml_name": "prone_rollleft",
+    "action_map": "prone",
+    "display_name": "Roll Left (while Prone)",
+    "current_proposal": "Roll Left (while Prone)",
+    "voice_draft": "Roll Left (while Prone)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "prone_rollright": {
+    "xml_name": "prone_rollright",
+    "action_map": "prone",
+    "display_name": "Roll Right (while Prone)",
+    "current_proposal": "Roll Right (while Prone)",
+    "voice_draft": "Roll Right (while Prone)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "reload": {
     "xml_name": "reload",
     "action_map": "player",
@@ -413,6 +791,60 @@
     "source": "csv_displayname",
     "confidence": "medium"
   },
+  "spectate_free_look": {
+    "xml_name": "spectate_free_look",
+    "action_map": "spectator",
+    "display_name": "",
+    "current_proposal": "Spectate Free Look",
+    "voice_draft": "Spectate Free Look",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "spectate_rotatepitch": {
+    "xml_name": "spectate_rotatepitch",
+    "action_map": "spectator",
+    "display_name": "Spectator Camera Rotate Pitch",
+    "current_proposal": "Spectator Camera Rotate Pitch",
+    "voice_draft": "Spectator Camera Rotate Pitch",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "spectate_rotateyaw": {
+    "xml_name": "spectate_rotateyaw",
+    "action_map": "spectator",
+    "display_name": "Spectator Camera Rotate Yaw",
+    "current_proposal": "Spectator Camera Rotate Yaw",
+    "voice_draft": "Spectator Camera Rotate Yaw",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "spectate_rotateyaw_mouse": {
+    "xml_name": "spectate_rotateyaw_mouse",
+    "action_map": "spectator",
+    "display_name": "Spectator Camera Rotate Yaw",
+    "current_proposal": "Spectator Camera Rotate Yaw",
+    "voice_draft": "Spectator Camera Rotate Yaw",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "spectate_speed_decrement": {
+    "xml_name": "spectate_speed_decrement",
+    "action_map": "spectator",
+    "display_name": "",
+    "current_proposal": "Spectate Speed Decrement",
+    "voice_draft": "Spectate Speed Decrement",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "spectate_speed_increment": {
+    "xml_name": "spectate_speed_increment",
+    "action_map": "spectator",
+    "display_name": "",
+    "current_proposal": "Spectate Speed Increment",
+    "voice_draft": "Spectate Speed Increment",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
   "spectate_toggle_thirdperson": {
     "xml_name": "spectate_toggle_thirdperson",
     "action_map": "spectator",
@@ -422,12 +854,48 @@
     "source": "xml_name_fallback",
     "confidence": "low"
   },
+  "spectate_zoom": {
+    "xml_name": "spectate_zoom",
+    "action_map": "spectator",
+    "display_name": "Spectator Camera Zoom",
+    "current_proposal": "Spectator Camera Zoom",
+    "voice_draft": "Spectator Camera Zoom",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "spectate_zoom_in": {
+    "xml_name": "spectate_zoom_in",
+    "action_map": "spectator",
+    "display_name": "Spectator Camera Zoom In",
+    "current_proposal": "Spectator Camera Zoom In",
+    "voice_draft": "Spectator Camera Zoom In",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "spectate_zoom_out": {
+    "xml_name": "spectate_zoom_out",
+    "action_map": "spectator",
+    "display_name": "Spectator Camera Zoom Out",
+    "current_proposal": "Spectator Camera Zoom Out",
+    "voice_draft": "Spectator Camera Zoom Out",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "stopwatch_reset": {
     "xml_name": "stopwatch_reset",
     "action_map": "stopwatch",
     "display_name": "Reset (Long Press)",
     "current_proposal": "Reset (Long Press)",
     "voice_draft": "Reset",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "thirdperson": {
+    "xml_name": "thirdperson",
+    "action_map": "player",
+    "display_name": "Third Person View (Toggle)",
+    "current_proposal": "Third Person View (Toggle)",
+    "voice_draft": "Third Person",
     "source": "csv_displayname",
     "confidence": "medium"
   },
@@ -446,6 +914,33 @@
     "display_name": "Flashlight (Toggle)",
     "current_proposal": "Flashlight (Toggle)",
     "voice_draft": "Flashlight",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "turret_esp_toggle": {
+    "xml_name": "turret_esp_toggle",
+    "action_map": "turret_advanced",
+    "display_name": "Turret E.S.P. Toggle On / Off",
+    "current_proposal": "Turret E.S.P. Toggle On / Off",
+    "voice_draft": "Turret E.S.P. On/Off Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "turret_limiter_rel": {
+    "xml_name": "turret_limiter_rel",
+    "action_map": "turret_advanced",
+    "display_name": "Turret - Speed Limiter (rel)",
+    "current_proposal": "Turret - Speed Limiter (rel)",
+    "voice_draft": "Turret - Speed Limiter REL.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "turret_limiter_rel_decrease": {
+    "xml_name": "turret_limiter_rel_decrease",
+    "action_map": "turret_advanced",
+    "display_name": "Turret - Speed Limiter - Decrease (rel)",
+    "current_proposal": "Turret - Speed Limiter - Decrease (rel)",
+    "voice_draft": "Turret - Speed Limiter - Dec. REL.",
     "source": "csv_displayname",
     "confidence": "medium"
   },
@@ -476,12 +971,48 @@
     "source": "xml_name_fallback",
     "confidence": "low"
   },
+  "v_ads_hold": {
+    "xml_name": "v_ads_hold",
+    "action_map": "spaceship_view",
+    "display_name": "ui_v_ads_hold",
+    "current_proposal": "Ads",
+    "voice_draft": "[H] ADS",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_auto_targeting_toggle_long": {
+    "xml_name": "v_auto_targeting_toggle_long",
+    "action_map": "spaceship_targeting",
+    "display_name": "Auto Targeting - Toggle On/Off (Long Press)",
+    "current_proposal": "Auto Targeting - Toggle On/Off (Long Press)",
+    "voice_draft": "[H] Auto Targeting - On/Off Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "v_autoland": {
     "xml_name": "v_autoland",
     "action_map": "spaceship_movement",
     "display_name": "Autoland",
     "current_proposal": "Autoland",
     "voice_draft": "Auto Land",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_boost": {
+    "xml_name": "v_boost",
+    "action_map": "vehicle_driver",
+    "display_name": "ui_CIboost",
+    "current_proposal": "Boost",
+    "voice_draft": "Boost",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_brake": {
+    "xml_name": "v_brake",
+    "action_map": "vehicle_driver",
+    "display_name": "Brake",
+    "current_proposal": "Brake",
+    "voice_draft": "Brake",
     "source": "csv_displayname",
     "confidence": "medium"
   },
@@ -502,6 +1033,15 @@
     "voice_draft": "Engines - Inc.",
     "source": "csv_displayname",
     "confidence": "medium"
+  },
+  "v_engineering_assignment_engine_min": {
+    "xml_name": "v_engineering_assignment_engine_min",
+    "action_map": "spaceship_power",
+    "display_name": "ui_v_capacitor_assignment_engine_min",
+    "current_proposal": "Engineering Assignment Engine Min",
+    "voice_draft": "Engineering Assignment Engine Min",
+    "source": "xml_name_fallback",
+    "confidence": "low"
   },
   "v_engineering_assignment_reset": {
     "xml_name": "v_engineering_assignment_reset",
@@ -530,6 +1070,258 @@
     "source": "csv_displayname",
     "confidence": "medium"
   },
+  "v_engineering_assignment_weapons_max": {
+    "xml_name": "v_engineering_assignment_weapons_max",
+    "action_map": "spaceship_power",
+    "display_name": "ui_v_capacitor_assignment_weapon_max",
+    "current_proposal": "Engineering Assignment Weapons Max",
+    "voice_draft": "Engineering Assignment Weapons Max",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_hud_cancel": {
+    "xml_name": "v_hud_cancel",
+    "action_map": "spaceship_hud",
+    "display_name": "",
+    "current_proposal": "Hud Cancel",
+    "voice_draft": "HUD Cancel",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_hud_confirm": {
+    "xml_name": "v_hud_confirm",
+    "action_map": "spaceship_hud",
+    "display_name": "",
+    "current_proposal": "Hud Confirm",
+    "voice_draft": "HUD Confirm",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_hud_focused_cycle_mode_back": {
+    "xml_name": "v_hud_focused_cycle_mode_back",
+    "action_map": "spaceship_hud",
+    "display_name": "",
+    "current_proposal": "Hud Focused Cycle Mode Back",
+    "voice_draft": "HUD Focused Cycle Mode Back",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_hud_focused_cycle_mode_fwd": {
+    "xml_name": "v_hud_focused_cycle_mode_fwd",
+    "action_map": "spaceship_hud",
+    "display_name": "",
+    "current_proposal": "Hud Focused Cycle Mode Fwd",
+    "voice_draft": "HUD Focused Cycle Mode Fwd",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_hud_left_panel_down": {
+    "xml_name": "v_hud_left_panel_down",
+    "action_map": "spaceship_hud",
+    "display_name": "",
+    "current_proposal": "Hud Left Panel Down",
+    "voice_draft": "HUD Left Panel Down",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_hud_left_panel_left": {
+    "xml_name": "v_hud_left_panel_left",
+    "action_map": "spaceship_hud",
+    "display_name": "",
+    "current_proposal": "Hud Left Panel Left",
+    "voice_draft": "HUD Left Panel Left",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_hud_left_panel_right": {
+    "xml_name": "v_hud_left_panel_right",
+    "action_map": "spaceship_hud",
+    "display_name": "",
+    "current_proposal": "Hud Left Panel Right",
+    "voice_draft": "HUD Left Panel Right",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_hud_left_panel_up": {
+    "xml_name": "v_hud_left_panel_up",
+    "action_map": "spaceship_hud",
+    "display_name": "",
+    "current_proposal": "Hud Left Panel Up",
+    "voice_draft": "HUD Left Panel Up",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_ifcs_speed_limiter_abs": {
+    "xml_name": "v_ifcs_speed_limiter_abs",
+    "action_map": "spaceship_movement",
+    "display_name": "Speed Limiter (abs)",
+    "current_proposal": "Speed Limiter (abs)",
+    "voice_draft": "Speed Limiter ABS.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_ifcs_speed_limiter_up": {
+    "xml_name": "v_ifcs_speed_limiter_up",
+    "action_map": "spaceship_movement",
+    "display_name": "Speed Limiter - Increase (hold)",
+    "current_proposal": "Speed Limiter - Increase (hold)",
+    "voice_draft": "Speed Limiter - Inc.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_ifcs_vector_decoupling_toggle": {
+    "xml_name": "v_ifcs_vector_decoupling_toggle",
+    "action_map": "spaceship_movement",
+    "display_name": "ui_v_ifcs_vector_decoupling_toggle",
+    "current_proposal": "Ifcs Vector Decoupling Toggle",
+    "voice_draft": "IFCS Vector Decoupling Toggle",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_increase_mining_throttle": {
+    "xml_name": "v_increase_mining_throttle",
+    "action_map": "spaceship_mining",
+    "display_name": "Increase Mining Laser Power",
+    "current_proposal": "Increase Mining Laser Power",
+    "voice_draft": "Inc. Mining Laser Power",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_look_ahead_enable": {
+    "xml_name": "v_look_ahead_enable",
+    "action_map": "spaceship_targeting",
+    "display_name": "Enable / Disable Look Ahead",
+    "current_proposal": "Enable / Disable Look Ahead",
+    "voice_draft": "Enable / Disable Look Ahead",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_look_ahead_start_target_tracking": {
+    "xml_name": "v_look_ahead_start_target_tracking",
+    "action_map": "spaceship_targeting",
+    "display_name": "Enable / Disable Target Padlock (Toggle, Hold)",
+    "current_proposal": "Enable / Disable Target Padlock (Toggle, Hold)",
+    "voice_draft": "Enable / Disable Target Padlock (Toggle, Hold)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_master_mode_set_scm": {
+    "xml_name": "v_master_mode_set_scm",
+    "action_map": "spaceship_movement",
+    "display_name": "Set Master Mode to SCM",
+    "current_proposal": "Set Master Mode to SCM",
+    "voice_draft": "Set Master Mode to SCM",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_mfd_interact_cycle_backwards_short": {
+    "xml_name": "v_mfd_interact_cycle_backwards_short",
+    "action_map": "vehicle_mfd",
+    "display_name": "MFD - Cycle Page - Backwards (Short Press)",
+    "current_proposal": "MFD - Cycle Page - Backwards (Short Press)",
+    "voice_draft": "Cycle Page - Backwards",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_mfd_interact_cycle_forwards_short": {
+    "xml_name": "v_mfd_interact_cycle_forwards_short",
+    "action_map": "vehicle_mfd",
+    "display_name": "MFD - Cycle Page - Forwards (Short Press)",
+    "current_proposal": "MFD - Cycle Page - Forwards (Short Press)",
+    "voice_draft": "Cycle Page - Forwards",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_mfd_select_view_comms_short": {
+    "xml_name": "v_mfd_select_view_comms_short",
+    "action_map": "vehicle_mfd",
+    "display_name": "MFD - Set Page - Communications (Short Press)",
+    "current_proposal": "MFD - Set Page - Communications (Short Press)",
+    "voice_draft": "Set Page - Communications",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_mfd_select_view_diagnostics_short": {
+    "xml_name": "v_mfd_select_view_diagnostics_short",
+    "action_map": "vehicle_mfd",
+    "display_name": "MFD - Set Page - Diagnostics (Short Press)",
+    "current_proposal": "MFD - Set Page - Diagnostics (Short Press)",
+    "voice_draft": "Set Page - Diagnostics",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_mfd_select_view_scanning_short": {
+    "xml_name": "v_mfd_select_view_scanning_short",
+    "action_map": "vehicle_mfd",
+    "display_name": "MFD - Set Page - Scanning (Short Press)",
+    "current_proposal": "MFD - Set Page - Scanning (Short Press)",
+    "voice_draft": "Set Page - Scanning",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_mfd_soft_select_mfd_5_long": {
+    "xml_name": "v_mfd_soft_select_mfd_5_long",
+    "action_map": "vehicle_mfd",
+    "display_name": "MFD - Select - MFD 5 (Long Press)",
+    "current_proposal": "MFD - Select - MFD 5 (Long Press)",
+    "voice_draft": "[H] Select - MFD 5",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_mfd_soft_select_mfd_6_long": {
+    "xml_name": "v_mfd_soft_select_mfd_6_long",
+    "action_map": "vehicle_mfd",
+    "display_name": "MFD - Select - MFD 6 (Long Press)",
+    "current_proposal": "MFD - Select - MFD 6 (Long Press)",
+    "voice_draft": "[H] Select - MFD 6",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_mfd_soft_select_mfd_7_long": {
+    "xml_name": "v_mfd_soft_select_mfd_7_long",
+    "action_map": "vehicle_mfd",
+    "display_name": "MFD - Select - MFD 7 (Long Press)",
+    "current_proposal": "MFD - Select - MFD 7 (Long Press)",
+    "voice_draft": "[H] Select - MFD 7",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_mfd_soft_select_mfd_8_long": {
+    "xml_name": "v_mfd_soft_select_mfd_8_long",
+    "action_map": "vehicle_mfd",
+    "display_name": "MFD - Select - MFD 8 (Long Press)",
+    "current_proposal": "MFD - Select - MFD 8 (Long Press)",
+    "voice_draft": "[H] Select - MFD 8",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_move": {
+    "xml_name": "v_move",
+    "action_map": "vehicle_driver",
+    "display_name": "Drive Forward / Backward",
+    "current_proposal": "Drive Forward / Backward",
+    "voice_draft": "Drive Forward / Backward",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_move_back": {
+    "xml_name": "v_move_back",
+    "action_map": "vehicle_driver",
+    "display_name": "Drive Backward",
+    "current_proposal": "Drive Backward",
+    "voice_draft": "Drive Backward",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_power_toggle_weapons": {
+    "xml_name": "v_power_toggle_weapons",
+    "action_map": "spaceship_power",
+    "display_name": "Toggle Power - Weapons",
+    "current_proposal": "Toggle Power - Weapons",
+    "voice_draft": "Power - Weapons Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "v_roll": {
     "xml_name": "v_roll",
     "action_map": "spaceship_movement",
@@ -538,6 +1330,42 @@
     "voice_draft": "Roll",
     "source": "csv_displayname",
     "confidence": "medium"
+  },
+  "v_roll_left": {
+    "xml_name": "v_roll_left",
+    "action_map": "spaceship_movement",
+    "display_name": "Roll left",
+    "current_proposal": "Roll left",
+    "voice_draft": "Roll left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_salvage_cycle_modifiers_focused": {
+    "xml_name": "v_salvage_cycle_modifiers_focused",
+    "action_map": "spaceship_salvage",
+    "display_name": "ui_CISalvageCycleModifiersFocused",
+    "current_proposal": "Salvage Cycle Modifiers Focused",
+    "voice_draft": "Salvage Cycle Modifiers Focused",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_salvage_focus_disintegrate": {
+    "xml_name": "v_salvage_focus_disintegrate",
+    "action_map": "spaceship_salvage",
+    "display_name": "ui_CISalvageFocusDisintegrate",
+    "current_proposal": "Salvage Focus Disintegrate",
+    "voice_draft": "Salvage Focus Disintegrate",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_salvage_toggle_fire_left": {
+    "xml_name": "v_salvage_toggle_fire_left",
+    "action_map": "spaceship_salvage",
+    "display_name": "ui_CISalvageFireToggleLeft",
+    "current_proposal": "Salvage Toggle Fire Left",
+    "voice_draft": "Salvage Fire Left Toggle",
+    "source": "xml_name_fallback",
+    "confidence": "low"
   },
   "v_set_mining_mode": {
     "xml_name": "v_set_mining_mode",
@@ -557,6 +1385,42 @@
     "source": "xml_name_fallback",
     "confidence": "low"
   },
+  "v_shield_raise_level_left": {
+    "xml_name": "v_shield_raise_level_left",
+    "action_map": "spaceship_defensive",
+    "display_name": "Shield raise level left",
+    "current_proposal": "Shield raise level left",
+    "voice_draft": "Shield raise level left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_shield_raise_level_right": {
+    "xml_name": "v_shield_raise_level_right",
+    "action_map": "spaceship_defensive",
+    "display_name": "Shield raise level right",
+    "current_proposal": "Shield raise level right",
+    "voice_draft": "Shield raise level right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_shield_raise_level_up": {
+    "xml_name": "v_shield_raise_level_up",
+    "action_map": "spaceship_defensive",
+    "display_name": "Shield raise level top",
+    "current_proposal": "Shield raise level top",
+    "voice_draft": "Shield raise level top",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_shield_reset_level": {
+    "xml_name": "v_shield_reset_level",
+    "action_map": "spaceship_defensive",
+    "display_name": "Shield reset levels",
+    "current_proposal": "Shield reset levels",
+    "voice_draft": "Shield reset levels",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "v_starmap": {
     "xml_name": "v_starmap",
     "action_map": "vehicle_general",
@@ -565,6 +1429,177 @@
     "voice_draft": "Map",
     "source": "csv_displayname",
     "confidence": "medium"
+  },
+  "v_strafe_left": {
+    "xml_name": "v_strafe_left",
+    "action_map": "spaceship_movement",
+    "display_name": "Strafe left (abs.)",
+    "current_proposal": "Strafe left (abs.)",
+    "voice_draft": "Strafe left (abs.)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_strafe_longitudinal": {
+    "xml_name": "v_strafe_longitudinal",
+    "action_map": "spaceship_movement",
+    "display_name": "Throttle - Forward / Back",
+    "current_proposal": "Throttle - Forward / Back",
+    "voice_draft": "Forward / Back",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_strafe_longitudinal_invert": {
+    "xml_name": "v_strafe_longitudinal_invert",
+    "action_map": "spaceship_movement",
+    "display_name": "Throttle - Forward / Back Invert",
+    "current_proposal": "Throttle - Forward / Back Invert",
+    "voice_draft": "Forward / Back Invert",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_strafe_right": {
+    "xml_name": "v_strafe_right",
+    "action_map": "spaceship_movement",
+    "display_name": "Strafe right (abs.)",
+    "current_proposal": "Strafe right (abs.)",
+    "voice_draft": "Strafe right (abs.)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_strafe_trim_reset_short": {
+    "xml_name": "v_strafe_trim_reset_short",
+    "action_map": "spaceship_movement",
+    "display_name": "Throttle - Trim - Release (Short Press)",
+    "current_proposal": "Throttle - Trim - Release (Short Press)",
+    "voice_draft": "Trim - Release",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_strafe_trim_set_50_long": {
+    "xml_name": "v_strafe_trim_set_50_long",
+    "action_map": "spaceship_movement",
+    "display_name": "Throttle - Trim - Set To 50% (Long Press)",
+    "current_proposal": "Throttle - Trim - Set To 50% (Long Press)",
+    "voice_draft": "[H] Trim - Set To 50%",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_strafe_trim_set_50_short": {
+    "xml_name": "v_strafe_trim_set_50_short",
+    "action_map": "spaceship_movement",
+    "display_name": "Throttle - Trim - Set To 50% (Short Press)",
+    "current_proposal": "Throttle - Trim - Set To 50% (Short Press)",
+    "voice_draft": "Trim - Set To 50%",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_strafe_trim_set_short": {
+    "xml_name": "v_strafe_trim_set_short",
+    "action_map": "spaceship_movement",
+    "display_name": "Throttle - Trim - Set (Short Press)",
+    "current_proposal": "Throttle - Trim - Set (Short Press)",
+    "voice_draft": "Trim - Set",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_strafe_vertical": {
+    "xml_name": "v_strafe_vertical",
+    "action_map": "spaceship_movement",
+    "display_name": "Strafe up / down (abs.)",
+    "current_proposal": "Strafe up / down (abs.)",
+    "voice_draft": "Strafe up / down (abs.)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_target_cycle_in_view_fwd": {
+    "xml_name": "v_target_cycle_in_view_fwd",
+    "action_map": "spaceship_targeting_advanced",
+    "display_name": "Cycle Lock - In View - Forward",
+    "current_proposal": "Cycle Lock - In View - Forward",
+    "voice_draft": "In-View Target Forward",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_target_pin_selected_hold": {
+    "xml_name": "v_target_pin_selected_hold",
+    "action_map": "spaceship_targeting",
+    "display_name": "Pin Selected Target (Hold)",
+    "current_proposal": "Pin Selected Target (Hold)",
+    "voice_draft": "[H] Pin Selected Target",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_target_toggle_lock_index_1": {
+    "xml_name": "v_target_toggle_lock_index_1",
+    "action_map": "spaceship_targeting",
+    "display_name": "Pin Index 1 - Lock / Unlock Pinned Target",
+    "current_proposal": "Pin Index 1 - Lock / Unlock Pinned Target",
+    "voice_draft": "Pin 1 Lock Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_target_toggle_lock_index_2": {
+    "xml_name": "v_target_toggle_lock_index_2",
+    "action_map": "spaceship_targeting",
+    "display_name": "Pin Index 2 - Lock / Unlock Pinned Target",
+    "current_proposal": "Pin Index 2 - Lock / Unlock Pinned Target",
+    "voice_draft": "Pin 2 Lock Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_target_toggle_lock_index_3": {
+    "xml_name": "v_target_toggle_lock_index_3",
+    "action_map": "spaceship_targeting",
+    "display_name": "Pin Index 3 - Lock / Unlock Pinned Target",
+    "current_proposal": "Pin Index 3 - Lock / Unlock Pinned Target",
+    "voice_draft": "Pin 3 Lock Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_target_toggle_pin_index_3": {
+    "xml_name": "v_target_toggle_pin_index_3",
+    "action_map": "spaceship_targeting",
+    "display_name": "Pin Index 3 - Pin / Unpin Selected Target",
+    "current_proposal": "Pin Index 3 - Pin / Unpin Selected Target",
+    "voice_draft": "Pin/Unpin 3",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_target_toggle_pin_index_3_hold": {
+    "xml_name": "v_target_toggle_pin_index_3_hold",
+    "action_map": "spaceship_targeting",
+    "display_name": "Pin Index 3 - Pin / Unpin Selected Target (Hold)",
+    "current_proposal": "Pin Index 3 - Pin / Unpin Selected Target (Hold)",
+    "voice_draft": "[H] Pin/Unpin 3",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_target_under_reticle": {
+    "xml_name": "v_target_under_reticle",
+    "action_map": "spaceship_targeting_advanced",
+    "display_name": "Lock Target Under Reticle",
+    "current_proposal": "Lock Target Under Reticle",
+    "voice_draft": "Lock Target Under Reticle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_target_unpin_selected_hold": {
+    "xml_name": "v_target_unpin_selected_hold",
+    "action_map": "spaceship_targeting",
+    "display_name": "Unpin Selected Target (Hold)",
+    "current_proposal": "Unpin Selected Target (Hold)",
+    "voice_draft": "[H] Unpin Selected Target",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_toggle_salvage_mode": {
+    "xml_name": "v_toggle_salvage_mode",
+    "action_map": "seat_general",
+    "display_name": "ui_CISalvageMode",
+    "current_proposal": "Toggle Salvage Mode",
+    "voice_draft": "Salvage Mode Toggle",
+    "source": "xml_name_fallback",
+    "confidence": "low"
   },
   "v_toggle_yaw_roll_swap": {
     "xml_name": "v_toggle_yaw_roll_swap",
@@ -584,6 +1619,78 @@
     "source": "csv_displayname",
     "confidence": "medium"
   },
+  "v_transform_retract": {
+    "xml_name": "v_transform_retract",
+    "action_map": "spaceship_movement",
+    "display_name": "Retract Configuration",
+    "current_proposal": "Retract Configuration",
+    "voice_draft": "Retract Configuration",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_unlock_all_ports": {
+    "xml_name": "v_unlock_all_ports",
+    "action_map": "vehicle_general",
+    "display_name": "Port Unlock All",
+    "current_proposal": "Port Unlock All",
+    "voice_draft": "Port Unlock All",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_cycle_fwd": {
+    "xml_name": "v_view_cycle_fwd",
+    "action_map": "server_renderer",
+    "display_name": "",
+    "current_proposal": "View Cycle Fwd",
+    "voice_draft": "View Cycle Fwd",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_view_cycle_internal_fwd": {
+    "xml_name": "v_view_cycle_internal_fwd",
+    "action_map": "spaceship_view",
+    "display_name": "",
+    "current_proposal": "View Cycle Internal Fwd",
+    "voice_draft": "View Cycle Internal Fwd",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
+  "v_view_dynamic_zoom_abs_toggle": {
+    "xml_name": "v_view_dynamic_zoom_abs_toggle",
+    "action_map": "vehicle_driver",
+    "display_name": "Dynamic Zoom Toggle (abs.)",
+    "current_proposal": "Dynamic Zoom Toggle (abs.)",
+    "voice_draft": "Dynamic Zoom (abs.) Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_dynamic_zoom_rel": {
+    "xml_name": "v_view_dynamic_zoom_rel",
+    "action_map": "vehicle_driver",
+    "display_name": "Dynamic Zoom In and Out (rel.)",
+    "current_proposal": "Dynamic Zoom In and Out (rel.)",
+    "voice_draft": "Dynamic Zoom In and Out (rel.)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_dynamic_zoom_rel_in": {
+    "xml_name": "v_view_dynamic_zoom_rel_in",
+    "action_map": "vehicle_driver",
+    "display_name": "Dynamic Zoom In (rel.)",
+    "current_proposal": "Dynamic Zoom In (rel.)",
+    "voice_draft": "Dynamic Zoom In (rel.)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_dynamic_zoom_rel_out": {
+    "xml_name": "v_view_dynamic_zoom_rel_out",
+    "action_map": "vehicle_driver",
+    "display_name": "Dynamic Zoom Out (rel.)",
+    "current_proposal": "Dynamic Zoom Out (rel.)",
+    "voice_draft": "Dynamic Zoom Out (rel.)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "v_view_interact": {
     "xml_name": "v_view_interact",
     "action_map": "spaceship_view",
@@ -592,6 +1699,15 @@
     "voice_draft": "View Interact",
     "source": "xml_name_fallback",
     "confidence": "low"
+  },
+  "v_view_mode": {
+    "xml_name": "v_view_mode",
+    "action_map": "spaceship_view",
+    "display_name": "Cycle camera orbit mode",
+    "current_proposal": "Cycle camera orbit mode",
+    "voice_draft": "Cycle camera orbit mode",
+    "source": "csv_displayname",
+    "confidence": "medium"
   },
   "v_view_option": {
     "xml_name": "v_view_option",
@@ -602,12 +1718,219 @@
     "source": "xml_name_fallback",
     "confidence": "low"
   },
+  "v_view_pitch": {
+    "xml_name": "v_view_pitch",
+    "action_map": "vehicle_general",
+    "display_name": "Look up / down",
+    "current_proposal": "Look up / down",
+    "voice_draft": "Look up / down",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_pitch_down": {
+    "xml_name": "v_view_pitch_down",
+    "action_map": "spaceship_view",
+    "display_name": "Look down",
+    "current_proposal": "Look down",
+    "voice_draft": "Look down",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_pitch_mouse": {
+    "xml_name": "v_view_pitch_mouse",
+    "action_map": "vehicle_general",
+    "display_name": "Look up / down",
+    "current_proposal": "Look up / down",
+    "voice_draft": "Look up / down",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_pitch_up": {
+    "xml_name": "v_view_pitch_up",
+    "action_map": "spaceship_view",
+    "display_name": "Look up",
+    "current_proposal": "Look up",
+    "voice_draft": "Look up",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_yaw": {
+    "xml_name": "v_view_yaw",
+    "action_map": "vehicle_general",
+    "display_name": "Look left / right",
+    "current_proposal": "Look left / right",
+    "voice_draft": "Look left / right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_yaw_left": {
+    "xml_name": "v_view_yaw_left",
+    "action_map": "spaceship_view",
+    "display_name": "Look left",
+    "current_proposal": "Look left",
+    "voice_draft": "Look left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_yaw_mouse": {
+    "xml_name": "v_view_yaw_mouse",
+    "action_map": "vehicle_general",
+    "display_name": "Look left / right",
+    "current_proposal": "Look left / right",
+    "voice_draft": "Look left / right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_view_yaw_right": {
+    "xml_name": "v_view_yaw_right",
+    "action_map": "spaceship_view",
+    "display_name": "Look right",
+    "current_proposal": "Look right",
+    "voice_draft": "Look right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_aim_type_set_painting": {
+    "xml_name": "v_weapon_aim_type_set_painting",
+    "action_map": "spaceship_weapons",
+    "display_name": "Aim Mode - Set to Painting",
+    "current_proposal": "Aim Mode - Set to Painting",
+    "voice_draft": "AIM Mode - Set to Painting",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_countermeasure_decoy_launch": {
+    "xml_name": "v_weapon_countermeasure_decoy_launch",
+    "action_map": "spaceship_defensive",
+    "display_name": "Decoy - Launch Burst (tap), Set and Launch Burst (hold)",
+    "current_proposal": "Decoy - Launch Burst (tap), Set and Launch Burst (hold)",
+    "voice_draft": "Launch Burst , Set and Launch Burst",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_gimbals_state_toggle": {
+    "xml_name": "v_weapon_gimbals_state_toggle",
+    "action_map": "spaceship_weapons",
+    "display_name": "Gimbal State - Toggle Locked / Unlocked",
+    "current_proposal": "Gimbal State - Toggle Locked / Unlocked",
+    "voice_draft": "Gimbal State - Locked / Unlocked Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_increase_max_missiles": {
+    "xml_name": "v_weapon_increase_max_missiles",
+    "action_map": "spaceship_missiles",
+    "display_name": "Increase Number of Armed Missiles",
+    "current_proposal": "Increase Number of Armed Missiles",
+    "voice_draft": "Inc. Number of Armed Missiles",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
   "v_weapon_launch_missile": {
     "xml_name": "v_weapon_launch_missile",
     "action_map": "spaceship_missiles",
     "display_name": "Launch Missiles (Hold)",
     "current_proposal": "Launch Missiles (Hold)",
     "voice_draft": "Launch Missiles",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_preset_attack": {
+    "xml_name": "v_weapon_preset_attack",
+    "action_map": "spaceship_weapons",
+    "display_name": "Weapon Preset - Fire",
+    "current_proposal": "Weapon Preset - Fire",
+    "voice_draft": "Weapon Preset - Fire",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_preset_fire_guns2": {
+    "xml_name": "v_weapon_preset_fire_guns2",
+    "action_map": "spaceship_weapons",
+    "display_name": "Weapon Presets - Fire Guns Group 3",
+    "current_proposal": "Weapon Presets - Fire Guns Group 3",
+    "voice_draft": "Weapon Preset Fire Guns Group 3",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_preset_guns0": {
+    "xml_name": "v_weapon_preset_guns0",
+    "action_map": "spaceship_weapons",
+    "display_name": "Weapon Presets - Set Guns Group 1",
+    "current_proposal": "Weapon Presets - Set Guns Group 1",
+    "voice_draft": "Weapon Preset Set Guns Group 1",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_preset_guns1": {
+    "xml_name": "v_weapon_preset_guns1",
+    "action_map": "spaceship_weapons",
+    "display_name": "Weapon Presets - Set Guns Group 2",
+    "current_proposal": "Weapon Presets - Set Guns Group 2",
+    "voice_draft": "Weapon Preset Set Guns Group 2",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_preset_qid_jammer": {
+    "xml_name": "v_weapon_preset_qid_jammer",
+    "action_map": "spaceship_weapons",
+    "display_name": "Weapon Presets - Set Quantum Jammers (short range)",
+    "current_proposal": "Weapon Presets - Set Quantum Jammers (short range)",
+    "voice_draft": "Weapon Preset Set Quantum Jammers (short range)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_preset_qid_pulse": {
+    "xml_name": "v_weapon_preset_qid_pulse",
+    "action_map": "spaceship_weapons",
+    "display_name": "Weapon Presets - Set Quantum Snares / Pulse (long range)",
+    "current_proposal": "Weapon Presets - Set Quantum Snares / Pulse (long range)",
+    "voice_draft": "Weapon Preset Set Quantum Snares / Pulse (long range)",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_reset_max_missiles": {
+    "xml_name": "v_weapon_reset_max_missiles",
+    "action_map": "spaceship_missiles",
+    "display_name": "Reset Number of Armed Missiles",
+    "current_proposal": "Reset Number of Armed Missiles",
+    "voice_draft": "Reset Number of Armed Missiles",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_staggered_fire_toggle": {
+    "xml_name": "v_weapon_staggered_fire_toggle",
+    "action_map": "spaceship_weapons",
+    "display_name": "Staggered Fire - Toggle On / Off",
+    "current_proposal": "Staggered Fire - Toggle On / Off",
+    "voice_draft": "Staggered Fire - On/Off Toggle",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_weapon_toggle_launch_missile": {
+    "xml_name": "v_weapon_toggle_launch_missile",
+    "action_map": "spaceship_missiles",
+    "display_name": "Launch Missiles (Tap)",
+    "current_proposal": "Launch Missiles (Tap)",
+    "voice_draft": "Launch Missiles",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_yaw_left": {
+    "xml_name": "v_yaw_left",
+    "action_map": "vehicle_driver",
+    "display_name": "Turn Left",
+    "current_proposal": "Turn Left",
+    "voice_draft": "Turn Left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "v_yaw_right": {
+    "xml_name": "v_yaw_right",
+    "action_map": "vehicle_driver",
+    "display_name": "Turn Right",
+    "current_proposal": "Turn Right",
+    "voice_draft": "Turn Right",
     "source": "csv_displayname",
     "confidence": "medium"
   },
@@ -629,12 +1952,30 @@
     "source": "csv_displayname",
     "confidence": "medium"
   },
+  "view_fstop_in": {
+    "xml_name": "view_fstop_in",
+    "action_map": "view_director_mode",
+    "display_name": "ui_CIAdvanCamDOFIncrease",
+    "current_proposal": "View Fstop In",
+    "voice_draft": "Camera F-stop Inc.",
+    "source": "xml_name_fallback",
+    "confidence": "low"
+  },
   "view_fstop_out": {
     "xml_name": "view_fstop_out",
     "action_map": "view_director_mode",
     "display_name": "Decrease DoF",
     "current_proposal": "Decrease DoF",
     "voice_draft": "Camera F-stop Dec.",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "view_restore_defaults": {
+    "xml_name": "view_restore_defaults",
+    "action_map": "view_director_mode",
+    "display_name": "Reset Current View",
+    "current_proposal": "Reset Current View",
+    "voice_draft": "Reset Current View",
     "source": "csv_displayname",
     "confidence": "medium"
   },
@@ -673,5 +2014,32 @@
     "voice_draft": "Launch from Surface",
     "source": "csv_displayname",
     "confidence": "medium"
+  },
+  "zgt_roll_left": {
+    "xml_name": "zgt_roll_left",
+    "action_map": "zero_gravity_traversal",
+    "display_name": "Roll Left",
+    "current_proposal": "Roll Left",
+    "voice_draft": "Roll Left",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "zgt_roll_right": {
+    "xml_name": "zgt_roll_right",
+    "action_map": "zero_gravity_traversal",
+    "display_name": "Roll Right",
+    "current_proposal": "Roll Right",
+    "voice_draft": "Roll Right",
+    "source": "csv_displayname",
+    "confidence": "medium"
+  },
+  "zoom_out": {
+    "xml_name": "zoom_out",
+    "action_map": "player",
+    "display_name": "ui_CIFPSZoomOut",
+    "current_proposal": "Zoom Out",
+    "voice_draft": "Zoom Out",
+    "source": "xml_name_fallback",
+    "confidence": "low"
   }
 }
