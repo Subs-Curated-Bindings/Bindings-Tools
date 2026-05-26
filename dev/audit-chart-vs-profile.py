@@ -103,12 +103,12 @@ def parse_chart(svg_path):
 
 ETCHED_PAT = re.compile(
     r"^(?P<etched>"
-    # VKB-style: L-A1, R-A3, L-A1B, etc. (with optional .dir suffix)
-    r"(?:[LR]-[A-Z0-9]+(?:\.[a-z0-9-]+)*)"
-    r"|(?:MAIN-TRIG-[LR](?:\.stage-\d+)?)"
-    r"|(?:RAPID-TRIG-[LR])"
-    # SOL-R-style: ANALOG-HAT-L, 4WAY-HAT-L-30, LL-SWITCH, LL-BTNS, PINKY-L, etc.
-    r"|(?:[A-Z0-9]+(?:-[A-Z0-9]+){1,4}(?:\.[a-z0-9-]+)*)"
+    # Generic multi-segment (covers SOL-R-style ANALOG-HAT-L, MAIN-TRIG-R.stage-1,
+    # RAPID-TRIG-L, Moza R-BB-1 / T-NAV-1 / T-BTN-A1, VMAX T-B1, etc.). Listed
+    # FIRST so multi-segment names aren't truncated by the simpler L-/R- alt below.
+    r"(?:[A-Z0-9]+(?:-[A-Z0-9]+){1,4}(?:\.[a-z0-9-]+)*)"
+    # VKB-style fallback: L-A1, R-A3, L-A1B (no extra -segment, optional .dir)
+    r"|(?:[LR]-[A-Z0-9]+(?:\.[a-z0-9-]+)*)"
     r")"
 )
 
@@ -201,6 +201,17 @@ def collect_vjoy_targets(action, by_id, visited=None, path="always"):
         for long_ in action.findall("./long-actions/action-id"):
             if long_.text and long_.text in by_id and long_.text != aid:
                 out.extend(collect_vjoy_targets(by_id[long_.text], by_id, set(visited), "hold"))
+        return out
+    # Double-tap: uses <single-actions>/<double-actions> containers. Treat both
+    # as the inherited path — the layout XML can't distinguish single vs double-tap
+    # fires of the same vjoy slot anyway.
+    if atype == "double-tap":
+        for s in action.findall("./single-actions/action-id"):
+            if s.text and s.text in by_id and s.text != aid:
+                out.extend(collect_vjoy_targets(by_id[s.text], by_id, set(visited), path))
+        for d in action.findall("./double-actions/action-id"):
+            if d.text and d.text in by_id and d.text != aid:
+                out.extend(collect_vjoy_targets(by_id[d.text], by_id, set(visited), path))
         return out
     # Non-tempo: walk any nested action-id refs with the same path
     for el in action.iter():
