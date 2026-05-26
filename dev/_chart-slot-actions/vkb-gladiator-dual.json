@@ -1,0 +1,1215 @@
+{
+  "stick_slug": "vkb-gladiator-dual",
+  "stick_folder": "[Enhanced] Dual VKB Gladiator NXT",
+  "jg_profile": "Joystick Gremlin Profile [ENH][NXT][4.8.0][LIVE][R14].xml",
+  "layout_xml": "layout_ENH_NXT_480_LIVE_exported.xml",
+  "preferred_modes": [
+    "SCM Mode",
+    "NAV Mode",
+    "Nav Mode",
+    "default",
+    ""
+  ],
+  "stats": {
+    "resolved": 55,
+    "no_action": 3
+  },
+  "binds": {
+    "L-A3.up": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "6",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_power_toggle"
+          },
+          "layout_keys": {
+            "always": "js1_button41"
+          },
+          "body": "Toggle Power On/Off"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_flightready"
+          },
+          "layout_keys": {
+            "always": "js1_button11"
+          },
+          "body": "Flight Ready"
+        }
+      },
+      "showcase_action": "v_flightready"
+    },
+    "L-A3.right": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "7",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_power_toggle_shields"
+          },
+          "layout_keys": {
+            "always": "js1_button42"
+          },
+          "body": "Shields Power Toggle"
+        }
+      },
+      "showcase_action": "v_power_toggle_shields"
+    },
+    "L-A3.down": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "8",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_power_toggle_thrusters"
+          },
+          "layout_keys": {
+            "always": "js1_button43"
+          },
+          "body": "Thruster Power Toggle Landing Gear"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_autoland"
+          },
+          "layout_keys": {
+            "always": "js1_button13"
+          },
+          "body": "Landing Gear, [H] Auto Land, Toggle Docking Mode"
+        }
+      },
+      "showcase_action": "v_autoland"
+    },
+    "L-A3.left": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "9",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_power_toggle_weapons"
+          },
+          "layout_keys": {
+            "always": "js1_button44"
+          },
+          "body": "Weapon Power Toggle Open Doors Toggle"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_toggle_all_doors"
+          },
+          "layout_keys": {
+            "always": "js1_button14"
+          },
+          "body": "Open Doors Toggle"
+        }
+      },
+      "showcase_action": "v_toggle_all_doors"
+    },
+    "L-A4.up": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "11",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_inc_scan_focus_level"
+          },
+          "layout_keys": {
+            "always": "js1_button36"
+          },
+          "body": "Inc. Scanning Angle | Inc. Bomb Range | Inc. Tractor Distance Camera (3rd Person)"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_view_cycle_fwd"
+          },
+          "layout_keys": {
+            "always": "js1_button6"
+          },
+          "body": "Camera Cycle View"
+        }
+      },
+      "showcase_action": "v_view_cycle_fwd"
+    },
+    "L-A4.right": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "12",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_dock_toggle_view"
+          },
+          "layout_keys": {
+            "always": "js1_button37"
+          },
+          "body": "Toggle Docking Camera"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_view_dynamic_zoom_abs_toggle"
+          },
+          "layout_keys": {
+            "always": "js1_button7"
+          },
+          "body": "Dynamic Zoom, [H] Missile Cinematic Camera"
+        }
+      },
+      "showcase_action": "v_view_dynamic_zoom_abs_toggle"
+    },
+    "L-A4.down": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "13",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_dec_scan_focus_level"
+          },
+          "layout_keys": {
+            "always": "js1_button38"
+          },
+          "body": "Dec. Tractor Distance | Dec. Bomb Range | Dec Scanning Angle"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_view_look_behind"
+          },
+          "layout_keys": {
+            "always": "js1_button8"
+          },
+          "body": "[H] Look Behind"
+        }
+      },
+      "showcase_action": "v_view_look_behind"
+    },
+    "L-A4.left": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "14",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "headtrack_recenter_device"
+          },
+          "layout_keys": {
+            "always": "js1_button39"
+          },
+          "body": "Reset Head Tracking"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "headtrack_camera_enabled"
+          },
+          "layout_keys": {
+            "always": "js1_button9"
+          },
+          "body": "Head Tracking On/Off"
+        }
+      },
+      "showcase_action": "headtrack_camera_enabled"
+    },
+    "L-A4.press-in": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "15",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_weapon_bombing_hud_range_reset"
+          },
+          "layout_keys": {
+            "always": "js1_button40"
+          },
+          "body": "Reset Range"
+        },
+        "SCM Mode": {
+          "actions": {
+            "tap": "v_view_freelook_mode",
+            "hold": "v_view_freelook_mode"
+          },
+          "layout_keys": {
+            "tap": "js1_button10",
+            "hold": "js1_button10"
+          },
+          "body": "Freelook"
+        }
+      },
+      "showcase_action": "v_view_freelook_mode"
+    },
+    "L-C1.right": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "17",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_flight_advanced_hud_toggle"
+          },
+          "layout_keys": {
+            "always": "js1_button52"
+          },
+          "body": "Adv.HUD Toggle"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_enter_remote_turret_3"
+          },
+          "layout_keys": {
+            "always": "js1_button22"
+          },
+          "body": "E.S.P. Toggle / Turret E.S.P, Remote Turret 3"
+        }
+      },
+      "showcase_action": "v_enter_remote_turret_3"
+    },
+    "L-A1": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "hat",
+      "phys_id": "1",
+      "modes": {},
+      "showcase_action": null
+    },
+    "L-T1": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "axis",
+      "phys_id": "3",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_mining_throttle"
+          },
+          "layout_keys": {
+            "always": "js1_rotz"
+          },
+          "body": "Mining Throttle / Salvage Beam Spacing (vjoy 1 Rz)"
+        }
+      },
+      "showcase_action": "v_mining_throttle"
+    },
+    "MAIN-TRIG-L": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "1",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_afterburner"
+          },
+          "layout_keys": {
+            "always": "js1_button1"
+          },
+          "body": "After Burner Toggle"
+        }
+      },
+      "showcase_action": "v_afterburner"
+    },
+    "L-A2": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "3",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "tap": "v_operator_mode_cycle_forward",
+            "hold": "v_master_mode_set_nav"
+          },
+          "layout_keys": {
+            "tap": "js1_button3",
+            "hold": "js1_button127"
+          },
+          "body": "[H] Master Mode Cycle Nav & SCM, Operator Mode Cycle"
+        }
+      },
+      "showcase_action": "v_operator_mode_cycle_forward"
+    },
+    "L-B1": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "4",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_ads_stable_max_zoom_hold"
+          },
+          "layout_keys": {
+            "always": "js1_button4"
+          },
+          "body": "Precision Aiming, [H] Precision Max Zoom"
+        }
+      },
+      "showcase_action": "v_ads_stable_max_zoom_hold"
+    },
+    "L-A3.press-in": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "10",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_atc_request"
+          },
+          "layout_keys": {
+            "always": "js1_button15"
+          },
+          "body": "Request Landing, Request Jumpgate"
+        }
+      },
+      "showcase_action": "v_atc_request"
+    },
+    "L-C1.up": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "16",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_enter_remote_turret_1"
+          },
+          "layout_keys": {
+            "always": "js1_button21"
+          },
+          "body": "Stagger Mode, Remote Turret 1"
+        }
+      },
+      "showcase_action": "v_enter_remote_turret_1"
+    },
+    "L-C1.down": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "18",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "tractor_beam_vehicle_increase_distance"
+          },
+          "layout_keys": {
+            "always": "js1_button23"
+          },
+          "body": "Turret Gyro Mode, Start/Pause Stop Watch"
+        }
+      },
+      "showcase_action": "tractor_beam_vehicle_increase_distance"
+    },
+    "L-C1.left": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "19",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_enter_remote_turret_2"
+          },
+          "layout_keys": {
+            "always": "js1_button24"
+          },
+          "body": "Toggle Lead/Lag Pip / Turret VJoy, Remote Turret 2"
+        }
+      },
+      "showcase_action": "v_enter_remote_turret_2"
+    },
+    "L-C1.press-in": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "20",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_reset_gimbal"
+          },
+          "layout_keys": {
+            "always": "js1_button25"
+          },
+          "body": "Gimbal Cycle Fixed/Auto, [H] Recenter Turret, Salvage Gimbal Reset"
+        }
+      },
+      "showcase_action": "v_salvage_reset_gimbal"
+    },
+    "RAPID-TRIG-L": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "21",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_space_brake"
+          },
+          "layout_keys": {
+            "always": "js1_button27"
+          },
+          "body": "Trigger Down: Space Brake"
+        }
+      },
+      "showcase_action": "v_space_brake"
+    },
+    "L-EN1.up": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "23",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_inc_scan_focus_level"
+          },
+          "layout_keys": {
+            "always": "js1_button28"
+          },
+          "body": "Mining Laser PWR / Scanning Angle / Bomb Range / Tractor Distance (Inc)"
+        }
+      },
+      "showcase_action": "v_inc_scan_focus_level"
+    },
+    "L-EN1.down": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "24",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_dec_scan_focus_level"
+          },
+          "layout_keys": {
+            "always": "js1_button29"
+          },
+          "body": "Mining Laser PWR / Scanning Angle / Bomb Range / Tractor Distance (Dec)"
+        }
+      },
+      "showcase_action": "v_dec_scan_focus_level"
+    },
+    "L-SW1.up": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "25",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_close_all_doors"
+          },
+          "layout_keys": {
+            "always": "js1_button19"
+          },
+          "body": "Close Doors"
+        }
+      },
+      "showcase_action": "v_close_all_doors"
+    },
+    "L-SW1.down": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "26",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_open_all_doors"
+          },
+          "layout_keys": {
+            "always": "js1_button20"
+          },
+          "body": "Open Doors"
+        }
+      },
+      "showcase_action": "v_open_all_doors"
+    },
+    "L-F1": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "27",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_atc_loading_area_request"
+          },
+          "layout_keys": {
+            "always": "js1_button16"
+          },
+          "body": "Request Cargo"
+        }
+      },
+      "showcase_action": "v_atc_loading_area_request"
+    },
+    "L-F2": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "28",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_transform_cycle"
+          },
+          "layout_keys": {
+            "always": "js1_button17"
+          },
+          "body": "VTOL Cycle (virtual placeholder; actual VTOL fires via btn 125/128 macros)"
+        }
+      },
+      "showcase_action": "v_transform_cycle"
+    },
+    "L-F3": {
+      "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
+      "phys_type": "button",
+      "phys_id": "29",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_transform_cycle"
+          },
+          "layout_keys": {
+            "always": "js1_button18"
+          },
+          "body": "Cycle Config / Turret Change Position"
+        }
+      },
+      "showcase_action": "v_transform_cycle"
+    },
+    "R-D1": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "5",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_target_hail"
+          },
+          "layout_keys": {
+            "always": "js2_button35"
+          },
+          "body": "[H] VOIP PTT Proximity | Hail Target | Accept Noti\ufb01cation | [DT] Decline Noti\ufb01cation"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "toggle_chat"
+          },
+          "layout_keys": {
+            "always": "js2_button5"
+          },
+          "body": "[H] VOIP PTT, [DT] Chat Window"
+        }
+      },
+      "showcase_action": "toggle_chat"
+    },
+    "R-A3.right": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "7",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_salvage_cycle_modifiers_right"
+          },
+          "layout_keys": {
+            "always": "js2_button42"
+          },
+          "body": "Right Modi\ufb01er Cycle"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_cycle_modifiers_right"
+          },
+          "layout_keys": {
+            "always": "js2_button12"
+          },
+          "body": "Missile Type Next, Fire Right Tool"
+        }
+      },
+      "showcase_action": "v_salvage_cycle_modifiers_right"
+    },
+    "R-A3.down": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "8",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_decrease_mining_throttle"
+          },
+          "layout_keys": {
+            "always": "js2_button43"
+          },
+          "body": "Cycle Structural Modes Dec. Mining Laser Power (Slow)"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_cycle_modifiers_structural"
+          },
+          "layout_keys": {
+            "always": "js2_button13"
+          },
+          "body": "Missile Count Down, Fire Disintegrate"
+        }
+      },
+      "showcase_action": "v_salvage_cycle_modifiers_structural"
+    },
+    "R-A3.left": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "9",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_salvage_cycle_modifiers_left"
+          },
+          "layout_keys": {
+            "always": "js2_button44"
+          },
+          "body": "Left Modi\ufb01er Cycle"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_cycle_modifiers_left"
+          },
+          "layout_keys": {
+            "always": "js2_button14"
+          },
+          "body": "Missile Type Previous, Fire Left Tool"
+        }
+      },
+      "showcase_action": "v_salvage_cycle_modifiers_left"
+    },
+    "R-A4.down": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "11",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_target_cycle_attacker_fwd"
+          },
+          "layout_keys": {
+            "always": "js2_button36"
+          },
+          "body": "Attackers Target Forward Attackers Target Closest"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_target_cycle_attacker_back"
+          },
+          "layout_keys": {
+            "always": "js2_button6"
+          },
+          "body": "[DT] Attackers Target Backward"
+        }
+      },
+      "showcase_action": "v_target_cycle_attacker_back"
+    },
+    "R-A4.right": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "12",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_target_cycle_subitem_fwd"
+          },
+          "layout_keys": {
+            "always": "js2_button37"
+          },
+          "body": "Sub Target Forward"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_target_cycle_all_fwd"
+          },
+          "layout_keys": {
+            "always": "js2_button7"
+          },
+          "body": "Hostile Target Forward"
+        }
+      },
+      "showcase_action": "v_target_cycle_all_fwd"
+    },
+    "R-A4.up": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "13",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_target_cycle_subitem_reset"
+          },
+          "layout_keys": {
+            "always": "js2_button38"
+          },
+          "body": "Sub Target Reset Main"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_target_cycle_all_reset"
+          },
+          "layout_keys": {
+            "always": "js2_button8"
+          },
+          "body": "Hostile Target Closest"
+        }
+      },
+      "showcase_action": "v_target_cycle_all_reset"
+    },
+    "R-A4.left": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "14",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_target_cycle_subitem_back"
+          },
+          "layout_keys": {
+            "always": "js2_button39"
+          },
+          "body": "Sub Target Backward"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_target_cycle_all_back"
+          },
+          "layout_keys": {
+            "always": "js2_button9"
+          },
+          "body": "Hostile Target Backward"
+        }
+      },
+      "showcase_action": "v_target_cycle_all_back"
+    },
+    "R-A4.press-in": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "15",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_target_pin_selected"
+          },
+          "layout_keys": {
+            "always": "js2_button40"
+          },
+          "body": "Pin Selected | [H] Unpin Selected"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_target_lock_selected"
+          },
+          "layout_keys": {
+            "always": "js2_button10"
+          },
+          "body": "EyeTracker Target / Target Under Reticle"
+        }
+      },
+      "showcase_action": "v_target_lock_selected"
+    },
+    "R-C1.up": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "16",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_mfd_movement_up_long"
+          },
+          "layout_keys": {
+            "always": "js2_button51"
+          },
+          "body": "[H] Select MFD Up 1 Mining Module 1 Focus Fracture Shields Fore"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_mining_use_consumable1"
+          },
+          "layout_keys": {
+            "always": "js2_button21"
+          },
+          "body": "Mining Module 1, Focus Fracture, Shields Forward"
+        }
+      },
+      "showcase_action": "v_mining_use_consumable1"
+    },
+    "R-C1.right": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "17",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_mfd_interact_cycle_forwards_short"
+          },
+          "layout_keys": {
+            "always": "js2_button52"
+          },
+          "body": "[H] Select MFD Right 1 | Cycle MFD Page Forward 1 | [DT] Select Right Cast 1"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_mining_use_consumable2"
+          },
+          "layout_keys": {
+            "always": "js2_button22"
+          },
+          "body": "Shields Right, Mining Module 2, Focus Right Tool"
+        }
+      },
+      "showcase_action": "v_mining_use_consumable2"
+    },
+    "R-C1.down": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "18",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_mfd_movement_down_long"
+          },
+          "layout_keys": {
+            "always": "js2_button53"
+          },
+          "body": "[H] Select MFD Down 1"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_focus_disintegrate"
+          },
+          "layout_keys": {
+            "always": "js2_button23"
+          },
+          "body": "Shields Aft, Focus Disintegration"
+        }
+      },
+      "showcase_action": "v_salvage_focus_disintegrate"
+    },
+    "R-C1.left": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "19",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_mfd_interact_cycle_backwards_short"
+          },
+          "layout_keys": {
+            "always": "js2_button54"
+          },
+          "body": "[H] Select MFD Left 1 | Cycle MFD Page Backward 1 | [DT] Select Left Cast 1"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_mining_use_consumable3"
+          },
+          "layout_keys": {
+            "always": "js2_button24"
+          },
+          "body": "Shields Left, Mining Module 3, Focus Left Tool"
+        }
+      },
+      "showcase_action": "v_mining_use_consumable3"
+    },
+    "RAPID-TRIG-R": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "21",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_weapon_preset_prev_overflow"
+          },
+          "layout_keys": {
+            "always": "js2_button57"
+          },
+          "body": "Next Weapon Preset | [DT] EMP/QID Preset Trigger Down Noise, | Prev. Weapon Preset"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_weapon_countermeasure_noise_launch"
+          },
+          "layout_keys": {
+            "always": "js2_button27"
+          },
+          "body": "Trigger Down: Noise / Multi Decoy"
+        }
+      },
+      "showcase_action": "v_weapon_countermeasure_noise_launch"
+    },
+    "R-F1": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "27",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_light_amplification_toggle"
+          },
+          "layout_keys": {
+            "always": "js2_button46"
+          },
+          "body": "Light Ampli\ufb01cation"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_lights"
+          },
+          "layout_keys": {
+            "always": "js2_button16"
+          },
+          "body": "Lights"
+        }
+      },
+      "showcase_action": "v_lights"
+    },
+    "R-F2": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "28",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_eject"
+          },
+          "layout_keys": {
+            "always": "js2_button47"
+          },
+          "body": "[H] Eject"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_emergency_exit"
+          },
+          "layout_keys": {
+            "always": "js2_button17"
+          },
+          "body": "Exit Seat / Turret, Quick Exit"
+        }
+      },
+      "showcase_action": "v_emergency_exit"
+    },
+    "R-F3": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "29",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_toggle_all_doorlocks"
+          },
+          "layout_keys": {
+            "always": "js2_button48"
+          },
+          "body": "Lock Doors Toggle"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_toggle_all_portlocks"
+          },
+          "layout_keys": {
+            "always": "js2_button18"
+          },
+          "body": "Port Lock Toggle"
+        }
+      },
+      "showcase_action": "v_toggle_all_portlocks"
+    },
+    "R-A1": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "hat",
+      "phys_id": "1",
+      "modes": {},
+      "showcase_action": null
+    },
+    "R-T1": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "axis",
+      "phys_id": "3",
+      "modes": {},
+      "showcase_action": null
+    },
+    "MAIN-TRIG-R.stage-1": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "1",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_toggle_qdrive_engagement"
+          },
+          "layout_keys": {
+            "always": "js2_button1"
+          },
+          "body": "Stage 1: Fire Selected Weapon Group, Fire Weapon Group 2"
+        }
+      },
+      "showcase_action": "v_toggle_qdrive_engagement"
+    },
+    "MAIN-TRIG-R.stage-2": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "2",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_weapon_preset_fire_guns0"
+          },
+          "layout_keys": {
+            "always": "js2_button2"
+          },
+          "body": "Stage 2: Fire Weapon Group 3"
+        }
+      },
+      "showcase_action": "v_weapon_preset_fire_guns0"
+    },
+    "R-A2": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "3",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "tap": "v_mfd_quick_action_repair_all",
+            "hold": "v_set_mining_mode"
+          },
+          "layout_keys": {
+            "tap": "js2_button3",
+            "hold": "js2_button126"
+          },
+          "body": "[H] Select Mining/Salvage Mode, Self Repair All Toggle"
+        }
+      },
+      "showcase_action": "v_mfd_quick_action_repair_all"
+    },
+    "R-B1": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "4",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_ifcs_vector_decoupling_toggle"
+          },
+          "layout_keys": {
+            "always": "js2_button4"
+          },
+          "body": "Decoupled Toggle"
+        }
+      },
+      "showcase_action": "v_ifcs_vector_decoupling_toggle"
+    },
+    "R-A3.up": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "6",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_toggle_fire_fracture"
+          },
+          "layout_keys": {
+            "always": "js2_button11"
+          },
+          "body": "Inc. Mining Laser Power (Slow), Fire Fracture, Missile Count Up"
+        }
+      },
+      "showcase_action": "v_salvage_toggle_fire_fracture"
+    },
+    "R-A3.press-in": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "10",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_toggle_mining_laser_type"
+          },
+          "layout_keys": {
+            "always": "js2_button15"
+          },
+          "body": "Reset Missile Count, Cycle Fracture/Extraction, Beam Axis Toggle"
+        }
+      },
+      "showcase_action": "v_toggle_mining_laser_type"
+    },
+    "R-C1.press-in": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "20",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_focus_all_heads"
+          },
+          "layout_keys": {
+            "always": "js2_button25"
+          },
+          "body": "Shields Reset, Focus All Salvage Heads"
+        }
+      },
+      "showcase_action": "v_salvage_focus_all_heads"
+    },
+    "R-EN1.up": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "23",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_increase_beam_spacing"
+          },
+          "layout_keys": {
+            "always": "js2_button28"
+          },
+          "body": "Salvage Beam Spacing Inc"
+        }
+      },
+      "showcase_action": "v_salvage_increase_beam_spacing"
+    },
+    "R-EN1.down": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "24",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_decrease_beam_spacing"
+          },
+          "layout_keys": {
+            "always": "js2_button29"
+          },
+          "body": "Salvage Beam Spacing Dec"
+        }
+      },
+      "showcase_action": "v_salvage_decrease_beam_spacing"
+    },
+    "R-SW1.up": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "25",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_weapon_countermeasure_decoy_burst_increase"
+          },
+          "layout_keys": {
+            "always": "js2_button19"
+          },
+          "body": "Decoy Burst Size Inc"
+        }
+      },
+      "showcase_action": "v_weapon_countermeasure_decoy_burst_increase"
+    },
+    "R-SW1.down": {
+      "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
+      "phys_type": "button",
+      "phys_id": "26",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_weapon_countermeasure_decoy_burst_decrease"
+          },
+          "layout_keys": {
+            "always": "js2_button20"
+          },
+          "body": "Decoy Burst Size Dec"
+        }
+      },
+      "showcase_action": "v_weapon_countermeasure_decoy_burst_decrease"
+    }
+  }
+}

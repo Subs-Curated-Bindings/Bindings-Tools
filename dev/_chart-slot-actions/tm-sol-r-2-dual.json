@@ -1,0 +1,560 @@
+{
+  "stick_slug": "tm-sol-r-2-dual",
+  "stick_folder": "[Enhanced] Dual TM SOL-R",
+  "jg_profile": "Joystick Gremlin Profile [ENH][SOL-R 2][4.8.0][LIVE][R14].xml",
+  "layout_xml": "layout_ENH_SOL-R2_480_LIVE_exported.xml",
+  "preferred_modes": [
+    "SCM Mode",
+    "NAV Mode",
+    "Nav Mode",
+    "default",
+    ""
+  ],
+  "stats": {
+    "resolved": 24,
+    "no_action": 1
+  },
+  "binds": {
+    "ANALOG-HAT-L": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "axis",
+      "phys_id": "4",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_power_toggle"
+          },
+          "layout_keys": {
+            "always": "js1_button46"
+          },
+          "body": "Analog hat Y (vjoy 1 roty, player movement Y in foot mode)"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_flightready"
+          },
+          "layout_keys": {
+            "always": "js1_button29"
+          },
+          "body": "v_flightready | v_flightready"
+        }
+      },
+      "showcase_action": "v_flightready"
+    },
+    "LL-SWITCH": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "4",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "turret_toggle_mouse_mode"
+          },
+          "layout_keys": {
+            "always": "js1_button54"
+          },
+          "body": "turret_toggle_mouse_mode"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_toggle_all_doors"
+          },
+          "layout_keys": {
+            "always": "js1_button14"
+          },
+          "body": "v_toggle_all_doors | v_unlock_all_ports"
+        }
+      },
+      "showcase_action": "v_toggle_all_doors"
+    },
+    "PINKY-L": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "28",
+      "modes": {},
+      "showcase_action": null
+    },
+    "LL-BTNS": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "30",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_dock_toggle_view"
+          },
+          "layout_keys": {
+            "always": "js1_button80"
+          },
+          "body": "v_dock_toggle_view | v_weapon_bombing_hud_range_reset"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_view_freelook_mode"
+          },
+          "layout_keys": {
+            "always": "js1_button30"
+          },
+          "body": "v_view_freelook_mode | eva_toggle_headlook_mode | v_view_freelook_mode"
+        }
+      },
+      "showcase_action": "v_view_freelook_mode"
+    },
+    "4WAY-HAT-L-30": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "31",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_dec_scan_focus_level"
+          },
+          "layout_keys": {
+            "always": "js1_button84"
+          },
+          "body": "v_dec_scan_focus_level"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_view_look_behind"
+          },
+          "layout_keys": {
+            "always": "js1_button34"
+          },
+          "body": "v_view_look_behind"
+        }
+      },
+      "showcase_action": "v_view_look_behind"
+    },
+    "L-CLUSTER": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "35",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_accel_range_down"
+          },
+          "layout_keys": {
+            "always": "js1_button94"
+          },
+          "body": "v_accel_range_down"
+        },
+        "Nav Mode": {
+          "actions": {
+            "always": "v_master_mode_cycle_long"
+          },
+          "layout_keys": {
+            "always": "js1_button36"
+          },
+          "body": "v_master_mode_cycle_long | v_toggle_mining_laser_type | v_master_mode_set_scm"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_ifcs_speed_limiter_down"
+          },
+          "layout_keys": {
+            "always": "js1_button44"
+          },
+          "body": "v_ifcs_speed_limiter_down | turret_limiter_rel_decrease"
+        }
+      },
+      "showcase_action": "v_ifcs_speed_limiter_down"
+    },
+    "4WAY-HAT-L-40": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "43",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_strafe_trim_reset_short"
+          },
+          "layout_keys": {
+            "always": "js1_button93"
+          },
+          "body": "v_strafe_trim_reset_short"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_strafe_trim_set_100_long"
+          },
+          "layout_keys": {
+            "always": "js1_button43"
+          },
+          "body": "v_strafe_trim_set_100_long | v_strafe_trim_set_short"
+        }
+      },
+      "showcase_action": "v_strafe_trim_set_100_long"
+    },
+    "L-THROTTLE": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "axis",
+      "phys_id": "1",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_mining_throttle"
+          },
+          "layout_keys": {
+            "always": "js1_z"
+          },
+          "body": "Mining Throttle / Salvage Beam Spacing / Turret Limiter (vjoy 1 z)"
+        }
+      },
+      "showcase_action": "v_mining_throttle"
+    },
+    "L-ENCODER": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "9",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_salvage_decrease_beam_spacing"
+          },
+          "layout_keys": {
+            "always": "js1_button10"
+          },
+          "body": "Decoy Burst Size Inc / Tractor Distance Inc."
+        }
+      },
+      "showcase_action": "v_salvage_decrease_beam_spacing"
+    },
+    "LR-SWITCH": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "12",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_lock_all_ports"
+          },
+          "layout_keys": {
+            "always": "js1_button15"
+          },
+          "body": "v_lock_all_ports | v_toggle_all_portlocks | v_lock_all_ports"
+        }
+      },
+      "showcase_action": "v_lock_all_ports"
+    },
+    "LR-BTNS": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "16",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_weapon_pip_toggle_lead_lag"
+          },
+          "layout_keys": {
+            "always": "js1_button17"
+          },
+          "body": "v_weapon_pip_toggle_lead_lag"
+        }
+      },
+      "showcase_action": "v_weapon_pip_toggle_lead_lag"
+    },
+    "L-KNOB": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "20",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_set_mining_mode"
+          },
+          "layout_keys": {
+            "always": "js1_button126"
+          },
+          "body": "Position 23 \u2014 Toggle M/S (change-mode)"
+        }
+      },
+      "showcase_action": "v_set_mining_mode"
+    },
+    "MAIN-TRIG-L": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "25",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_strafe_trim_reset_long"
+          },
+          "layout_keys": {
+            "always": "js1_button25"
+          },
+          "body": "v_strafe_trim_reset_long"
+        }
+      },
+      "showcase_action": "v_strafe_trim_reset_long"
+    },
+    "RAPID-TRIG-L": {
+      "phys_device": "141b1470-1081-11f0-8006-444553540000",
+      "phys_type": "button",
+      "phys_id": "26",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_space_brake"
+          },
+          "layout_keys": {
+            "always": "js1_button26"
+          },
+          "body": "v_space_brake | eva_brake | v_brake"
+        }
+      },
+      "showcase_action": "v_space_brake"
+    },
+    "ANALOG-HAT-R": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "axis",
+      "phys_id": "4",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_shield_reset_level"
+          },
+          "layout_keys": {
+            "always": "js2_button79"
+          },
+          "body": "Press-in: Freelook"
+        }
+      },
+      "showcase_action": "v_shield_reset_level"
+    },
+    "RL-BTNS": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "5",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_jettison_volatile_cargo"
+          },
+          "layout_keys": {
+            "always": "js2_button57"
+          },
+          "body": "v_jettison_volatile_cargo"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "notification_accept"
+          },
+          "layout_keys": {
+            "always": "js2_button7"
+          },
+          "body": "notification_accept | notification_decline"
+        }
+      },
+      "showcase_action": "notification_accept"
+    },
+    "RR-BTNS": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "18",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_mfd_soft_select_cast_left_short"
+          },
+          "layout_keys": {
+            "always": "js2_button69"
+          },
+          "body": "v_mfd_soft_select_cast_left_short"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_mfd_interact_cycle_backwards_short"
+          },
+          "layout_keys": {
+            "always": "js2_button19"
+          },
+          "body": "v_mfd_interact_cycle_backwards_short | v_mfd_movement_left_long"
+        }
+      },
+      "showcase_action": "v_mfd_interact_cycle_backwards_short"
+    },
+    "PINKY-R": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "28",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "foip_pushtotalk_proximity"
+          },
+          "layout_keys": {
+            "always": "js2_button78"
+          },
+          "body": "Push-to-Talk (FOIP)"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "foip_pushtotalk"
+          },
+          "layout_keys": {
+            "always": "js2_button28"
+          },
+          "body": "Push-to-Talk (FOIP)"
+        }
+      },
+      "showcase_action": "foip_pushtotalk"
+    },
+    "4WAY-HAT-R-30": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "30",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_target_cycle_friendly_reset"
+          },
+          "layout_keys": {
+            "always": "js2_button84"
+          },
+          "body": "v_target_cycle_friendly_reset | v_target_cycle_subitem_reset"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_target_cycle_all_reset"
+          },
+          "layout_keys": {
+            "always": "js2_button34"
+          },
+          "body": "v_target_cycle_all_reset | v_target_cycle_hostile_reset"
+        }
+      },
+      "showcase_action": "v_target_cycle_all_reset"
+    },
+    "R-CLUSTER": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "35",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_salvage_focus_right"
+          },
+          "layout_keys": {
+            "always": "js2_button89"
+          },
+          "body": "v_salvage_focus_right"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_engineering_assignment_reset"
+          },
+          "layout_keys": {
+            "always": "js2_button40"
+          },
+          "body": "v_engineering_assignment_reset"
+        }
+      },
+      "showcase_action": "v_engineering_assignment_reset"
+    },
+    "MAIN-TRIG-R": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "37",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "tractor_beam_vehicle_decrease_distance"
+          },
+          "layout_keys": {
+            "always": "js2_button88"
+          },
+          "body": "tractor_beam_vehicle_decrease_distance | v_weapon_preset_prev_overflow | v_weapon_cycle_missile_fwd"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_decrease_mining_throttle"
+          },
+          "layout_keys": {
+            "always": "js2_button38"
+          },
+          "body": "v_decrease_mining_throttle | v_salvage_focus_disintegrate | v_weapon_decrease_max_missiles"
+        }
+      },
+      "showcase_action": "v_decrease_mining_throttle"
+    },
+    "4WAY-HAT-R-40": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "41",
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "always": "v_engineering_assignment_engine_decrease"
+          },
+          "layout_keys": {
+            "always": "js2_button94"
+          },
+          "body": "v_engineering_assignment_engine_decrease | v_engineering_assignment_engine_min"
+        },
+        "SCM Mode": {
+          "actions": {
+            "always": "v_engineering_assignment_engine_increase"
+          },
+          "layout_keys": {
+            "always": "js2_button44"
+          },
+          "body": "v_engineering_assignment_engine_increase | v_engineering_assignment_engine_max"
+        }
+      },
+      "showcase_action": "v_engineering_assignment_engine_increase"
+    },
+    "RL-SWITCH": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "1",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_emergency_exit"
+          },
+          "layout_keys": {
+            "always": "js2_button4"
+          },
+          "body": "v_emergency_exit | turret_remote_exit | pl_exit"
+        }
+      },
+      "showcase_action": "v_emergency_exit"
+    },
+    "RR-SWITCH": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "12",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_mining_use_consumable3"
+          },
+          "layout_keys": {
+            "always": "js2_button15"
+          },
+          "body": "v_mining_use_consumable3"
+        }
+      },
+      "showcase_action": "v_mining_use_consumable3"
+    },
+    "RAPID-TRIG-R": {
+      "phys_device": "6686f980-1082-11f0-8008-444553540000",
+      "phys_type": "button",
+      "phys_id": "26",
+      "modes": {
+        "SCM Mode": {
+          "actions": {
+            "always": "v_weapon_countermeasure_noise_launch"
+          },
+          "layout_keys": {
+            "always": "js2_button26"
+          },
+          "body": "v_weapon_countermeasure_noise_launch"
+        }
+      },
+      "showcase_action": "v_weapon_countermeasure_noise_launch"
+    }
+  }
+}
