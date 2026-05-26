@@ -11,7 +11,6 @@ state -- they work on local files.
 
 | Script | What it does |
 |---|---|
-| [r13_to_r14.py](r13_to_r14.py) | One-shot Joystick Gremlin R13 → R14 profile converter. Built for the 2026-05 conversion sprint. Auto-writes a sidecar report to `<output_dir>/.Assets/<output_stem>.report.txt`. |
 | [load-layout-to-actionmaps.py](load-layout-to-actionmaps.py) | Copies a stick's layout XML into SC's `controls\mappings\` and rewrites the live `actionmaps.xml` from the layout body, bypassing SC's profile-import path (which has the `vehicle_mfd` wipe bug). Backs up actionmaps.xml first. SC must be fully closed. |
 | [wipe-actionmaps.py](wipe-actionmaps.py) | Deletes the live `actionmaps.xml` so SC produces its engine-default state on next launch. Used to test a shipped layout from the end-user perspective (wipe, launch, import via Customization). Timestamped backup, refuses if SC is running. |
 | [build-distribution-zip.py](build-distribution-zip.py) | Builds the user-facing release zip for a stick folder. Includes everything except `.Assets/`, `Thumbs.db`, and `*.af~lock~`. Output lands in `<stick-folder>/.Assets/<zip-name>.zip`. |
