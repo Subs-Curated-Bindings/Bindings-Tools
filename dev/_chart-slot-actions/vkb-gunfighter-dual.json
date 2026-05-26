@@ -11,8 +11,8 @@
     ""
   ],
   "stats": {
-    "resolved": 39,
-    "no_action": 3
+    "resolved": 41,
+    "no_action": 1
   },
   "binds": {
     "R-A2": {
@@ -190,8 +190,39 @@
       "phys_device": "0dcd7600-d727-11ef-800a-444553540000",
       "phys_type": "hat",
       "phys_id": "1",
-      "modes": {},
-      "showcase_action": null
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "up": "v_mfd_movement_up_long",
+            "down": "v_mfd_movement_down_long",
+            "left": "v_mfd_interact_cycle_backwards_short",
+            "right": "v_mfd_interact_cycle_forwards_short"
+          },
+          "layout_keys": {
+            "up": "js2_hat2_up",
+            "down": "js2_hat2_down",
+            "left": "js2_hat2_left",
+            "right": "js2_hat2_right"
+          },
+          "body": "up=[M][H] Select MFD Up 1 [M] Target Attacker Forward Target Under Reticle | down=Unlock Target [M] Target Attacker Closest [M][H] Select MFD Down 1 | left=Tobii Gaze Target Target Hostile Forward [DT] Target Hostile Closest [M][H] Select MFD Left 1 [M][DT] Select MFD Cast Left 1 [M] Cycle MFD Page Backward 1 | right=Target All Forward [DT] Target All Closest [M][H] Select MFD Right 1 [M][DT] Select MFD Cast Right 1 [M] Cycle MFD Page Forward 1 | press-in=Mode Switch To Analog Freelook 1"
+        },
+        "SCM Mode": {
+          "actions": {
+            "up": "v_target_under_reticle",
+            "down": "v_target_unlock",
+            "left": "v_target_lock_selected",
+            "right": "v_target_cycle_hostile_fwd"
+          },
+          "layout_keys": {
+            "up": "js2_hat1_up",
+            "down": "js2_hat1_down",
+            "left": "js2_hat1_left",
+            "right": "js2_hat1_right"
+          },
+          "body": "up=[M][H] Select MFD Up 1 [M] Target Attacker Forward Target Under Reticle | down=Unlock Target [M] Target Attacker Closest [M][H] Select MFD Down 1 | left=Tobii Gaze Target Target Hostile Forward [DT] Target Hostile Closest [M][H] Select MFD Left 1 [M][DT] Select MFD Cast Left 1 [M] Cycle MFD Page Backward 1 | right=Target All Forward [DT] Target All Closest [M][H] Select MFD Right 1 [M][DT] Select MFD Cast Right 1 [M] Cycle MFD Page Forward 1 | press-in=Mode Switch To Analog Freelook 1"
+        }
+      },
+      "showcase_action": "v_target_under_reticle"
     },
     "MAIN-TRIG-R.stage-1": {
       "phys_device": "0dcd7600-d727-11ef-800a-444553540000",
@@ -827,8 +858,37 @@
       "phys_device": "0dcdeb30-d727-11ef-8013-444553540000",
       "phys_type": "hat",
       "phys_id": "1",
-      "modes": {},
-      "showcase_action": null
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "up": "v_accel_range_up",
+            "down": "v_accel_range_down",
+            "right": "v_strafe_trim_reset_short"
+          },
+          "layout_keys": {
+            "up": "js1_hat2_up",
+            "down": "js1_hat2_down",
+            "right": "js1_hat2_right"
+          },
+          "body": "up=Increase Limiter Increase Limiter [M] Acc. Limiter Increase | down=[M] Acc. Limiter Decrease Decrease Limiter Decrease Limiter | left=Cruise Control Toggle [M] Set Limiter to SCM | right=Set Trim Toggle [H] Set Trim 100% [M] Release Trim | press-in=Mode Switch To Analog UNBOUND"
+        },
+        "SCM Mode": {
+          "actions": {
+            "up": "v_ifcs_speed_limiter_up",
+            "down": "v_ifcs_speed_limiter_down",
+            "left": "v_ifcs_throttle_swap_mode",
+            "right": "v_strafe_trim_set_100_long"
+          },
+          "layout_keys": {
+            "up": "js1_hat1_up",
+            "down": "js1_hat1_down",
+            "left": "js1_hat1_left",
+            "right": "js1_hat1_right"
+          },
+          "body": "up=Increase Limiter Increase Limiter [M] Acc. Limiter Increase | down=[M] Acc. Limiter Decrease Decrease Limiter Decrease Limiter | left=Cruise Control Toggle [M] Set Limiter to SCM | right=Set Trim Toggle [H] Set Trim 100% [M] Release Trim | press-in=Mode Switch To Analog UNBOUND"
+        }
+      },
+      "showcase_action": "v_ifcs_speed_limiter_up"
     },
     "L-A1B": {
       "phys_device": "0dcdeb30-d727-11ef-8013-444553540000",

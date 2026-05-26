@@ -215,18 +215,23 @@ def parse_layout(layout_path):
     return bind_map
 
 
-def vjoy_to_layout_key(dev, inp, vtype):
-    """Translate a JG vjoy emission tuple to the layout XML's (jsN, slot_name)."""
+HAT_DIRECTIONS = ("up", "down", "left", "right")
+
+
+def vjoy_to_layout_keys(dev, inp, vtype):
+    """Translate a JG vjoy emission tuple to a list of (layout_key, direction).
+
+    For buttons / axes there's one entry with direction=None. For hats, the JG
+    emission is a single hat slot but the layout XML splits it per direction
+    (`js1_hat1_up`, `_down`, etc.) — we return one entry per direction.
+    """
     if vtype == "button":
-        return (dev, f"button{inp}")
+        return [((dev, f"button{inp}"), None)]
     if vtype == "axis":
-        return (dev, VJOY_AXIS_NAMES.get(inp, f"axis{inp}"))
+        return [((dev, VJOY_AXIS_NAMES.get(inp, f"axis{inp}")), None)]
     if vtype == "hat":
-        # JG emits the hat by id; layout XML splits per direction. For audit
-        # purposes we don't usually go through hats this way (JG profiles wrap
-        # hat directions as separate inputs feeding buttons), but support it.
-        return (dev, f"hat{inp}")
-    return None
+        return [((dev, f"hat{inp}_{d}"), d) for d in HAT_DIRECTIONS]
+    return []
 
 
 # ---------- Sidecar builder ----------
@@ -267,16 +272,23 @@ def build_sidecar(stick_dir):
     # The renderer in subliminal-gg uses this to pick an action per chart slot
     # based on the slot's mode marker ([M] → Modifier, [H] → hold path, etc.).
 
-    def emission_action(vt):
-        """Look up a vjoy emission's first SC action via the layout XML."""
-        dev, inp, vtype, _ = vt
-        key = vjoy_to_layout_key(dev, inp, vtype)
-        if key is None:
-            return None, None
-        actions = layout_bind.get(key, [])
-        if not actions:
-            return None, f"js{dev}_{key[1]}"
-        return actions[0][1], f"js{dev}_{key[1]}"  # first action, layout key
+    def emission_actions(vt):
+        """Return a list of (path, action, layout_key) for a JG vjoy emission.
+
+        Buttons/axes yield a single entry whose path matches the JG tempo path
+        (always/tap/hold). Hat emissions fan out to one entry per direction
+        (up/down/left/right) — the path becomes the direction so the resolver
+        can pick the right one based on the chart's directional bind suffix.
+        """
+        dev, inp, vtype, jg_path = vt
+        out = []
+        for key, direction in vjoy_to_layout_keys(dev, inp, vtype):
+            actions = layout_bind.get(key, [])
+            if not actions:
+                continue
+            path = direction if direction else jg_path
+            out.append((path, actions[0][1], f"js{dev}_{key[1]}"))
+        return out
 
     by_etched = defaultdict(list)
     for r in jg_records:
@@ -288,15 +300,16 @@ def build_sidecar(stick_dir):
         modes_dict = {}
         for r in recs:
             mode_label = r["mode"] or "default"
-            # Map each vjoy_target's path to its action
+            # Map each vjoy_target's emissions to per-path actions. For hats one
+            # vjoy_target fans out to up/down/left/right; for buttons/axes it's
+            # a single entry whose path is the JG tempo path (always/tap/hold).
             per_path = {}  # path → action
             per_path_layout = {}  # path → layout key (for debug)
             for vt in r["vjoy_targets"]:
-                _dev, _inp, _vtype, path = vt
-                action, layout_key = emission_action(vt)
-                if action and path not in per_path:
-                    per_path[path] = action
-                    per_path_layout[path] = layout_key
+                for path, action, layout_key in emission_actions(vt):
+                    if path not in per_path:
+                        per_path[path] = action
+                        per_path_layout[path] = layout_key
             if per_path:
                 modes_dict[mode_label] = {
                     "actions": per_path,
@@ -304,14 +317,16 @@ def build_sidecar(stick_dir):
                     "body": r["body"],
                 }
 
-        # Pick the showcase action: highest-priority mode, prefer always > tap > hold
+        # Pick the showcase action: highest-priority mode, prefer always > tap
+        # > hold > any direction (used as last resort when there's no other path).
         showcase_action = None
         for mode_pref in PREFERRED_MODES + sorted(modes_dict.keys()):
             if mode_pref not in modes_dict:
                 continue
-            for p in ("always", "tap", "hold"):
-                if p in modes_dict[mode_pref]["actions"]:
-                    showcase_action = modes_dict[mode_pref]["actions"][p]
+            actions = modes_dict[mode_pref]["actions"]
+            for p in ("always", "tap", "hold", "up", "down", "left", "right"):
+                if p in actions:
+                    showcase_action = actions[p]
                     break
             if showcase_action:
                 break

@@ -11,8 +11,8 @@
     ""
   ],
   "stats": {
-    "resolved": 55,
-    "no_action": 3
+    "resolved": 57,
+    "no_action": 1
   },
   "binds": {
     "L-A3.up": {
@@ -263,8 +263,37 @@
       "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
       "phys_type": "hat",
       "phys_id": "1",
-      "modes": {},
-      "showcase_action": null
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "up": "v_accel_range_up",
+            "down": "v_accel_range_down",
+            "right": "v_strafe_trim_reset_short"
+          },
+          "layout_keys": {
+            "up": "js1_hat2_up",
+            "down": "js1_hat2_down",
+            "right": "js1_hat2_right"
+          },
+          "body": "up=Acc. Limiter Increase | down=Acc. Limiter Decrease Decrease Limiter Decrease Limiter | left=Set Limiter to SCM | right=Release Trim"
+        },
+        "SCM Mode": {
+          "actions": {
+            "up": "v_ifcs_speed_limiter_increment",
+            "down": "v_ifcs_speed_limiter_decrement",
+            "left": "v_ifcs_throttle_swap_mode",
+            "right": "v_strafe_trim_set_100_long"
+          },
+          "layout_keys": {
+            "up": "js1_hat1_up",
+            "down": "js1_hat1_down",
+            "left": "js1_hat1_left",
+            "right": "js1_hat1_right"
+          },
+          "body": "up=Increase Limiter Increase Limiter | left=Cruise Control Toggle | right=Set Trim Toggle/[H] Set Trim 100% | press-in=Mode Switch To Analog Axis Unbound"
+        }
+      },
+      "showcase_action": "v_ifcs_speed_limiter_increment"
     },
     "L-T1": {
       "phys_device": "7d12d5c0-43ea-11f0-800a-444553540000",
@@ -1003,8 +1032,37 @@
       "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
       "phys_type": "hat",
       "phys_id": "1",
-      "modes": {},
-      "showcase_action": null
+      "modes": {
+        "Modifier": {
+          "actions": {
+            "down": "v_engineering_assignment_engine_decrease",
+            "left": "v_engineering_assignment_weapons_decrease",
+            "right": "v_engineering_assignment_shields_decrease"
+          },
+          "layout_keys": {
+            "down": "js2_hat2_down",
+            "left": "js2_hat2_left",
+            "right": "js2_hat2_right"
+          },
+          "body": "down=Thruster Cap Decrease/[H] Thruster Set to Min 1 | left=Weapon Cap Decrease/[H] Weapon Set to Min 1 | right=Shield Cap Decrease/[H] Shield Set to Min 1"
+        },
+        "SCM Mode": {
+          "actions": {
+            "up": "v_engineering_assignment_reset",
+            "down": "v_engineering_assignment_engine_increase",
+            "left": "v_engineering_assignment_weapons_increase",
+            "right": "v_engineering_assignment_shields_increase"
+          },
+          "layout_keys": {
+            "up": "js2_hat1_up",
+            "down": "js2_hat1_down",
+            "left": "js2_hat1_left",
+            "right": "js2_hat1_right"
+          },
+          "body": "up=[H] Capacitor Reset | down=Thruster Cap Increase/[H] Thruster Set to Max 1 | left=Weapon Cap Increase/[H] Weapon Set to Max 1 | right=Shield Cap Increase/[H] Shield Set to Max 1"
+        }
+      },
+      "showcase_action": "v_engineering_assignment_reset"
     },
     "R-T1": {
       "phys_device": "ec8bbeb0-4009-11f0-8002-444553540000",
