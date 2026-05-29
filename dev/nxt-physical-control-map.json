@@ -1,0 +1,1226 @@
+{
+  "left-stick": {
+    "device_guid": "7d12d5c0-43ea-11f0-800a-444553540000",
+    "inputs": [
+      {
+        "index": 1,
+        "type": "axis",
+        "control": "Left stick axis 1",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "1",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "type": "axis",
+        "control": "Left stick axis 2",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "2",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "type": "axis",
+        "control": "L-T1 throttle wheel",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "6",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "type": "axis",
+        "control": "Left stick axis 4",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "4",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "type": "axis",
+        "control": "Left stick axis 5",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "5",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "type": "axis",
+        "control": "Left stick axis 6",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "3",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "type": "button",
+        "control": "MAIN-TRIG-L",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "31",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "1",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "type": "button",
+        "control": null,
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "32",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "2",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "type": "button",
+        "control": "L-A2",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "3",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "125",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "128",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "33",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "127",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "type": "button",
+        "control": "L-B1",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "34",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "4",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "type": "button",
+        "control": null,
+        "vjoy": []
+      },
+      {
+        "index": 6,
+        "type": "button",
+        "control": "L-A3.up",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "41",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "11",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "type": "button",
+        "control": "L-A3.right",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "42",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "12",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "type": "button",
+        "control": "L-A3.down",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "43",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "type": "button",
+        "control": "L-A3.left",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "44",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "14",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "type": "button",
+        "control": "L-A3.press-in",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "45",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "15",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "type": "button",
+        "control": "L-A4.up",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "36",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "6",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "type": "button",
+        "control": "L-A4.right",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "37",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "7",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 13,
+        "type": "button",
+        "control": "L-A4.down",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "38",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "8",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 14,
+        "type": "button",
+        "control": "L-A4.left",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "39",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "9",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 15,
+        "type": "button",
+        "control": "L-A4.press-in",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "40",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "10",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 16,
+        "type": "button",
+        "control": "L-C1.up",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "51",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "21",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 17,
+        "type": "button",
+        "control": "L-C1.right",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "52",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "22",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 18,
+        "type": "button",
+        "control": "L-C1.down",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "53",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "23",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 19,
+        "type": "button",
+        "control": "L-C1.left",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "54",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "24",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 20,
+        "type": "button",
+        "control": "L-C1.press-in",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "55",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "25",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 21,
+        "type": "button",
+        "control": "RAPID-TRIG-L",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "56",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "26",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 22,
+        "type": "button",
+        "control": "RAPID-TRIG-L",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "57",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "27",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 23,
+        "type": "button",
+        "control": "L-EN1.up",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "58",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "28",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 24,
+        "type": "button",
+        "control": "L-EN1.down",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "59",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "29",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 25,
+        "type": "button",
+        "control": "L-SW1.up",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "49",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "19",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 26,
+        "type": "button",
+        "control": "L-SW1.down",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "50",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "20",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 27,
+        "type": "button",
+        "control": "L-F1",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "46",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "16",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 28,
+        "type": "button",
+        "control": "L-F2",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "47",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "17",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 29,
+        "type": "button",
+        "control": "L-F3",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "48",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "18",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 125,
+        "type": "button",
+        "control": null,
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "125",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 126,
+        "type": "button",
+        "control": null,
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "126",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 127,
+        "type": "button",
+        "control": null,
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "127",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 128,
+        "type": "button",
+        "control": null,
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "128",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "type": "hat",
+        "control": "L-A1 [Modifier]",
+        "vjoy": [
+          {
+            "device": "1",
+            "id": "2",
+            "type": "hat"
+          },
+          {
+            "device": "1",
+            "id": "1",
+            "type": "hat"
+          }
+        ]
+      }
+    ]
+  },
+  "right-stick": {
+    "device_guid": "ec8bbeb0-4009-11f0-8002-444553540000",
+    "inputs": [
+      {
+        "index": 1,
+        "type": "axis",
+        "control": "Right stick axis 1",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "1",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "type": "axis",
+        "control": "Right stick axis 2",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "2",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "type": "axis",
+        "control": "R-T1 throttle wheel",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "6",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "type": "axis",
+        "control": "Right stick axis 4",
+        "vjoy": []
+      },
+      {
+        "index": 5,
+        "type": "axis",
+        "control": "Right stick axis 5",
+        "vjoy": []
+      },
+      {
+        "index": 6,
+        "type": "axis",
+        "control": "Right stick axis 6",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "3",
+            "type": "axis"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "type": "button",
+        "control": "MAIN-TRIG-R.stage-1",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "31",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "1",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "type": "button",
+        "control": "MAIN-TRIG-R.stage-2",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "32",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "2",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "type": "button",
+        "control": "R-A2",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "3",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "124",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "33",
+            "type": "button"
+          },
+          {
+            "device": "1",
+            "id": "125",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "126",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "type": "button",
+        "control": "R-B1",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "34",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "4",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "type": "button",
+        "control": "R-D1",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "35",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "5",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "type": "button",
+        "control": "R-A3.up",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "41",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "11",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "type": "button",
+        "control": "R-A3.right",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "42",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "12",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "type": "button",
+        "control": "R-A3.down",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "43",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "13",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "type": "button",
+        "control": "R-A3.left",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "44",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "14",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "type": "button",
+        "control": "R-A3.press-in",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "45",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "15",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "type": "button",
+        "control": "R-A4.down",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "36",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "6",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "type": "button",
+        "control": "R-A4.right",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "37",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "7",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 13,
+        "type": "button",
+        "control": "R-A4.up",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "38",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "8",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 14,
+        "type": "button",
+        "control": "R-A4.left",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "39",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "9",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 15,
+        "type": "button",
+        "control": "R-A4.press-in",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "40",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "10",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 16,
+        "type": "button",
+        "control": "R-C1.up",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "51",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "21",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 17,
+        "type": "button",
+        "control": "R-C1.right",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "52",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "22",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 18,
+        "type": "button",
+        "control": "R-C1.down",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "53",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "23",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 19,
+        "type": "button",
+        "control": "R-C1.left",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "54",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "24",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 20,
+        "type": "button",
+        "control": "R-C1.press-in",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "55",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "25",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 21,
+        "type": "button",
+        "control": "RAPID-TRIG-R",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "56",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "26",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 22,
+        "type": "button",
+        "control": "RAPID-TRIG-R",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "57",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "27",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 23,
+        "type": "button",
+        "control": "R-EN1.up",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "58",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "28",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 24,
+        "type": "button",
+        "control": "R-EN1.down",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "59",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "29",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 25,
+        "type": "button",
+        "control": "R-SW1.up",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "49",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "19",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 26,
+        "type": "button",
+        "control": "R-SW1.down",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "50",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "20",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 27,
+        "type": "button",
+        "control": "R-F1",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "46",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "16",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 28,
+        "type": "button",
+        "control": "R-F2",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "47",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "17",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 29,
+        "type": "button",
+        "control": "R-F3",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "48",
+            "type": "button"
+          },
+          {
+            "device": "2",
+            "id": "18",
+            "type": "button"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "type": "hat",
+        "control": "R-A1 [Modifier]",
+        "vjoy": [
+          {
+            "device": "2",
+            "id": "2",
+            "type": "hat"
+          },
+          {
+            "device": "2",
+            "id": "1",
+            "type": "hat"
+          }
+        ]
+      }
+    ]
+  }
+}
