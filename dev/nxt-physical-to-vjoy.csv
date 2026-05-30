@@ -1,0 +1,151 @@
+device_name,mode,input_type,physical_input,vjoy_device,vjoy_input_type,vjoy_input_id,path
+VKBsim Gladiator EVO  R,Auxiliary Mode,button,3,2,button,3,always
+VKBsim Gladiator EVO  R,Auxiliary Mode,button,3,1,button,124,always
+VKBsim Gladiator EVO  R,Modifier,button,1,2,button,31,always
+VKBsim Gladiator EVO  R,Modifier,button,2,2,button,32,always
+VKBsim Gladiator EVO  R,Modifier,button,3,2,button,33,always
+VKBsim Gladiator EVO  R,Modifier,button,4,2,button,34,always
+VKBsim Gladiator EVO  R,Modifier,button,5,2,button,35,always
+VKBsim Gladiator EVO  R,Modifier,button,6,2,button,41,always
+VKBsim Gladiator EVO  R,Modifier,button,7,2,button,42,always
+VKBsim Gladiator EVO  R,Modifier,button,8,2,button,43,always
+VKBsim Gladiator EVO  R,Modifier,button,9,2,button,44,always
+VKBsim Gladiator EVO  R,Modifier,button,10,2,button,45,always
+VKBsim Gladiator EVO  R,Modifier,button,11,2,button,36,always
+VKBsim Gladiator EVO  R,Modifier,button,12,2,button,37,always
+VKBsim Gladiator EVO  R,Modifier,button,13,2,button,38,always
+VKBsim Gladiator EVO  R,Modifier,button,14,2,button,39,always
+VKBsim Gladiator EVO  R,Modifier,button,15,2,button,40,always
+VKBsim Gladiator EVO  R,Modifier,button,16,2,button,51,always
+VKBsim Gladiator EVO  R,Modifier,button,17,2,button,52,always
+VKBsim Gladiator EVO  R,Modifier,button,18,2,button,53,always
+VKBsim Gladiator EVO  R,Modifier,button,19,2,button,54,always
+VKBsim Gladiator EVO  R,Modifier,button,20,2,button,55,always
+VKBsim Gladiator EVO  R,Modifier,button,21,2,button,56,always
+VKBsim Gladiator EVO  R,Modifier,button,22,2,button,57,always
+VKBsim Gladiator EVO  R,Modifier,button,23,2,button,58,always
+VKBsim Gladiator EVO  R,Modifier,button,24,2,button,59,always
+VKBsim Gladiator EVO  R,Modifier,button,25,2,button,49,always
+VKBsim Gladiator EVO  R,Modifier,button,26,2,button,50,always
+VKBsim Gladiator EVO  R,Modifier,button,27,2,button,46,always
+VKBsim Gladiator EVO  R,Modifier,button,28,2,button,47,always
+VKBsim Gladiator EVO  R,Modifier,button,29,2,button,48,always
+VKBsim Gladiator EVO  R,Modifier,hat,1,2,hat,2,always
+VKBsim Gladiator EVO  R,Nav Mode,button,3,2,button,3,always
+VKBsim Gladiator EVO  R,Nav Mode,button,3,1,button,125,always
+VKBsim Gladiator EVO  R,SCM Mode,axis,1,2,axis,1,always
+VKBsim Gladiator EVO  R,SCM Mode,axis,2,2,axis,2,always
+VKBsim Gladiator EVO  R,SCM Mode,axis,3,2,axis,6,always
+VKBsim Gladiator EVO  R,SCM Mode,axis,4,,,,no-output
+VKBsim Gladiator EVO  R,SCM Mode,axis,5,,,,no-output
+VKBsim Gladiator EVO  R,SCM Mode,axis,6,2,axis,3,always
+VKBsim Gladiator EVO  R,SCM Mode,button,1,2,button,1,always
+VKBsim Gladiator EVO  R,SCM Mode,button,2,2,button,2,always
+VKBsim Gladiator EVO  R,SCM Mode,button,3,2,button,3,always
+VKBsim Gladiator EVO  R,SCM Mode,button,3,2,button,126,always
+VKBsim Gladiator EVO  R,SCM Mode,button,4,2,button,4,always
+VKBsim Gladiator EVO  R,SCM Mode,button,5,2,button,5,always
+VKBsim Gladiator EVO  R,SCM Mode,button,6,2,button,11,always
+VKBsim Gladiator EVO  R,SCM Mode,button,7,2,button,12,always
+VKBsim Gladiator EVO  R,SCM Mode,button,8,2,button,13,always
+VKBsim Gladiator EVO  R,SCM Mode,button,9,2,button,14,always
+VKBsim Gladiator EVO  R,SCM Mode,button,10,2,button,15,always
+VKBsim Gladiator EVO  R,SCM Mode,button,11,2,button,6,always
+VKBsim Gladiator EVO  R,SCM Mode,button,12,2,button,7,always
+VKBsim Gladiator EVO  R,SCM Mode,button,13,2,button,8,always
+VKBsim Gladiator EVO  R,SCM Mode,button,14,2,button,9,always
+VKBsim Gladiator EVO  R,SCM Mode,button,15,2,button,10,always
+VKBsim Gladiator EVO  R,SCM Mode,button,16,2,button,21,always
+VKBsim Gladiator EVO  R,SCM Mode,button,17,2,button,22,always
+VKBsim Gladiator EVO  R,SCM Mode,button,18,2,button,23,always
+VKBsim Gladiator EVO  R,SCM Mode,button,19,2,button,24,always
+VKBsim Gladiator EVO  R,SCM Mode,button,20,2,button,25,always
+VKBsim Gladiator EVO  R,SCM Mode,button,21,2,button,26,always
+VKBsim Gladiator EVO  R,SCM Mode,button,22,2,button,27,always
+VKBsim Gladiator EVO  R,SCM Mode,button,23,2,button,28,always
+VKBsim Gladiator EVO  R,SCM Mode,button,24,2,button,29,always
+VKBsim Gladiator EVO  R,SCM Mode,button,25,2,button,19,always
+VKBsim Gladiator EVO  R,SCM Mode,button,26,2,button,20,always
+VKBsim Gladiator EVO  R,SCM Mode,button,27,2,button,16,always
+VKBsim Gladiator EVO  R,SCM Mode,button,28,2,button,17,always
+VKBsim Gladiator EVO  R,SCM Mode,button,29,2,button,18,always
+VKBsim Gladiator EVO  R,SCM Mode,hat,1,2,hat,1,always
+VKBsim Gladiator EVO OT L,Auxiliary Mode,button,3,1,button,3,always
+VKBsim Gladiator EVO OT L,Auxiliary Mode,button,3,1,button,125,always
+VKBsim Gladiator EVO OT L,Auxiliary Mode,button,3,1,button,128,always
+VKBsim Gladiator EVO OT L,Modifier,button,1,1,button,31,always
+VKBsim Gladiator EVO OT L,Modifier,button,2,1,button,32,always
+VKBsim Gladiator EVO OT L,Modifier,button,3,1,button,33,always
+VKBsim Gladiator EVO OT L,Modifier,button,4,1,button,34,always
+VKBsim Gladiator EVO OT L,Modifier,button,5,,,,no-output
+VKBsim Gladiator EVO OT L,Modifier,button,6,1,button,41,always
+VKBsim Gladiator EVO OT L,Modifier,button,7,1,button,42,always
+VKBsim Gladiator EVO OT L,Modifier,button,8,1,button,43,always
+VKBsim Gladiator EVO OT L,Modifier,button,9,1,button,44,always
+VKBsim Gladiator EVO OT L,Modifier,button,10,1,button,45,always
+VKBsim Gladiator EVO OT L,Modifier,button,11,1,button,36,always
+VKBsim Gladiator EVO OT L,Modifier,button,12,1,button,37,always
+VKBsim Gladiator EVO OT L,Modifier,button,13,1,button,38,always
+VKBsim Gladiator EVO OT L,Modifier,button,14,1,button,39,always
+VKBsim Gladiator EVO OT L,Modifier,button,15,1,button,40,always
+VKBsim Gladiator EVO OT L,Modifier,button,16,1,button,51,always
+VKBsim Gladiator EVO OT L,Modifier,button,17,1,button,52,always
+VKBsim Gladiator EVO OT L,Modifier,button,18,1,button,53,always
+VKBsim Gladiator EVO OT L,Modifier,button,19,1,button,54,always
+VKBsim Gladiator EVO OT L,Modifier,button,20,1,button,55,always
+VKBsim Gladiator EVO OT L,Modifier,button,21,1,button,56,always
+VKBsim Gladiator EVO OT L,Modifier,button,22,1,button,57,always
+VKBsim Gladiator EVO OT L,Modifier,button,23,1,button,58,always
+VKBsim Gladiator EVO OT L,Modifier,button,24,1,button,59,always
+VKBsim Gladiator EVO OT L,Modifier,button,25,1,button,49,always
+VKBsim Gladiator EVO OT L,Modifier,button,26,1,button,50,always
+VKBsim Gladiator EVO OT L,Modifier,button,27,1,button,46,always
+VKBsim Gladiator EVO OT L,Modifier,button,28,1,button,47,always
+VKBsim Gladiator EVO OT L,Modifier,button,29,1,button,48,always
+VKBsim Gladiator EVO OT L,Modifier,hat,1,1,hat,2,always
+VKBsim Gladiator EVO OT L,Nav Mode,button,3,1,button,3,always
+VKBsim Gladiator EVO OT L,Nav Mode,button,3,1,button,128,always
+VKBsim Gladiator EVO OT L,Nav Mode,button,5,,,,no-output
+VKBsim Gladiator EVO OT L,SCM Mode,axis,1,1,axis,1,always
+VKBsim Gladiator EVO OT L,SCM Mode,axis,2,1,axis,2,always
+VKBsim Gladiator EVO OT L,SCM Mode,axis,3,1,axis,6,always
+VKBsim Gladiator EVO OT L,SCM Mode,axis,4,1,axis,4,always
+VKBsim Gladiator EVO OT L,SCM Mode,axis,5,1,axis,5,always
+VKBsim Gladiator EVO OT L,SCM Mode,axis,6,1,axis,3,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,1,1,button,1,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,2,1,button,2,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,3,1,button,3,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,3,1,button,127,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,4,1,button,4,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,5,,,,no-output
+VKBsim Gladiator EVO OT L,SCM Mode,button,6,1,button,11,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,7,1,button,12,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,8,,,,no-output
+VKBsim Gladiator EVO OT L,SCM Mode,button,9,1,button,14,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,10,1,button,15,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,11,1,button,6,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,12,1,button,7,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,13,1,button,8,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,14,1,button,9,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,15,1,button,10,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,15,1,button,10,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,16,1,button,21,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,17,1,button,22,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,18,1,button,23,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,19,1,button,24,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,20,1,button,25,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,21,1,button,26,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,21,2,button,46,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,22,1,button,27,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,23,1,button,28,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,24,1,button,29,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,25,1,button,19,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,26,1,button,20,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,27,1,button,16,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,28,1,button,17,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,29,1,button,18,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,125,1,button,125,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,126,1,button,126,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,127,1,button,127,always
+VKBsim Gladiator EVO OT L,SCM Mode,button,128,1,button,128,always
+VKBsim Gladiator EVO OT L,SCM Mode,hat,1,1,hat,1,always
