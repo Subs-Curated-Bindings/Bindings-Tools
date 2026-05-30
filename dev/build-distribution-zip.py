@@ -5,6 +5,10 @@ Walks the stick folder and zips everything except:
   - the .Assets/ subfolder (contributor-only)
   - Thumbs.db
   - *.af~lock~ (Affinity lock files)
+  - rendered chart exports (.pdf/.png/.svg) inside Binding Charts/ -- as of
+    2026-05-30 the website chart generator renders charts on demand, so the
+    binds zip no longer ships pre-rendered exports. The .af template stays
+    (it's the generator's geometry/anchor source, not an export).
 
 The zip lands in <stick-folder>/.Assets/<zip-name>.zip. If a zip with the
 same name already exists, it is overwritten.
@@ -23,6 +27,11 @@ import zipfile
 EXCLUDE_DIRS = {'.Assets'}
 EXCLUDE_FILES = {'Thumbs.db'}
 EXCLUDE_SUFFIXES = ('.af~lock~',)
+
+# Rendered chart exports no longer ship (website generator renders on demand).
+# Scoped to the Binding Charts/ folder so unrelated PNGs elsewhere are untouched.
+CHART_DIR_NAME = 'Binding Charts'
+CHART_EXPORT_SUFFIXES = ('.pdf', '.png', '.svg')
 
 
 def build_zip(stick_dir, zip_name):
@@ -47,6 +56,10 @@ def build_zip(stick_dir, zip_name):
                 if fn in EXCLUDE_FILES:
                     continue
                 if any(fn.endswith(suf) for suf in EXCLUDE_SUFFIXES):
+                    continue
+                # Skip rendered chart exports under Binding Charts/ (keep .af)
+                if (CHART_DIR_NAME in dirpath.split(os.sep)
+                        and fn.lower().endswith(CHART_EXPORT_SUFFIXES)):
                     continue
                 src = os.path.join(dirpath, fn)
                 rel = os.path.relpath(src, stick_dir).replace('\\', '/')
