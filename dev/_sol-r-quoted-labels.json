@@ -1,0 +1,12 @@
+{
+  "8b4f1c2e-0d35-4f87-a1c3-2e9b6a3f7d12": "\"Light Amp Toggle | Miscellaneous\" Clean 100ms tap on light-amp vJoy button. Activation-mode must stay \"release\" (not \"both\").",
+  "487d7f33-154c-44f8-92cc-631b1648042e": "\"Toggle Docking Camera | Camera\" F4 + numpad-* keyboard chord -- bound for an unrebindable in-game action.",
+  "34cbdc14-347d-4671-9fe5-03fd7c25ec0c": "\"Modifier | Modifier\" Temporary push to Modifier while held (already in Modifier; refreshes the hold).",
+  "507b0262-635a-433c-9544-21c2bd4964cf": "\"Modifier | Modifier\" Hold-only Modifier mode (chord layer). Reverts on release.",
+  "e6909903-dee7-4069-ba56-f5e0cfb487ef": "\"Modifier | Modifier\" Hold-only Modifier mode (chord layer). Reverts on release.",
+  "ee318112-b368-4165-83b1-40ed14358f24": "\"NAV Mode | Flight Control\" Cycle into Nav mode.",
+  "e2930cd1-a204-480f-a76e-62d8f3c8ae77": "\"SCM Mode | Flight Control\" Cycle re-affirms SCM mode (no-op). Paired vJoy mapping is the real action.",
+  "97376e21-fcaa-4151-b5bb-5e88695b244d": "\"Toggle M/S | Flight Control\" Cycle into Auxiliary mode.",
+  "a1c55348-cf6b-491d-8f46-22520290d78d": "\"Master Mode Cycle | Flight Control\" Cycle into Nav mode.",
+  "31827787-0c9c-47e9-bba5-15fab77aac74": "\"Master Mode Cycle | Flight Control\" Cycle into SCM mode."
+}

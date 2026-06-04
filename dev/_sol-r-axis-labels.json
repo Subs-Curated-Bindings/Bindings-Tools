@@ -1,0 +1,18 @@
+{
+  "5df9c7a0": "\"Lateral Strafe (Left/Right) | Flight Control\"",
+  "a7231eb9": "\"Longitudinal Strafe (Fwd/Back) | Flight Control\"",
+  "7069d952": "\"Mining Throttle / Salvage Spacing | Mining\"",
+  "97f45469": "\"On-Foot Move (Left/Right) | Miscellaneous\"",
+  "b47aa0fc": "\"On-Foot Move (Fwd/Back) | Miscellaneous\"",
+  "bc76ce8a": "\"Vertical Strafe (Up/Down) | Flight Control\"",
+  "704b2c01": "\"Spare Axis (Unbound) | Unbound\"",
+  "c2041e1f": "\"Spare Axis (Unbound) | Unbound\"",
+  "8cef2e4c": "\"Yaw | Flight Control\"",
+  "96ce48b8": "\"Pitch | Flight Control\"",
+  "fda725db": "\"Spare Axis (Unbound) | Unbound\"",
+  "d4c037bf": "\"Camera Tilt (Mouse Y) | Camera\" Routed to mouse Y so you can free-look up/down while flying in 3rd person.",
+  "6b75c775": "\"Camera Pan (Mouse X) | Camera\" Routed to mouse X so you can free-look left/right while flying in 3rd person.",
+  "6e52cfba": "\"Roll | Flight Control\"",
+  "5a304edd": "\"Spare Axis (Unbound) | Unbound\"",
+  "181cac68": "\"Spare Axis (Unbound) | Unbound\""
+}
