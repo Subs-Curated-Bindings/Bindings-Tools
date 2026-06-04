@@ -23,6 +23,7 @@ state -- they work on local files.
 | [add-flat-response-curves.py](add-flat-response-curves.py) | Adds a flat (identity, no-deadzone) response-curve action to every axis input that lacks one. Inserts new actions at the top of `<library>` (preserves dependency order) and prepends each new action-id to its root's `<actions>` list (preserves the response-curve-before-mapping ordering). Supports `--dry-run`. Lets end users flip any axis by clicking the Response Curve's **Invert Curve** button. |
 | [fix-library-order.py](fix-library-order.py) | Topologically reorders `<library>` so every action is defined before any action that references it (eliminates forward refs). JG R14 appends newly-added actions at the end of `<library>`, which can leave roots pointing at later-defined response-curves — JG R14.2 tolerates it but the safe state is zero forward refs. Block-based move (preserves whitespace + BOM). Supports `--dry-run`. |
 | [check-ps1-syntax.ps1](check-ps1-syntax.ps1) | AST sanity check for a PowerShell script. Reports parse errors without executing it. Used to verify MFD-fix scripts (`Fix MFD Binds [...].ps1`) before shipping. PowerShell 5.1's no-BOM-UTF-8 → CP-1252 misread bug makes this worth running on every script edit. |
+| [parse_binds_v2.py](parse_binds_v2.py) | Extracts the SC keybinding action namespace from `defaultProfile.xml` + `global.ini` into the canonical `sc_keybinds_reference.csv` schema that feeds subliminal-gg's Binding Database + patch-compare. Strict superset of the original V1 parser: the 12 game columns stay byte-compatible, then resolved activation/behavioral columns are appended (Category, OnPress/OnHold/OnRelease, MultiTap, IsHold/IsTap/IsDoubleTap, ExtraBindings, ActivationSource). Stdlib-only; reads `global.ini` gzip-transparently. Key on `(ActionMap, XMLActionName)`. Extract the two inputs from `Data.p4k` with unp4k-suite **v4** (not v3) first — see the `sc-data-mirror` skill for the extraction half. |
 
 ## Typical workflows
 
@@ -99,3 +100,12 @@ python load-layout-to-actionmaps.py \
 4. Keep one-time / stick-specific operations (audio file renames, hardcoded
    label batches) out of this directory -- they're not reusable. Capture the
    workflow in the relevant skill reference instead.
+
+## Credits
+
+`parse_binds_v2.py` builds on **`parse_binds.py`** ("V1"), written and shared by
+**splitradius** in the SubliminalsTV Discord. V1 established the 12-column
+extraction schema this version preserves byte-for-byte — the resolved
+activation/behavioral columns are layered on top of that groundwork. Huge thanks
+to splitradius for the original parser and the extraction runbook that the
+self-hosted pipeline grew out of. 🙏
