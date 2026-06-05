@@ -113,9 +113,14 @@ def main():
     # collapse per device
     devices = {}
     for (dev, itype, iid), rec in inputs.items():
-        # pick the first description that yields a non-empty etched name
+        # pick the first description that yields a non-empty etched name,
+        # PREFERRING the em-dash cluster-bridge form ("<CLUSTER>[ [Mode]] —
+        # <text>") over bare bottom-tier action-label monikers (which carry no
+        # cluster identity). A stable sort keeps original order within each
+        # group, so the first bridge wins; bare monikers are only a fallback.
         control = None
-        for d in rec["descs"]:
+        ordered = sorted(rec["descs"], key=lambda d: 0 if d and "—" in d else 1)
+        for d in ordered:
             e = parse_etched(d)
             if e:
                 control = e
