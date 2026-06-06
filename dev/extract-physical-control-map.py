@@ -12,13 +12,17 @@ bridge that the JG profile owns).
 Two source conventions are supported:
   * default (em-dash): control name = the head of a description bridge,
     "<etched-name>[ [Mode]] — <chart text>" (NXT and the other em-dash sticks).
-  * --monikers: control name = the chart cluster the input's PHYSICAL MONIKER
-    maps to (leading bare token on an action-label: L30.up, L-SW-1.up, ...).
-    SOL-R 2 dropped its em-dash bridges in favour of monikers (2026-06-05), so
-    its control map must be extracted this way.
+  * --monikers: control name = the input's PHYSICAL MONIKER, verbatim (leading
+    bare token on an action-label: L30.up, L-SW-1.up, LL-BTN.6, ...). The JG
+    profile is the source of truth for the chart's control identity — one box
+    per moniker — so the moniker is carried through as the control. The chart
+    cluster the moniker maps to is recorded separately as `seed_group` (the
+    template bind.X group the box starts near on the blank chart). SOL-R 2
+    dropped its em-dash bridges in favour of monikers (2026-06-05), so its
+    control map must be extracted this way.
 
 Output JSON keyed by device role (left-stick / right-stick), each a list of
-{ index, type, control, vjoy } entries.
+{ index, type, control, seed_group, vjoy } entries.
 
 Usage:
   py tools/extract-physical-control-map.py "<JG profile>.xml" [-o out.json]
@@ -183,9 +187,14 @@ def main():
     unmapped = []
     for (dev, itype, iid), rec in inputs.items():
         if args.monikers:
-            # control = the chart cluster the input's first physical moniker maps
-            # to. Hidden axes and unmapped monikers resolve to a null control.
+            # The JG moniker IS the chart's control identity (one box per
+            # moniker — the JG profile is the source of truth, the Affinity
+            # template is just the blank chart). The mapped cluster is demoted
+            # to `seed_group`: which template bind.X group the box starts near
+            # on the blank chart (dotted direction suffix stripped to the group
+            # base). Hidden axes / unmapped monikers resolve to a null control.
             control = None
+            seed_group = None
             mon = rec["mons"][0] if rec["mons"] else None
             if mon:
                 side = "L" if dev == SOLR_LEFT_GUID else "R"
@@ -196,7 +205,8 @@ def main():
                     control = None
                     unmapped.append((dev, itype, iid, mon))
                 else:
-                    control = a
+                    control = mon
+                    seed_group = a.split(".")[0]
         else:
             # em-dash path: first description yielding an etched name, preferring
             # the "<CLUSTER>[ [Mode]] — <text>" bridge over bare monikers.
@@ -207,6 +217,8 @@ def main():
                 if e:
                     control = e
                     break
+            # em-dash control IS the cluster, so it's its own seed group.
+            seed_group = control
         # dedup vjoy slots, prefer device 1 buttons
         seen_v, vlist = set(), []
         for v in rec["vjoys"]:
@@ -218,6 +230,7 @@ def main():
             "index": int(iid) if iid.isdigit() else iid,
             "type": itype,
             "control": control,
+            "seed_group": seed_group,
             "vjoy": vlist,
         })
 
