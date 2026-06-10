@@ -79,8 +79,10 @@ def moniker_to_cluster(mon, side):
         return f"ANALOG-HAT-{side}"
     if re.match(r"^[LR]-SCROLL$", base):
         return mon            # L-SCROLL.up etc. — own bind, no cluster
-    if re.match(r"^BTN$", base):
-        return mon            # BTN.35 / BTN.39
+    if re.match(r"^(?:[LR]-)?BTN$", base):
+        # loose base buttons: own bind, no cluster (control keeps the full
+        # side-prefixed moniker; seed near the template's bare BTN group)
+        return f"BTN.{suf}" if suf else "BTN"
     if (re.match(r"^[LR]-(X|Y|Z)-Axis$|^[LR]-Z-Rotation$"
                  r"|^[LR]-(Slider|Dail|Dial)(-[12])?$", base)
             or base == "R-stick"):
