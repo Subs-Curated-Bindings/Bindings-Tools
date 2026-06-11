@@ -71,8 +71,8 @@ def moniker_to_cluster(mon, side):
         return f"RAPID-TRIG-{side}"
     if re.match(r"^[LR]-PINKY$", base):
         return f"PINKY-{side}"
-    if base == "L-Z-Axis":
-        return "L-THROTTLE"
+    if base in ("L-Z-Axis", "R-Z-Axis"):
+        return f"{side}-THROTTLE"
     if base in ("ANALOG-HAT-L", "ANALOG-HAT-R"):
         return base
     if re.match(r"^[LR]-ANALOG$", base) or re.match(r"^[LR]-(X|Y)-Rotation$", base):
