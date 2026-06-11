@@ -884,7 +884,7 @@
       {
         "index": 11,
         "type": "button",
-        "control": "R-A4.down",
+        "control": "R-A4.up",
         "vjoy": [
           {
             "device": "2",
@@ -918,7 +918,7 @@
       {
         "index": 13,
         "type": "button",
-        "control": "R-A4.up",
+        "control": "R-A4.down",
         "vjoy": [
           {
             "device": "2",

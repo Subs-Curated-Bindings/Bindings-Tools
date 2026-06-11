@@ -55,8 +55,9 @@ BUTTON_MONIKERS_R = {
     1: "MAIN-TRIG-R.stage-1", 2: "MAIN-TRIG-R.stage-2",
     3: "R-A2", 4: "R-B1", 5: "R-D1",
     6: "R-A3.up", 7: "R-A3.right", 8: "R-A3.down", 9: "R-A3.left", 10: "R-A3.press-in",
-    # R-A4 directions differ from L-A4 (verified against the 4.8.0 audit-clean bridges)
-    11: "R-A4.down", 12: "R-A4.right", 13: "R-A4.up", 14: "R-A4.left", 15: "R-A4.press-in",
+    # Same enumeration as every other NXT hat: base+0=up, +1=right, +2=down, +3=left.
+    # (The old 4.8.0 bridges had R-A4 up/down swapped -- a matcher artifact, not hardware.)
+    11: "R-A4.up", 12: "R-A4.right", 13: "R-A4.down", 14: "R-A4.left", 15: "R-A4.press-in",
     16: "R-C1.up", 17: "R-C1.right", 18: "R-C1.down", 19: "R-C1.left", 20: "R-C1.press-in",
     21: "RAPID-TRIG-R.up", 22: "RAPID-TRIG-R.down",
     23: "R-EN1.up", 24: "R-EN1.down",
