@@ -23,8 +23,9 @@ Two source conventions are supported:
 
 In --monikers mode, `--stick` picks the per-stick (left GUID, moniker → seed
 mapping) pair: `solr` (default, TM SOL-R 2), `gf` (dual VKB Gunfighter,
-migrated 2026-06-11 `367ac23`) or `vmax` (Virpil VMAX Throttle + Aeromax-R,
-migrated 2026-06-12 `aae6858`). GF specifics: monikers match the chart's
+migrated 2026-06-11 `367ac23`), `vmax` (Virpil VMAX Throttle + Aeromax-R,
+migrated 2026-06-12 `aae6858`) or `moza` (MOZA MTQ + MHG, migrated
+2026-06-12). GF specifics: monikers match the chart's
 per-direction bind.X groups nearly 1:1 (tempo-leaf `.tap`/`.hold` suffixes are
 stripped to the base moniker); the A1 ministick's WHOLE button-mode enumeration
 (buttons 16-20, incl. the press-in btn 20) is excluded — the analog ministick
@@ -47,6 +48,22 @@ bidirectional labels onto the opposing arrows); the R-M1 threshold emits
 Axis table: T-Z-Rotation = T-T1 thumb slider, T-Slider/T-Dial = the E1/E2
 encoder rotations, R-Z-Rotation's threshold = R-BRAKE (space brake; the
 analog lever itself is uncharted); main-flight + EVA axes hidden.
+
+MOZA specifics: MTQ throttle (T-*) = left/vjoy 1, MHG grip (R-*) = right/
+vjoy 2. Button monikers ARE the chart's bind.X group names (tempo leaves
+`.tap`/`.hold`/`.double-tap` stripped) with three seed exceptions: T-B1 (the
+Modifier; chart has only the label.T-B1 "MODIFIER" frame), R-BB-3 (the chart's
+BB-3 body frame is the typo'd label.R-BB-31, no bind group), and the
+single-frame encoders (T-E2.up/.down and T-E3.up/.down seed near bind.T-E2 /
+bind.T-E3 — only E1 is direction-split on the chart). bind.R-BB-2 stays
+physically driverless (vjoy 32 is reachable only as Modifier+R-LNCH, which
+charts on R-LNCH). Axis table: T-X/Y-Axis = the T-M1 analog mini-stick
+(anchor X -> .left, Y -> .up); T-Slider/T-Dial = the T-2/T-3 thumb dials;
+R-Slider = R-RT2 (anchored at R-RT2.up, fanned to the .down arrow at render);
+the MHG X-Rotation/Y-Rotation mouse-camera axes keep their HID names (GF
+precedent — quoted Camera rows need a charted anchor); throttle levers
+(T-X/Y-Rotation, incl. their >90% Boost thresholds), main-flight axes and
+the unbound R-RT1/R-Dial are hidden.
 
 Output JSON keyed by device role (left-stick / right-stick), each a list of
 { index, type, control, seed_group, vjoy } entries.
@@ -247,6 +264,67 @@ def vmax_control_and_seed(mons, side, itype, iid):
     return (mon, mon)
 
 
+# --- MOZA MTQ + MHG moniker -> (control, seed) -------------------------------
+# Monikers match the painted chart's bind.X groups nearly 1:1, so buttons pass
+# through verbatim. Axes are table-driven (same rationale as the VMAX).
+MOZA_LEFT_GUID = "b3167000-d436-11f0-8001-444553540000"   # MOZA MTQ throttle
+# (side, axis-id) -> (control, seed_group). None = uncharted (hidden axis).
+MOZA_AXIS = {
+    # MTQ: the T-M1 mini-stick analog axes anchor to the .left/.up arrows
+    # (SOL-R convention — distributeMiniStickAxes fans the bidirectional
+    # labels at render).
+    ("L", "1"): ("T-M1.left", "T-M1.left"),
+    ("L", "2"): ("T-M1.up", "T-M1.up"),
+    ("L", "4"): (None, None),            # throttle lever (X-Rotation) — uncharted,
+    ("L", "5"): (None, None),            # ditto Y-Rotation; >90% Boost thresholds ride them
+    ("L", "7"): ("T-2", "T-2"),          # T-Slider = T-2 thumb dial
+    ("L", "8"): ("T-3", "T-3"),          # T-Dial = T-3 thumb dial
+    # MHG: main flight axes hidden; the X/Y-Rotation pair is the R-POV's
+    # analog mode, routed to mouse free-look — keep the HID names so the
+    # quoted Camera rows get a charted anchor (GF precedent).
+    ("R", "1"): (None, None),            # yaw
+    ("R", "2"): (None, None),            # pitch
+    ("R", "4"): ("R-X-Rotation", None),
+    ("R", "5"): ("R-Y-Rotation", None),
+    ("R", "6"): (None, None),            # roll twist
+    ("R", "7"): ("R-RT2.up", "R-RT2.up"),  # speed-limiter wheel; fans to .down at render
+    ("R", "8"): (None, None),            # R-RT1 / R-Dial — unbound spare
+}
+
+
+def moza_control_and_seed(mons, side, itype, iid):
+    """MOZA moniker(s) -> (control, seed_group).
+
+    Same contract as vmax_control_and_seed: takes the full collected moniker
+    LIST, strips tempo/double-tap leaf suffixes, noise-guards prose tokens.
+    control None = uncharted; seed_group None = charted but no template group
+    (the bake places it)."""
+    if itype == "axis":
+        return MOZA_AXIS.get((side, str(iid)), (None, None))
+    bases = set()
+    for mon in mons:
+        parts = mon.split(".")
+        while len(parts) > 1 and parts[-1] in ("tap", "hold", "double-tap"):
+            parts.pop()
+        bases.add(".".join(parts))
+    # Noise guard: a real MOZA button moniker starts with T- / R- / the
+    # trigger cluster name. Drop anything else.
+    bases = {b for b in bases if re.match(r"^(?:[TR]-|MAIN-TRIG\.)", b)}
+    if not bases:
+        return (None, None)
+    if len(bases) > 1:
+        return (None, _GF_UNMAPPED)      # ambiguous — report for review
+    mon = bases.pop()
+    if mon == "T-B1":
+        return (mon, None)               # Modifier — label.T-B1 frame only
+    if mon == "R-BB-3":
+        return (mon, None)               # chart frame is the typo'd label.R-BB-31
+    m = re.match(r"^(T-E[23])\.(up|down)$", mon)
+    if m:
+        return (mon, m.group(1))         # single-frame encoders: seed at the base
+    return (mon, mon)
+
+
 def prop(action, name):
     """Return the <value> of the named <property> child, or None."""
     for p in action.findall("property"):
@@ -315,12 +393,13 @@ def main():
     ap.add_argument("--monikers", action="store_true",
                     help="derive control names from physical monikers, "
                          "not em-dash description bridges")
-    ap.add_argument("--stick", choices=("solr", "gf", "vmax"), default="solr",
+    ap.add_argument("--stick", choices=("solr", "gf", "vmax", "moza"),
+                    default="solr",
                     help="which stick's moniker→seed mapping + left GUID to "
                          "use in --monikers mode (default: solr)")
     args = ap.parse_args()
-    left_guid = {"gf": GF_LEFT_GUID, "vmax": VMAX_LEFT_GUID}.get(
-        args.stick, SOLR_LEFT_GUID)
+    left_guid = {"gf": GF_LEFT_GUID, "vmax": VMAX_LEFT_GUID,
+                 "moza": MOZA_LEFT_GUID}.get(args.stick, SOLR_LEFT_GUID)
 
     with open(args.profile, "r", encoding="utf-8", newline="") as fh:
         tree = ET.parse(fh)
@@ -372,6 +451,14 @@ def main():
                 # VMAX: buttons = moniker verbatim (.pm kept, tempo leaves
                 # stripped); axes table-driven. Takes the full moniker list.
                 control, seed_group = vmax_control_and_seed(
+                    rec["mons"], side, itype, iid)
+                if seed_group is _GF_UNMAPPED:
+                    seed_group = None
+                    unmapped.append((dev, itype, iid, mon))
+            elif args.stick == "moza":
+                # MOZA: buttons = moniker verbatim (tempo/double-tap leaves
+                # stripped); axes table-driven. Takes the full moniker list.
+                control, seed_group = moza_control_and_seed(
                     rec["mons"], side, itype, iid)
                 if seed_group is _GF_UNMAPPED:
                     seed_group = None
