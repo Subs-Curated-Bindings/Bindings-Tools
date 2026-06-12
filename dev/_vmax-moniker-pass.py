@@ -18,12 +18,14 @@ matcher bridges (the NXT R-A4 lesson):
   - Aeromax hats are press,up,right,down,left: R-H3 7-11, R-H2 20-24,
     R-H1 14-18 (press 14 + up 15 unbound -- chart paints up=Unbound).
   - Modifier layer = phys N -> vjoy N+40 on BOTH devices.
-  - The PHYSICAL MODIFIER (R-B3, hardware shift -- no JG presence) gives the
-    mini-stick a shifted block 26-30 (press,up,right,down,left), monikered
-    R-M1.<dir>.pm. That makes phys 26 (Capacitor Reset) the PM+press of the
-    mini-stick, NOT R-H1's press as the old chart painted it.
-  - AERO 25 / 31-36 are unidentified (likely phantom HID slots or the unbound
-    R-B2): left unmonikered.
+  - The PHYSICAL MODIFIER (R-B3, hardware shift -- no JG presence) registers
+    a sequential shifted block right after the 24 base ids (confirmed by Sub
+    2026-06-12): 25 = R-B1, 26-30 = R-H1 (press,up,right,down,left),
+    31 = R-B2, 32-36 = R-H2. Monikered with the .pm suffix. That makes
+    phys 26 (Capacitor Reset) PM+R-H1-press -- matching the chart's
+    R-H1.press-in box -- and the MFD Select binds at 27-30 line up 1:1 with
+    R-H1's up/right/down/left (the chart paints those inside R-M1 with [PM]
+    markers; physically they're the hat).
 
 What it does in one idempotent pass:
   1. Moniker on every bottom-tier emitting action across all modes; tempo
@@ -77,9 +79,11 @@ R_MONIKERS = {
 R_MONIKERS.update(hat("R-H3", 7, PURDL))
 R_MONIKERS.update(hat("R-H1", 14, PURDL))
 R_MONIKERS.update(hat("R-H2", 20, PURDL))
-# Physical-Modifier (R-B3 hardware shift) block: mini-stick press + 4 dirs
-R_MONIKERS.update({26 + i: f"R-M1.{d}.pm" for i, d in enumerate(PURDL)})
-# 25 and 31-36 unidentified (phantom HID slots / unbound R-B2) -> no moniker
+# Physical-Modifier (R-B3 hardware shift) block, sequential after base id 24:
+# B1, H1 (press,up,right,down,left), B2, H2 (same) -- confirmed by Sub.
+R_MONIKERS.update({25: "R-B1.pm", 31: "R-B2.pm"})
+R_MONIKERS.update({26 + i: f"R-H1.{d}.pm" for i, d in enumerate(PURDL)})
+R_MONIKERS.update({32 + i: f"R-H2.{d}.pm" for i, d in enumerate(PURDL)})
 
 BUTTON_MONIKERS = {T_DEV: T_MONIKERS, R_DEV: R_MONIKERS}
 
@@ -108,9 +112,8 @@ MOUSE_LABELS = {  # keyed by map-to-mouse `direction` property
 MINISTICK_SHORT = "Mini-stick - Targeting / MFDs"
 MINISTICK_DESC = ("The mini-stick reads as four buttons - push it past "
                   "halfway to cycle targets: hostiles by default, everything "
-                  "on a double-tap. With the physical modifier held the same "
-                  "pushes drive the MFDs instead. Click it in to lock the "
-                  "target under your reticle.")
+                  "on a double-tap. Click it in to lock the target under "
+                  "your reticle.")
 BRAKE_SHORT = "Brake Lever - Space Brake"
 BRAKE_DESC = ("Pulling the Aeromax brake lever nearly all the way (past 95%) "
               "presses and holds the space brake. Release to let go.")
