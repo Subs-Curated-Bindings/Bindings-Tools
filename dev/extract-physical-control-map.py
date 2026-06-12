@@ -25,11 +25,11 @@ In --monikers mode, `--stick` picks the per-stick (left GUID, moniker → seed
 mapping) pair: `solr` (default, TM SOL-R 2) or `gf` (dual VKB Gunfighter,
 migrated 2026-06-11 `367ac23`). GF specifics: monikers match the chart's
 per-direction bind.X groups nearly 1:1 (tempo-leaf `.tap`/`.hold` suffixes are
-stripped to the base moniker); the A1 ministick's button-mode enumeration
-(buttons 16-19) is excluded — its bound path is the POV hat (vjoy hat 1
-SCM / hat 2 Modifier), which fans to the same `<S>-A1.<dir>` anchors at
-generate time; button 20 (`<S>-A1.press-in`) IS charted (its template group
-exists; unbound paints "Unbound"); main-flight axes (X/Y/Z) are hidden; the
+stripped to the base moniker); the A1 ministick's WHOLE button-mode enumeration
+(buttons 16-20, incl. the press-in btn 20) is excluded — the analog ministick
+has no press, and its bound path is the POV hat (vjoy hat 1 SCM / hat 2
+Modifier), which fans to the same `<S>-A1.<dir>` anchors at generate time;
+main-flight axes (X/Y/Z) are hidden; the
 mouse-camera axes (R 4/5, quoted labels with no moniker) fall back to the JG
 HID axis name (`R-X-Rotation` / `R-Y-Rotation`) so the labeled camera rows get
 a charted anchor instead of colliding on device-agnostic `axis.N`.
@@ -137,11 +137,13 @@ def gf_control_and_seed(mon, side, itype, iid):
     mon = ".".join(parts)
     base = parts[0]
     suf = parts[1] if len(parts) > 1 else None
-    # A1 ministick. Button-mode enumeration (16-19) is excluded — the bound
-    # path is the POV hat, which fans to the same <S>-A1.<dir> anchors at
-    # generate time. The press (button 20) IS its own charted control.
+    # A1 ministick. The ENTIRE button-mode enumeration (16-20) is excluded —
+    # the bound path is the POV hat, which fans to the same <S>-A1.<dir> anchors
+    # at generate time. Button 20 (`<S>-A1.press-in`) is excluded too: the
+    # analog ministick has no press-in (Sub, 2026-06-12), and it's unbound on
+    # both grips anyway.
     if re.match(r"^[LR]-A1$", base) and itype == "button":
-        return (mon, mon) if suf == "press-in" else (None, None)
+        return (None, None)
     if re.match(r"^[LR]-A1$", base) and itype == "hat":
         return (mon, None)        # directions fan out at generate time
     if re.match(r"^[LR]-(A3|A4|C1)$", base) and suf:
