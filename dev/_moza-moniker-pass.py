@@ -81,15 +81,19 @@ T_MONIKERS = {
     1: "T-A1", 2: "T-A2", 3: "T-A3", 4: "T-A4",
     5: "T-NAV-1", 6: "T-HDG-4", 7: "T-SPD-2", 8: "T-ALT-5",
     9: "T-FD-3", 10: "T-AP-6",
-    14: "T-E3.down", 15: "T-E3.up", 16: "T-E3.press-in",
+    # Encoder ids per Sub's hardware map (2026-06-12, correcting the first
+    # pass): T-E1 = phys 11/12 (turn, directions TBD) + 13 (press);
+    # T-E2 = 14/15/16; T-E3 = 63/64. The operator-mode encoder 22/23/24
+    # (first-pass "T-E2") awaits its real name from Sub's fill-in table.
+    13: "T-E1.press-in",
+    14: "T-E2.down", 15: "T-E2.up", 16: "T-E2.press-in",
     17: "T-MODE.nav", 18: "T-MODE.2", 19: "T-MODE.scm", 20: "T-MODE.4",
     21: "T-MODE.mining",
-    22: "T-E2.press-in", 23: "T-E2.down", 24: "T-E2.up",
     25: "T-SW1.up", 26: "T-SW1.down", 27: "T-SW2.up", 28: "T-SW2.down",
     29: "T-SW3.up", 30: "T-SW3.down",
     36: "T-MODE.scm",
     50: "T-BRK.right", 51: "T-BRK.left",
-    62: "T-M1.press-in", 63: "T-E1.up", 64: "T-E1.down", 65: "T-B1",
+    62: "T-M1.press-in", 63: "T-E3.up", 64: "T-E3.down", 65: "T-B1",
 }
 T_MONIKERS.update(hat("T-WPN", 52, ("press-in", "right", "left", "down", "up")))
 T_MONIKERS.update(hat("T-COM", 57, ("press-in", "right", "left", "down", "up")))

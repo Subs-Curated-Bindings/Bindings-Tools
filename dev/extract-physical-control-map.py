@@ -333,6 +333,8 @@ def moza_control_and_seed(mons, side, itype, iid):
         return (mon, None)               # Modifier — label.T-B1 frame only
     if mon == "R-BB-3":
         return (mon, None)               # chart frame is the typo'd label.R-BB-31
+    if mon == "T-E1.press-in":
+        return (mon, None)               # chart only direction-splits T-E1 (.up/.down)
     m = re.match(r"^(T-E[23])\.(up|down)$", mon)
     if m:
         return (mon, m.group(1))         # single-frame encoders: seed at the base
