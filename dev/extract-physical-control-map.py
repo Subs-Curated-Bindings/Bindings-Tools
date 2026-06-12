@@ -224,7 +224,7 @@ VMAX_AXIS = {
     ("R", "4"): ("R-M1.left", "R-M1.left"),
     ("R", "5"): ("R-M1.up", "R-M1.up"),
     ("R", "6"): ("R-BRAKE", None),       # brake-lever threshold = space brake (new box, no template group)
-    ("R", "7"): (None, None),            # R-Slider — unbound
+    ("R", "7"): ("R-Slider", None),      # R-Slider — throttle at the right grip base; unbound in-game, charted as Unbound
     ("R", "8"): (None, None),            # R-Dial — unbound
 }
 
