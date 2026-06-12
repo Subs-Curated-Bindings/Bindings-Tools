@@ -22,8 +22,9 @@ Two source conventions are supported:
     control map must be extracted this way.
 
 In --monikers mode, `--stick` picks the per-stick (left GUID, moniker → seed
-mapping) pair: `solr` (default, TM SOL-R 2) or `gf` (dual VKB Gunfighter,
-migrated 2026-06-11 `367ac23`). GF specifics: monikers match the chart's
+mapping) pair: `solr` (default, TM SOL-R 2), `gf` (dual VKB Gunfighter,
+migrated 2026-06-11 `367ac23`) or `vmax` (Virpil VMAX Throttle + Aeromax-R,
+migrated 2026-06-12 `aae6858`). GF specifics: monikers match the chart's
 per-direction bind.X groups nearly 1:1 (tempo-leaf `.tap`/`.hold` suffixes are
 stripped to the base moniker); the A1 ministick's WHOLE button-mode enumeration
 (buttons 16-20, incl. the press-in btn 20) is excluded — the analog ministick
@@ -33,6 +34,19 @@ main-flight axes (X/Y/Z) are hidden; the
 mouse-camera axes (R 4/5, quoted labels with no moniker) fall back to the JG
 HID axis name (`R-X-Rotation` / `R-Y-Rotation`) so the labeled camera rows get
 a charted anchor instead of colliding on device-agnostic `axis.N`.
+
+VMAX specifics: throttle (T-*) = left/js1, Aeromax grip (R-*) = right/js2.
+Button monikers ARE the chart's bind.X group names (tempo leaves stripped).
+The `.pm` suffix is the Aeromax's PHYSICAL MODIFIER layer (R-B3 hardware
+shift; shifted presses arrive as distinct HID buttons 25-36) — kept verbatim
+in the control; the chart generator folds `<base>.pm` rows onto the base
+control's box tagged [PM]. Mini-stick analog axes anchor X → `<M1>.left`,
+Y → `<M1>.up` (the SOL-R convention, so distributeMiniStickAxes fans the
+bidirectional labels onto the opposing arrows); the R-M1 threshold emits
+(axis-as-button) fan to their own directional monikers at generate time.
+Axis table: T-Z-Rotation = T-T1 thumb slider, T-Slider/T-Dial = the E1/E2
+encoder rotations, R-Z-Rotation's threshold = R-BRAKE (space brake; the
+analog lever itself is uncharted); main-flight + EVA axes hidden.
 
 Output JSON keyed by device role (left-stick / right-stick), each a list of
 { index, type, control, seed_group, vjoy } entries.
@@ -166,6 +180,73 @@ def gf_control_and_seed(mon, side, itype, iid):
     return (None, _GF_UNMAPPED)
 
 
+# --- VMAX+AERO (Virpil VMAX Throttle + Aeromax-R) moniker -> (control, seed) --
+# Monikers match the painted chart's bind.X groups nearly 1:1, so buttons pass
+# through verbatim. Axes are table-driven (the moniker walk can pick up noise
+# tokens like "Mini-stick" from prose action-labels, and the charted identity
+# of an axis isn't always its HID-name moniker).
+VMAX_LEFT_GUID = "63b4c490-c93b-11f0-8004-444553540000"   # VPC CDT-VMAX Throttle
+# (side, axis-id) -> (control, seed_group). None = uncharted (hidden axis).
+VMAX_AXIS = {
+    # Throttle: mini-stick X/Y anchor to the .left/.up arrows (SOL-R convention
+    # — distributeMiniStickAxes fans the bidirectional labels at render).
+    ("L", "1"): ("T-M1.left", "T-M1.left"),
+    ("L", "2"): ("T-M1.up", "T-M1.up"),
+    ("L", "4"): (None, None),            # T-X-Rotation — EVA axis, uncharted
+    ("L", "5"): (None, None),            # T-Y-Rotation — main throttle, uncharted
+    ("L", "6"): ("T-T1", "T-T1"),        # T-Z-Rotation = thumb slider T-T1
+    ("L", "7"): ("T-E1", "T-E1"),        # T-Slider = E1 encoder rotation
+    ("L", "8"): ("T-E2", "T-E2"),        # T-Dial = E2 encoder rotation
+    # Aeromax: main flight axes hidden; mini-stick like the throttle's (its
+    # axis-as-button thresholds fan to R-M1.<dir> monikers at generate time,
+    # and the Modifier-mode map-to-mouse camera rows ride the .left/.up boxes,
+    # mirrored to the opposite arrows by distributeMiniStickAxes).
+    ("R", "1"): (None, None),
+    ("R", "2"): (None, None),
+    ("R", "3"): (None, None),
+    ("R", "4"): ("R-M1.left", "R-M1.left"),
+    ("R", "5"): ("R-M1.up", "R-M1.up"),
+    ("R", "6"): ("R-BRAKE", None),       # brake-lever threshold = space brake (new box, no template group)
+    ("R", "7"): (None, None),            # R-Slider — unbound
+    ("R", "8"): (None, None),            # R-Dial — unbound
+}
+
+
+def vmax_control_and_seed(mons, side, itype, iid):
+    """VMAX moniker(s) -> (control, seed_group).
+
+    Takes the full collected moniker LIST for the input (not just the first):
+    tempo leaves carry `<moniker>.tap`/`.hold` variants that strip back to one
+    base, and prose labels can contribute noise tokens the set-collapse drops.
+    control None = uncharted; seed_group None = charted but no template group
+    (the bake places it)."""
+    if itype == "axis":
+        return VMAX_AXIS.get((side, str(iid)), (None, None))
+    bases = set()
+    for mon in mons:
+        parts = mon.split(".")
+        while len(parts) > 1 and parts[-1] in ("tap", "hold"):
+            parts.pop()
+        bases.add(".".join(parts))
+    # Noise guard: a real VMAX button moniker starts with T- / R- / a trigger
+    # cluster name. Drop anything else (prose tokens that matched MONIKER_RE).
+    bases = {b for b in bases
+             if re.match(r"^(?:[TR]-|MAIN-TRIG-R\.|FLIP-TRIG-R\.)", b)}
+    if not bases:
+        return (None, None)
+    if len(bases) > 1:
+        return (None, _GF_UNMAPPED)      # ambiguous — report for review
+    mon = bases.pop()
+    if mon.endswith(".pm"):
+        # Physical-Modifier layer: the generator folds these onto the base
+        # control's box as [PM] rows — the .pm anchor itself never needs a seed.
+        return (mon, None)
+    if mon.startswith("FLIP-TRIG-R."):
+        # .flip / .pull split the chart's single FLIP-TRIG-R cluster.
+        return (mon, "FLIP-TRIG-R")
+    return (mon, mon)
+
+
 def prop(action, name):
     """Return the <value> of the named <property> child, or None."""
     for p in action.findall("property"):
@@ -234,11 +315,12 @@ def main():
     ap.add_argument("--monikers", action="store_true",
                     help="derive control names from physical monikers, "
                          "not em-dash description bridges")
-    ap.add_argument("--stick", choices=("solr", "gf"), default="solr",
+    ap.add_argument("--stick", choices=("solr", "gf", "vmax"), default="solr",
                     help="which stick's moniker→seed mapping + left GUID to "
                          "use in --monikers mode (default: solr)")
     args = ap.parse_args()
-    left_guid = GF_LEFT_GUID if args.stick == "gf" else SOLR_LEFT_GUID
+    left_guid = {"gf": GF_LEFT_GUID, "vmax": VMAX_LEFT_GUID}.get(
+        args.stick, SOLR_LEFT_GUID)
 
     with open(args.profile, "r", encoding="utf-8", newline="") as fh:
         tree = ET.parse(fh)
@@ -283,6 +365,14 @@ def main():
                 # GF: monikers ≈ template group names; the mapper also handles
                 # the moniker-less camera axes + tempo-leaf normalization.
                 control, seed_group = gf_control_and_seed(mon, side, itype, iid)
+                if seed_group is _GF_UNMAPPED:
+                    seed_group = None
+                    unmapped.append((dev, itype, iid, mon))
+            elif args.stick == "vmax":
+                # VMAX: buttons = moniker verbatim (.pm kept, tempo leaves
+                # stripped); axes table-driven. Takes the full moniker list.
+                control, seed_group = vmax_control_and_seed(
+                    rec["mons"], side, itype, iid)
                 if seed_group is _GF_UNMAPPED:
                     seed_group = None
                     unmapped.append((dev, itype, iid, mon))
