@@ -21,12 +21,26 @@ Two source conventions are supported:
     dropped its em-dash bridges in favour of monikers (2026-06-05), so its
     control map must be extracted this way.
 
+In --monikers mode, `--stick` picks the per-stick (left GUID, moniker → seed
+mapping) pair: `solr` (default, TM SOL-R 2) or `gf` (dual VKB Gunfighter,
+migrated 2026-06-11 `367ac23`). GF specifics: monikers match the chart's
+per-direction bind.X groups nearly 1:1 (tempo-leaf `.tap`/`.hold` suffixes are
+stripped to the base moniker); the A1 ministick's button-mode enumeration
+(buttons 16-19) is excluded — its bound path is the POV hat (vjoy hat 1
+SCM / hat 2 Modifier), which fans to the same `<S>-A1.<dir>` anchors at
+generate time; button 20 (`<S>-A1.press-in`) IS charted (its template group
+exists; unbound paints "Unbound"); main-flight axes (X/Y/Z) are hidden; the
+mouse-camera axes (R 4/5, quoted labels with no moniker) fall back to the JG
+HID axis name (`R-X-Rotation` / `R-Y-Rotation`) so the labeled camera rows get
+a charted anchor instead of colliding on device-agnostic `axis.N`.
+
 Output JSON keyed by device role (left-stick / right-stick), each a list of
 { index, type, control, seed_group, vjoy } entries.
 
 Usage:
   py tools/extract-physical-control-map.py "<JG profile>.xml" [-o out.json]
   py tools/extract-physical-control-map.py "<SOL-R>.xml" --monikers -o out.json
+  py tools/extract-physical-control-map.py "<GF>.xml" --monikers --stick gf -o out.json
 """
 import sys, json, re, argparse
 import xml.etree.ElementTree as ET
@@ -88,6 +102,66 @@ def moniker_to_cluster(mon, side):
             or base == "R-stick"):
         return "__AXIS__"     # hidden main flight axis / spare slider — not charted
     return None               # unmapped — report, leave null
+
+
+# --- GF (dual VKB Gunfighter) moniker -> (control, seed_group) --------------
+# The GF monikers (NXT grip names) match the chart template's bind.X groups
+# nearly 1:1, so unlike the SOL-R there is no separate cluster vocabulary —
+# the mapping mostly returns the (normalized) moniker itself as the seed group.
+GF_LEFT_GUID = "0dcdeb30-d727-11ef-8013-444553540000"
+GF_AXIS_NAME = {1: "X-Axis", 2: "Y-Axis", 3: "Z-Axis",
+                4: "X-Rotation", 5: "Y-Rotation"}
+_GF_UNMAPPED = object()   # sentinel: real moniker we couldn't place — report
+
+
+def gf_control_and_seed(mon, side, itype, iid):
+    """GF moniker -> (control, seed_group).
+
+    control None = uncharted (hidden axis / excluded enumeration); the
+    _GF_UNMAPPED sentinel as seed marks a moniker that SHOULD have mapped.
+    seed_group None = charted but no template group (the bake places it)."""
+    if mon is None:
+        # The mouse-camera axes (R 4/5) carry a quoted label, no moniker —
+        # fall back to the side-prefixed JG HID axis name so the labeled
+        # camera rows anchor to a real charted control.
+        if itype == "axis":
+            name = GF_AXIS_NAME.get(int(iid)) if str(iid).isdigit() else None
+            if name in ("X-Rotation", "Y-Rotation"):
+                return (f"{side}-{name}", None)
+        return (None, None)
+    # Tempo leaves carry the full <moniker>.tap/.hold — strip to the base
+    # moniker (the box identity; tap/hold are rows inside the box).
+    parts = mon.split(".")
+    while len(parts) > 1 and parts[-1] in ("tap", "hold"):
+        parts.pop()
+    mon = ".".join(parts)
+    base = parts[0]
+    suf = parts[1] if len(parts) > 1 else None
+    # A1 ministick. Button-mode enumeration (16-19) is excluded — the bound
+    # path is the POV hat, which fans to the same <S>-A1.<dir> anchors at
+    # generate time. The press (button 20) IS its own charted control.
+    if re.match(r"^[LR]-A1$", base) and itype == "button":
+        return (mon, mon) if suf == "press-in" else (None, None)
+    if re.match(r"^[LR]-A1$", base) and itype == "hat":
+        return (mon, None)        # directions fan out at generate time
+    if re.match(r"^[LR]-(A3|A4|C1)$", base) and suf:
+        return (mon, mon)         # per-direction template groups exist
+    if re.match(r"^[LR]-(A2|B1|D1)$", base):
+        # B1 seeds near the old chart's "A1B" group name (the moniker pass
+        # renamed the control to the grip-identical NXT name).
+        seed = f"{base[0]}-A1B" if base.endswith("-B1") else mon
+        return (mon, seed)
+    if base.startswith("MAIN-TRIG-"):
+        # The template stage-splits only the RIGHT trigger; left stages seed
+        # near the single MAIN-TRIG-L group.
+        return (mon, mon if base.endswith("-R") else base)
+    if base.startswith("RAPID-TRIG-"):
+        return (mon, base)        # template has one group per rapid trigger
+    if re.match(r"^[LR]-(X|Y)-Rotation$", base):
+        return (mon, None)        # ministick analog axes — bake places them
+    if re.match(r"^[LR]-(X|Y|Z)-Axis$", base):
+        return (None, None)       # main flight axes (strafe / yaw-pitch-roll / twist) — hidden
+    return (None, _GF_UNMAPPED)
 
 
 def prop(action, name):
@@ -156,9 +230,13 @@ def main():
     ap.add_argument("profile")
     ap.add_argument("-o", "--out")
     ap.add_argument("--monikers", action="store_true",
-                    help="derive control names from physical monikers (SOL-R), "
+                    help="derive control names from physical monikers, "
                          "not em-dash description bridges")
+    ap.add_argument("--stick", choices=("solr", "gf"), default="solr",
+                    help="which stick's moniker→seed mapping + left GUID to "
+                         "use in --monikers mode (default: solr)")
     args = ap.parse_args()
+    left_guid = GF_LEFT_GUID if args.stick == "gf" else SOLR_LEFT_GUID
 
     with open(args.profile, "r", encoding="utf-8", newline="") as fh:
         tree = ET.parse(fh)
@@ -193,13 +271,20 @@ def main():
             # moniker — the JG profile is the source of truth, the Affinity
             # template is just the blank chart). The mapped cluster is demoted
             # to `seed_group`: which template bind.X group the box starts near
-            # on the blank chart (dotted direction suffix stripped to the group
-            # base). Hidden axes / unmapped monikers resolve to a null control.
+            # on the blank chart. Hidden axes / unmapped monikers resolve to a
+            # null control.
             control = None
             seed_group = None
             mon = rec["mons"][0] if rec["mons"] else None
-            if mon:
-                side = "L" if dev == SOLR_LEFT_GUID else "R"
+            side = "L" if dev == left_guid else "R"
+            if args.stick == "gf":
+                # GF: monikers ≈ template group names; the mapper also handles
+                # the moniker-less camera axes + tempo-leaf normalization.
+                control, seed_group = gf_control_and_seed(mon, side, itype, iid)
+                if seed_group is _GF_UNMAPPED:
+                    seed_group = None
+                    unmapped.append((dev, itype, iid, mon))
+            elif mon:
                 a = moniker_to_cluster(mon, side)
                 if a == "__AXIS__":
                     control = None
@@ -208,6 +293,7 @@ def main():
                     unmapped.append((dev, itype, iid, mon))
                 else:
                     control = mon
+                    # SOL-R: dotted direction suffix stripped to the group base.
                     seed_group = a.split(".")[0]
         else:
             # em-dash path: first description yielding an etched name, preferring
@@ -240,7 +326,7 @@ def main():
     for dev, entries in devices.items():
         entries.sort(key=lambda e: (e["type"], e["index"] if isinstance(e["index"], int) else 999))
         if args.monikers:
-            role = "left-stick" if dev == SOLR_LEFT_GUID else "right-stick"
+            role = "left-stick" if dev == left_guid else "right-stick"
         else:
             # infer device role from the dominant -L / -R control-name suffix
             l = sum(1 for e in entries if e["control"] and e["control"].rstrip().endswith("-L"))
@@ -262,7 +348,7 @@ def main():
     if unmapped:
         print(f"UNMAPPED monikers ({len(unmapped)}) — review:", file=sys.stderr)
         for dev, it, iid, mon in unmapped:
-            side = "L" if dev == SOLR_LEFT_GUID else "R"
+            side = "L" if dev == left_guid else "R"
             print(f"  {side} {it} {iid}: {mon}", file=sys.stderr)
 
 
