@@ -239,21 +239,35 @@ def vmax_control_and_seed(mons, side, itype, iid):
     (the bake places it)."""
     if itype == "axis":
         return VMAX_AXIS.get((side, str(iid)), (None, None))
-    bases = set()
+    # Collect the per-leaf base monikers IN ORDER (tempo .tap/.hold stripped).
+    ordered = []
     for mon in mons:
         parts = mon.split(".")
         while len(parts) > 1 and parts[-1] in ("tap", "hold"):
             parts.pop()
-        bases.add(".".join(parts))
-    # Noise guard: a real VMAX button moniker starts with T- / R- / a trigger
-    # cluster name. Drop anything else (prose tokens that matched MONIKER_RE).
-    bases = {b for b in bases
-             if re.match(r"^(?:[TR]-|MAIN-TRIG-R\.|FLIP-TRIG-R\.)", b)}
-    if not bases:
+        b = ".".join(parts)
+        # Noise guard: a real VMAX button moniker starts with T- / R- / a
+        # trigger cluster name. Drop prose tokens that matched MONIKER_RE.
+        if re.match(r"^(?:[TR]-|MAIN-TRIG-R\.|FLIP-TRIG-R\.)", b):
+            ordered.append(b)
+    if not ordered:
         return (None, None)
-    if len(bases) > 1:
-        return (None, _GF_UNMAPPED)      # ambiguous — report for review
-    mon = bases.pop()
+    uniq = set(ordered)
+    if len(uniq) > 1:
+        # One physical button drives several CHART controls — e.g. the Aeromax
+        # flip trigger's down-press (map-to-vjoy) vs its release macro (exit to
+        # guns), now FLIP-TRIG-R.down / FLIP-TRIG-R.up. The control map is keyed
+        # per physical input, so it can only anchor ONE: the FIRST (primary)
+        # leaf. The generator routes the sibling leaves to their own boxes by
+        # each leaf's own moniker (same-root reroute). Only siblings of one
+        # control are expected here; if the roots differ it's a real ambiguity,
+        # so still report it.
+        roots = {b.rsplit(".", 1)[0] for b in uniq}
+        if len(roots) > 1:
+            return (None, _GF_UNMAPPED)
+        mon = ordered[0]
+    else:
+        mon = ordered[0]
     if mon.endswith(".pm"):
         # Physical-Modifier layer: the generator folds these onto the base
         # control's box as [PM] rows — the .pm anchor itself never needs a seed.
