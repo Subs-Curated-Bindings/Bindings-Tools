@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-white.png">
+    <img src="assets/logo-color.png" alt="SubliminalsTV Curated Bindings" width="180">
+  </picture>
+</p>
+
 # Bindings Tools
 
 Shared tooling for the [SubliminalsTV Curated Bindings](https://github.com/Subs-Curated-Bindings) org.
