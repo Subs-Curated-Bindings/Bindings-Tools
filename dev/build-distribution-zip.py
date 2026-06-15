@@ -35,7 +35,10 @@ import zipfile
 # .git / .github / .vscode are repo machinery, never user deliverables. Excluding
 # .git matters now that each stick is its own repo (the old monorepo folders had none).
 EXCLUDE_DIRS = {'.Assets', '.git', '.github', '.vscode'}
-EXCLUDE_FILES = {'Thumbs.db'}
+# README.md is the per-stick GitHub repo landing page (org-split artifact), and
+# .gitignore is a repo artifact -- neither is user-facing download content (the
+# user's readme is the README - <stick>.url shortcut). Exclude both.
+EXCLUDE_FILES = {'Thumbs.db', '.gitignore', 'README.md'}
 EXCLUDE_SUFFIXES = ('.af~lock~',)
 
 # Chart sources + rendered exports no longer ship (the website generator renders
