@@ -311,8 +311,12 @@ MOZA_AXIS = {
     # 60-62). Tie each axis to its button cluster by giving it the same base +
     # `.up`, so the analog rides the same ▲▼ arrows as the top/bottom detents
     # (fans to `.down` at render; absolute axes mirror onto both arrows).
-    ("R", "7"): ("R-SLIDER.up", "R-SLIDER.up"),  # R-Slider throttle axis (Speed Limiter)
-    ("R", "8"): ("R-DIAL.up", "R-DIAL.up"),      # R-Dial throttle axis (unbound until bound)
+    # Per Sub's hardware test + photo: the RIGHT throttle = axis 7 = the DIAL
+    # (strip 60-62), the LEFT throttle = axis 8 = the SLIDER (strip 57-59). The
+    # profile's axis labels ("R-Slider"=7) are themselves swapped, so tie by the
+    # real pairing: axis 7 → R-DIAL (Speed Limiter), axis 8 → R-SLIDER.
+    ("R", "7"): ("R-DIAL.up", "R-DIAL.up"),       # right throttle → Dial (Speed Limiter)
+    ("R", "8"): ("R-SLIDER.up", "R-SLIDER.up"),   # left throttle → Slider
 }
 
 
