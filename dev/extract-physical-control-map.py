@@ -298,8 +298,13 @@ MOZA_AXIS = {
     # quoted Camera rows get a charted anchor (GF precedent).
     ("R", "1"): (None, None),            # yaw
     ("R", "2"): (None, None),            # pitch
-    ("R", "4"): ("R-X-Rotation", None),
-    ("R", "5"): ("R-Y-Rotation", None),
+    # The R-POV "hat" is digital directions PLUS an analog mode (the mouse-camera
+    # axes). Tie the analog into the R-POV cluster like a mini-stick: vertical
+    # Camera Tilt (axis 4, Mouse Y) -> R-POV.up (mirrors to .down), horizontal
+    # Camera Pan (axis 5, Mouse X) -> R-POV.left (mirrors to .right). The camera
+    # rows then ride the same arrows as the capacitor-preset hat binds.
+    ("R", "4"): ("R-POV.up", "R-POV.up"),     # Camera Tilt (Mouse Y, vertical)
+    ("R", "5"): ("R-POV.left", "R-POV.left"), # Camera Pan (Mouse X, horizontal)
     ("R", "6"): (None, None),            # roll twist
     # The R-Slider / R-Dial throttles are each an AXIS that's ALSO a 3-position
     # detent button set (R-SLIDER.up/.center/.down on btns 57-59, R-DIAL.* on
