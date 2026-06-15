@@ -291,8 +291,11 @@ MOZA_AXIS = {
     ("L", "2"): ("T-M1.up", "T-M1.up"),
     ("L", "4"): (None, None),            # throttle lever (X-Rotation) — uncharted,
     ("L", "5"): (None, None),            # ditto Y-Rotation; >90% Boost thresholds ride them
-    ("L", "7"): ("T-2", "T-2"),          # T-Slider = T-2 thumb dial
-    ("L", "8"): ("T-3", "T-3"),          # T-Dial = T-3 thumb dial
+    # T-Slider / T-Dial are detent levers (axis + a click-ladder). Tie each axis
+    # into its detent cluster (buttons re-monikered T-SLIDER.0..full / T-DIAL.*)
+    # so the analog rides the same box as the detents — same pattern as the grip.
+    ("L", "7"): ("T-SLIDER.up", "T-SLIDER.up"),  # Slider axis (rides .up/.down arrows)
+    ("L", "8"): ("T-DIAL.up", "T-DIAL.up"),      # Dial axis
     # MHG: main flight axes hidden; the X/Y-Rotation pair is the R-POV's
     # analog mode, routed to mouse free-look — keep the HID names so the
     # quoted Camera rows get a charted anchor (GF precedent).
