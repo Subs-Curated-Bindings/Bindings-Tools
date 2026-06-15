@@ -301,8 +301,13 @@ MOZA_AXIS = {
     ("R", "4"): ("R-X-Rotation", None),
     ("R", "5"): ("R-Y-Rotation", None),
     ("R", "6"): (None, None),            # roll twist
-    ("R", "7"): ("R-RT2.up", "R-RT2.up"),  # speed-limiter wheel; fans to .down at render
-    ("R", "8"): (None, None),            # R-RT1 / R-Dial — unbound spare
+    # The R-Slider / R-Dial throttles are each an AXIS that's ALSO a 3-position
+    # detent button set (R-SLIDER.up/.center/.down on btns 57-59, R-DIAL.* on
+    # 60-62). Tie each axis to its button cluster by giving it the same base +
+    # `.up`, so the analog rides the same ▲▼ arrows as the top/bottom detents
+    # (fans to `.down` at render; absolute axes mirror onto both arrows).
+    ("R", "7"): ("R-SLIDER.up", "R-SLIDER.up"),  # R-Slider throttle axis (Speed Limiter)
+    ("R", "8"): ("R-DIAL.up", "R-DIAL.up"),      # R-Dial throttle axis (unbound until bound)
 }
 
 
