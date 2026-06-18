@@ -34,7 +34,9 @@ import zipfile
 
 # .git / .github / .vscode are repo machinery, never user deliverables. Excluding
 # .git matters now that each stick is its own repo (the old monorepo folders had none).
-EXCLUDE_DIRS = {'.Assets', '.git', '.github', '.vscode'}
+# assets/ holds the README header logo (logo-color/white.png) referenced by README.md
+# (itself excluded) -- GitHub-repo branding from the org split, not user download content.
+EXCLUDE_DIRS = {'.Assets', '.git', '.github', '.vscode', 'assets'}
 # README.md is the per-stick GitHub repo landing page (org-split artifact), and
 # .gitignore is a repo artifact -- neither is user-facing download content (the
 # user's readme is the README - <stick>.url shortcut). Exclude both.
